@@ -1,0 +1,3 @@
+- DESIGN.mdとSPEC.mdに詳細がある
+- npm run buildで静的解析をする
+- 不明点は勝手に決めずに、ユーザーに相談する

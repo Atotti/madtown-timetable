@@ -1,0 +1,14 @@
+{
+  "event": {
+    "name": "VCRGTA",
+    "startDate": "2025-10-01T00:00:00+09:00",
+    "endDate": "2025-10-31T23:59:59+09:00"
+  },
+  "filters": {
+    "titleKeywords": ["GTA", "MADTOWN", "VCRGTA"]
+  },
+  "display": {
+    "defaultTimeRange": 12,
+    "timeGridInterval": 1
+  }
+}
