@@ -126,8 +126,8 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
 
   // スクロール同期
   const handleHeaderScroll = () => {
-    if (headerScrollRef.current && gridScrollRef.current) {
-      gridScrollRef.current.scrollLeft = headerScrollRef.current.scrollLeft;
+    if (headerScrollRef.current && timeGridScrollRef.current) {
+      timeGridScrollRef.current.scrollLeft = headerScrollRef.current.scrollLeft;
     }
   };
 

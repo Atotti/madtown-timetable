@@ -91,6 +91,16 @@ export function TimeGrid({
     }
   };
 
+  // 時刻ラベルのスクロールイベントハンドラ
+  const handleTimeLabelScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const scrollTop = e.currentTarget.scrollTop;
+
+    // タイムグリッド本体の縦スクロールを同期
+    if (actualScrollRef.current) {
+      actualScrollRef.current.scrollTop = scrollTop;
+    }
+  };
+
   const gridSize = calculateGridSize(channels.length, hourCount);
   const virtualColumns = columnVirtualizer.getVirtualItems();
 
@@ -118,6 +128,7 @@ export function TimeGrid({
       <div
         ref={timeLabelScrollRef}
         className="relative bg-gray-50 border-r border-gray-300 overflow-y-auto overflow-x-hidden"
+        onScroll={handleTimeLabelScroll}
         style={{
           width: `${GRID_CONFIG.TIME_LABEL_WIDTH}px`,
           flexShrink: 0,
