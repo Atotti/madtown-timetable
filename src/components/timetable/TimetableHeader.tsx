@@ -6,11 +6,12 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { CalendarIcon, Share2 } from "lucide-react";
+import { CalendarIcon, Share2, HelpCircle } from "lucide-react";
 import { formatTime } from "@/lib/time-utils";
 import { getTagColor } from "@/lib/tag-utils";
 import Image from "next/image";
 import { useState } from "react";
+import { HowToUseModal } from "./HowToUseModal";
 
 type TimetableHeaderProps = {
   config: Config;
@@ -48,6 +49,7 @@ export function TimetableHeader({
   onCopyShareUrl,
 }: TimetableHeaderProps) {
   const [copyMessage, setCopyMessage] = useState<string>("");
+  const [showHowToUse, setShowHowToUse] = useState(false);
 
   // URLコピーボタンのハンドラー
   const handleCopyUrl = async () => {
@@ -97,6 +99,13 @@ export function TimetableHeader({
               })}
             </div>
           )}
+          <Button
+            onClick={() => setShowHowToUse(true)}
+            variant="outline"
+          >
+            <HelpCircle className="mr-2 h-4 w-4" />
+            使い方
+          </Button>
           <div className="text-sm text-gray-700 bg-gray-100 px-3 py-2 rounded-md border border-gray-200">
             {" "}
             {formatTime(currentViewDate, "MM月dd日 (E)")}
@@ -155,6 +164,9 @@ export function TimetableHeader({
           )}
         </div>
       </div>
+
+      {/* 使い方モーダル */}
+      <HowToUseModal open={showHowToUse} onOpenChange={setShowHowToUse} />
     </div>
   );
 }
