@@ -82,4 +82,9 @@ npm run dev
 npm run build
 ```
 
-MADTOWNまとめwiki編集者に感謝いたします。
+---
+
+<div align="center">
+   <p>MADTOWNまとめwiki, MADTOWN企画・運営, 配信者, 全てのコンテンツ制作者に感謝いたします。</p>
+   <p>MIT License © 2025 Atotti</p>
+</div>
