@@ -7,6 +7,7 @@ type UseTimeIndicatorsProps = {
   sharedTime: Date | null;
   shareTime: Date | null;
   isShareMode: boolean;
+  playbackTime: Date | null;
   gridStartTime: Date;
   hourCount: number;
   hourPositions: number[];
@@ -14,13 +15,14 @@ type UseTimeIndicatorsProps = {
 };
 
 /**
- * 時刻インジケーター（現在時刻、共有時刻、共有バー）の表示状態と位置を計算するフック
+ * 時刻インジケーター（現在時刻、共有時刻、共有バー、再生位置）の表示状態と位置を計算するフック
  */
 export function useTimeIndicators({
   currentTime,
   sharedTime,
   shareTime,
   isShareMode,
+  playbackTime,
   gridStartTime,
   hourCount,
   hourPositions,
@@ -86,6 +88,31 @@ export function useTimeIndicators({
     return timeToPosition(shareTime, gridStartTime, hourPositions, hourHeights);
   }, [isShareMode, shareTime, gridStartTime, hourPositions, hourHeights]);
 
+  // 再生位置の表示判定と位置
+  const isPlaybackTimeInView = useMemo(() => {
+    if (!playbackTime) return false;
+    return isWithinInterval(playbackTime, {
+      start: gridStartTime,
+      end: eventEndTime,
+    });
+  }, [playbackTime, gridStartTime, eventEndTime]);
+
+  const playbackTimePosition = useMemo(() => {
+    if (!isPlaybackTimeInView || !playbackTime) return 0;
+    return timeToPosition(
+      playbackTime,
+      gridStartTime,
+      hourPositions,
+      hourHeights,
+    );
+  }, [
+    playbackTime,
+    gridStartTime,
+    isPlaybackTimeInView,
+    hourPositions,
+    hourHeights,
+  ]);
+
   return {
     eventEndTime,
     isCurrentTimeInView,
@@ -93,5 +120,7 @@ export function useTimeIndicators({
     isSharedTimeInView,
     sharedTimePosition,
     shareTimePosition,
+    isPlaybackTimeInView,
+    playbackTimePosition,
   };
 }

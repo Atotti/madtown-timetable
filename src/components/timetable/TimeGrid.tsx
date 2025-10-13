@@ -29,6 +29,8 @@ type TimeGridProps = {
   isShareMode: boolean;
   shareTime: Date | null;
   onShareTimeChange: (time: Date) => void;
+  playbackTime: Date | null;
+  onSetPlaybackTime: (time: Date) => void;
 };
 
 export function TimeGrid({
@@ -47,6 +49,8 @@ export function TimeGrid({
   isShareMode,
   shareTime,
   onShareTimeChange,
+  playbackTime,
+  onSetPlaybackTime,
 }: TimeGridProps) {
   const internalScrollRef = useRef<HTMLDivElement>(null);
   const actualScrollRef = timeGridScrollRef || scrollRef || internalScrollRef;
@@ -119,11 +123,14 @@ export function TimeGrid({
     isSharedTimeInView,
     sharedTimePosition,
     shareTimePosition,
+    isPlaybackTimeInView,
+    playbackTimePosition,
   } = useTimeIndicators({
     currentTime,
     sharedTime: sharedTime || null,
     shareTime,
     isShareMode,
+    playbackTime,
     gridStartTime,
     hourCount,
     hourPositions,
@@ -194,6 +201,8 @@ export function TimeGrid({
             isShareMode={isShareMode}
             shareTime={shareTime}
             shareTimePosition={shareTimePosition}
+            isPlaybackTimeInView={isPlaybackTimeInView}
+            playbackTimePosition={playbackTimePosition}
             variant="label"
           />
         </div>
@@ -246,6 +255,8 @@ export function TimeGrid({
             shareTime={shareTime}
             shareTimePosition={shareTimePosition}
             onShareBarDrag={handleShareBarDrag}
+            isPlaybackTimeInView={isPlaybackTimeInView}
+            playbackTimePosition={playbackTimePosition}
             variant="grid"
           />
 
@@ -262,6 +273,7 @@ export function TimeGrid({
                 gridStartTime={gridStartTime}
                 hourHeights={hourHeights}
                 hourPositions={hourPositions}
+                onSetPlaybackTime={onSetPlaybackTime}
                 style={{
                   position: "absolute",
                   top: 0,

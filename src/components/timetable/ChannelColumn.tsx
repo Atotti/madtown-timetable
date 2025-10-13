@@ -10,6 +10,7 @@ type ChannelColumnProps = {
   hourHeights: number[];
   hourPositions: number[];
   style?: React.CSSProperties;
+  onSetPlaybackTime: (time: Date) => void;
 };
 
 export function ChannelColumn({
@@ -19,6 +20,7 @@ export function ChannelColumn({
   hourHeights,
   hourPositions,
   style,
+  onSetPlaybackTime,
 }: ChannelColumnProps) {
   return (
     <div
@@ -44,6 +46,11 @@ export function ChannelColumn({
               top: `${top}px`,
               height: `${height}px`,
             }}
+            gridStartTime={gridStartTime}
+            hourPositions={hourPositions}
+            hourHeights={hourHeights}
+            cardTop={top}
+            onSetPlaybackTime={onSetPlaybackTime}
           />
         );
       })}

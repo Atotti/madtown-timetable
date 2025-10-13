@@ -1,12 +1,27 @@
 import type { Stream } from "@/types";
 import { CARD_DISPLAY_THRESHOLDS } from "@/lib/constants";
+import { positionToTime } from "@/lib/time-position-converter";
+import { buildYouTubeUrl, buildTwitchUrl } from "@/lib/video-url-builder";
 
 type StreamCardProps = {
   stream: Stream;
   style: React.CSSProperties;
+  gridStartTime: Date;
+  hourPositions: number[];
+  hourHeights: number[];
+  cardTop: number;
+  onSetPlaybackTime: (time: Date) => void;
 };
 
-export function StreamCard({ stream, style }: StreamCardProps) {
+export function StreamCard({
+  stream,
+  style,
+  gridStartTime,
+  hourPositions,
+  hourHeights,
+  cardTop,
+  onSetPlaybackTime,
+}: StreamCardProps) {
   // heightを数値に変換（"526px" -> 526）
   const height =
     typeof style.height === "number"
@@ -14,11 +29,37 @@ export function StreamCard({ stream, style }: StreamCardProps) {
       : parseFloat(style.height as string) || 0;
   const showThumbnail = height >= CARD_DISPLAY_THRESHOLDS.SHOW_THUMBNAIL;
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // カード内のクリック位置（Y座標）を取得
+    const clickOffsetY = e.nativeEvent.offsetY;
+
+    // グリッド上の絶対Y座標
+    const absoluteY = cardTop + clickOffsetY;
+
+    // Y座標から時刻を計算
+    const clickedTime = positionToTime(
+      absoluteY,
+      gridStartTime,
+      hourPositions,
+      hourHeights,
+    );
+
+    // 再生位置を設定（緑色のバーを表示）
+    onSetPlaybackTime(clickedTime);
+
+    // 配信開始からの経過秒数を計算
+    const streamStartTime = new Date(stream.startTime);
+    const elapsedSeconds = Math.max(
+      0,
+      (clickedTime.getTime() - streamStartTime.getTime()) / 1000,
+    );
+
+    // 再生位置付きURLを生成
     const url =
       stream.platform === "youtube"
-        ? `https://www.youtube.com/watch?v=${stream.videoId}`
-        : `https://www.twitch.tv/videos/${stream.videoId}`;
+        ? buildYouTubeUrl(stream.videoId, elapsedSeconds)
+        : buildTwitchUrl(stream.videoId, elapsedSeconds);
+
     window.open(url, "_blank");
   };
 

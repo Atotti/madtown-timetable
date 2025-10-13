@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { Channel, Stream, Config } from "@/types";
 import { TimeGrid } from "./TimeGrid";
 import { TimetableHeader } from "./TimetableHeader";
@@ -137,6 +137,13 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     hourHeights,
   });
 
+  // 再生位置の管理
+  const [playbackTime, setPlaybackTime] = useState<Date | null>(null);
+
+  const handleSetPlaybackTime = (time: Date) => {
+    setPlaybackTime(time);
+  };
+
   // スクロール同期
   const handleHeaderScroll = () => {
     if (headerScrollRef.current && timeGridScrollRef.current) {
@@ -206,6 +213,8 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
           isShareMode={isShareMode}
           shareTime={shareTime}
           onShareTimeChange={setShareTime}
+          playbackTime={playbackTime}
+          onSetPlaybackTime={handleSetPlaybackTime}
         />
       </div>
     </div>

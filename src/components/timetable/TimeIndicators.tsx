@@ -13,12 +13,16 @@ type TimeIndicatorsProps = {
   shareTimePosition: number;
   onShareBarDrag?: (e: React.MouseEvent<HTMLDivElement>) => void;
 
+  // 再生位置
+  isPlaybackTimeInView: boolean;
+  playbackTimePosition: number;
+
   // レイアウト
   variant: "label" | "grid"; // 時刻ラベル側 or グリッド側
 };
 
 /**
- * 時刻インジケーター（現在時刻、共有時刻、共有バー）を表示するコンポーネント
+ * 時刻インジケーター（現在時刻、共有時刻、共有バー、再生位置）を表示するコンポーネント
  * 時刻ラベル側とグリッド側の両方で使用可能
  */
 export function TimeIndicators({
@@ -30,6 +34,8 @@ export function TimeIndicators({
   shareTime,
   shareTimePosition,
   onShareBarDrag,
+  isPlaybackTimeInView,
+  playbackTimePosition,
   variant,
 }: TimeIndicatorsProps) {
   const isLabelSide = variant === "label";
@@ -89,6 +95,23 @@ export function TimeIndicators({
           {isGridSide && (
             <span className="absolute left-2 -top-2 bg-blue-500 text-white text-xs px-2 py-0.5 rounded whitespace-nowrap select-none">
               ドラッグして時刻を選択
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* 再生位置インジケーター */}
+      {isPlaybackTimeInView && (
+        <div
+          className={`absolute ${isLabelSide ? "right-0" : "left-0 right-0"} h-0.5 bg-green-500 z-45 pointer-events-none`}
+          style={{
+            top: `${playbackTimePosition}px`,
+            ...(isLabelSide && { width: "100%" }),
+          }}
+        >
+          {isLabelSide && (
+            <span className="absolute right-1 -top-2 bg-green-500 text-white text-xs px-1 rounded whitespace-nowrap">
+              再生位置
             </span>
           )}
         </div>
