@@ -26,32 +26,6 @@ MADTOWN GTA イベントの配信スケジュールを表示するタイムテ�
 
 ## データ取得詳細
 
-配信データを取得するには、以下のスクリプトを順番に実行します：
-
-```bash
-# 1. まとめwikiからHTMLを取得
-npm run fetch:wiki
-
-# 2. チャンネルリストを取得（raw.html から YouTube & Twitch の情報を抽出）
-npm run scrape:channels
-
-# 3. YouTube @handle 形式のチャンネルIDを実際のIDに変換
-npm run resolve:handles
-
-# 4. Twitch ユーザー名からユーザーIDを取得
-npm run resolve:twitch-ids
-
-# 5. チャンネルアイコンを取得（YouTube & Twitch）
-npm run fetch:avatars
-
-# 6. 配信データを取得（YouTube & Twitch の両方）
-npm run fetch:streams
-```
-
-取得したデータは `data/` ディレクトリに保存されます。
-
-## 自動更新（GitHub Actions）
-
 GitHub Actionsを使用してデータを自動更新できます：
 
 - **チャンネル情報**: 毎日AM 4時（JST）に更新
