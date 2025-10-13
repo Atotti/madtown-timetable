@@ -6,6 +6,7 @@ export type Config = {
   };
   filters: {
     titleKeywords: string[]; // フィルタキーワード
+    twitchGameIds?: string[]; // Twitchゲームでフィルタ
   };
   display: {
     defaultTimeRange: number; // 時間

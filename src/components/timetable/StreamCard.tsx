@@ -25,7 +25,7 @@ export function StreamCard({ stream, style }: StreamCardProps) {
   // プラットフォームに応じた背景色
   const bgColor =
     stream.platform === "youtube"
-      ? "bg-blue-500 hover:bg-blue-600"
+      ? "bg-red-600 hover:bg-red-700"
       : "bg-purple-600 hover:bg-purple-700";
 
   return (

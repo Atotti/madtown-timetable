@@ -81,6 +81,7 @@ export async function getUserVideos(
   startDate: string,
   endDate: string,
   keywords: string[],
+  gameIds: string[] = [],
 ): Promise<TwitchVideo[]> {
   const token = await getAccessToken();
   const startTs = new Date(startDate).getTime();
@@ -116,13 +117,16 @@ export async function getUserVideos(
       if (createdAt < startTs) break; // 古すぎる動画に到達したら終了
       if (createdAt > endTs) continue; // 未来の動画はスキップ
 
-      // キーワードフィルタ
+      // キーワードフィルタ OR ゲームIDフィルタ
       const title = item.title || "";
-      const matched =
+      const titleMatched =
         keywords.length === 0 ||
         keywords.some((kw) => title.toLowerCase().includes(kw.toLowerCase()));
 
-      if (matched) {
+      const gameMatched =
+        gameIds.length === 0 || gameIds.includes(item.game_id);
+
+      if (titleMatched || gameMatched) {
         videos.push({
           id: item.id,
           userId: item.user_id,

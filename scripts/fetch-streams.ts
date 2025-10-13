@@ -123,6 +123,7 @@ async function main() {
           config.event.startDate,
           config.event.endDate,
           config.filters.titleKeywords,
+          config.filters.twitchGameIds || [],
         );
 
         if (twitchVideos.length === 0) {

@@ -1,5 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import type { Channel } from "@/types";
 import { getTagColor } from "@/lib/tag-utils";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { ExternalLink } from "lucide-react";
 
 type ChannelHeaderProps = {
   channel: Channel;
@@ -12,6 +21,8 @@ export function ChannelHeader({
   selectedTags,
   onToggleTag,
 }: ChannelHeaderProps) {
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+
   // チャンネルのすべてのタグを取得
   const tags: string[] = [];
   if (channel.job) {
@@ -27,43 +38,110 @@ export function ChannelHeader({
       ? getTagColor(tags[0], false)
       : "bg-gray-100 border-gray-300";
 
+  // URL生成
+  const youtubeUrl = channel.youtubeChannelId
+    ? `https://www.youtube.com/channel/${channel.youtubeChannelId}`
+    : channel.youtubeHandle
+      ? `https://www.youtube.com/@${channel.youtubeHandle}`
+      : undefined;
+
+  const twitchUrl = channel.twitchUserName
+    ? `https://www.twitch.tv/${channel.twitchUserName}`
+    : undefined;
+
   return (
-    <div
-      className={`flex items-center justify-center border-r ${headerColor}`}
-      style={{ width: "200px", minWidth: "200px" }}
-    >
-      <div className="flex flex-col items-center px-2 py-1">
-        {channel.avatarUrl && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={channel.avatarUrl}
-            alt={channel.name}
-            className="w-10 h-10 rounded-full mb-1 border border-gray-300"
-            loading="lazy"
-          />
-        )}
-        <p className="text-sm font-semibold text-gray-800 truncate max-w-full">
-          {channel.name}
-        </p>
-        {tags.length > 0 && (
-          <div className="flex flex-wrap gap-1 justify-center mt-1">
-            {tags.map((tag) => {
-              const isSelected = selectedTags.includes(tag);
-              const tagColor = getTagColor(tag, isSelected);
-              return (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => onToggleTag(tag)}
-                  className={`px-1 py-0 text-[10px] rounded border cursor-pointer transition-opacity hover:opacity-80 ${tagColor}`}
-                >
-                  {tag}
-                </button>
-              );
-            })}
+    <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
+      <PopoverTrigger asChild>
+        <div
+          className={`flex items-center justify-center border-r ${headerColor} cursor-pointer`}
+          style={{ width: "200px", minWidth: "200px" }}
+          onMouseEnter={() => setIsPopoverOpen(true)}
+          onMouseLeave={() => setIsPopoverOpen(false)}
+        >
+          <div className="flex flex-col items-center px-2 py-1">
+            {channel.avatarUrl && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={channel.avatarUrl}
+                alt={channel.name}
+                className="w-10 h-10 rounded-full mb-1 border border-gray-300"
+                loading="lazy"
+              />
+            )}
+            <p className="text-sm font-semibold text-gray-800 truncate max-w-full">
+              {channel.name}
+            </p>
+            {tags.length > 0 && (
+              <div className="flex flex-wrap gap-1 justify-center mt-1">
+                {tags.map((tag) => {
+                  const isSelected = selectedTags.includes(tag);
+                  const tagColor = getTagColor(tag, isSelected);
+                  return (
+                    <button
+                      key={tag}
+                      type="button"
+                      onClick={() => onToggleTag(tag)}
+                      className={`px-1 py-0 text-[10px] rounded border cursor-pointer transition-opacity hover:opacity-80 ${tagColor}`}
+                    >
+                      {tag}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
-        )}
-      </div>
-    </div>
+        </div>
+      </PopoverTrigger>
+      <PopoverContent
+        className="w-80"
+        onMouseEnter={() => setIsPopoverOpen(true)}
+        onMouseLeave={() => setIsPopoverOpen(false)}
+      >
+        <div className="space-y-3">
+          <div>
+            <h3 className="text-lg font-bold text-gray-900">{channel.name}</h3>
+            {tags.length > 0 && (
+              <div className="flex flex-wrap gap-1 mt-2">
+                {tags.map((tag) => {
+                  const tagColor = getTagColor(tag, false);
+                  return (
+                    <span
+                      key={tag}
+                      className={`px-2 py-1 text-xs rounded border ${tagColor}`}
+                    >
+                      {tag}
+                    </span>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+          <div className="flex gap-2">
+            {youtubeUrl && (
+              <a
+                href={youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded transition-colors"
+              >
+                <span className="font-semibold">YouTube</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+            {twitchUrl && (
+              <a
+                href={twitchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded transition-colors"
+              >
+                <span className="font-semibold">Twitch</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+          </div>
+        </div>
+      </PopoverContent>
+    </Popover>
   );
 }

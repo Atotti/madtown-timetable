@@ -5,7 +5,8 @@
     "endDate": "2025-10-31T23:59:59+09:00"
   },
   "filters": {
-    "titleKeywords": ["GTA", "MADTOWN", "VCRGTA"]
+    "titleKeywords": ["GTA", "MADTOWN", "VCRGTA", "MAD"],
+    "twitchGameIds": ["32982"]
   },
   "display": {
     "defaultTimeRange": 12,
