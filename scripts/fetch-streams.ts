@@ -65,9 +65,17 @@ async function main() {
           const videos = await getVideoDetails(videoIds);
 
           // liveStreamingDetailsが存在し、actualStartTimeがあるもののみ（ライブ配信）
-          const liveVideos = videos.filter(
-            (v) => v.liveStreamingDetails?.actualStartTime,
-          );
+          // ただし、liveBroadcastContentが"none"の場合は通常動画なので除外
+          const liveVideos = videos.filter((v) => {
+            // liveStreamingDetailsがない場合は除外
+            if (!v.liveStreamingDetails?.actualStartTime) return false;
+
+            // liveBroadcastContentが"none"の場合は通常動画なので除外
+            const broadcastContent = v.snippet?.liveBroadcastContent;
+            if (broadcastContent === "none") return false;
+
+            return true;
+          });
 
           if (liveVideos.length === 0) {
             console.log(
