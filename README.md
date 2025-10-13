@@ -28,26 +28,53 @@ MADTOWN GTA イベントの配信スケジュールを表示するタイムテ�
 
 配信データを取得するには、以下のスクリプトを順番に実行します：
 
-[非公式まとめwiki](view-source:https://w.atwiki.jp/madtowngta1/pages/12.html)を`data/raw.html`にdump
-
 ```bash
-# 1. チャンネルリストを取得（raw.html から YouTube & Twitch の情報を抽出）
+# 1. まとめwikiからHTMLを取得
+npm run fetch:wiki
+
+# 2. チャンネルリストを取得（raw.html から YouTube & Twitch の情報を抽出）
 npm run scrape:channels
 
-# 2. YouTube @handle 形式のチャンネルIDを実際のIDに変換
+# 3. YouTube @handle 形式のチャンネルIDを実際のIDに変換
 npm run resolve:handles
 
-# 3. Twitch ユーザー名からユーザーIDを取得
+# 4. Twitch ユーザー名からユーザーIDを取得
 npm run resolve:twitch-ids
 
-# 4. チャンネルアイコンを取得（YouTube & Twitch）
+# 5. チャンネルアイコンを取得（YouTube & Twitch）
 npm run fetch:avatars
 
-# 5. 配信データを取得（YouTube & Twitch の両方）
+# 6. 配信データを取得（YouTube & Twitch の両方）
 npm run fetch:streams
 ```
 
 取得したデータは `data/` ディレクトリに保存されます。
+
+## 自動更新（GitHub Actions）
+
+GitHub Actionsを使用してデータを自動更新できます：
+
+- **チャンネル情報**: 毎日AM 4時（JST）に更新
+- **配信情報**: 1時間ごとに更新
+
+### GitHub Secretsの設定
+
+リポジトリの Settings → Secrets and variables → Actions で以下を設定：
+
+| Secret名 | 説明 |
+|---------|------|
+| `YOUTUBE_API_KEY` | YouTube Data API v3のAPIキー |
+| `TWITCH_CLIENT_ID` | Twitch APIのClient ID |
+| `TWITCH_CLIENT_SECRET` | Twitch APIのClient Secret |
+
+### ワークフロー
+
+| ワークフロー | スケジュール | 更新対象 |
+|------------|------------|---------|
+| `update-channels.yml` | 毎日AM 4時（JST） | `data/channels.json` |
+| `update-streams.yml` | 1時間ごと | `data/streams.json` |
+
+手動実行も可能（Actions → ワークフロー選択 → Run workflow）
 
 ---
 

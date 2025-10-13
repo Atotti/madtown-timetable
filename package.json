@@ -7,6 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
+    "fetch:wiki": "tsx scripts/fetch-wiki.ts",
     "scrape:channels": "tsx scripts/scrape-channels.ts",
     "resolve:handles": "tsx scripts/resolve-handles.ts",
     "resolve:twitch-ids": "tsx scripts/resolve-twitch-ids.ts",
