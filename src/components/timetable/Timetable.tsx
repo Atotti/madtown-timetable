@@ -75,6 +75,12 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   // 現在表示中の日時
   const [currentViewDate, setCurrentViewDate] = useState<Date>(new Date());
 
+  // 選択可能な最大日付（現在時刻 または イベント終了日の早い方）
+  const maxSelectableDate = useMemo(() => {
+    const now = new Date();
+    return now < eventEndDate ? now : eventEndDate;
+  }, [currentTime, eventEndDate]);
+
   // 配信時間の長い順にソート
   const sortedChannels = useMemo(() => {
     return [...channels].sort((a, b) => {
@@ -111,8 +117,13 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   // 日付選択時のスクロール
   const handleDateSelect = (date: Date | undefined) => {
     if (!date) return;
+
+    // 選択された日付の17時に設定
+    const targetTime = new Date(date);
+    targetTime.setHours(17, 0, 0, 0);
+
     setSelectedDate(date);
-    scrollToTime(date);
+    scrollToTime(targetTime);
   };
 
   // 初回レンダリング時に現在時刻にスクロール
@@ -178,14 +189,17 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
                   mode="single"
                   selected={selectedDate}
                   onSelect={handleDateSelect}
-                  fromDate={eventStartDate}
-                  toDate={eventEndDate}
-                  initialFocus
+                  startMonth={eventStartDate}
+                  endMonth={maxSelectableDate}
+                  disabled={[
+                    { before: eventStartDate },
+                    { after: maxSelectableDate },
+                  ]}
                 />
               </PopoverContent>
             </Popover>
             <Button onClick={scrollToNow} variant="default">
-              今に戻る
+              現在時刻に戻る
             </Button>
           </div>
         </div>
