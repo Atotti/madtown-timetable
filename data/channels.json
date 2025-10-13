@@ -50,8 +50,8 @@
       "twitchUserId": "441251211",
       "twitchUserName": "tw_civa",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/bb6a07d4-11a3-4b42-98f8-254a35eaf2ae-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
+      "job": "ギャング、NPC、プール清掃員",
+      "organization": "Black Rose、神聖へっぽこーず",
       "totalViews": 0
     },
     {
@@ -103,8 +103,8 @@
       "twitchUserId": "912775996",
       "twitchUserName": "kawaii_club_0809",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/6f54a2e7-b890-4da6-a5ed-36a9d45a755a-profile_image-300x300.png",
-      "job": "ギャング、イベントプロデューサー",
-      "organization": "白狐",
+      "job": "ギャング、イベントプロデューサー、NPC",
+      "organization": "白狐、Team NPC(神聖へっぽこーず)",
       "totalViews": 0
     },
     {
@@ -174,12 +174,12 @@
     {
       "id": "ch-155",
       "name": "pepper",
+      "twitchUserId": "147479110",
       "twitchUserName": "ow_pepper",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/6fb7e3ac-f379-43c9-b893-f7f8e192b8ca-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
-      "totalViews": 0,
-      "twitchUserId": "147479110"
+      "job": "ギャング",
+      "organization": "XVI",
+      "totalViews": 0
     },
     {
       "id": "ch-200",
@@ -231,8 +231,8 @@
       "twitchUserId": "124467333",
       "twitchUserName": "selly55",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c7b0fd7-6f0b-4062-9d9e-cc34bc105e64-profile_image-300x300.png",
-      "job": "警察、カーディーラー、ギャング",
-      "organization": "Celestial Cats、Black Rose、angler",
+      "job": "ギャング、警察、カーディーラー",
+      "organization": "angler、Celestial Cats、Black Rose",
       "totalViews": 0
     },
     {
@@ -285,8 +285,8 @@
       "twitchUserId": "102009661",
       "twitchUserName": "usya",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/a1635b43-df04-41c4-af87-18dac1be1f38-profile_image-300x300.png",
-      "job": "スーパーマーケット (店長)",
-      "organization": "",
+      "job": "スーパーマーケット (店長)、NPC",
+      "organization": "Team NPC(神聖へっぽこーず)",
       "totalViews": 0
     },
     {
@@ -579,8 +579,8 @@
       "twitchUserId": "1320744591",
       "twitchUserName": "colon56n_stpr",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/c680203d-9fde-488e-b5cc-0cadb7c57239-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
+      "job": "ギャング、NPC",
+      "organization": "Black Rose、神聖へっぽこーず",
       "totalViews": 0
     },
     {
@@ -616,12 +616,12 @@
       "id": "ch-086",
       "name": "しのり",
       "youtubeChannelId": "UCiKqw8Bfw2dgOIMUgpMiedQ",
+      "twitchUserId": "428096132",
       "twitchUserName": "shinori_spt",
       "avatarUrl": "https://yt3.ggpht.com/Y0pGBRcZKaPMB4HN3I_1h8LpE4GoifbXAHpMtQMyVML6rhp8nWM-y_nrvLIgglNG5_aLsZHdEA=s88-c-k-c0x00ffffff-no-rj",
-      "job": "スーパーマーケット、ギャング",
-      "organization": "Celestial Cats、angler",
-      "totalViews": 0,
-      "twitchUserId": "428096132"
+      "job": "ギャング、スーパーマーケット",
+      "organization": "angler、Celestial Cats",
+      "totalViews": 0
     },
     {
       "id": "ch-092",
@@ -830,12 +830,12 @@
       "id": "ch-156",
       "name": "へしこ",
       "youtubeChannelId": "UCDJ_eFjX89HP-gAT9P1HbRA",
+      "twitchUserId": "448051349",
       "twitchUserName": "456_hesiko",
       "avatarUrl": "https://yt3.ggpht.com/JER_l9LsIzuQkdeRla9AfiPmhEdLXbTa7mQJ1D9mMzrZ7T5cQKhBVuCjWuTXtATJlV04X0cr=s88-c-k-c0x00ffffff-no-rj",
-      "job": "ギャング",
-      "organization": "XVI",
-      "totalViews": 0,
-      "twitchUserId": "448051349"
+      "job": "",
+      "organization": "",
+      "totalViews": 0
     },
     {
       "id": "ch-161",
@@ -1306,7 +1306,7 @@
       "name": "群青ロマン",
       "youtubeChannelId": "UCbdOhaCW0Ti1qVCb9PKvmxg",
       "avatarUrl": "https://yt3.ggpht.com/bA6DdQP8IbtEzsUlFzatuqmC4RHGb9WCF0Z4OT6T804FG_MgOBQ56uTdMGJo7kaXg8GmJOALXTw=s88-c-k-c0x00ffffff-no-rj",
-      "job": "スーパーマーケット、ギャング",
+      "job": "ギャング、スーパーマーケット",
       "organization": "白狐",
       "totalViews": 0
     },
@@ -1317,8 +1317,8 @@
       "twitchUserId": "73976866",
       "twitchUserName": "gotsukishima",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/49437742-fa8a-49bc-85cd-43f954324254-profile_image-300x300.png",
-      "job": "メカニック、ギャング",
-      "organization": "7278メカニック、XVI",
+      "job": "ギャング、メカニック",
+      "organization": "XVI",
       "totalViews": 0
     },
     {
@@ -1450,8 +1450,8 @@
       "twitchUserId": "467110256",
       "twitchUserName": "shibuyahal",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/cb0cdf4b-9b04-4253-892b-aebc264b0856-profile_image-300x300.png",
-      "job": "カーディーラー",
-      "organization": "",
+      "job": "カーディーラー、NPC",
+      "organization": "Team NPC(神聖へっぽこーず)",
       "totalViews": 0
     },
     {
@@ -1717,8 +1717,8 @@
       "name": "那和ツムグ",
       "youtubeChannelId": "UCRY2TC7xV6N_q9Fsx4Mp2Pw",
       "avatarUrl": "https://yt3.ggpht.com/5CeAGu1KlyA4TKHZ6H8_9_hkI466Up_gz0Rag6iFr5U7dZX7nXmYJEs_R82BMCsPrMHnMn--ow=s88-c-k-c0x00ffffff-no-rj",
-      "job": "スーパーマーケット、ギャング",
-      "organization": "朕狼党、白狐",
+      "job": "ギャング、スーパーマーケット",
+      "organization": "白狐、朕狼党",
       "totalViews": 0
     },
     {
@@ -1912,12 +1912,12 @@
       "id": "ch-162",
       "name": "魔界ノりりむ",
       "youtubeChannelId": "UC9EjSJ8pvxtvPdxLOElv73w",
+      "twitchUserId": "250613678",
       "twitchUserName": "makaino_ririmu",
       "avatarUrl": "https://yt3.ggpht.com/ytc/AIdro_m2c36OHhLH-aa5JcDxz2Sp34CvFAMl4i_nLTR1sQYXUYU=s88-c-k-c0x00ffffff-no-rj",
       "job": "",
       "organization": "",
-      "totalViews": 0,
-      "twitchUserId": "250613678"
+      "totalViews": 0
     },
     {
       "id": "ch-009",
@@ -2118,21 +2118,21 @@
       "id": "ch-208",
       "name": "Middleee",
       "youtubeChannelId": "UC9qiPae91lhOihUTzwqbdvA",
+      "twitchUserId": "116965093",
       "twitchUserName": "middleeetv",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/e3d41733-c642-4226-a5d1-2d2dfa75a72f-profile_image-300x300.png",
       "job": "タクシー運転手",
-      "organization": "Celestial Cats",
-      "twitchUserId": "116965093"
+      "organization": "Celestial Cats"
     },
     {
       "id": "ch-207",
       "name": "すず音",
       "youtubeChannelId": "UCxp0LCMGXynLAtl8mfwJkHw",
+      "twitchUserId": "533693230",
       "twitchUserName": "suzune_rabbit",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/60001145-d628-45ad-ac17-c6f9a8decaed-profile_image-300x300.png",
       "job": "メカニック",
-      "organization": "7278メカニック",
-      "twitchUserId": "533693230"
+      "organization": "7278メカニック"
     }
   ]
 }
