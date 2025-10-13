@@ -9,7 +9,8 @@ MADTOWN GTA イベントの配信スケジュールを表示するタイムテ�
 | イベント期間 | `data/config.json` | イベントの開始日時と終了日時 |
 | フィルタキーワード | `data/config.json` | 配信タイトルをフィルタリングするキーワードリスト（OR条件） |
 | Twitchゲームフィルタ | `data/config.json` | Twitch配信のゲームIDフィルタ（キーワードとOR条件） |
-| 参加者情報 | `data/channels.json` | [非公式まとめwiki](view-source:https://w.atwiki.jp/madtowngta1/pages/12.html)から抽出 |
+| 参加者情報 | `data/channels.json` | [非公式まとめwiki](https://w.atwiki.jp/madtowngta1/pages/12.html)から抽出 |
+| 職業・組織情報 | `src/lib/constants.ts` | 各参加者の職業や所属組織に関する情報 |
 
 ## 配信データ取得
 
@@ -79,3 +80,5 @@ npm run dev
 ```bash
 npm run build
 ```
+
+MADTOWNまとめwiki編集者に感謝いたします。
