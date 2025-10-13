@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Timetable } from "@/components/timetable/Timetable";
 import { loadChannels, loadStreams, loadConfig } from "@/lib/data-loader";
 
@@ -9,10 +10,12 @@ export default async function Home() {
   ]);
 
   return (
-    <Timetable
-      channels={channelsData.channels}
-      streams={streamsData.streams}
-      config={config}
-    />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Timetable
+        channels={channelsData.channels}
+        streams={streamsData.streams}
+        config={config}
+      />
+    </Suspense>
   );
 }

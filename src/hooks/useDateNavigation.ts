@@ -1,24 +1,44 @@
 import { useState, useEffect, RefObject } from "react";
-import { getHoursDiff } from "@/lib/time-utils";
+import { useSearchParams } from "next/navigation";
+import { differenceInMinutes } from "date-fns";
+import { GRID_CONFIG } from "@/lib/constants";
 
 type UseDateNavigationProps = {
   gridStartTime: Date;
   timeGridScrollRef: RefObject<HTMLDivElement | null>;
+  hourHeights: number[];
+  hourPositions: number[];
 };
 
 export function useDateNavigation({
   gridStartTime,
   timeGridScrollRef,
+  hourHeights,
+  hourPositions,
 }: UseDateNavigationProps) {
+  const searchParams = useSearchParams();
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [currentViewDate, setCurrentViewDate] = useState<Date>(new Date());
 
-  // 指定時刻にスクロール
+  // URLパラメータから共有時刻を取得
+  const sharedTimeParam = searchParams.get("t");
+  const sharedTime = sharedTimeParam ? new Date(sharedTimeParam) : null;
+
+  // 指定時刻にスクロール（動的な時間帯の高さを考慮）
   const scrollToTime = (targetDate: Date) => {
     if (!timeGridScrollRef.current) return;
 
-    const hoursDiff = getHoursDiff(gridStartTime, targetDate);
-    const scrollTop = hoursDiff * 60; // 1時間 = 60px
+    // 動的な位置を計算
+    const minutesFromStart = differenceInMinutes(targetDate, gridStartTime);
+    const hourIndex = Math.floor(minutesFromStart / 60);
+    const minuteInHour = minutesFromStart % 60;
+    const hourPosition = hourPositions[hourIndex] || 0;
+    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
+    const targetPosition = hourPosition + (minuteInHour / 60) * hourHeight;
+
+    // 画面中央に表示するためにビューポートの高さの半分を引く
+    const viewportHeight = timeGridScrollRef.current.clientHeight;
+    const scrollTop = Math.max(0, targetPosition - viewportHeight / 2);
 
     timeGridScrollRef.current.scrollTop = scrollTop;
   };
@@ -42,10 +62,17 @@ export function useDateNavigation({
     scrollToTime(targetTime);
   };
 
-  // 初回レンダリング時に現在時刻にスクロール
+  // 初回レンダリング時に共有時刻または現在時刻にスクロール
   useEffect(() => {
     const timer = setTimeout(() => {
-      scrollToNow();
+      if (sharedTime && !isNaN(sharedTime.getTime())) {
+        // 共有時刻がある場合はそこにスクロール
+        scrollToTime(sharedTime);
+        setSelectedDate(sharedTime);
+      } else {
+        // 共有時刻がない場合は現在時刻にスクロール
+        scrollToNow();
+      }
     }, 100);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -58,5 +85,6 @@ export function useDateNavigation({
     scrollToTime,
     scrollToNow,
     handleDateSelect,
+    sharedTime: sharedTime && !isNaN(sharedTime.getTime()) ? sharedTime : null,
   };
 }

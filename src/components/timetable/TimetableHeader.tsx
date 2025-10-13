@@ -6,10 +6,11 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, Share2 } from "lucide-react";
 import { formatTime } from "@/lib/time-utils";
 import { getTagColor } from "@/lib/tag-utils";
 import Image from "next/image";
+import { useState } from "react";
 
 type TimetableHeaderProps = {
   config: Config;
@@ -23,6 +24,10 @@ type TimetableHeaderProps = {
   onScrollToNow: () => void;
   eventStartDate: Date;
   maxSelectableDate: Date;
+  isShareMode: boolean;
+  onStartShare: () => void;
+  onCancelShare: () => void;
+  onCopyShareUrl: () => Promise<boolean>;
 };
 
 export function TimetableHeader({
@@ -37,7 +42,25 @@ export function TimetableHeader({
   onScrollToNow,
   eventStartDate,
   maxSelectableDate,
+  isShareMode,
+  onStartShare,
+  onCancelShare,
+  onCopyShareUrl,
 }: TimetableHeaderProps) {
+  const [copyMessage, setCopyMessage] = useState<string>("");
+
+  // URLコピーボタンのハンドラー
+  const handleCopyUrl = async () => {
+    const success = await onCopyShareUrl();
+    if (success) {
+      setCopyMessage("URLをコピーしました！");
+      setTimeout(() => setCopyMessage(""), 2000);
+    } else {
+      setCopyMessage("コピーに失敗しました");
+      setTimeout(() => setCopyMessage(""), 2000);
+    }
+  };
+
   return (
     <div className="bg-white border-b border-gray-300 p-4 shadow-sm">
       <div className="flex items-center justify-between">
@@ -102,9 +125,34 @@ export function TimetableHeader({
               />
             </PopoverContent>
           </Popover>
-          <Button onClick={onScrollToNow} variant="default">
-            現在時刻に戻る
-          </Button>
+          {!isShareMode ? (
+            <>
+              <Button onClick={onScrollToNow} variant="default">
+                現在時刻に戻る
+              </Button>
+              <Button onClick={onStartShare} variant="outline">
+                <Share2 className="mr-2 h-4 w-4" />
+                この時刻を共有
+              </Button>
+            </>
+          ) : (
+            <>
+              <div className="relative">
+                <Button onClick={handleCopyUrl} variant="default">
+                  <Share2 className="mr-2 h-4 w-4" />
+                  URLをコピー
+                </Button>
+                {copyMessage && (
+                  <div className="absolute top-full mt-2 right-0 bg-gray-800 text-white text-sm px-3 py-1 rounded shadow-lg whitespace-nowrap">
+                    {copyMessage}
+                  </div>
+                )}
+              </div>
+              <Button onClick={onCancelShare} variant="outline">
+                キャンセル
+              </Button>
+            </>
+          )}
         </div>
       </div>
     </div>

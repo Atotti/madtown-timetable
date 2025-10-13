@@ -2,16 +2,12 @@
 
 import { useRef, useMemo, useState, useEffect } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { differenceInMinutes, isWithinInterval, parseISO } from "date-fns";
+import { differenceInMinutes, isWithinInterval } from "date-fns";
 import type { Channel, Stream } from "@/types";
 import { ChannelColumn } from "./ChannelColumn";
 import { TimeLabel } from "./TimeLabel";
 import { generateHourLabels } from "@/lib/time-utils";
-import {
-  calculateGridSize,
-  calculateHourHeights,
-  calculateHourPositions,
-} from "@/lib/grid-calculator";
+import { calculateGridSize } from "@/lib/grid-calculator";
 import { GRID_CONFIG } from "@/lib/constants";
 
 type TimeGridProps = {
@@ -23,6 +19,13 @@ type TimeGridProps = {
   onScroll?: (scrollLeft: number, scrollTop: number) => void;
   timeGridScrollRef?: React.RefObject<HTMLDivElement | null>;
   timeLabelScrollRef?: React.RefObject<HTMLDivElement | null>;
+  sharedTime?: Date | null;
+  streamCountByHour: number[];
+  hourHeights: number[];
+  hourPositions: number[];
+  isShareMode: boolean;
+  shareTime: Date | null;
+  onShareTimeChange: (time: Date) => void;
 };
 
 export function TimeGrid({
@@ -34,6 +37,13 @@ export function TimeGrid({
   onScroll,
   timeGridScrollRef,
   timeLabelScrollRef,
+  sharedTime,
+  streamCountByHour,
+  hourHeights,
+  hourPositions,
+  isShareMode,
+  shareTime,
+  onShareTimeChange,
 }: TimeGridProps) {
   const internalScrollRef = useRef<HTMLDivElement>(null);
   const actualScrollRef = timeGridScrollRef || scrollRef || internalScrollRef;
@@ -70,43 +80,6 @@ export function TimeGrid({
     });
     return map;
   }, [channels, streams]);
-
-  // 時間帯ごとの配信数を計算（1時間刻み）
-  const streamCountByHour = useMemo(() => {
-    const counts = new Array(hourCount).fill(0);
-
-    streams.forEach((stream) => {
-      const startTime = parseISO(stream.startTime);
-      const endTime = stream.endTime ? parseISO(stream.endTime) : new Date();
-
-      // この配信が各時間帯に含まれるかチェック
-      for (let i = 0; i < hourCount; i++) {
-        const hourStart = new Date(gridStartTime);
-        hourStart.setHours(hourStart.getHours() + i);
-        const hourEnd = new Date(hourStart);
-        hourEnd.setHours(hourEnd.getHours() + 1);
-
-        // 配信時間と時間帯が重なっているか
-        if (startTime < hourEnd && endTime > hourStart) {
-          counts[i]++;
-        }
-      }
-    });
-
-    return counts;
-  }, [streams, gridStartTime, hourCount]);
-
-  // 各時間帯の高さを計算（inactive時は半分）
-  const hourHeights = useMemo(
-    () => calculateHourHeights(streamCountByHour),
-    [streamCountByHour],
-  );
-
-  // 各時間帯の累積位置を計算
-  const hourPositions = useMemo(
-    () => calculateHourPositions(hourHeights),
-    [hourHeights],
-  );
 
   // 仮想スクロール設定（横軸）
   const columnVirtualizer = useVirtualizer({
@@ -173,6 +146,88 @@ export function TimeGrid({
     hourHeights,
   ]);
 
+  // 共有時刻の位置を計算
+  const isSharedTimeInView = useMemo(() => {
+    if (!sharedTime) return false;
+    return isWithinInterval(sharedTime, {
+      start: gridStartTime,
+      end: eventEndTime,
+    });
+  }, [sharedTime, gridStartTime, eventEndTime]);
+
+  const sharedTimePosition = useMemo(() => {
+    if (!isSharedTimeInView || !sharedTime) return 0;
+    const minutesFromStart = differenceInMinutes(sharedTime, gridStartTime);
+    const hourIndex = Math.floor(minutesFromStart / 60);
+    const minuteInHour = minutesFromStart % 60;
+    const hourPosition = hourPositions[hourIndex] || 0;
+    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
+    return hourPosition + (minuteInHour / 60) * hourHeight;
+  }, [
+    sharedTime,
+    gridStartTime,
+    isSharedTimeInView,
+    hourPositions,
+    hourHeights,
+  ]);
+
+  // 共有時刻バーの位置を計算
+  const shareTimePosition = useMemo(() => {
+    if (!isShareMode || !shareTime) return 0;
+    const minutesFromStart = differenceInMinutes(shareTime, gridStartTime);
+    const hourIndex = Math.floor(minutesFromStart / 60);
+    const minuteInHour = minutesFromStart % 60;
+    const hourPosition = hourPositions[hourIndex] || 0;
+    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
+    return hourPosition + (minuteInHour / 60) * hourHeight;
+  }, [
+    isShareMode,
+    shareTime,
+    gridStartTime,
+    hourPositions,
+    hourHeights,
+  ]);
+
+  // 共有バーのドラッグ処理
+  const handleShareBarDrag = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const startY = e.clientY;
+    const startPosition = shareTimePosition;
+
+    const handleMouseMove = (moveEvent: MouseEvent) => {
+      const deltaY = moveEvent.clientY - startY;
+      const newPosition = startPosition + deltaY;
+
+      // 位置からDateを逆算
+      let targetHourIndex = 0;
+      for (let i = 0; i < hourPositions.length - 1; i++) {
+        if (newPosition >= hourPositions[i] && newPosition < hourPositions[i + 1]) {
+          targetHourIndex = i;
+          break;
+        }
+      }
+
+      const hourPosition = hourPositions[targetHourIndex] || 0;
+      const hourHeight = hourHeights[targetHourIndex] || GRID_CONFIG.HOUR_HEIGHT;
+      const positionInHour = newPosition - hourPosition;
+      const minuteInHour = Math.max(0, Math.min(59, (positionInHour / hourHeight) * 60));
+
+      const newTime = new Date(gridStartTime);
+      newTime.setHours(newTime.getHours() + targetHourIndex);
+      newTime.setMinutes(minuteInHour);
+
+      onShareTimeChange(newTime);
+    };
+
+    const handleMouseUp = () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+  };
+
   return (
     <div className="flex h-full">
       {/* 時刻ラベル（縦スクロール同期） */}
@@ -209,6 +264,36 @@ export function TimeGrid({
             >
               <span className="absolute right-1 -top-2 bg-red-500 text-white text-xs px-1 rounded whitespace-nowrap">
                 現在
+              </span>
+            </div>
+          )}
+
+          {/* 共有時刻インジケーター（時刻ラベル側） */}
+          {isSharedTimeInView && (
+            <div
+              className="absolute right-0 h-0.5 bg-blue-500 z-40 pointer-events-none"
+              style={{
+                top: `${sharedTimePosition}px`,
+                width: "100%",
+              }}
+            >
+              <span className="absolute right-1 -top-2 bg-blue-500 text-white text-xs px-1 rounded whitespace-nowrap">
+                共有
+              </span>
+            </div>
+          )}
+
+          {/* ドラッグ可能な共有バー（時刻ラベル側） */}
+          {isShareMode && shareTime && (
+            <div
+              className="absolute right-0 h-1 bg-blue-500 z-50 pointer-events-none"
+              style={{
+                top: `${shareTimePosition}px`,
+                width: "100%",
+              }}
+            >
+              <span className="absolute right-1 -top-2 bg-blue-500 text-white text-xs px-1 rounded whitespace-nowrap">
+                選択中
               </span>
             </div>
           )}
@@ -260,6 +345,31 @@ export function TimeGrid({
                 top: `${currentTimePosition}px`,
               }}
             />
+          )}
+
+          {/* 共有時刻インジケーター（グリッド側） */}
+          {isSharedTimeInView && (
+            <div
+              className="absolute left-0 right-0 h-0.5 bg-blue-500 z-40 pointer-events-none"
+              style={{
+                top: `${sharedTimePosition}px`,
+              }}
+            />
+          )}
+
+          {/* ドラッグ可能な共有バー */}
+          {isShareMode && shareTime && (
+            <div
+              className="absolute left-0 right-0 h-1 bg-blue-500 z-50 cursor-grab active:cursor-grabbing"
+              style={{
+                top: `${shareTimePosition}px`,
+              }}
+              onMouseDown={handleShareBarDrag}
+            >
+              <span className="absolute left-2 -top-2 bg-blue-500 text-white text-xs px-2 py-0.5 rounded whitespace-nowrap select-none">
+                ドラッグして時刻を選択
+              </span>
+            </div>
           )}
 
           {/* 仮想化されたチャンネル列 */}
