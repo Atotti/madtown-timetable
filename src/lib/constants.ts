@@ -9,7 +9,7 @@ export const GRID_CONFIG = {
 
 // 配信カードの表示閾値
 export const CARD_DISPLAY_THRESHOLDS = {
-  SHOW_THUMBNAIL: 80, // サムネイル表示の最小高さ（px）
-  SHOW_TIME: 60, // 時間表示の最小高さ（px）
-  SHOW_TITLE_ONLY: 40, // タイトルのみ表示の最小高さ（px）
+  SHOW_THUMBNAIL: 60, // サムネイル表示の最小高さ（px）
+  SHOW_TIME: 40, // 時間表示の最小高さ（px）は
+  SHOW_TITLE_ONLY: 20, // タイトルのみ表示の最小高さ（px）
 } as const;

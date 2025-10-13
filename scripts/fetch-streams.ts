@@ -143,7 +143,9 @@ async function main() {
               platform: "twitch",
               videoId: video.id,
               title: video.title,
-              thumbnailUrl: video.thumbnailUrl,
+              thumbnailUrl: video.thumbnailUrl
+                .replace("%{width}", "320")
+                .replace("%{height}", "180"),
               startTime: video.createdAt,
               endTime: endTime.toISOString(),
               duration: durationSeconds,
