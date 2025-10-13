@@ -1,25 +1,23 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useRef } from "react";
 import type { Channel, Stream, Config } from "@/types";
 import { TimeGrid } from "./TimeGrid";
 import { TimetableHeader } from "./TimetableHeader";
-import { ChannelHeader } from "./ChannelHeader";
+import { ChannelHeaderRow } from "./ChannelHeaderRow";
 import {
   parseTime,
   getDayStart,
   getHoursDiff,
   getDateFromScrollPosition,
 } from "@/lib/time-utils";
-import { addHours, parseISO } from "date-fns";
+import { addHours } from "date-fns";
 import { GRID_CONFIG } from "@/lib/constants";
 import { useTagFilter } from "@/hooks/useTagFilter";
 import { useDateNavigation } from "@/hooks/useDateNavigation";
+import { useShareMode } from "@/hooks/useShareMode";
+import { useGridCalculations } from "@/hooks/useGridCalculations";
 import { calculateChannelDuration } from "@/lib/stream-utils";
-import {
-  calculateHourHeights,
-  calculateHourPositions,
-} from "@/lib/grid-calculator";
 
 type TimetableProps = {
   channels: Channel[];
@@ -32,10 +30,6 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   const gridScrollRef = useRef<HTMLDivElement>(null);
   const timeGridScrollRef = useRef<HTMLDivElement>(null);
   const timeLabelScrollRef = useRef<HTMLDivElement>(null);
-
-  // 共有モードの状態管理
-  const [isShareMode, setIsShareMode] = useState(false);
-  const [shareTime, setShareTime] = useState<Date | null>(null);
 
   // イベント期間
   const eventStartDate = useMemo(
@@ -102,41 +96,13 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     });
   }, [channels, streams]);
 
-  // 時間帯ごとの配信数を計算（1時間刻み）
-  const streamCountByHour = useMemo(() => {
-    const counts = new Array(hourCount).fill(0);
-
-    streams.forEach((stream) => {
-      const startTime = parseISO(stream.startTime);
-      const endTime = stream.endTime ? parseISO(stream.endTime) : new Date();
-
-      // この配信が各時間帯に含まれるかチェック
-      for (let i = 0; i < hourCount; i++) {
-        const hourStart = new Date(gridStartTime);
-        hourStart.setHours(hourStart.getHours() + i);
-        const hourEnd = new Date(hourStart);
-        hourEnd.setHours(hourEnd.getHours() + 1);
-
-        // 配信時間と時間帯が重なっているか
-        if (startTime < hourEnd && endTime > hourStart) {
-          counts[i]++;
-        }
-      }
-    });
-
-    return counts;
-  }, [streams, gridStartTime, hourCount]);
-
-  // 各時間帯の高さを計算（inactive時は半分）
-  const hourHeights = useMemo(
-    () => calculateHourHeights(streamCountByHour),
-    [streamCountByHour],
-  );
-
-  // 各時間帯の累積位置を計算
-  const hourPositions = useMemo(
-    () => calculateHourPositions(hourHeights),
-    [hourHeights],
+  // グリッド計算（動的な高さと位置）
+  const { streamCountByHour, hourHeights, hourPositions } = useGridCalculations(
+    {
+      streams,
+      gridStartTime,
+      hourCount,
+    },
   );
 
   // カスタムフックの使用
@@ -155,6 +121,20 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     timeGridScrollRef,
     hourHeights,
     hourPositions,
+  });
+
+  const {
+    isShareMode,
+    shareTime,
+    setShareTime,
+    handleStartShare,
+    handleCancelShare,
+    handleCopyShareUrl,
+  } = useShareMode({
+    gridStartTime,
+    timeGridScrollRef,
+    hourPositions,
+    hourHeights,
   });
 
   // スクロール同期
@@ -176,62 +156,6 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
       GRID_CONFIG.HOUR_HEIGHT,
     );
     setCurrentViewDate(viewDate);
-  };
-
-  // 共有モード開始（画面中央の時刻を取得）
-  const handleStartShare = () => {
-    if (!timeGridScrollRef.current) return;
-
-    // 現在のスクロール位置とビューポートの中央を計算
-    const scrollTop = timeGridScrollRef.current.scrollTop;
-    const viewportHeight = timeGridScrollRef.current.clientHeight;
-    const centerY = scrollTop + viewportHeight / 2;
-
-    // Y座標から時刻を逆算（動的な高さを考慮）
-    let targetHourIndex = 0;
-    for (let i = 0; i < hourPositions.length - 1; i++) {
-      if (centerY >= hourPositions[i] && centerY < hourPositions[i + 1]) {
-        targetHourIndex = i;
-        break;
-      }
-    }
-
-    const hourPosition = hourPositions[targetHourIndex] || 0;
-    const hourHeight = hourHeights[targetHourIndex] || GRID_CONFIG.HOUR_HEIGHT;
-    const positionInHour = centerY - hourPosition;
-    const minuteInHour = Math.max(0, Math.min(59, (positionInHour / hourHeight) * 60));
-
-    const centerTime = new Date(gridStartTime);
-    centerTime.setHours(centerTime.getHours() + targetHourIndex);
-    centerTime.setMinutes(minuteInHour);
-
-    setIsShareMode(true);
-    setShareTime(centerTime);
-  };
-
-  // 共有モードキャンセル
-  const handleCancelShare = () => {
-    setIsShareMode(false);
-    setShareTime(null);
-  };
-
-  // 共有URLをコピー
-  const handleCopyShareUrl = async (): Promise<boolean> => {
-    if (!shareTime) return false;
-
-    const url = new URL(window.location.href);
-    url.searchParams.set("t", shareTime.toISOString());
-
-    try {
-      await navigator.clipboard.writeText(url.toString());
-      // コピー成功後、共有モードを終了
-      setIsShareMode(false);
-      setShareTime(null);
-      return true;
-    } catch (error) {
-      console.error("Failed to copy URL:", error);
-      return false;
-    }
   };
 
   return (
@@ -256,34 +180,13 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
       />
 
       {/* チャンネルヘッダー */}
-      <div
-        className="bg-gray-50 border-b border-gray-300 flex"
-        style={{ height: "120px" }}
-      >
-        <div
-          className="flex items-center justify-center border-r border-gray-300 bg-gray-100"
-          style={{ width: "60px", flexShrink: 0 }}
-        >
-          <span className="text-xs font-semibold text-gray-600">時刻</span>
-        </div>
-        <div
-          ref={headerScrollRef}
-          className="flex-1 overflow-x-auto overflow-y-hidden flex"
-          onScroll={handleHeaderScroll}
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          <div className="flex">
-            {filteredChannels.map((channel) => (
-              <ChannelHeader
-                key={channel.id}
-                channel={channel}
-                selectedTags={selectedTags}
-                onToggleTag={toggleTag}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      <ChannelHeaderRow
+        filteredChannels={filteredChannels}
+        selectedTags={selectedTags}
+        onToggleTag={toggleTag}
+        headerScrollRef={headerScrollRef}
+        onScroll={handleHeaderScroll}
+      />
 
       {/* タイムグリッド */}
       <div className="flex-1 overflow-hidden">

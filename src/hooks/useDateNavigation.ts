@@ -1,7 +1,6 @@
 import { useState, useEffect, RefObject } from "react";
 import { useSearchParams } from "next/navigation";
-import { differenceInMinutes } from "date-fns";
-import { GRID_CONFIG } from "@/lib/constants";
+import { timeToPosition } from "@/lib/time-position-converter";
 
 type UseDateNavigationProps = {
   gridStartTime: Date;
@@ -28,13 +27,13 @@ export function useDateNavigation({
   const scrollToTime = (targetDate: Date) => {
     if (!timeGridScrollRef.current) return;
 
-    // 動的な位置を計算
-    const minutesFromStart = differenceInMinutes(targetDate, gridStartTime);
-    const hourIndex = Math.floor(minutesFromStart / 60);
-    const minuteInHour = minutesFromStart % 60;
-    const hourPosition = hourPositions[hourIndex] || 0;
-    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
-    const targetPosition = hourPosition + (minuteInHour / 60) * hourHeight;
+    // 時刻から位置を計算
+    const targetPosition = timeToPosition(
+      targetDate,
+      gridStartTime,
+      hourPositions,
+      hourHeights,
+    );
 
     // 画面中央に表示するためにビューポートの高さの半分を引く
     const viewportHeight = timeGridScrollRef.current.clientHeight;

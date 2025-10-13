@@ -1,14 +1,17 @@
 "use client";
 
-import { useRef, useMemo, useState, useEffect } from "react";
+import { useRef, useMemo } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { differenceInMinutes, isWithinInterval } from "date-fns";
 import type { Channel, Stream } from "@/types";
 import { ChannelColumn } from "./ChannelColumn";
 import { TimeLabel } from "./TimeLabel";
+import { TimeIndicators } from "./TimeIndicators";
 import { generateHourLabels } from "@/lib/time-utils";
 import { calculateGridSize } from "@/lib/grid-calculator";
 import { GRID_CONFIG } from "@/lib/constants";
+import { positionToTime } from "@/lib/time-position-converter";
+import { useCurrentTime } from "@/hooks/useCurrentTime";
+import { useTimeIndicators } from "@/hooks/useTimeIndicators";
 
 type TimeGridProps = {
   channels: Channel[];
@@ -48,17 +51,8 @@ export function TimeGrid({
   const internalScrollRef = useRef<HTMLDivElement>(null);
   const actualScrollRef = timeGridScrollRef || scrollRef || internalScrollRef;
 
-  // 現在時刻の管理
-  const [currentTime, setCurrentTime] = useState<Date>(new Date());
-
-  // 1分ごとに現在時刻を更新
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 60000); // 60秒ごと
-
-    return () => clearInterval(timer);
-  }, []);
+  // 現在時刻の管理（1分ごとに更新）
+  const currentTime = useCurrentTime(60000);
 
   // 時刻ラベル生成
   const timeLabels = useMemo(
@@ -118,75 +112,23 @@ export function TimeGrid({
   const gridSize = calculateGridSize(channels.length, hourHeights);
   const virtualColumns = columnVirtualizer.getVirtualItems();
 
-  // 現在時刻のグリッド上の位置を計算
-  const eventEndTime = useMemo(() => {
-    const end = new Date(gridStartTime);
-    end.setHours(end.getHours() + hourCount);
-    return end;
-  }, [gridStartTime, hourCount]);
-
-  const isCurrentTimeInView = isWithinInterval(currentTime, {
-    start: gridStartTime,
-    end: eventEndTime,
-  });
-
-  const currentTimePosition = useMemo(() => {
-    if (!isCurrentTimeInView) return 0;
-    const minutesFromStart = differenceInMinutes(currentTime, gridStartTime);
-    const hourIndex = Math.floor(minutesFromStart / 60);
-    const minuteInHour = minutesFromStart % 60;
-    const hourPosition = hourPositions[hourIndex] || 0;
-    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
-    return hourPosition + (minuteInHour / 60) * hourHeight;
-  }, [
-    currentTime,
-    gridStartTime,
+  // 時刻インジケーターの位置計算
+  const {
     isCurrentTimeInView,
-    hourPositions,
-    hourHeights,
-  ]);
-
-  // 共有時刻の位置を計算
-  const isSharedTimeInView = useMemo(() => {
-    if (!sharedTime) return false;
-    return isWithinInterval(sharedTime, {
-      start: gridStartTime,
-      end: eventEndTime,
-    });
-  }, [sharedTime, gridStartTime, eventEndTime]);
-
-  const sharedTimePosition = useMemo(() => {
-    if (!isSharedTimeInView || !sharedTime) return 0;
-    const minutesFromStart = differenceInMinutes(sharedTime, gridStartTime);
-    const hourIndex = Math.floor(minutesFromStart / 60);
-    const minuteInHour = minutesFromStart % 60;
-    const hourPosition = hourPositions[hourIndex] || 0;
-    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
-    return hourPosition + (minuteInHour / 60) * hourHeight;
-  }, [
-    sharedTime,
-    gridStartTime,
+    currentTimePosition,
     isSharedTimeInView,
-    hourPositions,
-    hourHeights,
-  ]);
-
-  // 共有時刻バーの位置を計算
-  const shareTimePosition = useMemo(() => {
-    if (!isShareMode || !shareTime) return 0;
-    const minutesFromStart = differenceInMinutes(shareTime, gridStartTime);
-    const hourIndex = Math.floor(minutesFromStart / 60);
-    const minuteInHour = minutesFromStart % 60;
-    const hourPosition = hourPositions[hourIndex] || 0;
-    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
-    return hourPosition + (minuteInHour / 60) * hourHeight;
-  }, [
-    isShareMode,
+    sharedTimePosition,
+    shareTimePosition,
+  } = useTimeIndicators({
+    currentTime,
+    sharedTime: sharedTime || null,
     shareTime,
+    isShareMode,
     gridStartTime,
+    hourCount,
     hourPositions,
     hourHeights,
-  ]);
+  });
 
   // 共有バーのドラッグ処理
   const handleShareBarDrag = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -198,23 +140,13 @@ export function TimeGrid({
       const deltaY = moveEvent.clientY - startY;
       const newPosition = startPosition + deltaY;
 
-      // 位置からDateを逆算
-      let targetHourIndex = 0;
-      for (let i = 0; i < hourPositions.length - 1; i++) {
-        if (newPosition >= hourPositions[i] && newPosition < hourPositions[i + 1]) {
-          targetHourIndex = i;
-          break;
-        }
-      }
-
-      const hourPosition = hourPositions[targetHourIndex] || 0;
-      const hourHeight = hourHeights[targetHourIndex] || GRID_CONFIG.HOUR_HEIGHT;
-      const positionInHour = newPosition - hourPosition;
-      const minuteInHour = Math.max(0, Math.min(59, (positionInHour / hourHeight) * 60));
-
-      const newTime = new Date(gridStartTime);
-      newTime.setHours(newTime.getHours() + targetHourIndex);
-      newTime.setMinutes(minuteInHour);
+      // 位置から時刻を計算
+      const newTime = positionToTime(
+        newPosition,
+        gridStartTime,
+        hourPositions,
+        hourHeights,
+      );
 
       onShareTimeChange(newTime);
     };
@@ -253,50 +185,17 @@ export function TimeGrid({
             />
           ))}
 
-          {/* 現在時刻インジケーター（時刻ラベル側） */}
-          {isCurrentTimeInView && (
-            <div
-              className="absolute right-0 h-0.5 bg-red-500 z-50 pointer-events-none"
-              style={{
-                top: `${currentTimePosition}px`,
-                width: "100%",
-              }}
-            >
-              <span className="absolute right-1 -top-2 bg-red-500 text-white text-xs px-1 rounded whitespace-nowrap">
-                現在
-              </span>
-            </div>
-          )}
-
-          {/* 共有時刻インジケーター（時刻ラベル側） */}
-          {isSharedTimeInView && (
-            <div
-              className="absolute right-0 h-0.5 bg-blue-500 z-40 pointer-events-none"
-              style={{
-                top: `${sharedTimePosition}px`,
-                width: "100%",
-              }}
-            >
-              <span className="absolute right-1 -top-2 bg-blue-500 text-white text-xs px-1 rounded whitespace-nowrap">
-                共有
-              </span>
-            </div>
-          )}
-
-          {/* ドラッグ可能な共有バー（時刻ラベル側） */}
-          {isShareMode && shareTime && (
-            <div
-              className="absolute right-0 h-1 bg-blue-500 z-50 pointer-events-none"
-              style={{
-                top: `${shareTimePosition}px`,
-                width: "100%",
-              }}
-            >
-              <span className="absolute right-1 -top-2 bg-blue-500 text-white text-xs px-1 rounded whitespace-nowrap">
-                選択中
-              </span>
-            </div>
-          )}
+          {/* インジケーター（時刻ラベル側） */}
+          <TimeIndicators
+            isCurrentTimeInView={isCurrentTimeInView}
+            currentTimePosition={currentTimePosition}
+            isSharedTimeInView={isSharedTimeInView}
+            sharedTimePosition={sharedTimePosition}
+            isShareMode={isShareMode}
+            shareTime={shareTime}
+            shareTimePosition={shareTimePosition}
+            variant="label"
+          />
         </div>
       </div>
 
@@ -337,40 +236,18 @@ export function TimeGrid({
             </div>
           ))}
 
-          {/* 現在時刻インジケーター（グリッド側） */}
-          {isCurrentTimeInView && (
-            <div
-              className="absolute left-0 right-0 h-0.5 bg-red-500 z-50 pointer-events-none"
-              style={{
-                top: `${currentTimePosition}px`,
-              }}
-            />
-          )}
-
-          {/* 共有時刻インジケーター（グリッド側） */}
-          {isSharedTimeInView && (
-            <div
-              className="absolute left-0 right-0 h-0.5 bg-blue-500 z-40 pointer-events-none"
-              style={{
-                top: `${sharedTimePosition}px`,
-              }}
-            />
-          )}
-
-          {/* ドラッグ可能な共有バー */}
-          {isShareMode && shareTime && (
-            <div
-              className="absolute left-0 right-0 h-1 bg-blue-500 z-50 cursor-grab active:cursor-grabbing"
-              style={{
-                top: `${shareTimePosition}px`,
-              }}
-              onMouseDown={handleShareBarDrag}
-            >
-              <span className="absolute left-2 -top-2 bg-blue-500 text-white text-xs px-2 py-0.5 rounded whitespace-nowrap select-none">
-                ドラッグして時刻を選択
-              </span>
-            </div>
-          )}
+          {/* インジケーター（グリッド側） */}
+          <TimeIndicators
+            isCurrentTimeInView={isCurrentTimeInView}
+            currentTimePosition={currentTimePosition}
+            isSharedTimeInView={isSharedTimeInView}
+            sharedTimePosition={sharedTimePosition}
+            isShareMode={isShareMode}
+            shareTime={shareTime}
+            shareTimePosition={shareTimePosition}
+            onShareBarDrag={handleShareBarDrag}
+            variant="grid"
+          />
 
           {/* 仮想化されたチャンネル列 */}
           {virtualColumns.map((virtualColumn) => {
