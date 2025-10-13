@@ -7,6 +7,8 @@ type ChannelColumnProps = {
   channel: Channel;
   streams: Stream[];
   gridStartTime: Date;
+  hourHeights: number[];
+  hourPositions: number[];
   style?: React.CSSProperties;
 };
 
@@ -14,6 +16,8 @@ export function ChannelColumn({
   channel, // eslint-disable-line @typescript-eslint/no-unused-vars
   streams,
   gridStartTime,
+  hourHeights,
+  hourPositions,
   style,
 }: ChannelColumnProps) {
   return (
@@ -26,7 +30,12 @@ export function ChannelColumn({
     >
       {/* チャンネル内の配信カード */}
       {streams.map((stream) => {
-        const { top, height } = calculateCardPosition(stream, gridStartTime);
+        const { top, height } = calculateCardPosition(
+          stream,
+          gridStartTime,
+          hourHeights,
+          hourPositions,
+        );
         return (
           <StreamCard
             key={stream.id}

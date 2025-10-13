@@ -3,7 +3,7 @@ name: Update Channel Data
 on:
   schedule:
     # 毎日AM 4時（JST）= 19:00（UTC前日）
-    - cron: '0 19 * * *'
+    - cron: "0 19 * * *"
   workflow_dispatch: # 手動実行も可能
 
 jobs:
@@ -20,8 +20,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci

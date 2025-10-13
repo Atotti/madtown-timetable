@@ -1,6 +1,7 @@
 // グリッドレイアウトの定数
 export const GRID_CONFIG = {
-  HOUR_HEIGHT: 60, // 1時間の高さ（px）
+  HOUR_HEIGHT: 60, // 1時間の高さ（px）- active時
+  INACTIVE_HOUR_HEIGHT: 30, // 1時間の高さ（px）- inactive時
   CHANNEL_WIDTH: 200, // 1チャンネルの幅（px）
   TIME_LABEL_WIDTH: 60, // 時刻ラベルの幅（px）
   HEADER_HEIGHT: 60, // ヘッダーの高さ（px）

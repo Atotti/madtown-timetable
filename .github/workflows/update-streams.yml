@@ -3,7 +3,7 @@ name: Update Stream Data
 on:
   schedule:
     # 1時間ごと（毎時5分）
-    - cron: '5 * * * *'
+    - cron: "5 * * * *"
   workflow_dispatch: # 手動実行も可能
 
 jobs:
@@ -20,8 +20,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci

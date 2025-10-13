@@ -4,16 +4,15 @@ MADTOWN GTA イベントの配信スケジュールを表示するタイムテ�
 
 <img width="1710" height="948" alt="image" src="https://github.com/user-attachments/assets/80aa74dc-34cf-4ff9-96dd-3808bd6d407b" />
 
-
 ## マスターデータ
 
-| データ項目 | ファイル | 説明 |
-|-----------|---------|------|
-| イベント期間 | `data/config.json` | イベントの開始日時と終了日時 |
-| フィルタキーワード | `data/config.json` | 配信タイトルをフィルタリングするキーワードリスト（OR条件） |
-| Twitchゲームフィルタ | `data/config.json` | Twitch配信のゲームIDフィルタ（キーワードとOR条件） |
-| 参加者情報 | `data/channels.json` | [非公式まとめwiki](https://w.atwiki.jp/madtowngta1/pages/12.html)から抽出 |
-| 職業・組織情報 | `src/lib/constants.ts` | 各参加者の職業や所属組織に関する情報 |
+| データ項目           | ファイル               | 説明                                                                      |
+| -------------------- | ---------------------- | ------------------------------------------------------------------------- |
+| イベント期間         | `data/config.json`     | イベントの開始日時と終了日時                                              |
+| フィルタキーワード   | `data/config.json`     | 配信タイトルをフィルタリングするキーワードリスト（OR条件）                |
+| Twitchゲームフィルタ | `data/config.json`     | Twitch配信のゲームIDフィルタ（キーワードとOR条件）                        |
+| 参加者情報           | `data/channels.json`   | [非公式まとめwiki](https://w.atwiki.jp/madtowngta1/pages/12.html)から抽出 |
+| 職業・組織情報       | `src/lib/constants.ts` | 各参加者の職業や所属組織に関する情報                                      |
 
 ## 配信データ取得
 
@@ -38,18 +37,18 @@ GitHub Actionsを使用してデータを自動更新できます：
 
 リポジトリの Settings → Secrets and variables → Actions で以下を設定：
 
-| Secret名 | 説明 |
-|---------|------|
-| `YOUTUBE_API_KEY` | YouTube Data API v3のAPIキー |
-| `TWITCH_CLIENT_ID` | Twitch APIのClient ID |
-| `TWITCH_CLIENT_SECRET` | Twitch APIのClient Secret |
+| Secret名               | 説明                         |
+| ---------------------- | ---------------------------- |
+| `YOUTUBE_API_KEY`      | YouTube Data API v3のAPIキー |
+| `TWITCH_CLIENT_ID`     | Twitch APIのClient ID        |
+| `TWITCH_CLIENT_SECRET` | Twitch APIのClient Secret    |
 
 ### ワークフロー
 
-| ワークフロー | スケジュール | 更新対象 |
-|------------|------------|---------|
+| ワークフロー          | スケジュール      | 更新対象             |
+| --------------------- | ----------------- | -------------------- |
 | `update-channels.yml` | 毎日AM 4時（JST） | `data/channels.json` |
-| `update-streams.yml` | 1時間ごと | `data/streams.json` |
+| `update-streams.yml`  | 1時間ごと         | `data/streams.json`  |
 
 手動実行も可能（Actions → ワークフロー選択 → Run workflow）
 

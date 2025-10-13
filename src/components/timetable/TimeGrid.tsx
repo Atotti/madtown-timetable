@@ -7,7 +7,11 @@ import type { Channel, Stream } from "@/types";
 import { ChannelColumn } from "./ChannelColumn";
 import { TimeLabel } from "./TimeLabel";
 import { generateHourLabels } from "@/lib/time-utils";
-import { calculateGridSize } from "@/lib/grid-calculator";
+import {
+  calculateGridSize,
+  calculateHourHeights,
+  calculateHourPositions,
+} from "@/lib/grid-calculator";
 import { GRID_CONFIG } from "@/lib/constants";
 
 type TimeGridProps = {
@@ -92,6 +96,18 @@ export function TimeGrid({
     return counts;
   }, [streams, gridStartTime, hourCount]);
 
+  // 各時間帯の高さを計算（inactive時は半分）
+  const hourHeights = useMemo(
+    () => calculateHourHeights(streamCountByHour),
+    [streamCountByHour],
+  );
+
+  // 各時間帯の累積位置を計算
+  const hourPositions = useMemo(
+    () => calculateHourPositions(hourHeights),
+    [hourHeights],
+  );
+
   // 仮想スクロール設定（横軸）
   const columnVirtualizer = useVirtualizer({
     count: channels.length,
@@ -126,7 +142,7 @@ export function TimeGrid({
     }
   };
 
-  const gridSize = calculateGridSize(channels.length, hourCount);
+  const gridSize = calculateGridSize(channels.length, hourHeights);
   const virtualColumns = columnVirtualizer.getVirtualItems();
 
   // 現在時刻のグリッド上の位置を計算
@@ -144,8 +160,18 @@ export function TimeGrid({
   const currentTimePosition = useMemo(() => {
     if (!isCurrentTimeInView) return 0;
     const minutesFromStart = differenceInMinutes(currentTime, gridStartTime);
-    return (minutesFromStart / 60) * GRID_CONFIG.HOUR_HEIGHT;
-  }, [currentTime, gridStartTime, isCurrentTimeInView]);
+    const hourIndex = Math.floor(minutesFromStart / 60);
+    const minuteInHour = minutesFromStart % 60;
+    const hourPosition = hourPositions[hourIndex] || 0;
+    const hourHeight = hourHeights[hourIndex] || GRID_CONFIG.HOUR_HEIGHT;
+    return hourPosition + (minuteInHour / 60) * hourHeight;
+  }, [
+    currentTime,
+    gridStartTime,
+    isCurrentTimeInView,
+    hourPositions,
+    hourHeights,
+  ]);
 
   return (
     <div className="flex h-full">
@@ -163,7 +189,13 @@ export function TimeGrid({
       >
         <div style={{ height: `${gridSize.height}px` }}>
           {timeLabels.map((time, index) => (
-            <TimeLabel key={index} time={time} index={index} />
+            <TimeLabel
+              key={index}
+              time={time}
+              index={index}
+              top={hourPositions[index]}
+              height={hourHeights[index]}
+            />
           ))}
 
           {/* 現在時刻インジケーター（時刻ラベル側） */}
@@ -205,8 +237,8 @@ export function TimeGrid({
                 <div
                   className="absolute left-0 right-0 bg-gray-400 opacity-20 pointer-events-none"
                   style={{
-                    top: `${index * GRID_CONFIG.HOUR_HEIGHT}px`,
-                    height: `${GRID_CONFIG.HOUR_HEIGHT}px`,
+                    top: `${hourPositions[index]}px`,
+                    height: `${hourHeights[index]}px`,
                   }}
                 />
               )}
@@ -214,7 +246,7 @@ export function TimeGrid({
               <div
                 className="absolute left-0 right-0 border-t border-gray-200"
                 style={{
-                  top: `${index * GRID_CONFIG.HOUR_HEIGHT}px`,
+                  top: `${hourPositions[index]}px`,
                 }}
               />
             </div>
@@ -241,6 +273,8 @@ export function TimeGrid({
                 channel={channel}
                 streams={channelStreams}
                 gridStartTime={gridStartTime}
+                hourHeights={hourHeights}
+                hourPositions={hourPositions}
                 style={{
                   position: "absolute",
                   top: 0,
