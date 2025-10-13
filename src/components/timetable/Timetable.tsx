@@ -19,12 +19,26 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { CalendarIcon } from "lucide-react";
-import { GRID_CONFIG } from "@/lib/constants";
+import { GRID_CONFIG, JOB_COLORS, JOB_COLORS_SELECTED } from "@/lib/constants";
 
 type TimetableProps = {
   channels: Channel[];
   streams: Stream[];
   config: Config;
+};
+
+// 括弧を除去してタグの基本形を取得
+const getBaseTag = (tag: string): string => {
+  return tag.split("(")[0].split("（")[0].trim();
+};
+
+// タグに対応する色クラスを取得
+const getTagColor = (tag: string, isSelected: boolean): string => {
+  const baseTag = getBaseTag(tag);
+  if (isSelected) {
+    return JOB_COLORS_SELECTED[baseTag] || "bg-gray-100 border-gray-300";
+  }
+  return JOB_COLORS[baseTag] || "bg-gray-50 border-gray-200";
 };
 
 export function Timetable({ channels, streams, config }: TimetableProps) {
@@ -75,27 +89,78 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   // 現在表示中の日時
   const [currentViewDate, setCurrentViewDate] = useState<Date>(new Date());
 
+  // 選択中のタグ（フィルタ）
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+
   // 選択可能な最大日付（現在時刻 または イベント終了日の早い方）
   const maxSelectableDate = useMemo(() => {
     const now = new Date();
     return now < eventEndDate ? now : eventEndDate;
   }, [currentTime, eventEndDate]);
 
-  // 配信時間の長い順にソート
+  // チャンネルをソート（配信時間順）
   const sortedChannels = useMemo(() => {
+    // 各チャンネルの配信時間を計算
+    const channelDurations = new Map<string, number>();
+    channels.forEach((channel) => {
+      const duration = streams
+        .filter((s) => s.channelId === channel.id)
+        .reduce((total, stream) => total + (stream.duration || 0), 0);
+      channelDurations.set(channel.id, duration);
+    });
+
+    // 配信時間の長い順にソート
     return [...channels].sort((a, b) => {
-      // 各チャンネルの配信時間合計を計算
-      const aDuration = streams
-        .filter((s) => s.channelId === a.id)
-        .reduce((total, stream) => total + (stream.duration || 0), 0);
-
-      const bDuration = streams
-        .filter((s) => s.channelId === b.id)
-        .reduce((total, stream) => total + (stream.duration || 0), 0);
-
-      return bDuration - aDuration; // 配信時間が長い順
+      const aDuration = channelDurations.get(a.id) || 0;
+      const bDuration = channelDurations.get(b.id) || 0;
+      return bDuration - aDuration;
     });
   }, [channels, streams]);
+
+  // チャンネルをフィルタ
+  const filteredChannels = useMemo(() => {
+    if (selectedTags.length === 0) {
+      return sortedChannels;
+    }
+
+    return sortedChannels.filter((channel) => {
+      // チャンネルのすべてのタグを取得
+      const channelTags: string[] = [];
+      if (channel.job) {
+        channelTags.push(...channel.job.split("、").map((t) => t.trim()));
+      }
+      if (channel.organization) {
+        channelTags.push(
+          ...channel.organization.split("、").map((t) => t.trim()),
+        );
+      }
+
+      // OR条件: selectedTagsのいずれかがchannelTagsに含まれていればtrue
+      // 括弧を除去した基本形で比較
+      return selectedTags.some((selectedTag) => {
+        const selectedBaseTag = getBaseTag(selectedTag);
+        return channelTags.some((channelTag) => {
+          const channelBaseTag = getBaseTag(channelTag);
+          return selectedBaseTag === channelBaseTag;
+        });
+      });
+    });
+  }, [sortedChannels, selectedTags]);
+
+  // タグの追加・削除
+  const toggleTag = (tag: string) => {
+    setSelectedTags((prev) => {
+      if (prev.includes(tag)) {
+        return prev.filter((t) => t !== tag);
+      } else {
+        return [...prev, tag];
+      }
+    });
+  };
+
+  const removeTag = (tag: string) => {
+    setSelectedTags((prev) => prev.filter((t) => t !== tag));
+  };
 
   // 指定時刻にスクロール
   const scrollToTime = (targetDate: Date) => {
@@ -170,6 +235,23 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
             </p>
           </div>
           <div className="flex items-center gap-3">
+            {selectedTags.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {selectedTags.map((tag) => {
+                  const colorClass = getTagColor(tag, true);
+                  return (
+                    <button
+                      key={tag}
+                      type="button"
+                      onClick={() => removeTag(tag)}
+                      className={`px-2 py-1 text-xs rounded border ${colorClass} hover:opacity-80 transition-opacity`}
+                    >
+                      ×{tag}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
             <div className="text-sm text-gray-700 bg-gray-100 px-3 py-2 rounded-md border border-gray-200">
               <span className="font-semibold">表示中:</span>{" "}
               {formatTime(currentViewDate, "MM月dd日 (E)")}
@@ -208,7 +290,7 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
       {/* チャンネルヘッダー */}
       <div
         className="bg-gray-50 border-b border-gray-300 flex"
-        style={{ height: "90px" }}
+        style={{ height: "120px" }}
       >
         <div
           className="flex items-center justify-center border-r border-gray-300 bg-gray-100"
@@ -223,33 +305,65 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           <div className="flex">
-            {sortedChannels.map((channel) => (
-              <div
-                key={channel.id}
-                className="flex items-center justify-center border-r border-gray-200"
-                style={{ width: "200px", minWidth: "200px" }}
-              >
-                <div className="flex flex-col items-center px-2 py-1">
-                  {channel.avatarUrl && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={channel.avatarUrl}
-                      alt={channel.name}
-                      className="w-10 h-10 rounded-full mb-1 border border-gray-300"
-                      loading="lazy"
-                    />
-                  )}
-                  <p className="text-sm font-semibold text-gray-800 truncate max-w-full">
-                    {channel.name}
-                  </p>
-                  {channel.job && (
-                    <p className="text-xs text-gray-500 truncate max-w-full">
-                      {channel.job}
+            {filteredChannels.map((channel) => {
+              // チャンネルのすべてのタグを取得
+              const tags: string[] = [];
+              if (channel.job) {
+                tags.push(...channel.job.split("、").map((t) => t.trim()));
+              }
+              if (channel.organization) {
+                tags.push(
+                  ...channel.organization.split("、").map((t) => t.trim()),
+                );
+              }
+
+              // 最初のタグの色をヘッダー背景色に使用
+              const headerColor =
+                tags.length > 0
+                  ? getTagColor(tags[0], false)
+                  : "bg-gray-100 border-gray-300";
+
+              return (
+                <div
+                  key={channel.id}
+                  className={`flex items-center justify-center border-r ${headerColor}`}
+                  style={{ width: "200px", minWidth: "200px" }}
+                >
+                  <div className="flex flex-col items-center px-2 py-1">
+                    {channel.avatarUrl && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={channel.avatarUrl}
+                        alt={channel.name}
+                        className="w-10 h-10 rounded-full mb-1 border border-gray-300"
+                        loading="lazy"
+                      />
+                    )}
+                    <p className="text-sm font-semibold text-gray-800 truncate max-w-full">
+                      {channel.name}
                     </p>
-                  )}
+                    {tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1 justify-center mt-1">
+                        {tags.map((tag) => {
+                          const isSelected = selectedTags.includes(tag);
+                          const tagColor = getTagColor(tag, isSelected);
+                          return (
+                            <button
+                              key={tag}
+                              type="button"
+                              onClick={() => toggleTag(tag)}
+                              className={`px-1 py-0 text-[10px] rounded border cursor-pointer transition-opacity hover:opacity-80 ${tagColor}`}
+                            >
+                              {tag}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
@@ -257,7 +371,7 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
       {/* タイムグリッド */}
       <div className="flex-1 overflow-hidden">
         <TimeGrid
-          channels={sortedChannels}
+          channels={filteredChannels}
           streams={streams}
           gridStartTime={gridStartTime}
           hourCount={hourCount}

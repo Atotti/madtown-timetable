@@ -7,12 +7,14 @@ export type WikiChannel = {
   twitchUserName?: string;
   avatarUrl: string;
   job?: string;
+  organization?: string;
   totalViews: number;
 };
 
 type RowData = {
   name: string;
   job: string;
+  organization: string;
 };
 
 /**
@@ -31,32 +33,26 @@ export async function scrapeChannelsFromWiki(): Promise<WikiChannel[]> {
   let duplicateCount = 0;
   let noYoutubeLinkCount = 0;
 
-  // テーブル行を抽出 (<!--N-M--> の形式でコメントがある行)
-  const lines = html.split("\n");
-  const rows = new Map<number, RowData>(); // rowNum -> { name, job }
+  // テーブル行を抽出 (<!--N-M--> の形式でコメントとその後のtdタグ)
+  const rows = new Map<number, RowData>(); // rowNum -> { name, job, organization }
   const rowYoutubeIds = new Map<number, string>(); // rowNum -> youtubeChannelId
   const rowTwitchUsernames = new Map<number, string>(); // rowNum -> twitchUserName
 
-  for (const line of lines) {
-    // <!--N-M--> の形式のコメントを探す
-    const commentMatch = line.match(/<!--(\d+)-(\d+)-->/);
-    if (!commentMatch) continue;
+  // <!--N-M--> とその後のtdタグをペアで抽出（複数行にまたがる可能性あり）
+  const cellPattern = /<!--(\d+)-(\d+)-->\s*<td[^>]*>([\s\S]*?)<\/td>/g;
+  let match;
 
-    const rowNum = parseInt(commentMatch[1]);
-    const colNum = parseInt(commentMatch[2]);
+  while ((match = cellPattern.exec(html)) !== null) {
+    const rowNum = parseInt(match[1]);
+    const colNum = parseInt(match[2]);
+    const tdContent = match[3];
 
     // ヘッダー行（行0）はスキップ
     if (rowNum === 0) continue;
 
-    // tdタグの内容を抽出
-    const tdMatch = line.match(/<td[^>]*>([\s\S]*?)<\/td>/);
-    if (!tdMatch) continue;
-
-    const tdContent = tdMatch[1];
-
     // 行データを初期化
     if (!rows.has(rowNum)) {
-      rows.set(rowNum, { name: "", job: "" });
+      rows.set(rowNum, { name: "", job: "", organization: "" });
     }
 
     const rowData = rows.get(rowNum)!;
@@ -65,13 +61,22 @@ export async function scrapeChannelsFromWiki(): Promise<WikiChannel[]> {
     if (colNum === 0) {
       // 名前 (font-size:0pxのspanタグ内のテキストを除去)
       let nameContent = tdContent.replace(
-        /<span[^>]*font-size:\s*0px[^>]*>[\s\S]*?<\/span>/gi,
+        /<span[^>]*font-size:\s*0px[^>]*>[\s\S]*?<\/span\s*>/gi,
         "",
       );
       rowData.name = nameContent.replace(/<[^>]*>/g, "").trim();
     } else if (colNum === 1) {
       // 職業
-      rowData.job = tdContent.replace(/<[^>]*>/g, "").trim();
+      rowData.job = tdContent
+        .replace(/<[^>]*>/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    } else if (colNum === 2) {
+      // 組織名
+      rowData.organization = tdContent
+        .replace(/<[^>]*>/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
     } else if (colNum === 4) {
       // 主な活動場所（YouTubeリンク、Twitchリンク）
       const youtubeMatch = tdContent.match(
@@ -120,6 +125,7 @@ export async function scrapeChannelsFromWiki(): Promise<WikiChannel[]> {
       twitchUserName: twitchUserName,
       avatarUrl: "",
       job: rowData.job || "",
+      organization: rowData.organization || "",
       totalViews: 0,
     });
 

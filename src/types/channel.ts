@@ -10,6 +10,7 @@ export type Channel = {
   // 共通
   avatarUrl: string; // アイコン画像URL
   job?: string; // 職業
+  organization?: string; // 組織名
   totalViews?: number; // 総再生回数
 };
 
