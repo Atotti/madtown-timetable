@@ -118,13 +118,33 @@ export async function getUserVideos(
       if (createdAt > endTs) continue; // 未来の動画はスキップ
 
       // キーワードフィルタ OR ゲームIDフィルタ
+      const hasKeywords = keywords.length > 0;
+      const hasGameIds = gameIds.length > 0;
+
+      // フィルタが指定されていない場合は全て取得
+      if (!hasKeywords && !hasGameIds) {
+        videos.push({
+          id: item.id,
+          userId: item.user_id,
+          title: item.title,
+          description: item.description,
+          createdAt: item.created_at,
+          publishedAt: item.published_at,
+          url: item.url,
+          thumbnailUrl: item.thumbnail_url,
+          viewCount: item.view_count,
+          duration: item.duration, // "1h2m30s" 形式
+        });
+        continue;
+      }
+
+      // キーワードまたはゲームIDにマッチするかチェック
       const title = item.title || "";
       const titleMatched =
-        keywords.length === 0 ||
+        hasKeywords &&
         keywords.some((kw) => title.toLowerCase().includes(kw.toLowerCase()));
 
-      const gameMatched =
-        gameIds.length === 0 || gameIds.includes(item.game_id);
+      const gameMatched = hasGameIds && gameIds.includes(item.game_id);
 
       if (titleMatched || gameMatched) {
         videos.push({

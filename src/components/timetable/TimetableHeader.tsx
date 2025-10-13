@@ -9,6 +9,7 @@ import {
 import { CalendarIcon } from "lucide-react";
 import { formatTime } from "@/lib/time-utils";
 import { getTagColor } from "@/lib/tag-utils";
+import Image from "next/image";
 
 type TimetableHeaderProps = {
   config: Config;
@@ -41,7 +42,14 @@ export function TimetableHeader({
     <div className="bg-white border-b border-gray-300 p-4 shadow-sm">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            <Image
+              src="/madtown.png"
+              alt="MADTOWN"
+              width={38}
+              height={38}
+              className="object-contain"
+            />
             {config.event.name} タイムテーブル
           </h1>
           <p className="text-sm text-gray-600 mt-1">
