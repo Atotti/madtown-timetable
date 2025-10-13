@@ -23,15 +23,15 @@ export function ChannelHeaderRow({
 }: ChannelHeaderRowProps) {
   return (
     <div
-      className="bg-gray-50 border-b border-gray-300 flex"
+      className="bg-white border-b border-gray-300 flex shadow-md"
       style={{ height: "120px" }}
     >
       {/* 左端の"時刻"ラベル */}
       <div
-        className="flex items-center justify-center border-r border-gray-300 bg-gray-100"
+        className="flex items-center justify-center border-r border-gray-300 bg-white shadow-sm"
         style={{ width: "60px", flexShrink: 0 }}
       >
-        <span className="text-xs font-semibold text-gray-600">時刻</span>
+        <span className="text-xs font-bold text-gray-700">時刻</span>
       </div>
 
       {/* スクロール可能なチャンネルヘッダー */}

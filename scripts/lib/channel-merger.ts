@@ -3,13 +3,35 @@ import type { WikiChannel } from "./wiki-scraper";
 
 /**
  * チャンネルのユニークキーを生成
- * name + youtubeChannelId の組み合わせでユニーク性を保証
- * youtubeChannelIdがない場合はnameのみ
+ * YouTube/Twitch両方を考慮してユニーク性を保証
+ * - YouTube + Twitch: `youtube:twitch`
+ * - YouTubeのみ: `yt:youtubeId`
+ * - Twitchのみ: `tw:twitchUserName`
+ * - どちらもない: `name:name`
  */
 function getChannelKey(channel: Channel | WikiChannel): string {
   const youtubeId =
     "youtubeChannelId" in channel ? channel.youtubeChannelId : "";
-  return youtubeId ? `${channel.name}:${youtubeId}` : channel.name;
+  const twitchUserName =
+    "twitchUserName" in channel ? channel.twitchUserName : "";
+
+  // YouTube + Twitch両方ある場合
+  if (youtubeId && twitchUserName) {
+    return `${youtubeId}:${twitchUserName}`;
+  }
+
+  // YouTubeのみ
+  if (youtubeId) {
+    return `yt:${youtubeId}`;
+  }
+
+  // Twitchのみ
+  if (twitchUserName) {
+    return `tw:${twitchUserName}`;
+  }
+
+  // どちらもない場合は名前で区別
+  return `name:${channel.name}`;
 }
 
 /**

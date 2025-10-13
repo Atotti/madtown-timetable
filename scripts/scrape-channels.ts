@@ -25,8 +25,21 @@ async function main() {
       console.log("📂 既存データなし。新規作成します。\n");
     }
 
-    // Wikiからチャンネル情報を取得
-    const wikiChannels = await scrapeChannelsFromWiki();
+    // 既存データから最大ID番号を取得
+    let maxIdNumber = 0;
+    for (const channel of existingChannels) {
+      const idMatch = channel.id.match(/^ch-(\d+)$/);
+      if (idMatch) {
+        const idNum = parseInt(idMatch[1]);
+        if (idNum > maxIdNumber) {
+          maxIdNumber = idNum;
+        }
+      }
+    }
+    console.log(`📊 既存データの最大ID: ch-${String(maxIdNumber).padStart(3, "0")}\n`);
+
+    // Wikiからチャンネル情報を取得（既存最大ID+1から開始）
+    const wikiChannels = await scrapeChannelsFromWiki(maxIdNumber + 1);
 
     console.log(`\n✅ ${wikiChannels.length}件のチャンネルを取得しました\n`);
 

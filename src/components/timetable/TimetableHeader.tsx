@@ -64,23 +64,35 @@ export function TimetableHeader({
   };
 
   return (
-    <div className="bg-white border-b border-gray-300 p-4 shadow-sm">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-            <Image
-              src="/madtown.png"
-              alt="MADTOWN"
-              width={38}
-              height={38}
-              className="object-contain"
-            />
+    <div className="bg-white border-b border-gray-300 p-4 shadow-lg">
+      <div className="flex items-center justify-between gap-6">
+        {/* ロゴ（大きく表示） */}
+        <div className="flex-shrink-0 -my-4">
+          <Image
+            src="/madtown.png"
+            alt="MADTOWN"
+            width={96}
+            height={96}
+            className="object-contain"
+          />
+        </div>
+
+        {/* タイトルと統計情報 */}
+        <div className="flex-1">
+          <h1 className="text-2xl font-bold text-gray-800">
             {config.event.name} タイムテーブル
           </h1>
-          <p className="text-sm text-gray-600 mt-1">
-            {channels.length}チャンネル / {streams.length}配信
-          </p>
+          <div className="flex items-center gap-2 mt-1">
+            <span className="bg-white shadow-sm border border-gray-200 px-2 py-1 rounded text-xs text-gray-700">
+              📺 {channels.length}チャンネル
+            </span>
+            <span className="bg-white shadow-sm border border-gray-200 px-2 py-1 rounded text-xs text-gray-700">
+              🎬 {streams.length}配信
+            </span>
+          </div>
         </div>
+
+        {/* ボタン群 */}
         <div className="flex items-center gap-3">
           {selectedTags.length > 0 && (
             <div className="flex flex-wrap gap-1">
@@ -91,7 +103,7 @@ export function TimetableHeader({
                     key={tag}
                     type="button"
                     onClick={() => onRemoveTag(tag)}
-                    className={`px-2 py-1 text-xs rounded border ${colorClass} hover:opacity-80 transition-opacity`}
+                    className={`px-2 py-1 text-xs rounded border ${colorClass} shadow-sm hover:shadow-md hover:opacity-80 transition-all`}
                   >
                     ×{tag}
                   </button>
@@ -102,19 +114,19 @@ export function TimetableHeader({
           <Button
             onClick={() => setShowHowToUse(true)}
             variant="outline"
+            className="shadow-sm hover:shadow-md transition-shadow"
           >
             <HelpCircle className="mr-2 h-4 w-4" />
             使い方
           </Button>
-          <div className="text-sm text-gray-700 bg-gray-100 px-3 py-2 rounded-md border border-gray-200">
-            {" "}
+          <div className="text-sm text-gray-700 bg-white px-3 py-2 rounded-md border border-gray-200 shadow-sm">
             {formatTime(currentViewDate, "MM月dd日 (E)")}
           </div>
           <Popover>
             <PopoverTrigger asChild>
               <Button
                 variant="outline"
-                className="w-[200px] justify-start text-left font-normal"
+                className="w-[200px] justify-start text-left font-normal shadow-sm hover:shadow-md transition-shadow"
               >
                 <CalendarIcon className="mr-2 h-4 w-4" />
                 {formatTime(selectedDate, "yyyy/MM/dd")}
@@ -136,10 +148,10 @@ export function TimetableHeader({
           </Popover>
           {!isShareMode ? (
             <>
-              <Button onClick={onScrollToNow} variant="default">
+              <Button onClick={onScrollToNow} variant="default" className="shadow-sm hover:shadow-md transition-shadow">
                 現在時刻に戻る
               </Button>
-              <Button onClick={onStartShare} variant="outline">
+              <Button onClick={onStartShare} variant="outline" className="shadow-sm hover:shadow-md transition-shadow">
                 <Share2 className="mr-2 h-4 w-4" />
                 この時刻を共有
               </Button>
@@ -147,7 +159,7 @@ export function TimetableHeader({
           ) : (
             <>
               <div className="relative">
-                <Button onClick={handleCopyUrl} variant="default">
+                <Button onClick={handleCopyUrl} variant="default" className="shadow-sm hover:shadow-md transition-shadow">
                   <Share2 className="mr-2 h-4 w-4" />
                   URLをコピー
                 </Button>
@@ -157,7 +169,7 @@ export function TimetableHeader({
                   </div>
                 )}
               </div>
-              <Button onClick={onCancelShare} variant="outline">
+              <Button onClick={onCancelShare} variant="outline" className="shadow-sm hover:shadow-md transition-shadow">
                 キャンセル
               </Button>
             </>

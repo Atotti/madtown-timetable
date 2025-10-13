@@ -53,7 +53,7 @@ export function ChannelHeader({
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
         <div
-          className={`flex items-center justify-center border-r ${headerColor} cursor-pointer`}
+          className={`flex items-center justify-center border-r ${headerColor} cursor-pointer shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5`}
           style={{ width: "200px", minWidth: "200px" }}
           onMouseEnter={() => setIsPopoverOpen(true)}
           onMouseLeave={() => setIsPopoverOpen(false)}
@@ -64,7 +64,7 @@ export function ChannelHeader({
               <img
                 src={channel.avatarUrl}
                 alt={channel.name}
-                className="w-10 h-10 rounded-full mb-1 border border-gray-300"
+                className="w-10 h-10 rounded-full mb-1 border border-gray-300 shadow-md"
                 loading="lazy"
               />
             )}

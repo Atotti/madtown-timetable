@@ -20,14 +20,16 @@ type RowData = {
 /**
  * data/raw.htmlからチャンネルリストをスクレイピング
  * コメントベースのパース方式（<!--N-M--> 形式）
+ *
+ * @param startIdCounter 開始ID番号（デフォルト: 1）
  */
-export async function scrapeChannelsFromWiki(): Promise<WikiChannel[]> {
+export async function scrapeChannelsFromWiki(startIdCounter: number = 1): Promise<WikiChannel[]> {
   console.log("data/raw.html からチャンネル情報を読み込み中...");
 
   const html = await fs.readFile("data/raw.html", "utf-8");
 
   const channels: WikiChannel[] = [];
-  let idCounter = 1;
+  let idCounter = startIdCounter;
   const seenRows = new Set<number>();
   const seenChannelIds = new Set<string>();
   let duplicateCount = 0;
