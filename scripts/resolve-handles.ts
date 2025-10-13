@@ -1,6 +1,10 @@
 import { readJSON, writeJSON } from "./lib/file-utils";
 import { google } from "googleapis";
 import type { Channel } from "../src/types/channel";
+import { config } from "dotenv";
+
+// .envファイルを読み込み
+config();
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
