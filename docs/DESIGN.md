@@ -98,20 +98,20 @@
 
 ### 1.3 技術スタック詳細
 
-| カテゴリ       | 技術                    | バージョン | 用途                         |
-| -------------- | ----------------------- | ---------- | ---------------------------- |
-| フレームワーク | Next.js                 | 15.x       | React SSG/SSR                |
-| 言語           | TypeScript              | 5.x        | 型安全性                     |
-| UI             | React                   | 19.x       | コンポーネント               |
-| スタイリング   | Tailwind CSS            | 4.x        | CSSフレームワーク            |
-| 仮想スクロール | @tanstack/react-virtual | 3.x        | パフォーマンス最適化         |
-| 日時処理       | date-fns                | 3.x        | タイムゾーン・フォーマット   |
-| スクレイピング | cheerio                 | 1.x        | HTML解析                     |
-| HTTP           | axios                   | 1.x        | API呼び出し（主にTwitch）    |
-| YouTube API    | googleapis              | 最新       | 公式クライアント             |
-| Twitch API     | Twitch Helix API        | -          | OAuth2 + REST API            |
-| ホスティング   | Vercel                  | -          | デプロイ                     |
-| CI/CD          | GitHub Actions          | -          | 自動化                       |
+| カテゴリ       | 技術                    | バージョン | 用途                       |
+| -------------- | ----------------------- | ---------- | -------------------------- |
+| フレームワーク | Next.js                 | 15.x       | React SSG/SSR              |
+| 言語           | TypeScript              | 5.x        | 型安全性                   |
+| UI             | React                   | 19.x       | コンポーネント             |
+| スタイリング   | Tailwind CSS            | 4.x        | CSSフレームワーク          |
+| 仮想スクロール | @tanstack/react-virtual | 3.x        | パフォーマンス最適化       |
+| 日時処理       | date-fns                | 3.x        | タイムゾーン・フォーマット |
+| スクレイピング | cheerio                 | 1.x        | HTML解析                   |
+| HTTP           | axios                   | 1.x        | API呼び出し（主にTwitch）  |
+| YouTube API    | googleapis              | 最新       | 公式クライアント           |
+| Twitch API     | Twitch Helix API        | -          | OAuth2 + REST API          |
+| ホスティング   | Vercel                  | -          | デプロイ                   |
+| CI/CD          | GitHub Actions          | -          | 自動化                     |
 
 ## 2. ディレクトリ構造
 
@@ -876,7 +876,7 @@ export async function getUserVideos(
   userId: string,
   startDate: string,
   endDate: string,
-  keywords: string[]
+  keywords: string[],
 ): Promise<TwitchVideo[]> {
   // Twitch APIからVODを取得し、期間・キーワードでフィルタ
   // 詳細は実装参照
@@ -1120,7 +1120,7 @@ export type ChannelsData = {
 export type Stream = {
   id: string; // UUID
   channelId: string; // チャンネルID
-  platform: 'youtube' | 'twitch'; // プラットフォーム識別子
+  platform: "youtube" | "twitch"; // プラットフォーム識別子
   videoId: string; // 動画ID（YouTubeまたはTwitch）
   title: string; // タイトル
   thumbnailUrl: string; // サムネイル

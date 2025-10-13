@@ -43,6 +43,7 @@ export async function getUserByLogin(login: string): Promise<{
   id: string;
   login: string;
   displayName: string;
+  profileImageUrl?: string;
 } | null> {
   try {
     const token = await getAccessToken();
@@ -64,6 +65,7 @@ export async function getUserByLogin(login: string): Promise<{
       id: user.id,
       login: user.login,
       displayName: user.display_name,
+      profileImageUrl: user.profile_image_url,
     };
   } catch (error) {
     console.error(`Error fetching user by login: ${login}`, error);

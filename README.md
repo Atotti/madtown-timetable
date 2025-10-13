@@ -56,6 +56,8 @@ npm run dev
 
 配信データを取得するには、以下のスクリプトを順番に実行します：
 
+まとめwikiを`data/raw.html`にdump（view-source:https://w.atwiki.jp/madtowngta1/pages/12.html）
+
 ```bash
 # 1. チャンネルリストを取得（raw.html から YouTube & Twitch の情報を抽出）
 npm run scrape:channels
@@ -66,7 +68,10 @@ npm run resolve:handles
 # 3. Twitch ユーザー名からユーザーIDを取得
 npm run resolve:twitch-ids
 
-# 4. 配信データを取得（YouTube & Twitch の両方）
+# 4. チャンネルアイコンを取得（YouTube & Twitch）
+npm run fetch:avatars
+
+# 5. 配信データを取得（YouTube & Twitch の両方）
 npm run fetch:streams
 ```
 

@@ -194,7 +194,7 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
       {/* チャンネルヘッダー */}
       <div
         className="bg-gray-50 border-b border-gray-300 flex"
-        style={{ height: "60px" }}
+        style={{ height: "90px" }}
       >
         <div
           className="flex items-center justify-center border-r border-gray-300 bg-gray-100"
@@ -215,12 +215,23 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
                 className="flex items-center justify-center border-r border-gray-200"
                 style={{ width: "200px", minWidth: "200px" }}
               >
-                <div className="text-center px-2">
-                  <p className="text-sm font-semibold text-gray-800 truncate">
+                <div className="flex flex-col items-center px-2 py-1">
+                  {channel.avatarUrl && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={channel.avatarUrl}
+                      alt={channel.name}
+                      className="w-10 h-10 rounded-full mb-1 border border-gray-300"
+                      loading="lazy"
+                    />
+                  )}
+                  <p className="text-sm font-semibold text-gray-800 truncate max-w-full">
                     {channel.name}
                   </p>
                   {channel.job && (
-                    <p className="text-xs text-gray-500">{channel.job}</p>
+                    <p className="text-xs text-gray-500 truncate max-w-full">
+                      {channel.job}
+                    </p>
                   )}
                 </div>
               </div>

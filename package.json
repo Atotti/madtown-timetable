@@ -10,6 +10,7 @@
     "scrape:channels": "tsx scripts/scrape-channels.ts",
     "resolve:handles": "tsx scripts/resolve-handles.ts",
     "resolve:twitch-ids": "tsx scripts/resolve-twitch-ids.ts",
+    "fetch:avatars": "tsx scripts/fetch-avatars.ts",
     "fetch:streams": "tsx scripts/fetch-streams.ts"
   },
   "dependencies": {

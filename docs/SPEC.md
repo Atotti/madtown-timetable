@@ -102,6 +102,7 @@ ABEMA TVの番組表のようなUIで、複数視点から同時刻の配信を�
 ```
 
 **注意**:
+
 - **YouTube**: `startTime`と`endTime`は`liveStreamingDetails.actualStartTime`と`actualEndTime`から取得します。通常のアップロード動画（`liveStreamingDetails`が存在しない）は除外されます。
 - **Twitch**: VOD（Video on Demand）の`created_at`を`startTime`とし、`duration`から`endTime`を計算します。
 
