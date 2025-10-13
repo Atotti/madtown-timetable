@@ -2,16 +2,20 @@ import { useMemo, useState } from "react";
 import type { Channel } from "@/types";
 import { getBaseTag } from "@/lib/tag-utils";
 
-export function useTagFilter(sortedChannels: Channel[]) {
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+export function useTagFilter(sortedChannels: Channel[], initialTags: string[] = []) {
+  const [selectedTags, setSelectedTags] = useState<string[]>(initialTags);
 
-  // チャンネルをフィルタ
+  // チャンネルをソート（該当チャンネルを左に寄せる）
   const filteredChannels = useMemo(() => {
     if (selectedTags.length === 0) {
       return sortedChannels;
     }
 
-    return sortedChannels.filter((channel) => {
+    // チャンネルを2つのグループに分ける
+    const matched: Channel[] = [];
+    const unmatched: Channel[] = [];
+
+    for (const channel of sortedChannels) {
       // チャンネルのすべてのタグを取得
       const channelTags: string[] = [];
       if (channel.job) {
@@ -25,14 +29,23 @@ export function useTagFilter(sortedChannels: Channel[]) {
 
       // OR条件: selectedTagsのいずれかがchannelTagsに含まれていればtrue
       // 括弧を除去した基本形で比較
-      return selectedTags.some((selectedTag) => {
+      const isMatched = selectedTags.some((selectedTag) => {
         const selectedBaseTag = getBaseTag(selectedTag);
         return channelTags.some((channelTag) => {
           const channelBaseTag = getBaseTag(channelTag);
           return selectedBaseTag === channelBaseTag;
         });
       });
-    });
+
+      if (isMatched) {
+        matched.push(channel);
+      } else {
+        unmatched.push(channel);
+      }
+    }
+
+    // 該当するチャンネルを前に、該当しないチャンネルを後ろに配置
+    return [...matched, ...unmatched];
   }, [sortedChannels, selectedTags]);
 
   // タグの追加・削除

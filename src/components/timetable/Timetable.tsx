@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import type { Channel, Stream, Config } from "@/types";
 import { TimeGrid } from "./TimeGrid";
 import { TimetableHeader } from "./TimetableHeader";
@@ -26,10 +27,17 @@ type TimetableProps = {
 };
 
 export function Timetable({ channels, streams, config }: TimetableProps) {
+  const searchParams = useSearchParams();
   const headerScrollRef = useRef<HTMLDivElement>(null);
   const gridScrollRef = useRef<HTMLDivElement>(null);
   const timeGridScrollRef = useRef<HTMLDivElement>(null);
   const timeLabelScrollRef = useRef<HTMLDivElement>(null);
+
+  // URLパラメータから初期タグを取得
+  const initialTags = useMemo(() => {
+    const tagsParam = searchParams.get("tags");
+    return tagsParam ? tagsParam.split(",").filter(Boolean) : [];
+  }, [searchParams]);
 
   // イベント期間
   const eventStartDate = useMemo(
@@ -107,7 +115,7 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
 
   // カスタムフックの使用
   const { selectedTags, filteredChannels, toggleTag, removeTag } =
-    useTagFilter(sortedChannels);
+    useTagFilter(sortedChannels, initialTags);
 
   const {
     selectedDate,

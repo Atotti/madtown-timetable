@@ -45,11 +45,18 @@ export function useShareMode({
   };
 
   // 共有URLをコピー
-  const handleCopyShareUrl = async (): Promise<boolean> => {
+  const handleCopyShareUrl = async (selectedTags: string[] = []): Promise<boolean> => {
     if (!shareTime) return false;
 
     const url = new URL(window.location.href);
     url.searchParams.set("t", shareTime.toISOString());
+
+    // タグが選択されている場合はURLに追加
+    if (selectedTags.length > 0) {
+      url.searchParams.set("tags", selectedTags.join(","));
+    } else {
+      url.searchParams.delete("tags");
+    }
 
     try {
       await navigator.clipboard.writeText(url.toString());

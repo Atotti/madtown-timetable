@@ -28,7 +28,7 @@ type TimetableHeaderProps = {
   isShareMode: boolean;
   onStartShare: () => void;
   onCancelShare: () => void;
-  onCopyShareUrl: () => Promise<boolean>;
+  onCopyShareUrl: (selectedTags: string[]) => Promise<boolean>;
 };
 
 export function TimetableHeader({
@@ -53,7 +53,7 @@ export function TimetableHeader({
 
   // URLコピーボタンのハンドラー
   const handleCopyUrl = async () => {
-    const success = await onCopyShareUrl();
+    const success = await onCopyShareUrl(selectedTags);
     if (success) {
       setCopyMessage("URLをコピーしました！");
       setTimeout(() => setCopyMessage(""), 2000);
