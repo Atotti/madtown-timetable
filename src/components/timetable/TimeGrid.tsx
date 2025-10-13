@@ -2,7 +2,7 @@
 
 import { useRef, useMemo, useState, useEffect } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { differenceInMinutes, isWithinInterval } from "date-fns";
+import { differenceInMinutes, isWithinInterval, parseISO } from "date-fns";
 import type { Channel, Stream } from "@/types";
 import { ChannelColumn } from "./ChannelColumn";
 import { TimeLabel } from "./TimeLabel";
@@ -66,6 +66,31 @@ export function TimeGrid({
     });
     return map;
   }, [channels, streams]);
+
+  // 時間帯ごとの配信数を計算（1時間刻み）
+  const streamCountByHour = useMemo(() => {
+    const counts = new Array(hourCount).fill(0);
+
+    streams.forEach((stream) => {
+      const startTime = parseISO(stream.startTime);
+      const endTime = stream.endTime ? parseISO(stream.endTime) : new Date();
+
+      // この配信が各時間帯に含まれるかチェック
+      for (let i = 0; i < hourCount; i++) {
+        const hourStart = new Date(gridStartTime);
+        hourStart.setHours(hourStart.getHours() + i);
+        const hourEnd = new Date(hourStart);
+        hourEnd.setHours(hourEnd.getHours() + 1);
+
+        // 配信時間と時間帯が重なっているか
+        if (startTime < hourEnd && endTime > hourStart) {
+          counts[i]++;
+        }
+      }
+    });
+
+    return counts;
+  }, [streams, gridStartTime, hourCount]);
 
   // 仮想スクロール設定（横軸）
   const columnVirtualizer = useVirtualizer({
@@ -171,15 +196,28 @@ export function TimeGrid({
             height: `${gridSize.height}px`,
           }}
         >
-          {/* 横線（1時間ごと） */}
+          {/* 横線（1時間ごと） + グレーアウト */}
           {timeLabels.map((_, index) => (
-            <div
-              key={index}
-              className="absolute left-0 right-0 border-t border-gray-200"
-              style={{
-                top: `${index * GRID_CONFIG.HOUR_HEIGHT}px`,
-              }}
-            />
+            <div key={index}>
+              {/* 配信数が少ない時間帯の背景 */}
+              {streamCountByHour[index] <=
+                GRID_CONFIG.INACTIVE_HOUR_THRESHOLD && (
+                <div
+                  className="absolute left-0 right-0 bg-gray-400 opacity-20 pointer-events-none"
+                  style={{
+                    top: `${index * GRID_CONFIG.HOUR_HEIGHT}px`,
+                    height: `${GRID_CONFIG.HOUR_HEIGHT}px`,
+                  }}
+                />
+              )}
+              {/* 横線 */}
+              <div
+                className="absolute left-0 right-0 border-t border-gray-200"
+                style={{
+                  top: `${index * GRID_CONFIG.HOUR_HEIGHT}px`,
+                }}
+              />
+            </div>
           ))}
 
           {/* 現在時刻インジケーター（グリッド側） */}
