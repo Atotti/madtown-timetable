@@ -5,6 +5,7 @@
   },
   "streams": [
     {
+<<<<<<< HEAD
       "id": "stream-1760365667849-jfk7ra",
       "channelId": "ch-010",
       "platform": "youtube",
@@ -20,6 +21,9 @@
     },
     {
       "id": "stream-1760362753273-jxl1ne",
+=======
+      "id": "stream-1760360374864-1za9vf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2580256170",
@@ -29,7 +33,7 @@
       "endTime": "2025-10-01T07:20:56.000Z",
       "duration": 3270,
       "isLive": false,
-      "viewCount": 9102
+      "viewCount": 9101
     },
     {
       "id": "stream-1760362698749-xcy04i",
@@ -45,6 +49,7 @@
       "viewCount": 39953
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365764353-bo9bsu",
       "channelId": "ch-018",
       "platform": "youtube",
@@ -74,6 +79,9 @@
     },
     {
       "id": "stream-1760362612568-8p3vht",
+=======
+      "id": "stream-1760360210863-rek1cq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2580285498",
@@ -125,6 +133,7 @@
       "viewCount": 61416
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365567881-v360nj",
       "channelId": "ch-036",
       "platform": "youtube",
@@ -168,6 +177,9 @@
     },
     {
       "id": "stream-1760362721775-fpxgfj",
+=======
+      "id": "stream-1760360341981-fdlzcj",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2580291248",
@@ -177,7 +189,7 @@
       "endTime": "2025-10-01T18:21:35.000Z",
       "duration": 36164,
       "isLive": false,
-      "viewCount": 126982
+      "viewCount": 126980
     },
     {
       "id": "stream-1760362644465-g7qv0v",
@@ -193,6 +205,7 @@
       "viewCount": 68688
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365562098-qf8wed",
       "channelId": "ch-023",
       "platform": "youtube",
@@ -208,6 +221,9 @@
     },
     {
       "id": "stream-1760362770281-zsrx3k",
+=======
+      "id": "stream-1760360392621-o1wv8u",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2580292345",
@@ -246,7 +262,11 @@
       "viewCount": 173079
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362758636-mqeot8",
+=======
+      "id": "stream-1760360380118-ank038",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-147",
       "platform": "twitch",
       "videoId": "2580294691",
@@ -259,7 +279,11 @@
       "viewCount": 89890
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362693604-b6vyht",
+=======
+      "id": "stream-1760360313033-qmk5t",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-204",
       "platform": "twitch",
       "videoId": "2580295179",
@@ -285,7 +309,11 @@
       "viewCount": 11241
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362629147-93hs1",
+=======
+      "id": "stream-1760360234220-d2pv6q",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2580295992",
@@ -295,7 +323,7 @@
       "endTime": "2025-10-01T18:08:03.000Z",
       "duration": 34398,
       "isLive": false,
-      "viewCount": 4019
+      "viewCount": 4018
     },
     {
       "id": "stream-1760362774275-4pcuio",
@@ -324,6 +352,7 @@
       "viewCount": 63995
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365629630-6u9n3a",
       "channelId": "ch-198",
       "platform": "youtube",
@@ -353,6 +382,9 @@
     },
     {
       "id": "stream-1760362635309-y0nb5",
+=======
+      "id": "stream-1760360242754-iuzvun",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-011",
       "platform": "twitch",
       "videoId": "2580298397",
@@ -365,7 +397,11 @@
       "viewCount": 54785
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362685324-ba4xz",
+=======
+      "id": "stream-1760360303937-8fnjl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-183",
       "platform": "twitch",
       "videoId": "2580299908",
@@ -378,7 +414,11 @@
       "viewCount": 17192
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362646182-dfq4o",
+=======
+      "id": "stream-1760360255971-w409xh",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-043",
       "platform": "twitch",
       "videoId": "2580300094",
@@ -389,62 +429,6 @@
       "duration": 14185,
       "isLive": false,
       "viewCount": 45758
-    },
-    {
-      "id": "stream-1760365651862-dvbpub",
-      "channelId": "ch-041",
-      "platform": "youtube",
-      "videoId": "eVSYgcku3y0",
-      "title": "【MADTOWN】初日です。やりたいことは決まってます【ぶいすぽ/花芽なずな】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/eVSYgcku3y0/mqdefault.jpg",
-      "startTime": "2025-10-01T08:49:21Z",
-      "endTime": "2025-10-01T14:27:30Z",
-      "scheduledStartTime": "2025-10-01T08:45:00Z",
-      "duration": 20289,
-      "isLive": false,
-      "viewCount": 177632
-    },
-    {
-      "id": "stream-1760365566070-590qbu",
-      "channelId": "ch-034",
-      "platform": "youtube",
-      "videoId": "a_wkluEhtp0",
-      "title": "【#MADTOWN】【ドズル社 / おおはらMEN】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/a_wkluEhtp0/mqdefault.jpg",
-      "startTime": "2025-10-01T08:49:57Z",
-      "endTime": "2025-10-01T18:01:43Z",
-      "scheduledStartTime": "2025-10-01T08:45:00Z",
-      "duration": 33106,
-      "isLive": false,
-      "viewCount": 121061
-    },
-    {
-      "id": "stream-1760365576236-o8op2o",
-      "channelId": "ch-065",
-      "platform": "youtube",
-      "videoId": "xWQHwhnJ5wI",
-      "title": "【#MADTOWN】何するか決めてないや 1日目【クロノア】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xWQHwhnJ5wI/mqdefault.jpg",
-      "startTime": "2025-10-01T08:50:18Z",
-      "endTime": "2025-10-01T18:01:45Z",
-      "scheduledStartTime": "2025-10-01T08:48:42Z",
-      "duration": 33087,
-      "isLive": false,
-      "viewCount": 67062
-    },
-    {
-      "id": "stream-1760365650839-wp147h",
-      "channelId": "ch-040",
-      "platform": "youtube",
-      "videoId": "2M8QkGeURA0",
-      "title": "【GTA5 MADTOWN】MADな町へ【ぶいすぽっ！/花芽すみれ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/2M8QkGeURA0/mqdefault.jpg",
-      "startTime": "2025-10-01T08:50:39Z",
-      "endTime": "2025-10-01T18:02:03Z",
-      "scheduledStartTime": "2025-10-01T08:45:00Z",
-      "duration": 33084,
-      "isLive": false,
-      "viewCount": 186332
     },
     {
       "id": "stream-1760360215901-oa103i",
@@ -460,7 +444,11 @@
       "viewCount": 207957
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362753273-ynom5h",
+=======
+      "id": "stream-1760360374864-hqruz6",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2580301698",
@@ -470,7 +458,7 @@
       "endTime": "2025-10-01T18:01:16.000Z",
       "duration": 32824,
       "isLive": false,
-      "viewCount": 110943
+      "viewCount": 110941
     },
     {
       "id": "stream-1760362678949-xsnkth",
@@ -499,7 +487,11 @@
       "viewCount": 396343
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-olawqv",
+=======
+      "id": "stream-1760360341091-z2eust",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2580301982",
@@ -512,6 +504,7 @@
       "viewCount": 97964
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365600458-8mgz5t",
       "channelId": "ch-114",
       "platform": "youtube",
@@ -527,6 +520,9 @@
     },
     {
       "id": "stream-1760362746812-ljpif8",
+=======
+      "id": "stream-1760360366850-g0bj8",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-003",
       "platform": "twitch",
       "videoId": "2580302625",
@@ -539,6 +535,7 @@
       "viewCount": 83276
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365706733-f2el2b",
       "channelId": "ch-003",
       "platform": "youtube",
@@ -554,6 +551,9 @@
     },
     {
       "id": "stream-1760362647151-18cw5",
+=======
+      "id": "stream-1760360257274-qemlv",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-051",
       "platform": "twitch",
       "videoId": "2580302679",
@@ -566,6 +566,7 @@
       "viewCount": 53075
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365573278-w8h01o",
       "channelId": "ch-051",
       "platform": "youtube",
@@ -580,6 +581,9 @@
     },
     {
       "id": "stream-1760362784247-16ldt9",
+=======
+      "id": "stream-1760360405795-a0mrtn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2580302787",
@@ -618,7 +622,11 @@
       "viewCount": 593586
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362648103-sjjibm",
+=======
+      "id": "stream-1760360258850-o75uqi",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2580303482",
@@ -641,7 +649,7 @@
       "endTime": "2025-10-01T15:12:20.000Z",
       "duration": 22351,
       "isLive": false,
-      "viewCount": 79169
+      "viewCount": 79168
     },
     {
       "id": "stream-1760362717070-43ikes",
@@ -657,6 +665,7 @@
       "viewCount": 71549
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365750973-wdzhx9",
       "channelId": "ch-184",
       "platform": "youtube",
@@ -812,6 +821,9 @@
     },
     {
       "id": "stream-1760362666371-ctxc6l",
+=======
+      "id": "stream-1760360284595-ubjejd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2580305130",
@@ -824,7 +836,11 @@
       "viewCount": 51315
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362618381-59bcw5",
+=======
+      "id": "stream-1760360219091-ablhu",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2580305558",
@@ -834,7 +850,7 @@
       "endTime": "2025-10-01T12:31:10.000Z",
       "duration": 12363,
       "isLive": false,
-      "viewCount": 35782
+      "viewCount": 35778
     },
     {
       "id": "stream-1760362650433-zjmv1l",
@@ -850,7 +866,11 @@
       "viewCount": 105279
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362687200-rlqtv",
+=======
+      "id": "stream-1760360306445-p3dxm",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-188",
       "platform": "twitch",
       "videoId": "2580305826",
@@ -876,6 +896,7 @@
       "viewCount": 13904
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365612161-9jivan",
       "channelId": "ch-153",
       "platform": "youtube",
@@ -891,6 +912,9 @@
     },
     {
       "id": "stream-1760362614124-o75r18",
+=======
+      "id": "stream-1760360212416-lev6s",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-192",
       "platform": "twitch",
       "videoId": "2580306259",
@@ -900,7 +924,7 @@
       "endTime": "2025-10-01T18:05:50.000Z",
       "duration": 32301,
       "isLive": false,
-      "viewCount": 228893
+      "viewCount": 228891
     },
     {
       "id": "stream-1760362677475-gfbyjo",
@@ -916,7 +940,11 @@
       "viewCount": 672912
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362661846-wcpllk",
+=======
+      "id": "stream-1760360276130-fk7ktb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-095",
       "platform": "twitch",
       "videoId": "2580306433",
@@ -929,7 +957,11 @@
       "viewCount": 203798
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362621518-87psmp",
+=======
+      "id": "stream-1760360223528-d6t6bo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-001",
       "platform": "twitch",
       "videoId": "2580309506",
@@ -942,6 +974,7 @@
       "viewCount": 47843
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365534892-ubr1kb",
       "channelId": "ch-129",
       "platform": "youtube",
@@ -957,6 +990,9 @@
     },
     {
       "id": "stream-1760362651837-diamph",
+=======
+      "id": "stream-1760360263094-v8clve",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2580311527",
@@ -969,7 +1005,11 @@
       "viewCount": 119258
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362610126-a1wbf9",
+=======
+      "id": "stream-1760360207025-nl0nxp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-119",
       "platform": "twitch",
       "videoId": "2580314165",
@@ -982,7 +1022,11 @@
       "viewCount": 58584
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362749297-y3790x",
+=======
+      "id": "stream-1760360369676-u5oift",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-038",
       "platform": "twitch",
       "videoId": "2580314531",
@@ -995,6 +1039,7 @@
       "viewCount": 10389
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365692531-ykfhew",
       "channelId": "ch-072",
       "platform": "youtube",
@@ -1038,6 +1083,9 @@
     },
     {
       "id": "stream-1760362655325-yqthcn",
+=======
+      "id": "stream-1760360267832-y10w8j",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-077",
       "platform": "twitch",
       "videoId": "2580319072",
@@ -1050,7 +1098,11 @@
       "viewCount": 138007
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362728019-x8d9r",
+=======
+      "id": "stream-1760360348394-an8w8s",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-046",
       "platform": "twitch",
       "videoId": "2580323596",
@@ -1076,6 +1128,7 @@
       "viewCount": 16425
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365676588-onuij9",
       "channelId": "ch-064",
       "platform": "youtube",
@@ -1105,6 +1158,9 @@
     },
     {
       "id": "stream-1760362605682-029sjo",
+=======
+      "id": "stream-1760360199665-qfd36bc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-139",
       "platform": "twitch",
       "videoId": "2580332958",
@@ -1114,7 +1170,7 @@
       "endTime": "2025-10-01T18:00:56.000Z",
       "duration": 27054,
       "isLive": false,
-      "viewCount": 1594
+      "viewCount": 1593
     },
     {
       "id": "stream-1760362779554-r41mqo",
@@ -1143,7 +1199,11 @@
       "viewCount": 273734
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362653506-6anlx",
+=======
+      "id": "stream-1760360264681-vbe9yf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-070",
       "platform": "twitch",
       "videoId": "2580349352",
@@ -1156,6 +1216,7 @@
       "viewCount": 50200
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365687246-if0em6",
       "channelId": "ch-087",
       "platform": "youtube",
@@ -1213,6 +1274,9 @@
     },
     {
       "id": "stream-1760362675971-e4f07",
+=======
+      "id": "stream-1760360294989-6snzk",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2580377150",
@@ -1225,7 +1289,11 @@
       "viewCount": 411473
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362618381-zzmt57",
+=======
+      "id": "stream-1760360219091-n3jup8",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2580386259",
@@ -1251,6 +1319,7 @@
       "viewCount": 5713
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365684162-xna0b",
       "channelId": "ch-089",
       "platform": "youtube",
@@ -1280,6 +1349,9 @@
     },
     {
       "id": "stream-1760362646182-ay8snlf",
+=======
+      "id": "stream-1760360255971-g0kbnk",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-043",
       "platform": "twitch",
       "videoId": "2580390894",
@@ -1302,7 +1374,7 @@
       "endTime": "2025-10-01T13:51:28.000Z",
       "duration": 2884,
       "isLive": false,
-      "viewCount": 351
+      "viewCount": 350
     },
     {
       "id": "stream-1760362650433-oo66c9",
@@ -1315,21 +1387,7 @@
       "endTime": "2025-10-01T17:55:45.000Z",
       "duration": 16554,
       "isLive": false,
-      "viewCount": 51991
-    },
-    {
-      "id": "stream-1760365737320-6v0fsm",
-      "channelId": "ch-175",
-      "platform": "youtube",
-      "videoId": "ex9UQUA4DYE",
-      "title": "【#MADTOWN：初日】初めてのGTA！MADTOWNに初参戦です！！【望月ほぐの/ゆにれいど！】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ex9UQUA4DYE/mqdefault.jpg",
-      "startTime": "2025-10-01T13:45:17Z",
-      "endTime": "2025-10-01T18:25:15Z",
-      "scheduledStartTime": "2025-10-01T14:00:00Z",
-      "duration": 16798,
-      "isLive": false,
-      "viewCount": 8717
+      "viewCount": 51990
     },
     {
       "id": "stream-1760362686289-osfqst",
@@ -1342,7 +1400,7 @@
       "endTime": "2025-10-01T15:13:30.000Z",
       "duration": 5084,
       "isLive": false,
-      "viewCount": 41806
+      "viewCount": 41805
     },
     {
       "id": "stream-1760362651837-o18l7",
@@ -1358,7 +1416,11 @@
       "viewCount": 2238
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362651837-6jn1gq",
+=======
+      "id": "stream-1760360263094-zm0sns",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2580463399",
@@ -1381,7 +1443,7 @@
       "endTime": "2025-10-01T18:01:15.000Z",
       "duration": 10098,
       "isLive": false,
-      "viewCount": 10045
+      "viewCount": 10044
     },
     {
       "id": "stream-1760362760172-xz45cy",
@@ -1410,6 +1472,7 @@
       "viewCount": 11751
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365694396-gri8um",
       "channelId": "ch-049",
       "platform": "youtube",
@@ -1425,6 +1488,9 @@
     },
     {
       "id": "stream-1760362629147-u8k6t",
+=======
+      "id": "stream-1760360234220-1ncoik",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2580608624",
@@ -1435,34 +1501,6 @@
       "duration": 5155,
       "isLive": false,
       "viewCount": 219
-    },
-    {
-      "id": "stream-1760365588987-n5hxur",
-      "channelId": "ch-092",
-      "platform": "youtube",
-      "videoId": "erqkAE48uQE",
-      "title": "【MADTOWN】警察署長奮闘記！なんとかやりきるぞ！！！【#2】※概要欄必読",
-      "thumbnailUrl": "https://i.ytimg.com/vi/erqkAE48uQE/mqdefault.jpg",
-      "startTime": "2025-10-02T07:31:55Z",
-      "endTime": "2025-10-02T08:40:45Z",
-      "scheduledStartTime": "2025-10-02T07:30:00Z",
-      "duration": 4130,
-      "isLive": false,
-      "viewCount": 15828
-    },
-    {
-      "id": "stream-1760365723015-xhouk",
-      "channelId": "ch-149",
-      "platform": "youtube",
-      "videoId": "_O1-6gmO_tI",
-      "title": "【MADTOWN】２日目警察になりました！がんばるぞお！【日ノ隈らん 】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/_O1-6gmO_tI/mqdefault.jpg",
-      "startTime": "2025-10-02T07:31:55Z",
-      "endTime": "2025-10-02T18:01:35Z",
-      "scheduledStartTime": "2025-10-02T07:30:00Z",
-      "duration": 37780,
-      "isLive": false,
-      "viewCount": 55390
     },
     {
       "id": "stream-1760360215901-hb18jg",
@@ -1478,7 +1516,11 @@
       "viewCount": 155621
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362629147-wlp3sa",
+=======
+      "id": "stream-1760360234220-os4",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2581127268",
@@ -1491,7 +1533,11 @@
       "viewCount": 2537
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362612568-fzkp7",
+=======
+      "id": "stream-1760360210863-8wexws",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2581128340",
@@ -1530,6 +1576,7 @@
       "viewCount": 62624
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365670330-cdvlqk",
       "channelId": "ch-116",
       "platform": "youtube",
@@ -1614,6 +1661,9 @@
     },
     {
       "id": "stream-1760362648103-fu4e6n",
+=======
+      "id": "stream-1760360258850-g0mole",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2581128695",
@@ -1626,7 +1676,11 @@
       "viewCount": 160531
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-4pfwh",
+=======
+      "id": "stream-1760360214444-7tfyn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2581128783",
@@ -1639,7 +1693,11 @@
       "viewCount": 59051
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362630007-h558of",
+=======
+      "id": "stream-1760360235649-p7yte",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2581128844",
@@ -1652,7 +1710,11 @@
       "viewCount": 420467
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637867-e42vsa",
+=======
+      "id": "stream-1760360245915-mxaram",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2581129162",
@@ -1665,6 +1727,7 @@
       "viewCount": 36282
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365699733-dm172k",
       "channelId": "ch-098",
       "platform": "youtube",
@@ -1680,6 +1743,9 @@
     },
     {
       "id": "stream-1760362760997-nq6wi",
+=======
+      "id": "stream-1760360382780-ucftjb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2581129291",
@@ -1689,7 +1755,7 @@
       "endTime": "2025-10-02T18:00:39.000Z",
       "duration": 32299,
       "isLive": false,
-      "viewCount": 76825
+      "viewCount": 76824
     },
     {
       "id": "stream-1760362677475-da0x45",
@@ -1705,7 +1771,11 @@
       "viewCount": 525798
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362684490-a95uj",
+=======
+      "id": "stream-1760360303159-3xfuq9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-179",
       "platform": "twitch",
       "videoId": "2581129677",
@@ -1715,35 +1785,7 @@
       "endTime": "2025-10-02T18:06:13.000Z",
       "duration": 32563,
       "isLive": false,
-      "viewCount": 18003
-    },
-    {
-      "id": "stream-1760365638752-q29kz9",
-      "channelId": "ch-020",
-      "platform": "youtube",
-      "videoId": "SaNzgZgbq5I",
-      "title": "【#MADTOWN】頑張れって感じのアヤミだ #2【綾見ユラ/YUMENOS】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/SaNzgZgbq5I/mqdefault.jpg",
-      "startTime": "2025-10-02T09:03:33Z",
-      "endTime": "2025-10-02T18:13:12Z",
-      "scheduledStartTime": "2025-10-02T09:00:00Z",
-      "duration": 32979,
-      "isLive": false,
-      "viewCount": 8805
-    },
-    {
-      "id": "stream-1760365630673-orwhqk",
-      "channelId": "ch-199",
-      "platform": "youtube",
-      "videoId": "RXM2W8yY2Vg",
-      "title": "【MADTOWN】どんどん悪に吸い込まれてる気がします。【るぅと／すとぷり／STPR Family】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/RXM2W8yY2Vg/mqdefault.jpg",
-      "startTime": "2025-10-02T09:03:38Z",
-      "endTime": "2025-10-02T18:14:07Z",
-      "scheduledStartTime": "2025-10-02T09:00:00Z",
-      "duration": 33029,
-      "isLive": false,
-      "viewCount": 61902
+      "viewCount": 18002
     },
     {
       "id": "stream-1760362760172-lvnbnb",
@@ -1759,7 +1801,11 @@
       "viewCount": 81110
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362758636-6203c",
+=======
+      "id": "stream-1760360380118-zfokkl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-147",
       "platform": "twitch",
       "videoId": "2581130627",
@@ -1798,6 +1844,7 @@
       "viewCount": 29218
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365653956-1axumc",
       "channelId": "ch-044",
       "platform": "youtube",
@@ -1813,6 +1860,9 @@
     },
     {
       "id": "stream-1760362647151-md7dq",
+=======
+      "id": "stream-1760360257274-zs3ucg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-051",
       "platform": "twitch",
       "videoId": "2581131595",
@@ -1838,7 +1888,11 @@
       "viewCount": 34369
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362721775-cildoi",
+=======
+      "id": "stream-1760360341981-7dse59",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2581132398",
@@ -1851,7 +1905,11 @@
       "viewCount": 83140
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362635309-m8u478",
+=======
+      "id": "stream-1760360242754-gyyel",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-011",
       "platform": "twitch",
       "videoId": "2581133483",
@@ -1864,7 +1922,11 @@
       "viewCount": 48654
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362678949-6dywki",
+=======
+      "id": "stream-1760360297907-4jm11v",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-161",
       "platform": "twitch",
       "videoId": "2581134582",
@@ -1890,7 +1952,11 @@
       "viewCount": 189039
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362621518-n5qrfu",
+=======
+      "id": "stream-1760360223528-m1qr6g",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-001",
       "platform": "twitch",
       "videoId": "2581138817",
@@ -1916,7 +1982,11 @@
       "viewCount": 62614
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-qy2y7",
+=======
+      "id": "stream-1760360315351-bqshoc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2581141283",
@@ -1955,6 +2025,7 @@
       "viewCount": 34673
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365684162-l0vzik",
       "channelId": "ch-089",
       "platform": "youtube",
@@ -1970,6 +2041,9 @@
     },
     {
       "id": "stream-1760362757079-tfjz2",
+=======
+      "id": "stream-1760360378894-rzkzp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-140",
       "platform": "twitch",
       "videoId": "2581147901",
@@ -1982,7 +2056,11 @@
       "viewCount": 46087
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362693604-6ysfb",
+=======
+      "id": "stream-1760360313033-vtk0np",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-204",
       "platform": "twitch",
       "videoId": "2581148837",
@@ -2008,7 +2086,11 @@
       "viewCount": 26567
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362753273-s2pom",
+=======
+      "id": "stream-1760360374864-ok4mj5",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2581152606",
@@ -2018,7 +2100,7 @@
       "endTime": "2025-10-02T19:01:11.000Z",
       "duration": 31580,
       "isLive": false,
-      "viewCount": 28803
+      "viewCount": 28801
     },
     {
       "id": "stream-1760362670577-7q993d",
@@ -2034,7 +2116,11 @@
       "viewCount": 185287
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362671746-k7aee",
+=======
+      "id": "stream-1760360289729-jd21i",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2581169418",
@@ -2047,6 +2133,7 @@
       "viewCount": 51747
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365710047-iq1bm2",
       "channelId": "ch-038",
       "platform": "youtube",
@@ -2062,6 +2149,9 @@
     },
     {
       "id": "stream-1760362749297-vhsiy",
+=======
+      "id": "stream-1760360369676-lom13p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-038",
       "platform": "twitch",
       "videoId": "2581172158",
@@ -2113,6 +2203,7 @@
       "viewCount": 24352
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365690150-1dl0aa",
       "channelId": "ch-075",
       "platform": "youtube",
@@ -2156,6 +2247,9 @@
     },
     {
       "id": "stream-1760362620180-yomg7r",
+=======
+      "id": "stream-1760360220999-he51bd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-200",
       "platform": "twitch",
       "videoId": "2581185127",
@@ -2181,7 +2275,11 @@
       "viewCount": 65204
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362746812-eplipb",
+=======
+      "id": "stream-1760360366850-forlr",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-003",
       "platform": "twitch",
       "videoId": "2581187475",
@@ -2204,20 +2302,7 @@
       "endTime": "2025-10-02T16:31:07.000Z",
       "duration": 16649,
       "isLive": false,
-      "viewCount": 16962
-    },
-    {
-      "id": "stream-1760365571860-5qkffj",
-      "channelId": "ch-043",
-      "platform": "youtube",
-      "videoId": "GACBre8n58w",
-      "title": "【#MADTOWN】#2 GTAV 犯罪しちゃうぞ！！【REJECT/かしわねこ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/GACBre8n58w/mqdefault.jpg",
-      "startTime": "2025-10-02T11:53:42Z",
-      "endTime": "2025-10-02T16:31:12Z",
-      "duration": 16650,
-      "isLive": false,
-      "viewCount": 5231
+      "viewCount": 16961
     },
     {
       "id": "stream-1760362681243-uwckc",
@@ -2233,7 +2318,11 @@
       "viewCount": 15186
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362784247-u9rsta",
+=======
+      "id": "stream-1760360405795-fwfqic",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2581194635",
@@ -2285,7 +2374,11 @@
       "viewCount": 251356
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362614124-s82cll",
+=======
+      "id": "stream-1760360212416-k40w3e",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-192",
       "platform": "twitch",
       "videoId": "2581210313",
@@ -2311,7 +2404,11 @@
       "viewCount": 24461
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362751610-1luhdh",
+=======
+      "id": "stream-1760360373333-na4i7p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-105",
       "platform": "twitch",
       "videoId": "2581222829",
@@ -2321,7 +2418,7 @@
       "endTime": "2025-10-02T16:43:22.000Z",
       "duration": 13370,
       "isLive": false,
-      "viewCount": 12468
+      "viewCount": 12467
     },
     {
       "id": "stream-1760362746812-eafp88",
@@ -2350,7 +2447,11 @@
       "viewCount": 44515
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-kfqxjc",
+=======
+      "id": "stream-1760360245915-2j2yex",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2581242850",
@@ -2360,7 +2461,7 @@
       "endTime": "2025-10-02T16:45:48.000Z",
       "duration": 11284,
       "isLive": false,
-      "viewCount": 18754
+      "viewCount": 18753
     },
     {
       "id": "stream-1760362605682-7ntllr",
@@ -2373,35 +2474,7 @@
       "endTime": "2025-10-02T18:02:43.000Z",
       "duration": 15736,
       "isLive": false,
-      "viewCount": 764
-    },
-    {
-      "id": "stream-1760365666941-jo5oy3",
-      "channelId": "ch-054",
-      "platform": "youtube",
-      "videoId": "WyPasiGfAck",
-      "title": "【 #MADTOWN 】100人の患者診断を目指して！DAY2【 #九衣よな / Vlash】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/WyPasiGfAck/mqdefault.jpg",
-      "startTime": "2025-10-02T13:59:29Z",
-      "endTime": "2025-10-02T18:04:24Z",
-      "scheduledStartTime": "2025-10-02T14:00:00Z",
-      "duration": 14695,
-      "isLive": false,
-      "viewCount": 4492
-    },
-    {
-      "id": "stream-1760365712477-yb5fg6",
-      "channelId": "ch-045",
-      "platform": "youtube",
-      "videoId": "5x8-h4rqV4w",
-      "title": "#MADTOWN 10/02 チルくスーパー店員【 奏手イヅル 】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5x8-h4rqV4w/mqdefault.jpg",
-      "startTime": "2025-10-02T14:00:25Z",
-      "endTime": "2025-10-02T18:14:47Z",
-      "scheduledStartTime": "2025-10-02T14:00:00Z",
-      "duration": 15262,
-      "isLive": false,
-      "viewCount": 12832
+      "viewCount": 763
     },
     {
       "id": "stream-1760362760172-o5ujch",
@@ -2414,35 +2487,7 @@
       "endTime": "2025-10-02T19:17:11.000Z",
       "duration": 17931,
       "isLive": false,
-      "viewCount": 93010
-    },
-    {
-      "id": "stream-1760365556609-ddaa5q",
-      "channelId": "ch-008",
-      "platform": "youtube",
-      "videoId": "y3YkxHTPWhU",
-      "title": "【#MADTOWN】Fishing and Cookin #2",
-      "thumbnailUrl": "https://i.ytimg.com/vi/y3YkxHTPWhU/mqdefault.jpg",
-      "startTime": "2025-10-02T14:30:34Z",
-      "endTime": "2025-10-02T18:02:16Z",
-      "scheduledStartTime": "2025-10-02T14:30:00Z",
-      "duration": 12702,
-      "isLive": false,
-      "viewCount": 5614
-    },
-    {
-      "id": "stream-1760365600458-fm9x3c",
-      "channelId": "ch-114",
-      "platform": "youtube",
-      "videoId": "6zwPnfeaPd4",
-      "title": "【MADTOWN GTA】新しい風を吹かしに行くぜ。はじめまして【ちくのぼ】です。#2",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6zwPnfeaPd4/mqdefault.jpg",
-      "startTime": "2025-10-02T14:51:43Z",
-      "endTime": "2025-10-02T18:02:54Z",
-      "scheduledStartTime": "2025-10-02T15:00:00Z",
-      "duration": 11471,
-      "isLive": false,
-      "viewCount": 3774
+      "viewCount": 93005
     },
     {
       "id": "stream-1760362724132-u23k5",
@@ -2458,7 +2503,11 @@
       "viewCount": 18669
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-wn32xd",
+=======
+      "id": "stream-1760360245915-48v6lo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2581368179",
@@ -2468,21 +2517,7 @@
       "endTime": "2025-10-02T18:01:01.000Z",
       "duration": 4391,
       "isLive": false,
-      "viewCount": 6944
-    },
-    {
-      "id": "stream-1760365743070-eomzxj",
-      "channelId": "ch-009",
-      "platform": "youtube",
-      "videoId": "oMO8nHKLM70",
-      "title": "【GTA5 MADTOWN】 ちょっとだけお邪魔～！#1 【麻倉シノ / ネオポルテ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/oMO8nHKLM70/mqdefault.jpg",
-      "startTime": "2025-10-02T17:03:06Z",
-      "endTime": "2025-10-02T18:04:58Z",
-      "scheduledStartTime": "2025-10-02T16:45:00Z",
-      "duration": 3712,
-      "isLive": false,
-      "viewCount": 3864
+      "viewCount": 6943
     },
     {
       "id": "stream-1760362680710-6xrluf",
@@ -2498,7 +2533,11 @@
       "viewCount": 23629
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-ks5au5",
+=======
+      "id": "stream-1760360382780-0kz72",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2581994608",
@@ -2524,7 +2563,11 @@
       "viewCount": 146231
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362684490-wvme2o",
+=======
+      "id": "stream-1760360303159-onpldk",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-179",
       "platform": "twitch",
       "videoId": "2581994891",
@@ -2537,6 +2580,7 @@
       "viewCount": 17562
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365753133-1khhmp",
       "channelId": "ch-002",
       "platform": "youtube",
@@ -2622,6 +2666,9 @@
     },
     {
       "id": "stream-1760362678949-2s5o2",
+=======
+      "id": "stream-1760360297907-om5nob",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-161",
       "platform": "twitch",
       "videoId": "2581995915",
@@ -2634,7 +2681,11 @@
       "viewCount": 34779
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-23t3xh",
+=======
+      "id": "stream-1760360341091-85de2l",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2581997007",
@@ -2647,7 +2698,11 @@
       "viewCount": 49200
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362770281-o0kxth",
+=======
+      "id": "stream-1760360392621-cliyg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2581997286",
@@ -2660,6 +2715,7 @@
       "viewCount": 9382
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365735933-jq4qq",
       "channelId": "ch-148",
       "platform": "youtube",
@@ -2675,6 +2731,9 @@
     },
     {
       "id": "stream-1760362615301-pxjy1",
+=======
+      "id": "stream-1760360214444-gu028m",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2581998628",
@@ -2684,21 +2743,7 @@
       "endTime": "2025-10-03T12:33:10.000Z",
       "duration": 11849,
       "isLive": false,
-      "viewCount": 19732
-    },
-    {
-      "id": "stream-1760365649832-x7x7al",
-      "channelId": "ch-141",
-      "platform": "youtube",
-      "videoId": "pSf6t0yK6Iw",
-      "title": "〖 ​​GTA5 #MADTOWN 〗一期一会を大事に✨今日も元気に働きます💪 ＃３〖 花ノ木まる / ゆにれいど！ 〗",
-      "thumbnailUrl": "https://i.ytimg.com/vi/pSf6t0yK6Iw/mqdefault.jpg",
-      "startTime": "2025-10-03T09:15:43Z",
-      "endTime": "2025-10-03T18:04:27Z",
-      "scheduledStartTime": "2025-10-03T09:00:00Z",
-      "duration": 31724,
-      "isLive": false,
-      "viewCount": 13126
+      "viewCount": 19729
     },
     {
       "id": "stream-1760362621518-vhmexq",
@@ -2714,6 +2759,7 @@
       "viewCount": 35145
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365644873-xark8",
       "channelId": "ch-030",
       "platform": "youtube",
@@ -2729,6 +2775,9 @@
     },
     {
       "id": "stream-1760362647151-entgy",
+=======
+      "id": "stream-1760360257274-ditacl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-051",
       "platform": "twitch",
       "videoId": "2581998902",
@@ -2741,6 +2790,7 @@
       "viewCount": 49579
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365573278-30kd2",
       "channelId": "ch-051",
       "platform": "youtube",
@@ -2755,6 +2805,9 @@
     },
     {
       "id": "stream-1760362784247-8trlz8",
+=======
+      "id": "stream-1760360405795-c98cw",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2581999014",
@@ -2764,21 +2817,7 @@
       "endTime": "2025-10-03T18:03:05.000Z",
       "duration": 31569,
       "isLive": false,
-      "viewCount": 40912
-    },
-    {
-      "id": "stream-1760365667849-1y8nws",
-      "channelId": "ch-010",
-      "platform": "youtube",
-      "videoId": "gCBaIRAybsE",
-      "title": "【GTA5 MADTOWN】飲食店オープンと懺悔をききます。【空澄セナ/ぶいすぽっ！】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/gCBaIRAybsE/mqdefault.jpg",
-      "startTime": "2025-10-03T09:17:11Z",
-      "endTime": "2025-10-03T17:07:01Z",
-      "scheduledStartTime": "2025-10-03T09:00:00Z",
-      "duration": 28190,
-      "isLive": false,
-      "viewCount": 92461
+      "viewCount": 40906
     },
     {
       "id": "stream-1760362629147-c947eg",
@@ -2794,7 +2833,11 @@
       "viewCount": 1978
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-bnht9o",
+=======
+      "id": "stream-1760360245915-o6rrjp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2582000164",
@@ -2833,6 +2876,7 @@
       "viewCount": 64793
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365530882-wqe8n",
       "channelId": "ch-169",
       "platform": "youtube",
@@ -2847,6 +2891,9 @@
     },
     {
       "id": "stream-1760362753273-kaw2ee",
+=======
+      "id": "stream-1760360374864-khmoh8",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2582002086",
@@ -2859,6 +2906,7 @@
       "viewCount": 19092
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365588987-lm85fk",
       "channelId": "ch-092",
       "platform": "youtube",
@@ -2902,6 +2950,9 @@
     },
     {
       "id": "stream-1760362721775-zpxjjo",
+=======
+      "id": "stream-1760360341981-snzb4",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2582005713",
@@ -2927,7 +2978,11 @@
       "viewCount": 96739
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-me0rmn",
+=======
+      "id": "stream-1760360315351-p0i23",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2582013977",
@@ -2940,7 +2995,11 @@
       "viewCount": 120408
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362666371-e7mji",
+=======
+      "id": "stream-1760360284595-qzfjim",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2582016147",
@@ -2950,7 +3009,7 @@
       "endTime": "2025-10-03T18:04:52.000Z",
       "duration": 28617,
       "isLive": false,
-      "viewCount": 20472
+      "viewCount": 20471
     },
     {
       "id": "stream-1760362610126-fs05w",
@@ -2963,63 +3022,7 @@
       "endTime": "2025-10-03T18:05:55.000Z",
       "duration": 28381,
       "isLive": false,
-      "viewCount": 40680
-    },
-    {
-      "id": "stream-1760365704126-f3s6x",
-      "channelId": "ch-004",
-      "platform": "youtube",
-      "videoId": "lxt2emkfs2w",
-      "title": "【MADTOWN #３】僕らの正義があるってわけ！ギャング抗争準備！【にじさんじ / 赤城ウェン】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/lxt2emkfs2w/mqdefault.jpg",
-      "startTime": "2025-10-03T10:20:07Z",
-      "endTime": "2025-10-03T18:03:45Z",
-      "scheduledStartTime": "2025-10-03T10:15:00Z",
-      "duration": 27818,
-      "isLive": false,
-      "viewCount": 109349
-    },
-    {
-      "id": "stream-1760365629630-6tgv4d",
-      "channelId": "ch-198",
-      "platform": "youtube",
-      "videoId": "aD2bu7hR7SI",
-      "title": "#3-2【MAD TOWN】タコス食えやコラ👊",
-      "thumbnailUrl": "https://i.ytimg.com/vi/aD2bu7hR7SI/mqdefault.jpg",
-      "startTime": "2025-10-03T10:24:02Z",
-      "endTime": "2025-10-03T18:03:05Z",
-      "scheduledStartTime": "2025-10-03T10:20:00Z",
-      "duration": 27543,
-      "isLive": false,
-      "viewCount": 43672
-    },
-    {
-      "id": "stream-1760365566070-5oy86",
-      "channelId": "ch-034",
-      "platform": "youtube",
-      "videoId": "6BXaIDxO_tg",
-      "title": "【#MADTOWN】一旦スーパーカーでも買いますか…【ドズル社 / おおはらMEN】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6BXaIDxO_tg/mqdefault.jpg",
-      "startTime": "2025-10-03T10:25:56Z",
-      "endTime": "2025-10-03T18:01:49Z",
-      "scheduledStartTime": "2025-10-03T10:30:00Z",
-      "duration": 27353,
-      "isLive": false,
-      "viewCount": 56447
-    },
-    {
-      "id": "stream-1760365659469-jfbnb4",
-      "channelId": "ch-110",
-      "platform": "youtube",
-      "videoId": "LrWKQxtuklk",
-      "title": "【 GTAV MADTOWN  】へりこぷたーほしい 【ぶいすぽっ！/橘ひなの】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/LrWKQxtuklk/mqdefault.jpg",
-      "startTime": "2025-10-03T10:26:15Z",
-      "endTime": "2025-10-03T18:02:32Z",
-      "scheduledStartTime": "2025-10-03T10:00:00Z",
-      "duration": 27377,
-      "isLive": false,
-      "viewCount": 385525
+      "viewCount": 40678
     },
     {
       "id": "stream-1760362680710-waxif5",
@@ -3032,7 +3035,7 @@
       "endTime": "2025-10-03T18:08:57.000Z",
       "duration": 27707,
       "isLive": false,
-      "viewCount": 65535
+      "viewCount": 65534
     },
     {
       "id": "stream-1760362614124-4th2k",
@@ -3061,7 +3064,11 @@
       "viewCount": 4421
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362717069-b7gdsb",
+=======
+      "id": "stream-1760360337792-o73zas",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-061",
       "platform": "twitch",
       "videoId": "2582029750",
@@ -3074,6 +3081,7 @@
       "viewCount": 18887
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365650839-1dy8kx",
       "channelId": "ch-040",
       "platform": "youtube",
@@ -3089,6 +3097,9 @@
     },
     {
       "id": "stream-1760362651837-j1qkp",
+=======
+      "id": "stream-1760360263094-ws5vs",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2582033043",
@@ -3114,7 +3125,11 @@
       "viewCount": 38316
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362687200-axbmk",
+=======
+      "id": "stream-1760360306445-wcklwf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-188",
       "platform": "twitch",
       "videoId": "2582035612",
@@ -3127,6 +3142,7 @@
       "viewCount": 36477
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365642471-07787",
       "channelId": "ch-026",
       "platform": "youtube",
@@ -3142,6 +3158,9 @@
     },
     {
       "id": "stream-1760362669696-phone",
+=======
+      "id": "stream-1760360287402-hzks6w",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-125",
       "platform": "twitch",
       "videoId": "2582037359",
@@ -3164,7 +3183,7 @@
       "endTime": "2025-10-03T18:01:36.000Z",
       "duration": 24941,
       "isLive": false,
-      "viewCount": 993
+      "viewCount": 991
     },
     {
       "id": "stream-1760362659430-3yty5",
@@ -3206,7 +3225,11 @@
       "viewCount": 34056
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362671746-oeptqr",
+=======
+      "id": "stream-1760360289729-rlu6e9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2582048784",
@@ -3219,6 +3242,7 @@
       "viewCount": 34341
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365720076-iq95nn",
       "channelId": "ch-124",
       "platform": "youtube",
@@ -3234,6 +3258,9 @@
     },
     {
       "id": "stream-1760362774275-zuzs5",
+=======
+      "id": "stream-1760360396699-qpj4a",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-189",
       "platform": "twitch",
       "videoId": "2582053537",
@@ -3243,7 +3270,7 @@
       "endTime": "2025-10-03T20:45:47.000Z",
       "duration": 32468,
       "isLive": false,
-      "viewCount": 44614
+      "viewCount": 44613
     },
     {
       "id": "stream-1760362661846-xt7hw",
@@ -3259,7 +3286,11 @@
       "viewCount": 75786
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362686289-aztme9",
+=======
+      "id": "stream-1760360305209-dt2c2j",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-187",
       "platform": "twitch",
       "videoId": "2582063896",
@@ -3269,7 +3300,7 @@
       "endTime": "2025-10-03T18:21:17.000Z",
       "duration": 22601,
       "isLive": false,
-      "viewCount": 129713
+      "viewCount": 129712
     },
     {
       "id": "stream-1760362653506-5sffai",
@@ -3295,147 +3326,7 @@
       "endTime": "2025-10-03T18:05:30.000Z",
       "duration": 20540,
       "isLive": false,
-      "viewCount": 13750
-    },
-    {
-      "id": "stream-1760365732236-locche",
-      "channelId": "ch-090",
-      "platform": "youtube",
-      "videoId": "K6rozTHornc",
-      "title": "【 #MADTOWN 】初参戦GTA❕悪に染まっていく白波瀬 #03【 #白波瀬ソル / #YUMENOS】#vtuber",
-      "thumbnailUrl": "https://i.ytimg.com/vi/K6rozTHornc/mqdefault.jpg",
-      "startTime": "2025-10-03T12:58:51Z",
-      "endTime": "2025-10-03T18:24:31Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 19540,
-      "isLive": false,
-      "viewCount": 7717
-    },
-    {
-      "id": "stream-1760365605985-hnjofxj",
-      "channelId": "ch-137",
-      "platform": "youtube",
-      "videoId": "sWAS5cWGUl8",
-      "title": "MADTOWNへGO【GTA5】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/sWAS5cWGUl8/mqdefault.jpg",
-      "startTime": "2025-10-03T12:59:26Z",
-      "endTime": "2025-10-03T18:08:04Z",
-      "scheduledStartTime": "2025-10-03T12:55:00Z",
-      "duration": 18518,
-      "isLive": false,
-      "viewCount": 25073
-    },
-    {
-      "id": "stream-1760365666941-thcnp",
-      "channelId": "ch-054",
-      "platform": "youtube",
-      "videoId": "B46KTF8rWhk",
-      "title": "【 #MADTOWN 】今日は何人救えるかな？DAY3【 #九衣よな / Vlash】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/B46KTF8rWhk/mqdefault.jpg",
-      "startTime": "2025-10-03T12:59:57Z",
-      "endTime": "2025-10-03T18:02:02Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 18125,
-      "isLive": false,
-      "viewCount": 4098
-    },
-    {
-      "id": "stream-1760365721061-kizbi",
-      "channelId": "ch-130",
-      "platform": "youtube",
-      "videoId": "0TvwnxxlL-E",
-      "title": "【 #MADTOWN (Day3) 】ギャングになってドンをドンにするラッパーVtuber【YUMENOS/那和ツムグ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/0TvwnxxlL-E/mqdefault.jpg",
-      "startTime": "2025-10-03T13:00:01Z",
-      "endTime": "2025-10-03T18:07:41Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 18460,
-      "isLive": false,
-      "viewCount": 1544
-    },
-    {
-      "id": "stream-1760365750973-jdkmma",
-      "channelId": "ch-184",
-      "platform": "youtube",
-      "videoId": "MBv4hhMiBPw",
-      "title": "【GTA5 MADTOWN】スーパー店員の男　3日目【夕刻ロベル/ホロスターズ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/MBv4hhMiBPw/mqdefault.jpg",
-      "startTime": "2025-10-03T13:00:21Z",
-      "endTime": "2025-10-03T18:00:58Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 18037,
-      "isLive": false,
-      "viewCount": 55495
-    },
-    {
-      "id": "stream-1760365605985-qv0cgt",
-      "channelId": "ch-137",
-      "platform": "youtube",
-      "videoId": "btvGSUR8wm8",
-      "title": "縦MADTOWNへGO　【GTA5】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/btvGSUR8wm8/mqdefault.jpg",
-      "startTime": "2025-10-03T13:03:12Z",
-      "endTime": "2025-10-03T18:08:01Z",
-      "scheduledStartTime": "2025-10-03T12:55:00Z",
-      "duration": 18289,
-      "isLive": false,
-      "viewCount": 22799
-    },
-    {
-      "id": "stream-1760365638752-9lzjyf",
-      "channelId": "ch-020",
-      "platform": "youtube",
-      "videoId": "IU56QKqf_IY",
-      "title": "【#MADTOWN】君の！MADじゃないか！！ #3【綾見ユラ/YUMENOS】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/IU56QKqf_IY/mqdefault.jpg",
-      "startTime": "2025-10-03T13:06:15Z",
-      "endTime": "2025-10-03T18:16:58Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 18643,
-      "isLive": false,
-      "viewCount": 13722
-    },
-    {
-      "id": "stream-1760365663084-vx6omm",
-      "channelId": "ch-057",
-      "platform": "youtube",
-      "videoId": "G52bUFzXVaE",
-      "title": "【#MADTOWN】新　世　界【NIJISANJI EN￤Meloco Kyoran】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/G52bUFzXVaE/mqdefault.jpg",
-      "startTime": "2025-10-03T13:07:04Z",
-      "endTime": "2025-10-03T18:20:25Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 18801,
-      "isLive": false,
-      "viewCount": 153745
-    },
-    {
-      "id": "stream-1760365685368-o167uq",
-      "channelId": "ch-123",
-      "platform": "youtube",
-      "videoId": "sQdjgNpYppw",
-      "title": "【#MADTOWN ３日目】（フレッシュ）行き当たりばったりの人生だっていい！（フレッシュ）『十神仁 /  YUMENOS』#GTA5",
-      "thumbnailUrl": "https://i.ytimg.com/vi/sQdjgNpYppw/mqdefault.jpg",
-      "startTime": "2025-10-03T13:09:11Z",
-      "endTime": "2025-10-03T18:03:06Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 17635,
-      "isLive": false,
-      "viewCount": 3358
-    },
-    {
-      "id": "stream-1760365553727-l3bxa",
-      "channelId": "ch-007",
-      "platform": "youtube",
-      "videoId": "15_uQvAkBVA",
-      "title": "【GTA5│MAD TOWN】ほしい車と兼業シスター珍道中【アキロゼ/ホロライブ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/15_uQvAkBVA/mqdefault.jpg",
-      "startTime": "2025-10-03T13:12:27Z",
-      "endTime": "2025-10-03T18:08:13Z",
-      "scheduledStartTime": "2025-10-03T13:00:00Z",
-      "duration": 17746,
-      "isLive": false,
-      "viewCount": 149989
+      "viewCount": 13749
     },
     {
       "id": "stream-1760362677475-tywa5",
@@ -3451,7 +3342,11 @@
       "viewCount": 211940
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362605503-uk1h7g",
+=======
+      "id": "stream-1760360199115-uz9fk",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-022",
       "platform": "twitch",
       "videoId": "2582118104",
@@ -3477,7 +3372,11 @@
       "viewCount": 140505
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362620180-7d3aog",
+=======
+      "id": "stream-1760360220999-4xvn9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-200",
       "platform": "twitch",
       "videoId": "2582131402",
@@ -3503,6 +3402,7 @@
       "viewCount": 10151
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365600458-q4jczl",
       "channelId": "ch-114",
       "platform": "youtube",
@@ -3532,6 +3432,9 @@
     },
     {
       "id": "stream-1760362618381-0xmgkd",
+=======
+      "id": "stream-1760360219091-6sums",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2582157481",
@@ -3541,7 +3444,7 @@
       "endTime": "2025-10-03T18:01:04.000Z",
       "duration": 11262,
       "isLive": false,
-      "viewCount": 16073
+      "viewCount": 16072
     },
     {
       "id": "stream-1760362675971-r19utm",
@@ -3557,7 +3460,11 @@
       "viewCount": 214389
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362751610-2rnm8i",
+=======
+      "id": "stream-1760360373333-qjhtda",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-105",
       "platform": "twitch",
       "videoId": "2582188507",
@@ -3570,6 +3477,7 @@
       "viewCount": 10646
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365743070-adpcoo",
       "channelId": "ch-009",
       "platform": "youtube",
@@ -3627,6 +3535,9 @@
     },
     {
       "id": "stream-1760362610126-t6o2rh",
+=======
+      "id": "stream-1760360207025-0xkoch",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-119",
       "platform": "twitch",
       "videoId": "2582883639",
@@ -3639,7 +3550,11 @@
       "viewCount": 22624
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-iszdh9",
+=======
+      "id": "stream-1760360382780-ngi4z",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2582890205",
@@ -3652,7 +3567,11 @@
       "viewCount": 136493
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-e3tm08",
+=======
+      "id": "stream-1760360341091-nedphr",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2582890928",
@@ -3678,7 +3597,11 @@
       "viewCount": 31871
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362728019-dv6t32",
+=======
+      "id": "stream-1760360348394-uom4vb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-046",
       "platform": "twitch",
       "videoId": "2582891819",
@@ -3691,6 +3614,7 @@
       "viewCount": 26985
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365673980-78xpbd",
       "channelId": "ch-168",
       "platform": "youtube",
@@ -3706,6 +3630,9 @@
     },
     {
       "id": "stream-1760362647151-ol5n2d",
+=======
+      "id": "stream-1760360257274-62jmf5",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-051",
       "platform": "twitch",
       "videoId": "2582891922",
@@ -3731,7 +3658,11 @@
       "viewCount": 475909
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362758636-c9nj5d",
+=======
+      "id": "stream-1760360380118-0eg9pq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-147",
       "platform": "twitch",
       "videoId": "2582892745",
@@ -3744,7 +3675,11 @@
       "viewCount": 44784
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362770281-ut2jcx",
+=======
+      "id": "stream-1760360392621-q6kcth",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2582893072",
@@ -3754,21 +3689,7 @@
       "endTime": "2025-10-04T18:01:19.000Z",
       "duration": 32209,
       "isLive": false,
-      "viewCount": 10996
-    },
-    {
-      "id": "stream-1760365753133-mnrh0f",
-      "channelId": "ch-002",
-      "platform": "youtube",
-      "videoId": "xCRoyCyB7Sc",
-      "title": "【GTA5 MADTOWN】抗争、CCどうなる？！【ぶいすぽっ！/ 藍沢エマ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xCRoyCyB7Sc/mqdefault.jpg",
-      "startTime": "2025-10-04T09:04:36Z",
-      "endTime": "2025-10-04T18:24:41Z",
-      "scheduledStartTime": "2025-10-04T09:00:00Z",
-      "duration": 33605,
-      "isLive": false,
-      "viewCount": 364872
+      "viewCount": 10995
     },
     {
       "id": "stream-1760362677475-a22kd4",
@@ -3797,7 +3718,11 @@
       "viewCount": 2454
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-irvafn",
+=======
+      "id": "stream-1760360245915-y8mkw",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2582895338",
@@ -3807,7 +3732,7 @@
       "endTime": "2025-10-04T20:08:51.000Z",
       "duration": 39489,
       "isLive": false,
-      "viewCount": 90495
+      "viewCount": 90494
     },
     {
       "id": "stream-1760362678949-att3sw",
@@ -3823,7 +3748,11 @@
       "viewCount": 33171
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362670577-m83u16",
+=======
+      "id": "stream-1760360288682-8zlp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-126",
       "platform": "twitch",
       "videoId": "2582896520",
@@ -3859,21 +3788,7 @@
       "endTime": "2025-10-04T18:01:02.000Z",
       "duration": 31510,
       "isLive": false,
-      "viewCount": 71362
-    },
-    {
-      "id": "stream-1760365644873-emwy8",
-      "channelId": "ch-030",
-      "platform": "youtube",
-      "videoId": "q8whm6deIno",
-      "title": "【 #MADTOWN 】４日目 まったり生きるぞ！",
-      "thumbnailUrl": "https://i.ytimg.com/vi/q8whm6deIno/mqdefault.jpg",
-      "startTime": "2025-10-04T09:17:42Z",
-      "endTime": "2025-10-04T16:08:00Z",
-      "scheduledStartTime": "2025-10-04T09:15:00Z",
-      "duration": 24618,
-      "isLive": false,
-      "viewCount": 7011
+      "viewCount": 71359
     },
     {
       "id": "stream-1760362760172-lq1w15",
@@ -3902,6 +3817,7 @@
       "viewCount": 38191
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365587257-h35m7m",
       "channelId": "ch-084",
       "platform": "youtube",
@@ -3917,6 +3833,9 @@
     },
     {
       "id": "stream-1760362685324-uuprrk",
+=======
+      "id": "stream-1760360303937-ujuzga",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-183",
       "platform": "twitch",
       "videoId": "2582901985",
@@ -3929,7 +3848,11 @@
       "viewCount": 48303
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362648103-s8ncfo",
+=======
+      "id": "stream-1760360258850-d893c",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2582905524",
@@ -3942,7 +3865,11 @@
       "viewCount": 174397
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362721775-c544d",
+=======
+      "id": "stream-1760360341981-8k93cp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2582906395",
@@ -3952,21 +3879,7 @@
       "endTime": "2025-10-04T18:04:31.000Z",
       "duration": 30136,
       "isLive": false,
-      "viewCount": 74406
-    },
-    {
-      "id": "stream-1760365588987-jfj1rb",
-      "channelId": "ch-092",
-      "platform": "youtube",
-      "videoId": "3d_L1JdPXuE",
-      "title": "【MADTOWN】今日から犯罪が活発になるらしい【#4】※概要欄必読",
-      "thumbnailUrl": "https://i.ytimg.com/vi/3d_L1JdPXuE/mqdefault.jpg",
-      "startTime": "2025-10-04T09:52:41Z",
-      "endTime": "2025-10-04T16:03:42Z",
-      "scheduledStartTime": "2025-10-04T09:45:00Z",
-      "duration": 22261,
-      "isLive": false,
-      "viewCount": 29606
+      "viewCount": 74405
     },
     {
       "id": "stream-1760362659430-w91jcm",
@@ -3979,7 +3892,7 @@
       "endTime": "2025-10-04T18:03:09.000Z",
       "duration": 29194,
       "isLive": false,
-      "viewCount": 76886
+      "viewCount": 76885
     },
     {
       "id": "stream-1760362650433-wfj6yk",
@@ -3995,7 +3908,11 @@
       "viewCount": 91370
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362618381-b0lec",
+=======
+      "id": "stream-1760360219091-kbuzqa",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2582914761",
@@ -4021,6 +3938,7 @@
       "viewCount": 22359
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365621379-7n3vu",
       "channelId": "ch-174",
       "platform": "youtube",
@@ -4050,6 +3968,9 @@
     },
     {
       "id": "stream-1760362749297-32cho",
+=======
+      "id": "stream-1760360369676-5e9psb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-038",
       "platform": "twitch",
       "videoId": "2582920983",
@@ -4062,6 +3983,7 @@
       "viewCount": 11328
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365566070-wgf1pc",
       "channelId": "ch-034",
       "platform": "youtube",
@@ -4105,6 +4027,9 @@
     },
     {
       "id": "stream-1760362651837-m1fpq",
+=======
+      "id": "stream-1760360263094-caidh8",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2582924553",
@@ -4117,7 +4042,11 @@
       "viewCount": 121215
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362666371-yd35x9",
+=======
+      "id": "stream-1760360284595-8ahnad",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2582929476",
@@ -4143,7 +4072,11 @@
       "viewCount": 45874
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362746812-tpiyyd",
+=======
+      "id": "stream-1760360366850-p0y29s",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-003",
       "platform": "twitch",
       "videoId": "2582931667",
@@ -4156,6 +4089,7 @@
       "viewCount": 28176
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365630673-ypq2a4",
       "channelId": "ch-199",
       "platform": "youtube",
@@ -4199,6 +4133,9 @@
     },
     {
       "id": "stream-1760362786144-7dj1sj",
+=======
+      "id": "stream-1760360407599-bc5ssq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-058",
       "platform": "twitch",
       "videoId": "2582940428",
@@ -4211,6 +4148,7 @@
       "viewCount": 30470
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365712477-qjgsap",
       "channelId": "ch-045",
       "platform": "youtube",
@@ -4226,6 +4164,9 @@
     },
     {
       "id": "stream-1760362671746-xtypsf",
+=======
+      "id": "stream-1760360289729-wwzal",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2582943062",
@@ -4238,6 +4179,7 @@
       "viewCount": 36744
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365723015-ksa2bu",
       "channelId": "ch-149",
       "platform": "youtube",
@@ -4281,6 +4223,9 @@
     },
     {
       "id": "stream-1760362684490-d58hu",
+=======
+      "id": "stream-1760360303159-3m2n1",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-179",
       "platform": "twitch",
       "videoId": "2582947707",
@@ -4290,7 +4235,7 @@
       "endTime": "2025-10-04T18:04:03.000Z",
       "duration": 24067,
       "isLive": false,
-      "viewCount": 11164
+      "viewCount": 11163
     },
     {
       "id": "stream-1760362687200-thv1z8",
@@ -4332,6 +4277,7 @@
       "viewCount": 20989
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365563995-nluau8",
       "channelId": "ch-028",
       "platform": "youtube",
@@ -4347,6 +4293,9 @@
     },
     {
       "id": "stream-1760362610126-pf88e",
+=======
+      "id": "stream-1760360207025-9cwgvr",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-119",
       "platform": "twitch",
       "videoId": "2582958121",
@@ -4359,7 +4308,11 @@
       "viewCount": 20015
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362675971-73oiwr",
+=======
+      "id": "stream-1760360294989-g28u59",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2582959293",
@@ -4385,7 +4338,11 @@
       "viewCount": 74203
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362611057-4f2ixh",
+=======
+      "id": "stream-1760360208845-e3fp2j",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-033",
       "platform": "twitch",
       "videoId": "2582962292",
@@ -4411,7 +4368,11 @@
       "viewCount": 308451
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-vo7dpf",
+=======
+      "id": "stream-1760360381782-fwrj6p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2582975418",
@@ -4424,7 +4385,11 @@
       "viewCount": 161254
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362753273-265lk7",
+=======
+      "id": "stream-1760360374864-teq3ed",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2582989000",
@@ -4437,6 +4402,7 @@
       "viewCount": 18600
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365600458-mhhac",
       "channelId": "ch-114",
       "platform": "youtube",
@@ -4452,6 +4418,9 @@
     },
     {
       "id": "stream-1760362744002-r4ohq",
+=======
+      "id": "stream-1760360364106-645hs",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-005",
       "platform": "twitch",
       "videoId": "2583004502",
@@ -4477,7 +4446,11 @@
       "viewCount": 60183
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-o3si5b",
+=======
+      "id": "stream-1760360315351-cfb08",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2583033982",
@@ -4490,7 +4463,11 @@
       "viewCount": 63442
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362614124-o1qb3f",
+=======
+      "id": "stream-1760360212416-eev06d",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-192",
       "platform": "twitch",
       "videoId": "2583037893",
@@ -4503,7 +4480,11 @@
       "viewCount": 50825
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362635309-hn1bdh",
+=======
+      "id": "stream-1760360242754-mfw8ck",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-011",
       "platform": "twitch",
       "videoId": "2583043273",
@@ -4513,63 +4494,7 @@
       "endTime": "2025-10-04T20:08:41.000Z",
       "duration": 21482,
       "isLive": false,
-      "viewCount": 35863
-    },
-    {
-      "id": "stream-1760365612161-4mpjdj",
-      "channelId": "ch-153",
-      "platform": "youtube",
-      "videoId": "7Rsv8HuKNig",
-      "title": "【MADTOWN】遅めの出勤失礼します。警察やらせてもろてます【ぷりっつ / AMPTAK(アンプタック)】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/7Rsv8HuKNig/mqdefault.jpg",
-      "startTime": "2025-10-04T14:12:16Z",
-      "endTime": "2025-10-04T18:02:43Z",
-      "scheduledStartTime": "2025-10-04T14:15:00Z",
-      "duration": 13827,
-      "isLive": false,
-      "viewCount": 42138
-    },
-    {
-      "id": "stream-1760365692531-utmdl",
-      "channelId": "ch-072",
-      "platform": "youtube",
-      "videoId": "JUkRT5xPbgE",
-      "title": "〖 MADTOWN 〗 まったりお店と教会見てくる～！ 〖 心白てと / ネオポルテ 〗",
-      "thumbnailUrl": "https://i.ytimg.com/vi/JUkRT5xPbgE/mqdefault.jpg",
-      "startTime": "2025-10-04T14:13:11Z",
-      "endTime": "2025-10-04T17:34:22Z",
-      "scheduledStartTime": "2025-10-04T14:11:28Z",
-      "duration": 12071,
-      "isLive": false,
-      "viewCount": 5887
-    },
-    {
-      "id": "stream-1760365754459-4bte6x",
-      "channelId": "ch-197",
-      "platform": "youtube",
-      "videoId": "LFXfLz1N_uE",
-      "title": "#4 #MADTOWN【 GTA5 MADTOWN 】Ritunes music barの日常3話目【律可/ホロスターズ 】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/LFXfLz1N_uE/mqdefault.jpg",
-      "startTime": "2025-10-04T14:27:07Z",
-      "endTime": "2025-10-04T17:56:14Z",
-      "scheduledStartTime": "2025-10-04T14:30:00Z",
-      "duration": 12547,
-      "isLive": false,
-      "viewCount": 9807
-    },
-    {
-      "id": "stream-1760365620446-jjsuqbj",
-      "channelId": "ch-173",
-      "platform": "youtube",
-      "videoId": "Y1vkRb5VE1Q",
-      "title": "🌐【#MADTOWN】魚ギャングのスハです　DAY４【NIJISANJI】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Y1vkRb5VE1Q/mqdefault.jpg",
-      "startTime": "2025-10-04T14:28:24Z",
-      "endTime": "2025-10-04T18:00:33Z",
-      "scheduledStartTime": "2025-10-04T14:45:00Z",
-      "duration": 12729,
-      "isLive": false,
-      "viewCount": 6475
+      "viewCount": 35862
     },
     {
       "id": "stream-1760362610126-7hhjvf",
@@ -4611,6 +4536,7 @@
       "viewCount": 35413
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365530881-kb71q",
       "channelId": "ch-169",
       "platform": "youtube",
@@ -4625,6 +4551,9 @@
     },
     {
       "id": "stream-1760362631748-p1sjkfx",
+=======
+      "id": "stream-1760360238740-c4mn3h",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-186",
       "platform": "twitch",
       "videoId": "2583129530",
@@ -4637,6 +4566,7 @@
       "viewCount": 2097
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365683058-lrdvvl",
       "channelId": "ch-080",
       "platform": "youtube",
@@ -4666,6 +4596,9 @@
     },
     {
       "id": "stream-1760362637866-t85sw9",
+=======
+      "id": "stream-1760360245915-hycug",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2583725268",
@@ -4704,7 +4637,11 @@
       "viewCount": 322182
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-vdookn",
+=======
+      "id": "stream-1760360341091-buyetb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2583778654",
@@ -4717,7 +4654,11 @@
       "viewCount": 45728
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362648103-y8chc",
+=======
+      "id": "stream-1760360258850-xtfqrc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2583779417",
@@ -4730,7 +4671,11 @@
       "viewCount": 178538
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362698749-t9a51j",
+=======
+      "id": "stream-1760360317793-580cpg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-012",
       "platform": "twitch",
       "videoId": "2583780042",
@@ -4743,7 +4688,11 @@
       "viewCount": 26508
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362684490-rf2mhj",
+=======
+      "id": "stream-1760360303159-gyukp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-179",
       "platform": "twitch",
       "videoId": "2583780160",
@@ -4753,7 +4702,7 @@
       "endTime": "2025-10-05T18:04:30.000Z",
       "duration": 32619,
       "isLive": false,
-      "viewCount": 19670
+      "viewCount": 19669
     },
     {
       "id": "stream-1760362615301-8973u",
@@ -4769,7 +4718,11 @@
       "viewCount": 9586
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362770281-6tb9cgi",
+=======
+      "id": "stream-1760360392621-xww52",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2583780749",
@@ -4782,6 +4735,7 @@
       "viewCount": 7714
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365676588-qdp7ot",
       "channelId": "ch-064",
       "platform": "youtube",
@@ -4797,6 +4751,9 @@
     },
     {
       "id": "stream-1760362630007-ez5zzv",
+=======
+      "id": "stream-1760360235649-t5j4v",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2583780810",
@@ -4819,21 +4776,7 @@
       "endTime": "2025-10-05T18:03:35.000Z",
       "duration": 32466,
       "isLive": false,
-      "viewCount": 116436
-    },
-    {
-      "id": "stream-1760365733303-ky1ru",
-      "channelId": "ch-178",
-      "platform": "youtube",
-      "videoId": "b8jmiw34_FM",
-      "title": "【MADTOWN】#5 仲間、無し。金、無し。仕事、無し。夢、あり。【八神ツクモ／ネオポルテ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/b8jmiw34_FM/mqdefault.jpg",
-      "startTime": "2025-10-05T09:02:35Z",
-      "endTime": "2025-10-05T18:07:44Z",
-      "scheduledStartTime": "2025-10-05T09:00:00Z",
-      "duration": 32709,
-      "isLive": false,
-      "viewCount": 6684
+      "viewCount": 116434
     },
     {
       "id": "stream-1760362758636-3vz4p9",
@@ -4849,7 +4792,11 @@
       "viewCount": 54811
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362677475-vr66s1c",
+=======
+      "id": "stream-1760360296635-3t3ehp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-154",
       "platform": "twitch",
       "videoId": "2583781382",
@@ -4862,7 +4809,11 @@
       "viewCount": 181849
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362629147-4xrgl5",
+=======
+      "id": "stream-1760360234220-7449a",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2583781495",
@@ -4875,6 +4826,7 @@
       "viewCount": 2563
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365619588-r0lhh",
       "channelId": "ch-172",
       "platform": "youtube",
@@ -4987,6 +4939,9 @@
     },
     {
       "id": "stream-1760362784247-n1j9",
+=======
+      "id": "stream-1760360405795-mivbbf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2583783479",
@@ -4999,7 +4954,11 @@
       "viewCount": 62154
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362721775-o6nun5",
+=======
+      "id": "stream-1760360341981-185fxq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2583786291",
@@ -5025,7 +4984,11 @@
       "viewCount": 62796
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362621518-gxa6g",
+=======
+      "id": "stream-1760360223528-j5luoo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-001",
       "platform": "twitch",
       "videoId": "2583787493",
@@ -5038,7 +5001,11 @@
       "viewCount": 35884
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362650433-pyhrdg",
+=======
+      "id": "stream-1760360261349-aodvr7",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-067",
       "platform": "twitch",
       "videoId": "2583787823",
@@ -5126,7 +5093,7 @@
       "endTime": "2025-10-05T21:02:56.000Z",
       "duration": 41491,
       "isLive": false,
-      "viewCount": 47294
+      "viewCount": 47293
     },
     {
       "id": "stream-1760362749297-2vp5k8",
@@ -5142,7 +5109,11 @@
       "viewCount": 6433
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-idsk5f",
+=======
+      "id": "stream-1760360315351-qea1ie",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2583794344",
@@ -5207,6 +5178,7 @@
       "viewCount": 39618
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365573278-k553x8",
       "channelId": "ch-051",
       "platform": "youtube",
@@ -5221,6 +5193,9 @@
     },
     {
       "id": "stream-1760362659430-71ilm",
+=======
+      "id": "stream-1760360272890-opzzia",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-093",
       "platform": "twitch",
       "videoId": "2583801052",
@@ -5230,63 +5205,7 @@
       "endTime": "2025-10-05T18:01:10.000Z",
       "duration": 28981,
       "isLive": false,
-      "viewCount": 66262
-    },
-    {
-      "id": "stream-1760365693512-oy5fxk",
-      "channelId": "ch-176",
-      "platform": "youtube",
-      "videoId": "6b8L7Z2NzeA",
-      "title": "【GTA5 #MADTOWN 】はじめましてのMAD TOWN #2【森中花咲/にじさんじ所属】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6b8L7Z2NzeA/mqdefault.jpg",
-      "startTime": "2025-10-05T10:00:24Z",
-      "endTime": "2025-10-05T16:24:13Z",
-      "scheduledStartTime": "2025-10-05T10:00:00Z",
-      "duration": 23029,
-      "isLive": false,
-      "viewCount": 52179
-    },
-    {
-      "id": "stream-1760365737320-j72dma",
-      "channelId": "ch-175",
-      "platform": "youtube",
-      "videoId": "SqMITdhAt6M",
-      "title": "【#MADTOWN：５日目】無職になったので、自分を見つめなおす旅に出ます。【望月ほぐの/ゆにれいど！】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/SqMITdhAt6M/mqdefault.jpg",
-      "startTime": "2025-10-05T10:00:38Z",
-      "endTime": "2025-10-05T19:14:03Z",
-      "scheduledStartTime": "2025-10-05T10:00:00Z",
-      "duration": 33205,
-      "isLive": false,
-      "viewCount": 13769
-    },
-    {
-      "id": "stream-1760365612161-xboyld",
-      "channelId": "ch-153",
-      "platform": "youtube",
-      "videoId": "yq6Btu8dyUY",
-      "title": "【MADTOWN】犯人捕まえろおおおおおおおおおお！【ぷりっつ / AMPTAK(アンプタック)】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/yq6Btu8dyUY/mqdefault.jpg",
-      "startTime": "2025-10-05T10:01:19Z",
-      "endTime": "2025-10-05T18:04:13Z",
-      "scheduledStartTime": "2025-10-05T10:00:00Z",
-      "duration": 28974,
-      "isLive": false,
-      "viewCount": 69322
-    },
-    {
-      "id": "stream-1760365749965-0w9ad6",
-      "channelId": "ch-191",
-      "platform": "youtube",
-      "videoId": "8v73J48P2gY",
-      "title": "【#MADTOWN】ピンクギャング始動！~Black Rose~マッドタウン5日目【GTA5】【夜絆ニウ / NeoPorte (ネオポルテ) 】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/8v73J48P2gY/mqdefault.jpg",
-      "startTime": "2025-10-05T10:01:38Z",
-      "endTime": "2025-10-05T18:03:11Z",
-      "scheduledStartTime": "2025-10-05T10:00:00Z",
-      "duration": 28893,
-      "isLive": false,
-      "viewCount": 41768
+      "viewCount": 66261
     },
     {
       "id": "stream-1760362618381-07sgda",
@@ -5299,63 +5218,7 @@
       "endTime": "2025-10-05T18:31:09.000Z",
       "duration": 30300,
       "isLive": false,
-      "viewCount": 47272
-    },
-    {
-      "id": "stream-1760365650839-026tsv",
-      "channelId": "ch-040",
-      "platform": "youtube",
-      "videoId": "jsXeDAIb_1Q",
-      "title": "【GTA5 MADTOWN】中型がく、くる【ぶいすぽっ！/花芽すみれ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/jsXeDAIb_1Q/mqdefault.jpg",
-      "startTime": "2025-10-05T10:07:15Z",
-      "endTime": "2025-10-05T17:43:00Z",
-      "scheduledStartTime": "2025-10-05T10:00:00Z",
-      "duration": 27345,
-      "isLive": false,
-      "viewCount": 161515
-    },
-    {
-      "id": "stream-1760365704126-oocf6a",
-      "channelId": "ch-004",
-      "platform": "youtube",
-      "videoId": "wgzWVcWtJxQ",
-      "title": "【MADTOWN #５】本日よりギャングです！【にじさんじ / 赤城ウェン】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/wgzWVcWtJxQ/mqdefault.jpg",
-      "startTime": "2025-10-05T10:07:59Z",
-      "endTime": "2025-10-05T18:02:55Z",
-      "scheduledStartTime": "2025-10-05T10:00:00Z",
-      "duration": 28496,
-      "isLive": false,
-      "viewCount": 119798
-    },
-    {
-      "id": "stream-1760365657402-z740h",
-      "channelId": "ch-013",
-      "platform": "youtube",
-      "videoId": "hd1BA7jRU_0",
-      "title": "【MADTOWN】4日目！　一日あいて浦島太郎です　助けてください【#あまがみらいぶ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/hd1BA7jRU_0/mqdefault.jpg",
-      "startTime": "2025-10-05T10:10:53Z",
-      "endTime": "2025-10-05T18:15:51Z",
-      "scheduledStartTime": "2025-10-05T10:30:00Z",
-      "duration": 29098,
-      "isLive": false,
-      "viewCount": 65588
-    },
-    {
-      "id": "stream-1760365649832-fmokvo",
-      "channelId": "ch-141",
-      "platform": "youtube",
-      "videoId": "sGKaXnm6uok",
-      "title": "〖 ​​GTA5 #MADTOWN 〗今日も元気にチルく働くど～！ ＃５〖 花ノ木まる / ゆにれいど！ 〗",
-      "thumbnailUrl": "https://i.ytimg.com/vi/sGKaXnm6uok/mqdefault.jpg",
-      "startTime": "2025-10-05T10:10:54Z",
-      "endTime": "2025-10-05T15:55:45Z",
-      "scheduledStartTime": "2025-10-05T10:15:00Z",
-      "duration": 20691,
-      "isLive": false,
-      "viewCount": 6731
+      "viewCount": 47267
     },
     {
       "id": "stream-1760362670577-c74t7b",
@@ -5371,7 +5234,11 @@
       "viewCount": 138656
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362669696-1fcpcn",
+=======
+      "id": "stream-1760360287402-l0ja5d",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-125",
       "platform": "twitch",
       "videoId": "2583812868",
@@ -5381,7 +5248,7 @@
       "endTime": "2025-10-05T18:03:21.000Z",
       "duration": 27329,
       "isLive": false,
-      "viewCount": 43088
+      "viewCount": 43087
     },
     {
       "id": "stream-1760362681243-c7so2",
@@ -5394,21 +5261,7 @@
       "endTime": "2025-10-05T17:55:47.000Z",
       "duration": 25738,
       "isLive": false,
-      "viewCount": 16378
-    },
-    {
-      "id": "stream-1760365696616-jgnhj",
-      "channelId": "ch-081",
-      "platform": "youtube",
-      "videoId": "neDFqwTL2Fs",
-      "title": "【MADTOWN】今日もチルタイムでのんびり〜 4【清楚系/酢酸かのん】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/neDFqwTL2Fs/mqdefault.jpg",
-      "startTime": "2025-10-05T10:50:35Z",
-      "endTime": "2025-10-05T18:02:40Z",
-      "scheduledStartTime": "2025-10-05T10:50:00Z",
-      "duration": 25925,
-      "isLive": false,
-      "viewCount": 7756
+      "viewCount": 16376
     },
     {
       "id": "stream-1760362717069-docyng",
@@ -5424,6 +5277,7 @@
       "viewCount": 16385
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365567881-lkoagr",
       "channelId": "ch-036",
       "platform": "youtube",
@@ -5509,6 +5363,9 @@
     },
     {
       "id": "stream-1760362766742-ip20ro",
+=======
+      "id": "stream-1760360388747-dh48y",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-145",
       "platform": "twitch",
       "videoId": "2583830861",
@@ -5531,7 +5388,7 @@
       "endTime": "2025-10-05T13:50:52.000Z",
       "duration": 9622,
       "isLive": false,
-      "viewCount": 6934
+      "viewCount": 6930
     },
     {
       "id": "stream-1760362651837-77hjoe",
@@ -5547,7 +5404,11 @@
       "viewCount": 149673
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362628956-chlrlt",
+=======
+      "id": "stream-1760360233667-qsq0ck",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-127",
       "platform": "twitch",
       "videoId": "2583836441",
@@ -5560,7 +5421,11 @@
       "viewCount": 41039
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362678949-1omkus",
+=======
+      "id": "stream-1760360297907-h6n54",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-161",
       "platform": "twitch",
       "videoId": "2583840355",
@@ -5583,7 +5448,7 @@
       "endTime": "2025-10-05T20:46:00.000Z",
       "duration": 33200,
       "isLive": false,
-      "viewCount": 38981
+      "viewCount": 38979
     },
     {
       "id": "stream-1760362671746-ft9p0i",
@@ -5599,6 +5464,7 @@
       "viewCount": 29644
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365719170-rmzc3p",
       "channelId": "ch-121",
       "platform": "youtube",
@@ -5614,6 +5480,9 @@
     },
     {
       "id": "stream-1760362774275-33pik",
+=======
+      "id": "stream-1760360396699-36dajj",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-189",
       "platform": "twitch",
       "videoId": "2583858223",
@@ -5623,7 +5492,7 @@
       "endTime": "2025-10-05T20:12:34.000Z",
       "duration": 29175,
       "isLive": false,
-      "viewCount": 38537
+      "viewCount": 38536
     },
     {
       "id": "stream-1760362661846-l8cha",
@@ -5639,7 +5508,11 @@
       "viewCount": 75614
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362612568-b6bjxk",
+=======
+      "id": "stream-1760360210863-5j6vqb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2583889520",
@@ -5665,7 +5538,11 @@
       "viewCount": 22423
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362627848-43mmxs",
+=======
+      "id": "stream-1760360232112-a8f4j",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-106",
       "platform": "twitch",
       "videoId": "2583934981",
@@ -5678,6 +5555,7 @@
       "viewCount": 22135
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760364291038-1loqej",
       "channelId": "ch-155",
       "platform": "twitch",
@@ -5706,6 +5584,9 @@
     },
     {
       "id": "stream-1760362675971-wqb2u8",
+=======
+      "id": "stream-1760360294989-qluc1e",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2583978675",
@@ -5718,7 +5599,11 @@
       "viewCount": 178472
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-vu1u",
+=======
+      "id": "stream-1760360381782-q0v1b6",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2583985339",
@@ -5731,7 +5616,11 @@
       "viewCount": 109068
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362631353-c0tf8b",
+=======
+      "id": "stream-1760360238003-urzhdpn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-180",
       "platform": "twitch",
       "videoId": "2584035523",
@@ -5757,7 +5646,11 @@
       "viewCount": 66516
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-5evf7c",
+=======
+      "id": "stream-1760360382780-o7xy69",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2584643548",
@@ -5783,6 +5676,7 @@
       "viewCount": 23963
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365670330-0fg1u",
       "channelId": "ch-116",
       "platform": "youtube",
@@ -5811,6 +5705,9 @@
     },
     {
       "id": "stream-1760362758636-ize54",
+=======
+      "id": "stream-1760360380118-lupyt",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-147",
       "platform": "twitch",
       "videoId": "2585153896",
@@ -5823,6 +5720,7 @@
       "viewCount": 31705
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365658577-isni1x",
       "channelId": "ch-037",
       "platform": "youtube",
@@ -5894,6 +5792,9 @@
     },
     {
       "id": "stream-1760362630007-bphw2",
+=======
+      "id": "stream-1760360235649-v3bb3n",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2585451184",
@@ -5906,7 +5807,11 @@
       "viewCount": 128861
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362630007-qi1pt",
+=======
+      "id": "stream-1760360235649-a925z",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2585475239",
@@ -5942,7 +5847,7 @@
       "endTime": "2025-10-07T15:07:40.000Z",
       "duration": 11064,
       "isLive": false,
-      "viewCount": 29093
+      "viewCount": 29091
     },
     {
       "id": "stream-1760362615301-zjwnp",
@@ -5955,21 +5860,7 @@
       "endTime": "2025-10-07T16:30:10.000Z",
       "duration": 15952,
       "isLive": false,
-      "viewCount": 49655
-    },
-    {
-      "id": "stream-1760365596797-p0ap5d",
-      "channelId": "ch-103",
-      "platform": "youtube",
-      "videoId": "6y79DKYZPVw",
-      "title": "【#MADTOWN】練習鯖で車の練習！白狐のルーキーがんばります 5.5日目【だいだら視点】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6y79DKYZPVw/mqdefault.jpg",
-      "startTime": "2025-10-07T12:30:23Z",
-      "endTime": "2025-10-07T16:48:59Z",
-      "scheduledStartTime": "2025-10-07T12:30:00Z",
-      "duration": 15516,
-      "isLive": false,
-      "viewCount": 14640
+      "viewCount": 49654
     },
     {
       "id": "stream-1760362647151-nl8nh4",
@@ -5985,7 +5876,11 @@
       "viewCount": 8658
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-avk4s5",
+=======
+      "id": "stream-1760360382780-qi8to",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2586247236",
@@ -5995,21 +5890,7 @@
       "endTime": "2025-10-08T20:30:03.000Z",
       "duration": 41691,
       "isLive": false,
-      "viewCount": 104840
-    },
-    {
-      "id": "stream-1760365584733-ex6s",
-      "channelId": "ch-079",
-      "platform": "youtube",
-      "videoId": "NXTQS7N3bfM",
-      "title": "【#MADTOWN┆day6】クセになってんだ 人助けてヘリ乗るの【コンプサウルス┆ゆにれいど！】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/NXTQS7N3bfM/mqdefault.jpg",
-      "startTime": "2025-10-08T08:55:13Z",
-      "endTime": "2025-10-08T18:07:37Z",
-      "scheduledStartTime": "2025-10-08T09:00:00Z",
-      "duration": 33144,
-      "isLive": false,
-      "viewCount": 64459
+      "viewCount": 104839
     },
     {
       "id": "stream-1760362648103-6f57kb",
@@ -6025,7 +5906,11 @@
       "viewCount": 187884
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-98ze6",
+=======
+      "id": "stream-1760360341091-l2ikhi",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2586248428",
@@ -6038,7 +5923,11 @@
       "viewCount": 47030
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362653966-femp9s",
+=======
+      "id": "stream-1760360265511-am6xkd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-071",
       "platform": "twitch",
       "videoId": "2586249427",
@@ -6051,7 +5940,11 @@
       "viewCount": 182869
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362784247-qkjkcg",
+=======
+      "id": "stream-1760360405795-l4zd9s",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2586250000",
@@ -6064,7 +5957,11 @@
       "viewCount": 61106
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362753273-oawld9",
+=======
+      "id": "stream-1760360374864-9pacbx",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2586250169",
@@ -6116,7 +6013,11 @@
       "viewCount": 85301
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362630007-yx6v6l",
+=======
+      "id": "stream-1760360235649-h4obkd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2586250383",
@@ -6129,7 +6030,11 @@
       "viewCount": 554704
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362721775-whimbx",
+=======
+      "id": "stream-1760360341981-6lb7uu",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2586250662",
@@ -6142,7 +6047,11 @@
       "viewCount": 66225
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-a6oyp1",
+=======
+      "id": "stream-1760360381782-drkx9c",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2586250692",
@@ -6155,7 +6064,11 @@
       "viewCount": 73525
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362629147-e8fty",
+=======
+      "id": "stream-1760360234220-pz867b",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2586250832",
@@ -6168,7 +6081,11 @@
       "viewCount": 5058
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362628956-2fv79c",
+=======
+      "id": "stream-1760360233667-ccybuh",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-127",
       "platform": "twitch",
       "videoId": "2586251474",
@@ -6178,7 +6095,7 @@
       "endTime": "2025-10-08T18:04:49.000Z",
       "duration": 32242,
       "isLive": false,
-      "viewCount": 44002
+      "viewCount": 44001
     },
     {
       "id": "stream-1760362747953-4eoq98",
@@ -6194,7 +6111,11 @@
       "viewCount": 356447
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362669696-w9qmh",
+=======
+      "id": "stream-1760360287402-hb4kok",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-125",
       "platform": "twitch",
       "videoId": "2586252122",
@@ -6207,7 +6128,11 @@
       "viewCount": 56788
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-4fq89u",
+=======
+      "id": "stream-1760360315351-1so8n",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2586254035",
@@ -6220,7 +6145,11 @@
       "viewCount": 158245
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362635309-7stx1",
+=======
+      "id": "stream-1760360242754-m3ayve",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-011",
       "platform": "twitch",
       "videoId": "2586254415",
@@ -6233,7 +6162,11 @@
       "viewCount": 39462
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362651837-79k8ar",
+=======
+      "id": "stream-1760360263094-lpsx5m",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2586255030",
@@ -6285,6 +6218,7 @@
       "viewCount": 21074
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365724816-62qnmj",
       "channelId": "ch-146",
       "platform": "youtube",
@@ -6300,6 +6234,9 @@
     },
     {
       "id": "stream-1760362612568-vzuhd",
+=======
+      "id": "stream-1760360210863-04xps",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2586258483",
@@ -6312,7 +6249,11 @@
       "viewCount": 136643
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362605682-ilzoi2",
+=======
+      "id": "stream-1760360199665-tpitcl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-139",
       "platform": "twitch",
       "videoId": "2586262114",
@@ -6338,6 +6279,7 @@
       "viewCount": 25161
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365763094-eusqnp",
       "channelId": "ch-195",
       "platform": "youtube",
@@ -6353,6 +6295,9 @@
     },
     {
       "id": "stream-1760362644465-mte2so",
+=======
+      "id": "stream-1760360254176-9h4skh",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-039",
       "platform": "twitch",
       "videoId": "2586266009",
@@ -6362,7 +6307,7 @@
       "endTime": "2025-10-08T16:24:03.000Z",
       "duration": 23319,
       "isLive": false,
-      "viewCount": 13722
+      "viewCount": 13721
     },
     {
       "id": "stream-1760362678949-w0jlot",
@@ -6391,6 +6336,7 @@
       "viewCount": 97494
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365600458-zx6gmn",
       "channelId": "ch-114",
       "platform": "youtube",
@@ -6406,6 +6352,9 @@
     },
     {
       "id": "stream-1760362647151-18kdv9",
+=======
+      "id": "stream-1760360257274-kp8qak",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-051",
       "platform": "twitch",
       "videoId": "2586268953",
@@ -6418,7 +6367,11 @@
       "viewCount": 37113
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362685324-9lqnb",
+=======
+      "id": "stream-1760360303937-plwbkn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-183",
       "platform": "twitch",
       "videoId": "2586270088",
@@ -6431,7 +6384,11 @@
       "viewCount": 11384
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362618381-q09jxf",
+=======
+      "id": "stream-1760360219091-1v0an",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2586274760",
@@ -6444,7 +6401,11 @@
       "viewCount": 37605
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362659430-bzcrlg",
+=======
+      "id": "stream-1760360272890-1vdyvi",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-093",
       "platform": "twitch",
       "videoId": "2586285181",
@@ -6457,7 +6418,11 @@
       "viewCount": 54346
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362692592-2w93l9",
+=======
+      "id": "stream-1760360312115-pmqw4i",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-203",
       "platform": "twitch",
       "videoId": "2586286294",
@@ -6470,7 +6435,11 @@
       "viewCount": 13404
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362784746-s6wqcc",
+=======
+      "id": "stream-1760360406296-ge8dqs",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-056",
       "platform": "twitch",
       "videoId": "2586290386",
@@ -6483,7 +6452,11 @@
       "viewCount": 118169
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362671746-vthxgci",
+=======
+      "id": "stream-1760360289729-yygbf8",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2586297557",
@@ -6496,6 +6469,7 @@
       "viewCount": 26386
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365706733-3r5pk8",
       "channelId": "ch-003",
       "platform": "youtube",
@@ -6511,6 +6485,9 @@
     },
     {
       "id": "stream-1760362746812-mf1wd",
+=======
+      "id": "stream-1760360366850-1qgb67",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-003",
       "platform": "twitch",
       "videoId": "2586304060",
@@ -6601,7 +6578,11 @@
       "viewCount": 44867
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362677475-crjnxo",
+=======
+      "id": "stream-1760360296635-hoovlh",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-154",
       "platform": "twitch",
       "videoId": "2586317246",
@@ -6640,7 +6621,11 @@
       "viewCount": 69466
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362614124-z5mwhg",
+=======
+      "id": "stream-1760360212416-ez0gnd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-192",
       "platform": "twitch",
       "videoId": "2586319810",
@@ -6653,7 +6638,11 @@
       "viewCount": 66050
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362646182-oxsi7k",
+=======
+      "id": "stream-1760360255971-d06wm",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-043",
       "platform": "twitch",
       "videoId": "2586336576",
@@ -6666,6 +6655,7 @@
       "viewCount": 2376
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365571860-dawjbc",
       "channelId": "ch-043",
       "platform": "youtube",
@@ -6680,6 +6670,9 @@
     },
     {
       "id": "stream-1760362639161-s9ts1e",
+=======
+      "id": "stream-1760360248280-r9uf88",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-025",
       "platform": "twitch",
       "videoId": "2586341496",
@@ -6705,7 +6698,11 @@
       "viewCount": 282698
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362646182-ei6lrh",
+=======
+      "id": "stream-1760360255971-7g8cfa",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-043",
       "platform": "twitch",
       "videoId": "2586346217",
@@ -6715,7 +6712,7 @@
       "endTime": "2025-10-08T18:01:25.000Z",
       "duration": 17839,
       "isLive": false,
-      "viewCount": 23688
+      "viewCount": 23684
     },
     {
       "id": "stream-1760362757079-c6u9j",
@@ -6731,7 +6728,11 @@
       "viewCount": 37818
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362631748-9x69x",
+=======
+      "id": "stream-1760360238740-hrcig4",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-186",
       "platform": "twitch",
       "videoId": "2586365396",
@@ -6744,6 +6745,7 @@
       "viewCount": 5218
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365556609-gn1c4",
       "channelId": "ch-008",
       "platform": "youtube",
@@ -6787,6 +6789,9 @@
     },
     {
       "id": "stream-1760362627848-8r7zel",
+=======
+      "id": "stream-1760360232112-1lvftq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-106",
       "platform": "twitch",
       "videoId": "2586389021",
@@ -6799,6 +6804,7 @@
       "viewCount": 18179
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365519789-flnf9j",
       "channelId": "ch-085",
       "platform": "youtube",
@@ -6827,6 +6833,9 @@
     },
     {
       "id": "stream-1760362758636-l4ga3b",
+=======
+      "id": "stream-1760360380118-6wsbx8",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-147",
       "platform": "twitch",
       "videoId": "2586404643",
@@ -6839,7 +6848,11 @@
       "viewCount": 13265
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362631353-d83jsh",
+=======
+      "id": "stream-1760360238003-3fpueo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-180",
       "platform": "twitch",
       "videoId": "2586406339",
@@ -6849,7 +6862,7 @@
       "endTime": "2025-10-08T18:02:00.000Z",
       "duration": 11388,
       "isLive": false,
-      "viewCount": 15180
+      "viewCount": 15178
     },
     {
       "id": "stream-1760362653966-67gshj",
@@ -6865,7 +6878,11 @@
       "viewCount": 72145
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362620180-sob9r",
+=======
+      "id": "stream-1760360220999-h5enh5",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-200",
       "platform": "twitch",
       "videoId": "2586415083",
@@ -6878,7 +6895,11 @@
       "viewCount": 69300
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-d5weze",
+=======
+      "id": "stream-1760360381782-ttxhxg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2586435161",
@@ -6891,7 +6912,11 @@
       "viewCount": 95545
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-1ptr7y",
+=======
+      "id": "stream-1760360214444-ihu7j",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2586443074",
@@ -6904,7 +6929,11 @@
       "viewCount": 33905
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362718715-tftqnv",
+=======
+      "id": "stream-1760360339438-t8etg4",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-010",
       "platform": "twitch",
       "videoId": "2586474007",
@@ -6927,7 +6956,7 @@
       "endTime": "2025-10-08T18:10:01.000Z",
       "duration": 4529,
       "isLive": false,
-      "viewCount": 7840
+      "viewCount": 7839
     },
     {
       "id": "stream-1760362610126-n3bhx5n",
@@ -6969,7 +6998,11 @@
       "viewCount": 68763
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362629147-6ser3q",
+=======
+      "id": "stream-1760360234220-arqmcl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2587085399",
@@ -6995,7 +7028,11 @@
       "viewCount": 117997
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362644465-fo0gj",
+=======
+      "id": "stream-1760360254175-ae0a7r",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-039",
       "platform": "twitch",
       "videoId": "2587088085",
@@ -7008,7 +7045,11 @@
       "viewCount": 12259
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-b683yg",
+=======
+      "id": "stream-1760360382780-bybay",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2587088262",
@@ -7034,6 +7075,7 @@
       "viewCount": 34924
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365670330-4yf989",
       "channelId": "ch-116",
       "platform": "youtube",
@@ -7160,6 +7202,9 @@
     },
     {
       "id": "stream-1760362637866-7il8rac",
+=======
+      "id": "stream-1760360245915-g9s59p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2587089045",
@@ -7172,7 +7217,11 @@
       "viewCount": 13989
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-02dzgs",
+=======
+      "id": "stream-1760360381782-ssb78q",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2587089170",
@@ -7198,7 +7247,11 @@
       "viewCount": 236102
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362630007-8e8sn",
+=======
+      "id": "stream-1760360235649-nxtw3",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2587089807",
@@ -7211,7 +7264,11 @@
       "viewCount": 481485
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362747953-a5ftd",
+=======
+      "id": "stream-1760360368284-9v6codi",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-060",
       "platform": "twitch",
       "videoId": "2587090063",
@@ -7237,7 +7294,11 @@
       "viewCount": 34579
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-dkve7q",
+=======
+      "id": "stream-1760360214444-elvczc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2587090205",
@@ -7260,133 +7321,7 @@
       "endTime": "2025-10-09T17:56:41.000Z",
       "duration": 31876,
       "isLive": false,
-      "viewCount": 27994
-    },
-    {
-      "id": "stream-1760365657402-jqjjlb",
-      "channelId": "ch-013",
-      "platform": "youtube",
-      "videoId": "yftOo_VXN7Y",
-      "title": "【MADTOWN】6日目！頑張る、泣かない、怖くない【#あまがみらいぶ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/yftOo_VXN7Y/mqdefault.jpg",
-      "startTime": "2025-10-09T09:05:37Z",
-      "endTime": "2025-10-09T18:23:17Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 33460,
-      "isLive": false,
-      "viewCount": 86380
-    },
-    {
-      "id": "stream-1760365534892-153r37",
-      "channelId": "ch-129",
-      "platform": "youtube",
-      "videoId": "tQrhBlk4iH4",
-      "title": "【 GTA5 MADTOWN 】Day7  なんか金欠",
-      "thumbnailUrl": "https://i.ytimg.com/vi/tQrhBlk4iH4/mqdefault.jpg",
-      "startTime": "2025-10-09T09:06:08Z",
-      "endTime": "2025-10-09T18:02:34Z",
-      "scheduledStartTime": "2025-10-09T09:15:00Z",
-      "duration": 32186,
-      "isLive": false,
-      "viewCount": 378186
-    },
-    {
-      "id": "stream-1760365685368-qsjtpf",
-      "channelId": "ch-123",
-      "platform": "youtube",
-      "videoId": "LgG8vh5nToI",
-      "title": "【#MADTOWN ７日目】（無職）募）爪痕の残し方『十神仁 /  YUMENOS』#GTA5",
-      "thumbnailUrl": "https://i.ytimg.com/vi/LgG8vh5nToI/mqdefault.jpg",
-      "startTime": "2025-10-09T09:06:09Z",
-      "endTime": "2025-10-09T18:03:22Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 32233,
-      "isLive": false,
-      "viewCount": 3234
-    },
-    {
-      "id": "stream-1760365655436-a8xxjh",
-      "channelId": "ch-014",
-      "platform": "youtube",
-      "videoId": "TQR3VydXoPw",
-      "title": "【 GTA5 #MADTOWN 】# １ 遅刻！遅刻！ここどこですか？！🏃‍♀️【甘音あむ / ネオポルテ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/TQR3VydXoPw/mqdefault.jpg",
-      "startTime": "2025-10-09T09:06:15Z",
-      "endTime": "2025-10-09T17:08:16Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 28921,
-      "isLive": false,
-      "viewCount": 25429
-    },
-    {
-      "id": "stream-1760365653956-blq2xq",
-      "channelId": "ch-044",
-      "platform": "youtube",
-      "videoId": "xFNRMM8OV-k",
-      "title": "MADTOWN #7 | 新武器！ワクワク！（ハンティング）　【にじさんじ/叶】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xFNRMM8OV-k/mqdefault.jpg",
-      "startTime": "2025-10-09T09:06:16Z",
-      "endTime": "2025-10-09T18:02:19Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 32163,
-      "isLive": false,
-      "viewCount": 479114
-    },
-    {
-      "id": "stream-1760365566070-zvu2im",
-      "channelId": "ch-034",
-      "platform": "youtube",
-      "videoId": "HUVnZZoc-lY",
-      "title": "【#MADTOWN】白狐ギャングとして銭を稼ぎまくる日【ドズル社 / おおはらMEN】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/HUVnZZoc-lY/mqdefault.jpg",
-      "startTime": "2025-10-09T09:07:03Z",
-      "endTime": "2025-10-09T18:01:03Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 32040,
-      "isLive": false,
-      "viewCount": 66410
-    },
-    {
-      "id": "stream-1760365720076-mxddmj",
-      "channelId": "ch-124",
-      "platform": "youtube",
-      "videoId": "VKMMt1QvUh4",
-      "title": "【MAD TOWN】釣りで稼いだ金でギャンブルするだけ【ぶいすぽ/兎咲ミミ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/VKMMt1QvUh4/mqdefault.jpg",
-      "startTime": "2025-10-09T09:07:23Z",
-      "endTime": "2025-10-09T18:03:52Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 32189,
-      "isLive": false,
-      "viewCount": 89556
-    },
-    {
-      "id": "stream-1760365691302-wozon",
-      "channelId": "ch-076",
-      "platform": "youtube",
-      "videoId": "RSwvPpl0UBs",
-      "title": "【MADTOWN】荒波すぎ【小柳ロウ/にじさんじ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/RSwvPpl0UBs/mqdefault.jpg",
-      "startTime": "2025-10-09T09:07:36Z",
-      "endTime": "2025-10-09T18:02:03Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 32067,
-      "isLive": false,
-      "viewCount": 165189
-    },
-    {
-      "id": "stream-1760365644873-cfvn3t",
-      "channelId": "ch-030",
-      "platform": "youtube",
-      "videoId": "tqkZjSDeoSI",
-      "title": "【 #MADTOWN 】6日目 まったり生きるぞ！",
-      "thumbnailUrl": "https://i.ytimg.com/vi/tqkZjSDeoSI/mqdefault.jpg",
-      "startTime": "2025-10-09T09:07:53Z",
-      "endTime": "2025-10-09T14:29:11Z",
-      "scheduledStartTime": "2025-10-09T09:00:00Z",
-      "duration": 19278,
-      "isLive": false,
-      "viewCount": 4575
+      "viewCount": 27993
     },
     {
       "id": "stream-1760362669696-62na2q",
@@ -7415,7 +7350,11 @@
       "viewCount": 56540
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362670577-rwvf8",
+=======
+      "id": "stream-1760360288682-u3rbba",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-126",
       "platform": "twitch",
       "videoId": "2587093337",
@@ -7441,7 +7380,11 @@
       "viewCount": 83753
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362786144-2iw6h",
+=======
+      "id": "stream-1760360407599-x4ozr",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-058",
       "platform": "twitch",
       "videoId": "2587094731",
@@ -7451,7 +7394,7 @@
       "endTime": "2025-10-09T12:41:11.000Z",
       "duration": 12083,
       "isLive": false,
-      "viewCount": 18947
+      "viewCount": 18943
     },
     {
       "id": "stream-1760362647151-i5t2db",
@@ -7467,7 +7410,11 @@
       "viewCount": 35057
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362677475-4b1tt",
+=======
+      "id": "stream-1760360296635-zk01v",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-154",
       "platform": "twitch",
       "videoId": "2587100048",
@@ -7490,21 +7437,7 @@
       "endTime": "2025-10-09T10:01:16.000Z",
       "duration": 1246,
       "isLive": false,
-      "viewCount": 6112
-    },
-    {
-      "id": "stream-1760365645814-e0in7f",
-      "channelId": "ch-016",
-      "platform": "youtube",
-      "videoId": "nP-Gi1KG_gc",
-      "title": "【#MADTOWN】＃03 『仕事を見つけたい（切実な思い）』【雨夜リズ/ミリプロ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/nP-Gi1KG_gc/mqdefault.jpg",
-      "startTime": "2025-10-09T09:43:43Z",
-      "endTime": "2025-10-09T14:14:59Z",
-      "scheduledStartTime": "2025-10-09T09:30:00Z",
-      "duration": 16276,
-      "isLive": false,
-      "viewCount": 13235
+      "viewCount": 6111
     },
     {
       "id": "stream-1760362653506-hxotz9",
@@ -7520,6 +7453,7 @@
       "viewCount": 13967
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365649832-gr148",
       "channelId": "ch-141",
       "platform": "youtube",
@@ -7549,6 +7483,9 @@
     },
     {
       "id": "stream-1760362659430-ts2n4",
+=======
+      "id": "stream-1760360272890-klzzt",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-093",
       "platform": "twitch",
       "videoId": "2587105032",
@@ -7574,7 +7511,11 @@
       "viewCount": 183234
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362698749-ho7kkw",
+=======
+      "id": "stream-1760360317793-swqdlo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-012",
       "platform": "twitch",
       "videoId": "2587107277",
@@ -7587,7 +7528,11 @@
       "viewCount": 10585
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362770281-t0oq5c",
+=======
+      "id": "stream-1760360392621-92s5i",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2587108514",
@@ -7610,35 +7555,7 @@
       "endTime": "2025-10-09T21:20:59.000Z",
       "duration": 40442,
       "isLive": false,
-      "viewCount": 92543
-    },
-    {
-      "id": "stream-1760365743070-uemqcm",
-      "channelId": "ch-009",
-      "platform": "youtube",
-      "videoId": "37_AxYEo--I",
-      "title": "【GTA5 MADTOWN】 釣り×ギャンブルですよ。 #5 【麻倉シノ / ネオポルテ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/37_AxYEo--I/mqdefault.jpg",
-      "startTime": "2025-10-09T10:07:09Z",
-      "endTime": "2025-10-09T18:03:18Z",
-      "scheduledStartTime": "2025-10-09T09:45:00Z",
-      "duration": 28569,
-      "isLive": false,
-      "viewCount": 9961
-    },
-    {
-      "id": "stream-1760365721061-jwqs2o",
-      "channelId": "ch-130",
-      "platform": "youtube",
-      "videoId": "c6A-2Rqiw8c",
-      "title": "【 #MADTOWN (Day７) 】GTAの世界でスーパー店員として成長する物語【YUMENOS/那和ツムグ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6A-2Rqiw8c/mqdefault.jpg",
-      "startTime": "2025-10-09T10:07:39Z",
-      "endTime": "2025-10-09T17:56:14Z",
-      "scheduledStartTime": "2025-10-09T10:00:00Z",
-      "duration": 28115,
-      "isLive": false,
-      "viewCount": 2830
+      "viewCount": 92541
     },
     {
       "id": "stream-1760362628956-ps8ek9",
@@ -7654,7 +7571,11 @@
       "viewCount": 38143
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362635309-c1j5o",
+=======
+      "id": "stream-1760360242754-jv9mq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-011",
       "platform": "twitch",
       "videoId": "2587113257",
@@ -7667,7 +7588,11 @@
       "viewCount": 27494
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362648103-whxfs",
+=======
+      "id": "stream-1760360258850-5acuve",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2587118595",
@@ -7693,7 +7618,11 @@
       "viewCount": 43789
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362717069-ilmwheh",
+=======
+      "id": "stream-1760360337792-qebej",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-061",
       "platform": "twitch",
       "videoId": "2587123927",
@@ -7706,6 +7635,7 @@
       "viewCount": 15403
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365696616-xv7fb",
       "channelId": "ch-081",
       "platform": "youtube",
@@ -7721,6 +7651,9 @@
     },
     {
       "id": "stream-1760362678949-koc9z4",
+=======
+      "id": "stream-1760360297907-u90mcj",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-161",
       "platform": "twitch",
       "videoId": "2587125115",
@@ -7759,7 +7692,11 @@
       "viewCount": 182651
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362655325-wuvi4",
+=======
+      "id": "stream-1760360267832-2wchyf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-077",
       "platform": "twitch",
       "videoId": "2587128865",
@@ -7772,7 +7709,11 @@
       "viewCount": 40142
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362666371-mnhavd",
+=======
+      "id": "stream-1760360284595-eci6r",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2587135899",
@@ -7785,7 +7726,11 @@
       "viewCount": 20105
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362618381-0ctgld",
+=======
+      "id": "stream-1760360219091-jreu",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2587152211",
@@ -7798,7 +7743,11 @@
       "viewCount": 36648
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362757079-r13evs",
+=======
+      "id": "stream-1760360378893-9ww5yg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-140",
       "platform": "twitch",
       "videoId": "2587152889",
@@ -7811,7 +7760,11 @@
       "viewCount": 20851
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362611057-si7yk",
+=======
+      "id": "stream-1760360208845-798gbd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-033",
       "platform": "twitch",
       "videoId": "2587154092",
@@ -7824,7 +7777,11 @@
       "viewCount": 16936
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362746812-rt9jwq",
+=======
+      "id": "stream-1760360366850-v071",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-003",
       "platform": "twitch",
       "videoId": "2587157726",
@@ -7837,7 +7794,11 @@
       "viewCount": 9895
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362661846-ysblw",
+=======
+      "id": "stream-1760360276130-1tpvsj",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-095",
       "platform": "twitch",
       "videoId": "2587159140",
@@ -7860,7 +7821,7 @@
       "endTime": "2025-10-09T19:45:46.000Z",
       "duration": 27191,
       "isLive": false,
-      "viewCount": 23927
+      "viewCount": 23923
     },
     {
       "id": "stream-1760362669339-8xghzx",
@@ -7889,7 +7850,11 @@
       "viewCount": 17776
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362675971-61on34",
+=======
+      "id": "stream-1760360294989-fj6a6a",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2587166751",
@@ -7915,6 +7880,7 @@
       "viewCount": 8009
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365571860-bg424m",
       "channelId": "ch-043",
       "platform": "youtube",
@@ -7929,6 +7895,9 @@
     },
     {
       "id": "stream-1760362651837-1wn0vym",
+=======
+      "id": "stream-1760360263094-e2l1ta",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2587168783",
@@ -7941,7 +7910,11 @@
       "viewCount": 6506
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362675971-6gtr7x",
+=======
+      "id": "stream-1760360294989-i7wbsva",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2587170730",
@@ -7951,35 +7924,7 @@
       "endTime": "2025-10-09T12:35:32.000Z",
       "duration": 61,
       "isLive": false,
-      "viewCount": 4412
-    },
-    {
-      "id": "stream-1760365667849-6bilqx",
-      "channelId": "ch-010",
-      "platform": "youtube",
-      "videoId": "YjXHeMFtSZk",
-      "title": "【GTA5 MADTOWN】教会でボイス事業【空澄セナ/ぶいすぽっ！】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/YjXHeMFtSZk/mqdefault.jpg",
-      "startTime": "2025-10-09T12:36:24Z",
-      "endTime": "2025-10-09T15:05:07Z",
-      "scheduledStartTime": "2025-10-09T12:30:00Z",
-      "duration": 8923,
-      "isLive": false,
-      "viewCount": 34397
-    },
-    {
-      "id": "stream-1760365663084-prs4xk",
-      "channelId": "ch-057",
-      "platform": "youtube",
-      "videoId": "_F1UZRrVLCM",
-      "title": "【#MADTOWN】 タコスとシスター 【NIJISANJI EN￤Meloco Kyoran】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/_F1UZRrVLCM/mqdefault.jpg",
-      "startTime": "2025-10-09T12:36:59Z",
-      "endTime": "2025-10-09T18:03:52Z",
-      "scheduledStartTime": "2025-10-09T12:00:00Z",
-      "duration": 19613,
-      "isLive": false,
-      "viewCount": 94090
+      "viewCount": 4410
     },
     {
       "id": "stream-1760362675971-0nccuv",
@@ -8008,20 +7953,6 @@
       "viewCount": 8303
     },
     {
-      "id": "stream-1760365563995-paocgm",
-      "channelId": "ch-028",
-      "platform": "youtube",
-      "videoId": "22c5CyUFXIs",
-      "title": "【MAD TOWNⅡ│GTA5】ミ、サ⑤【イブラヒム/にじさんじ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/22c5CyUFXIs/mqdefault.jpg",
-      "startTime": "2025-10-09T12:39:01Z",
-      "endTime": "2025-10-09T14:43:01Z",
-      "scheduledStartTime": "2025-10-09T12:40:00Z",
-      "duration": 7440,
-      "isLive": false,
-      "viewCount": 143679
-    },
-    {
       "id": "stream-1760360215901-a5dnyr",
       "channelId": "ch-169",
       "platform": "twitch",
@@ -8045,7 +7976,7 @@
       "endTime": "2025-10-09T18:36:11.000Z",
       "duration": 21221,
       "isLive": false,
-      "viewCount": 55351
+      "viewCount": 55349
     },
     {
       "id": "stream-1760362651837-zow7x",
@@ -8061,7 +7992,11 @@
       "viewCount": 98407
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362671746-hunfqa",
+=======
+      "id": "stream-1760360289729-57dyfo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2587185938",
@@ -8097,62 +8032,7 @@
       "endTime": "2025-10-09T18:02:39.000Z",
       "duration": 17577,
       "isLive": false,
-      "viewCount": 50374
-    },
-    {
-      "id": "stream-1760365728230-zbydu",
-      "channelId": "ch-133",
-      "platform": "youtube",
-      "videoId": "7EVgDg4ioB4",
-      "title": "【MADTOWN】二日目！まだバーと釣り場にしか行けてない【ぶいすぽ / 猫汰つな】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/7EVgDg4ioB4/mqdefault.jpg",
-      "startTime": "2025-10-09T13:31:50Z",
-      "endTime": "2025-10-09T20:20:55Z",
-      "scheduledStartTime": "2025-10-09T13:30:00Z",
-      "duration": 24545,
-      "isLive": false,
-      "viewCount": 107550
-    },
-    {
-      "id": "stream-1760364291038-p421e",
-      "channelId": "ch-155",
-      "platform": "twitch",
-      "videoId": "2587212651",
-      "title": "ただいまー！！ MADTOWN 2",
-      "thumbnailUrl": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2ed2f922e3818273c22b_ow_pepper_314980254835_1760017974//thumb/thumb0-320x180.jpg",
-      "startTime": "2025-10-09T13:53:00Z",
-      "endTime": "2025-10-09T17:49:11.000Z",
-      "duration": 14171,
-      "isLive": false,
-      "viewCount": 22633
-    },
-    {
-      "id": "stream-1760365737320-tkzde6j",
-      "channelId": "ch-175",
-      "platform": "youtube",
-      "videoId": "zd9zu60rkE8",
-      "title": "【#MADTOWN：７日目】今日は遅めの参戦なのでまったり悪やりたい。【望月ほぐの/ゆにれいど！】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/zd9zu60rkE8/mqdefault.jpg",
-      "startTime": "2025-10-09T14:01:14Z",
-      "endTime": "2025-10-09T18:12:14Z",
-      "scheduledStartTime": "2025-10-09T14:00:00Z",
-      "duration": 15060,
-      "isLive": false,
-      "viewCount": 6272
-    },
-    {
-      "id": "stream-1760365628398-toe5m",
-      "channelId": "ch-196",
-      "platform": "youtube",
-      "videoId": "v51B7OwMu5E",
-      "title": "[MADTOWN]リグゼ参加してみます！！とても緊張する",
-      "thumbnailUrl": "https://i.ytimg.com/vi/v51B7OwMu5E/mqdefault.jpg",
-      "startTime": "2025-10-09T14:01:24Z",
-      "endTime": "2025-10-09T18:03:02Z",
-      "scheduledStartTime": "2025-10-09T14:00:00Z",
-      "duration": 14498,
-      "isLive": false,
-      "viewCount": 19542
+      "viewCount": 50372
     },
     {
       "id": "stream-1760362770281-wupvgh",
@@ -8181,6 +8061,7 @@
       "viewCount": 9663
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365683058-i19frp",
       "channelId": "ch-080",
       "platform": "youtube",
@@ -8196,6 +8077,9 @@
     },
     {
       "id": "stream-1760362744002-w3waw",
+=======
+      "id": "stream-1760360364106-50ksli",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-005",
       "platform": "twitch",
       "videoId": "2587236000",
@@ -8208,7 +8092,11 @@
       "viewCount": 102092
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362646182-wvh7e",
+=======
+      "id": "stream-1760360255971-y1tlx2",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-043",
       "platform": "twitch",
       "videoId": "2587239904",
@@ -8218,7 +8106,7 @@
       "endTime": "2025-10-09T18:02:06.000Z",
       "duration": 12117,
       "isLive": false,
-      "viewCount": 9742
+      "viewCount": 9741
     },
     {
       "id": "stream-1760362639161-codjh",
@@ -8247,6 +8135,7 @@
       "viewCount": 823
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365738270-dwjyi",
       "channelId": "ch-118",
       "platform": "youtube",
@@ -8262,6 +8151,9 @@
     },
     {
       "id": "stream-1760362675971-7llsef",
+=======
+      "id": "stream-1760360294989-t88um",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2587361276",
@@ -8274,7 +8166,11 @@
       "viewCount": 64182
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362758437-vw0v2",
+=======
+      "id": "stream-1760360379828-xxxzur",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-149",
       "platform": "twitch",
       "videoId": "2587398335",
@@ -8284,7 +8180,7 @@
       "endTime": "2025-10-09T21:21:27.000Z",
       "duration": 10921,
       "isLive": false,
-      "viewCount": 8708
+      "viewCount": 8707
     },
     {
       "id": "stream-1760362629147-homfqc",
@@ -8297,35 +8193,7 @@
       "endTime": "2025-10-09T21:20:57.000Z",
       "duration": 10739,
       "isLive": false,
-      "viewCount": 1267
-    },
-    {
-      "id": "stream-1760365562097-i2jhoh",
-      "channelId": "ch-023",
-      "platform": "youtube",
-      "videoId": "i72e2egr-X8",
-      "title": "【GTA5 #MADTOWN S2】ひっさびさにフルログイン【アルランディス/ホロスターズ】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/i72e2egr-X8/mqdefault.jpg",
-      "startTime": "2025-10-10T08:01:06Z",
-      "endTime": "2025-10-10T18:03:02Z",
-      "scheduledStartTime": "2025-10-10T08:00:00Z",
-      "duration": 36116,
-      "isLive": false,
-      "viewCount": 73597
-    },
-    {
-      "id": "stream-1760365701352-qca4lv",
-      "channelId": "ch-157",
-      "platform": "youtube",
-      "videoId": "ZN47A1FiH4Q",
-      "title": "【 #MADTOWN / 8日目 】今日こそギャンブれるのか？！💰星宮、いきます【星宮ちょこ / Vlash】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ZN47A1FiH4Q/mqdefault.jpg",
-      "startTime": "2025-10-10T08:47:36Z",
-      "endTime": "2025-10-10T18:03:45Z",
-      "scheduledStartTime": "2025-10-10T09:00:00Z",
-      "duration": 33369,
-      "isLive": false,
-      "viewCount": 26504
+      "viewCount": 1266
     },
     {
       "id": "stream-1760362758636-0fge3",
@@ -8341,7 +8209,11 @@
       "viewCount": 68144
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362648103-z7jer",
+=======
+      "id": "stream-1760360258850-v1zzpie",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2587926566",
@@ -8367,7 +8239,11 @@
       "viewCount": 46241
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-mx098g",
+=======
+      "id": "stream-1760360382779-34qomj",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2587927265",
@@ -8380,7 +8256,11 @@
       "viewCount": 99908
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362610126-n944hi",
+=======
+      "id": "stream-1760360207025-xy58c5",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-119",
       "platform": "twitch",
       "videoId": "2587927431",
@@ -8393,7 +8273,11 @@
       "viewCount": 56194
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362786144-sigq3",
+=======
+      "id": "stream-1760360407599-qlqfo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-058",
       "platform": "twitch",
       "videoId": "2587927695",
@@ -8432,7 +8316,11 @@
       "viewCount": 255091
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-lmua4j",
+=======
+      "id": "stream-1760360214444-26q9ln",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2587927895",
@@ -8445,7 +8333,11 @@
       "viewCount": 22278
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-qsux09",
+=======
+      "id": "stream-1760360245915-lvdwiw",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2587928384",
@@ -8458,7 +8350,11 @@
       "viewCount": 119055
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362747953-8h5nf",
+=======
+      "id": "stream-1760360368284-v8ryyd",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-060",
       "platform": "twitch",
       "videoId": "2587928462",
@@ -8523,7 +8419,11 @@
       "viewCount": 25754
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362687200-ze2gdm",
+=======
+      "id": "stream-1760360306445-315l5",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-188",
       "platform": "twitch",
       "videoId": "2587932518",
@@ -8536,7 +8436,11 @@
       "viewCount": 52978
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362635309-fhy32g",
+=======
+      "id": "stream-1760360242754-nwrzdm",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-011",
       "platform": "twitch",
       "videoId": "2587932724",
@@ -8549,7 +8453,11 @@
       "viewCount": 29451
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362678949-6yv9yj",
+=======
+      "id": "stream-1760360297907-gwtgbb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-161",
       "platform": "twitch",
       "videoId": "2587935154",
@@ -8588,7 +8496,11 @@
       "viewCount": 70337
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362647151-31wv9r",
+=======
+      "id": "stream-1760360257274-fygpdm",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-051",
       "platform": "twitch",
       "videoId": "2587937230",
@@ -8601,7 +8513,11 @@
       "viewCount": 51958
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362669696-dxnk4b",
+=======
+      "id": "stream-1760360287402-qyhpc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-125",
       "platform": "twitch",
       "videoId": "2587940423",
@@ -8614,7 +8530,11 @@
       "viewCount": 46087
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362770281-jelthk",
+=======
+      "id": "stream-1760360392621-h0o77k",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2587944485",
@@ -8624,7 +8544,7 @@
       "endTime": "2025-10-10T18:00:50.000Z",
       "duration": 29128,
       "isLive": false,
-      "viewCount": 4465
+      "viewCount": 4464
     },
     {
       "id": "stream-1760362620180-5oqm3",
@@ -8640,7 +8560,11 @@
       "viewCount": 117197
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-q2jhfc",
+=======
+      "id": "stream-1760360315351-etdusao",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2587948735",
@@ -8679,7 +8603,11 @@
       "viewCount": 2810
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362677475-qt0e7",
+=======
+      "id": "stream-1760360296635-emze9m",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-154",
       "platform": "twitch",
       "videoId": "2587953408",
@@ -8705,7 +8633,11 @@
       "viewCount": 57332
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362784247-4petq9",
+=======
+      "id": "stream-1760360405795-7u1yra",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2587959350",
@@ -8731,7 +8663,11 @@
       "viewCount": 72007
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362651837-l5a68o",
+=======
+      "id": "stream-1760360263094-85t77d",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2587972260",
@@ -8744,7 +8680,11 @@
       "viewCount": 118235
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362693604-vr4otr",
+=======
+      "id": "stream-1760360313033-n9bz9a",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-204",
       "platform": "twitch",
       "videoId": "2587975342",
@@ -8757,7 +8697,11 @@
       "viewCount": 83507
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362721775-dq3mag",
+=======
+      "id": "stream-1760360341981-otyi4p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2587979825",
@@ -8770,7 +8714,11 @@
       "viewCount": 46736
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362666371-1w4ii9",
+=======
+      "id": "stream-1760360284595-i3o3y",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2587983107",
@@ -8783,7 +8731,11 @@
       "viewCount": 12694
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362609023-k3bvw",
+=======
+      "id": "stream-1760360205628-sa4xk",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-120",
       "platform": "twitch",
       "videoId": "2587987130",
@@ -8793,7 +8745,7 @@
       "endTime": "2025-10-10T18:01:17.000Z",
       "duration": 22248,
       "isLive": false,
-      "viewCount": 20530
+      "viewCount": 20528
     },
     {
       "id": "stream-1760362615301-zfywzp",
@@ -8809,7 +8761,11 @@
       "viewCount": 50743
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362766742-jbwf1",
+=======
+      "id": "stream-1760360388747-uqcafl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-145",
       "platform": "twitch",
       "videoId": "2587991744",
@@ -8822,7 +8778,11 @@
       "viewCount": 295982
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362639161-0jvdgb",
+=======
+      "id": "stream-1760360248280-30cra",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-025",
       "platform": "twitch",
       "videoId": "2588001968",
@@ -8861,7 +8821,11 @@
       "viewCount": 66241
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362675971-y9a2s",
+=======
+      "id": "stream-1760360294989-rpzglp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-152",
       "platform": "twitch",
       "videoId": "2588016127",
@@ -8884,7 +8848,7 @@
       "endTime": "2025-10-10T18:07:24.000Z",
       "duration": 18880,
       "isLive": false,
-      "viewCount": 24437
+      "viewCount": 24434
     },
     {
       "id": "stream-1760362614124-0dphe",
@@ -8926,7 +8890,11 @@
       "viewCount": 124672
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362785524-hugbd4",
+=======
+      "id": "stream-1760360407104-sz1dfq",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-031",
       "platform": "twitch",
       "videoId": "2588030976",
@@ -8939,7 +8907,11 @@
       "viewCount": 22807
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362670577-f503z4",
+=======
+      "id": "stream-1760360288682-jet68t",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-126",
       "platform": "twitch",
       "videoId": "2588041585",
@@ -8952,7 +8924,11 @@
       "viewCount": 73195
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362627848-4mez6l",
+=======
+      "id": "stream-1760360232112-7omss",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-106",
       "platform": "twitch",
       "videoId": "2588084264",
@@ -8965,6 +8941,7 @@
       "viewCount": 7135
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365655436-t7i2xm",
       "channelId": "ch-014",
       "platform": "youtube",
@@ -8994,6 +8971,9 @@
     },
     {
       "id": "stream-1760362633713-yhqhl",
+=======
+      "id": "stream-1760360240941-3s1sto",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-006",
       "platform": "twitch",
       "videoId": "2588105112",
@@ -9003,35 +8983,7 @@
       "endTime": "2025-10-10T17:52:50.000Z",
       "duration": 9957,
       "isLive": false,
-      "viewCount": 1188
-    },
-    {
-      "id": "stream-1760365651862-5bg1o",
-      "channelId": "ch-041",
-      "platform": "youtube",
-      "videoId": "e6CLbFkUZmI",
-      "title": "【MADTOWN】だいぶ遅めのやつ【ぶいすぽ/花芽なずな】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/e6CLbFkUZmI/mqdefault.jpg",
-      "startTime": "2025-10-10T15:14:49Z",
-      "endTime": "2025-10-10T15:53:16Z",
-      "scheduledStartTime": "2025-10-10T15:15:00Z",
-      "duration": 2307,
-      "isLive": false,
-      "viewCount": 31623
-    },
-    {
-      "id": "stream-1760365697684-8bchei",
-      "channelId": "ch-171",
-      "platform": "youtube",
-      "videoId": "wNhXX0Ht2pY",
-      "title": "【 #MADTOWN | GTA5 】おばけメカニック3日目【 水無世燐央 l UPROAR!! 】",
-      "thumbnailUrl": "https://i.ytimg.com/vi/wNhXX0Ht2pY/mqdefault.jpg",
-      "startTime": "2025-10-10T15:16:07Z",
-      "endTime": "2025-10-10T19:10:20Z",
-      "scheduledStartTime": "2025-10-10T15:15:00Z",
-      "duration": 14053,
-      "isLive": false,
-      "viewCount": 3926
+      "viewCount": 1184
     },
     {
       "id": "stream-1760362610126-2vmb7",
@@ -9060,7 +9012,11 @@
       "viewCount": 10939
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362651837-it22vm1",
+=======
+      "id": "stream-1760360263094-oib4aa",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-068",
       "platform": "twitch",
       "videoId": "2588163053",
@@ -9086,7 +9042,11 @@
       "viewCount": 13168
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362672785-fu2x39",
+=======
+      "id": "stream-1760360290829-abzeu9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-137",
       "platform": "twitch",
       "videoId": "2588166051",
@@ -9125,6 +9085,7 @@
       "viewCount": 1735
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365696616-i98wj",
       "channelId": "ch-081",
       "platform": "youtube",
@@ -9140,6 +9101,9 @@
     },
     {
       "id": "stream-1760362720732-ceorng",
+=======
+      "id": "stream-1760360341091-hn4p2t",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2588816360",
@@ -9152,7 +9116,11 @@
       "viewCount": 3802
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-2xvcx7",
+=======
+      "id": "stream-1760360341091-v4imw",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2588852045",
@@ -9165,7 +9133,11 @@
       "viewCount": 54486
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362610126-8y1gr",
+=======
+      "id": "stream-1760360207025-pg7tso",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-119",
       "platform": "twitch",
       "videoId": "2588856261",
@@ -9178,7 +9150,11 @@
       "viewCount": 79526
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-5kalje",
+=======
+      "id": "stream-1760360382779-jwl8rc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2588862062",
@@ -9188,7 +9164,7 @@
       "endTime": "2025-10-11T18:02:34.000Z",
       "duration": 32625,
       "isLive": false,
-      "viewCount": 107858
+      "viewCount": 107857
     },
     {
       "id": "stream-1760362629147-1jyqil",
@@ -9204,7 +9180,11 @@
       "viewCount": 15412
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-ed86x",
+=======
+      "id": "stream-1760360214444-00tryc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2588863180",
@@ -9217,7 +9197,11 @@
       "viewCount": 10901
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362644465-lm9bi",
+=======
+      "id": "stream-1760360254175-rke58",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-039",
       "platform": "twitch",
       "videoId": "2588863484",
@@ -9230,7 +9214,11 @@
       "viewCount": 20046
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362666371-tm6tlmi",
+=======
+      "id": "stream-1760360284595-rdsvbh",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2588863774",
@@ -9243,7 +9231,11 @@
       "viewCount": 28830
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362758636-e24g9g",
+=======
+      "id": "stream-1760360380118-fzp0p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-147",
       "platform": "twitch",
       "videoId": "2588865931",
@@ -9282,7 +9274,11 @@
       "viewCount": 34912
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362753273-xtwz0s",
+=======
+      "id": "stream-1760360374864-615a9i",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-101",
       "platform": "twitch",
       "videoId": "2588867179",
@@ -9295,7 +9291,11 @@
       "viewCount": 26242
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362653966-sfzksp",
+=======
+      "id": "stream-1760360265511-mbgrjf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-071",
       "platform": "twitch",
       "videoId": "2588867650",
@@ -9321,7 +9321,11 @@
       "viewCount": 158708
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-7h91rj",
+=======
+      "id": "stream-1760360245915-ne08hx",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2588868707",
@@ -9334,7 +9338,11 @@
       "viewCount": 8196
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362747953-5tg03f",
+=======
+      "id": "stream-1760360368284-nd7x1a",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-060",
       "platform": "twitch",
       "videoId": "2588869714",
@@ -9357,7 +9365,7 @@
       "endTime": "2025-10-11T09:24:41.000Z",
       "duration": 364,
       "isLive": false,
-      "viewCount": 1234
+      "viewCount": 1233
     },
     {
       "id": "stream-1760362647151-oh331n",
@@ -9373,7 +9381,11 @@
       "viewCount": 36821
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362630007-ea5259",
+=======
+      "id": "stream-1760360235649-ang1pgi",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2588870254",
@@ -9386,7 +9398,11 @@
       "viewCount": 445870
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362770281-4ehabo",
+=======
+      "id": "stream-1760360392621-0hv4b",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-159",
       "platform": "twitch",
       "videoId": "2588871487",
@@ -9396,7 +9412,7 @@
       "endTime": "2025-10-11T15:09:16.000Z",
       "duration": 20764,
       "isLive": false,
-      "viewCount": 7339
+      "viewCount": 7337
     },
     {
       "id": "stream-1760362628956-yd12kd",
@@ -9412,7 +9428,11 @@
       "viewCount": 2040
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362784247-jcgtkb",
+=======
+      "id": "stream-1760360405795-l3jks3",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-167",
       "platform": "twitch",
       "videoId": "2588872131",
@@ -9451,6 +9471,7 @@
       "viewCount": 4867
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365657402-awdpxk",
       "channelId": "ch-013",
       "platform": "youtube",
@@ -9494,6 +9515,9 @@
     },
     {
       "id": "stream-1760362677475-26qd1",
+=======
+      "id": "stream-1760360296635-03ju9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-154",
       "platform": "twitch",
       "videoId": "2588874681",
@@ -9545,7 +9569,11 @@
       "viewCount": 23577
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362628956-r1fxks",
+=======
+      "id": "stream-1760360233667-d62dmp",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-127",
       "platform": "twitch",
       "videoId": "2588878550",
@@ -9597,7 +9625,11 @@
       "viewCount": 138387
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362695615-qqzwjh",
+=======
+      "id": "stream-1760360315351-mc9bl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-206",
       "platform": "twitch",
       "videoId": "2588885078",
@@ -9623,7 +9655,11 @@
       "viewCount": 140223
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362669696-bm1vzh",
+=======
+      "id": "stream-1760360287402-5w08ns",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-125",
       "platform": "twitch",
       "videoId": "2588886151",
@@ -9636,7 +9672,11 @@
       "viewCount": 43328
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362621518-g9ly2",
+=======
+      "id": "stream-1760360223528-it2ip",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-001",
       "platform": "twitch",
       "videoId": "2588889103",
@@ -9649,7 +9689,11 @@
       "viewCount": 27451
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-xxnzl",
+=======
+      "id": "stream-1760360214444-zzu0uv",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2588895511",
@@ -9662,7 +9706,11 @@
       "viewCount": 63556
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362717069-edfzuj",
+=======
+      "id": "stream-1760360337792-14cfaw",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-061",
       "platform": "twitch",
       "videoId": "2588897298",
@@ -9675,6 +9723,7 @@
       "viewCount": 12715
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760365642471-wl2m7f",
       "channelId": "ch-026",
       "platform": "youtube",
@@ -9704,6 +9753,9 @@
     },
     {
       "id": "stream-1760362620180-mbujj",
+=======
+      "id": "stream-1760360220999-haewg6",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-200",
       "platform": "twitch",
       "videoId": "2588905461",
@@ -9729,7 +9781,11 @@
       "viewCount": 86714
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362698749-ocln9",
+=======
+      "id": "stream-1760360317793-zecwal",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-012",
       "platform": "twitch",
       "videoId": "2588909843",
@@ -9742,7 +9798,11 @@
       "viewCount": 8882
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362659430-3zbn3",
+=======
+      "id": "stream-1760360272890-m1wu6q",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-093",
       "platform": "twitch",
       "videoId": "2588913289",
@@ -9755,7 +9815,11 @@
       "viewCount": 93574
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362671746-bxkih",
+=======
+      "id": "stream-1760360289729-h2frn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2588916371",
@@ -9768,7 +9832,11 @@
       "viewCount": 20626
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362661846-ktelr",
+=======
+      "id": "stream-1760360276130-zmendl",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-095",
       "platform": "twitch",
       "videoId": "2588917157",
@@ -9781,7 +9849,11 @@
       "viewCount": 72814
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362612568-j0h446",
+=======
+      "id": "stream-1760360210863-3qq9hn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2588918031",
@@ -9833,7 +9905,11 @@
       "viewCount": 148285
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-ejjkxl",
+=======
+      "id": "stream-1760360381782-0m7q2d",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2588937513",
@@ -9846,7 +9922,11 @@
       "viewCount": 168893
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362757079-7szk2c",
+=======
+      "id": "stream-1760360378893-tabpk",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-140",
       "platform": "twitch",
       "videoId": "2588940195",
@@ -9859,7 +9939,11 @@
       "viewCount": 48377
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362639161-o450q9",
+=======
+      "id": "stream-1760360248280-y35cf9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-025",
       "platform": "twitch",
       "videoId": "2588945204",
@@ -9898,7 +9982,11 @@
       "viewCount": 37717
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362605682-ry2vop",
+=======
+      "id": "stream-1760360199665-b3pe3",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-139",
       "platform": "twitch",
       "videoId": "2588952888",
@@ -9924,7 +10012,11 @@
       "viewCount": 13040
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362631748-xqbcq",
+=======
+      "id": "stream-1760360238740-12q369",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-186",
       "platform": "twitch",
       "videoId": "2588981350",
@@ -9950,7 +10042,11 @@
       "viewCount": 27218
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362687200-oejd9n",
+=======
+      "id": "stream-1760360306445-dh79i",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-188",
       "platform": "twitch",
       "videoId": "2589005452",
@@ -9989,7 +10085,11 @@
       "viewCount": 5232
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362684490-2vw9f",
+=======
+      "id": "stream-1760360303159-nj0uyg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-179",
       "platform": "twitch",
       "videoId": "2589016111",
@@ -10015,7 +10115,11 @@
       "viewCount": 15374
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362611057-8srre",
+=======
+      "id": "stream-1760360208845-26gsun",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-033",
       "platform": "twitch",
       "videoId": "2589028391",
@@ -10054,7 +10158,11 @@
       "viewCount": 5718
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362633713-4w9dpo",
+=======
+      "id": "stream-1760360240941-s9mvx",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-006",
       "platform": "twitch",
       "videoId": "2589072539",
@@ -10067,7 +10175,11 @@
       "viewCount": 945
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362612568-bf9pdw",
+=======
+      "id": "stream-1760360210863-57dypf",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2589120712",
@@ -10093,7 +10205,11 @@
       "viewCount": 3060
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362610126-8ty8r",
+=======
+      "id": "stream-1760360207025-jdq61p",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-119",
       "platform": "twitch",
       "videoId": "2589740903",
@@ -10106,7 +10222,11 @@
       "viewCount": 141077
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362637866-o6744h",
+=======
+      "id": "stream-1760360245915-0u4lac",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-021",
       "platform": "twitch",
       "videoId": "2589752580",
@@ -10132,7 +10252,11 @@
       "viewCount": 43252
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362612568-6zpbi",
+=======
+      "id": "stream-1760360210863-siva18",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-050",
       "platform": "twitch",
       "videoId": "2589780243",
@@ -10158,7 +10282,11 @@
       "viewCount": 36963
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362648103-knlupm",
+=======
+      "id": "stream-1760360258850-tlj5wn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-059",
       "platform": "twitch",
       "videoId": "2589781858",
@@ -10171,7 +10299,11 @@
       "viewCount": 186085
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362720732-co7mlk",
+=======
+      "id": "stream-1760360341091-mchud",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-116",
       "platform": "twitch",
       "videoId": "2589782011",
@@ -10184,7 +10316,11 @@
       "viewCount": 53545
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362615301-dcp7s",
+=======
+      "id": "stream-1760360214444-og0veb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-164",
       "platform": "twitch",
       "videoId": "2589782276",
@@ -10210,7 +10346,11 @@
       "viewCount": 46687
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-skl6oa",
+=======
+      "id": "stream-1760360382779-s2sob4",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2589782465",
@@ -10223,7 +10363,11 @@
       "viewCount": 2320
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362629147-32xxti",
+=======
+      "id": "stream-1760360234220-vmzb9t",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-185",
       "platform": "twitch",
       "videoId": "2589782863",
@@ -10236,7 +10380,11 @@
       "viewCount": 8238
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362747953-9jb638",
+=======
+      "id": "stream-1760360368284-ui0wjc",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-060",
       "platform": "twitch",
       "videoId": "2589783588",
@@ -10249,7 +10397,11 @@
       "viewCount": 185488
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362630007-y3ziya",
+=======
+      "id": "stream-1760360235649-cixms",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-142",
       "platform": "twitch",
       "videoId": "2589783658",
@@ -10275,7 +10427,11 @@
       "viewCount": 271124
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760997-ygcqxh",
+=======
+      "id": "stream-1760360382779-0bcqg7",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-135",
       "platform": "twitch",
       "videoId": "2589785574",
@@ -10353,7 +10509,11 @@
       "viewCount": 59462
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362666371-xdjmvn",
+=======
+      "id": "stream-1760360284595-7ycbg",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-113",
       "platform": "twitch",
       "videoId": "2589791872",
@@ -10405,7 +10565,11 @@
       "viewCount": 119040
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362684490-lf56df",
+=======
+      "id": "stream-1760360303159-g119h",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-179",
       "platform": "twitch",
       "videoId": "2589793674",
@@ -10418,7 +10582,11 @@
       "viewCount": 14849
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362653506-08wpw5",
+=======
+      "id": "stream-1760360264681-5bnvsb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-070",
       "platform": "twitch",
       "videoId": "2589794523",
@@ -10431,7 +10599,11 @@
       "viewCount": 36206
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362621518-etqw0j",
+=======
+      "id": "stream-1760360223528-cvmwqt",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-001",
       "platform": "twitch",
       "videoId": "2589800523",
@@ -10444,7 +10616,11 @@
       "viewCount": 31312
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362628956-vojjnd",
+=======
+      "id": "stream-1760360233667-xu334",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-127",
       "platform": "twitch",
       "videoId": "2589803026",
@@ -10457,7 +10633,11 @@
       "viewCount": 33851
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362644465-2knke",
+=======
+      "id": "stream-1760360254175-qsyto",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-039",
       "platform": "twitch",
       "videoId": "2589806965",
@@ -10548,7 +10728,11 @@
       "viewCount": 64934
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362669696-2hhkca",
+=======
+      "id": "stream-1760360287402-yh3krn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-125",
       "platform": "twitch",
       "videoId": "2589822743",
@@ -10561,7 +10745,11 @@
       "viewCount": 35792
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362698749-56uh2l",
+=======
+      "id": "stream-1760360317793-161124",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-012",
       "platform": "twitch",
       "videoId": "2589829525",
@@ -10574,7 +10762,11 @@
       "viewCount": 22983
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362760172-uz91hw",
+=======
+      "id": "stream-1760360381782-rdy18e",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-052",
       "platform": "twitch",
       "videoId": "2589831321",
@@ -10587,7 +10779,11 @@
       "viewCount": 174262
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362766742-r11rm",
+=======
+      "id": "stream-1760360388747-k6jw6f",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-145",
       "platform": "twitch",
       "videoId": "2589835935",
@@ -10600,7 +10796,11 @@
       "viewCount": 130204
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362746812-ed9zsh",
+=======
+      "id": "stream-1760360366850-22z109",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-003",
       "platform": "twitch",
       "videoId": "2589838814",
@@ -10613,7 +10813,11 @@
       "viewCount": 7512
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362614124-snt0f",
+=======
+      "id": "stream-1760360212416-cqkd54",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-192",
       "platform": "twitch",
       "videoId": "2589851791",
@@ -10652,7 +10856,11 @@
       "viewCount": 64208
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362618380-x8y2w9",
+=======
+      "id": "stream-1760360219091-e6tx4q",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-132",
       "platform": "twitch",
       "videoId": "2589859996",
@@ -10665,7 +10873,11 @@
       "viewCount": 1348
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362659430-zj5zhh",
+=======
+      "id": "stream-1760360272890-3rc1ji",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-093",
       "platform": "twitch",
       "videoId": "2589866390",
@@ -10678,7 +10890,11 @@
       "viewCount": 63208
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362650433-n8jad5",
+=======
+      "id": "stream-1760360261349-n4i5vo",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-067",
       "platform": "twitch",
       "videoId": "2589869729",
@@ -10704,7 +10920,11 @@
       "viewCount": 29083
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362721775-xxut9d",
+=======
+      "id": "stream-1760360341981-nzufx",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-117",
       "platform": "twitch",
       "videoId": "2589872468",
@@ -10717,7 +10937,11 @@
       "viewCount": 64512
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362631748-2z5isg",
+=======
+      "id": "stream-1760360238740-leeh8n",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-186",
       "platform": "twitch",
       "videoId": "2589875283",
@@ -10730,7 +10954,11 @@
       "viewCount": 1100
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362671746-gf8dhb",
+=======
+      "id": "stream-1760360289729-u4iwap",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-131",
       "platform": "twitch",
       "videoId": "2589875745",
@@ -10756,7 +10984,11 @@
       "viewCount": 14403
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362751610-xlhqua",
+=======
+      "id": "stream-1760360373333-qj16k",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-105",
       "platform": "twitch",
       "videoId": "2589884627",
@@ -10769,7 +11001,11 @@
       "viewCount": 31417
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362672785-17s8g",
+=======
+      "id": "stream-1760360290829-05t4kn",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-137",
       "platform": "twitch",
       "videoId": "2589890856",
@@ -10782,7 +11018,11 @@
       "viewCount": 5467
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362757078-4cjjjl",
+=======
+      "id": "stream-1760360378893-a9q0ej",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-140",
       "platform": "twitch",
       "videoId": "2589895122",
@@ -10795,7 +11035,11 @@
       "viewCount": 43350
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362766742-7op71ef",
+=======
+      "id": "stream-1760360388747-su4bre",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-145",
       "platform": "twitch",
       "videoId": "2589898374",
@@ -10860,7 +11104,11 @@
       "viewCount": 27770
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362655325-g4wir7",
+=======
+      "id": "stream-1760360267832-hmuchh",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-077",
       "platform": "twitch",
       "videoId": "2589915685",
@@ -10873,7 +11121,11 @@
       "viewCount": 37252
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362691362-mg97qe",
+=======
+      "id": "stream-1760360310771-8mfxb",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-201",
       "platform": "twitch",
       "videoId": "2589953358",
@@ -10896,7 +11148,7 @@
       "endTime": "2025-10-12T18:08:12.000Z",
       "duration": 12811,
       "isLive": false,
-      "viewCount": 8670
+      "viewCount": 8669
     },
     {
       "id": "stream-1760362651837-wasuc",
@@ -10938,7 +11190,11 @@
       "viewCount": 40436
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362633713-81eagn",
+=======
+      "id": "stream-1760360240941-52d7he",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-006",
       "platform": "twitch",
       "videoId": "2589976399",
@@ -11029,7 +11285,11 @@
       "viewCount": 15708
     },
     {
+<<<<<<< HEAD
       "id": "stream-1760362680710-1llwhm",
+=======
+      "id": "stream-1760360299558-0qvzi9",
+>>>>>>> 7d35108 (tmp)
       "channelId": "ch-165",
       "platform": "twitch",
       "videoId": "2590719738",
