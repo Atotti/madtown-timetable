@@ -23,7 +23,9 @@ type RowData = {
  *
  * @param startIdCounter 開始ID番号（デフォルト: 1）
  */
-export async function scrapeChannelsFromWiki(startIdCounter: number = 1): Promise<WikiChannel[]> {
+export async function scrapeChannelsFromWiki(
+  startIdCounter: number = 1,
+): Promise<WikiChannel[]> {
   console.log("data/raw.html からチャンネル情報を読み込み中...");
 
   const html = await fs.readFile("data/raw.html", "utf-8");

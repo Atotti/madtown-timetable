@@ -8,18 +8,22 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Pin } from "lucide-react";
 
 type ChannelHeaderProps = {
   channel: Channel;
   selectedTags: string[];
   onToggleTag: (tag: string) => void;
+  isPinned: boolean;
+  onTogglePin: (channelId: string) => void;
 };
 
 export function ChannelHeader({
   channel,
   selectedTags,
   onToggleTag,
+  isPinned,
+  onTogglePin,
 }: ChannelHeaderProps) {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
@@ -53,11 +57,28 @@ export function ChannelHeader({
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
         <div
-          className={`flex items-center justify-center border-r ${headerColor} cursor-pointer shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5`}
+          className={`relative flex items-center justify-center border-r ${headerColor} cursor-pointer shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5`}
           style={{ width: "200px", minWidth: "200px" }}
           onMouseEnter={() => setIsPopoverOpen(true)}
           onMouseLeave={() => setIsPopoverOpen(false)}
         >
+          {/* ピン留めボタン（ボックス右上） */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onTogglePin(channel.id);
+            }}
+            className={`absolute top-1 right-1 w-5 h-5 rounded-full flex items-center justify-center transition-all z-10 ${
+              isPinned
+                ? "bg-yellow-500 text-white shadow-md"
+                : "bg-gray-200 text-gray-500 hover:bg-gray-300"
+            }`}
+            title={isPinned ? "ピン留めを解除" : "ピン留め"}
+          >
+            <Pin className={`w-3 h-3 ${isPinned ? "fill-current" : ""}`} />
+          </button>
+
           <div className="flex flex-col items-center px-2 py-1">
             {channel.avatarUrl && (
               // eslint-disable-next-line @next/next/no-img-element

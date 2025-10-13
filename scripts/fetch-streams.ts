@@ -46,7 +46,9 @@ async function main() {
         `📂 既存データ: ${existingStreams.length}件のストリームを読み込みました\n`,
       );
     } catch (error) {
-      console.warn("⚠️  既存データの読み込みに失敗しました。新規作成します。\n");
+      console.warn(
+        "⚠️  既存データの読み込みに失敗しました。新規作成します。\n",
+      );
     }
   } else {
     console.log("📂 既存データなし。新規作成します。\n");

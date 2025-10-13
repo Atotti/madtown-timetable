@@ -33,10 +33,15 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   const timeGridScrollRef = useRef<HTMLDivElement>(null);
   const timeLabelScrollRef = useRef<HTMLDivElement>(null);
 
-  // URLパラメータから初期タグを取得
+  // URLパラメータから初期タグとピン留めを取得
   const initialTags = useMemo(() => {
     const tagsParam = searchParams.get("tags");
     return tagsParam ? tagsParam.split(",").filter(Boolean) : [];
+  }, [searchParams]);
+
+  const initialPins = useMemo(() => {
+    const pinsParam = searchParams.get("pins");
+    return pinsParam ? pinsParam.split(",").filter(Boolean) : [];
   }, [searchParams]);
 
   // イベント期間
@@ -114,8 +119,14 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   );
 
   // カスタムフックの使用
-  const { selectedTags, filteredChannels, toggleTag, removeTag } =
-    useTagFilter(sortedChannels, initialTags);
+  const {
+    selectedTags,
+    filteredChannels,
+    toggleTag,
+    removeTag,
+    pinnedChannelIds,
+    togglePin,
+  } = useTagFilter(sortedChannels, initialTags, initialPins);
 
   const {
     selectedDate,
@@ -192,6 +203,7 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
         onStartShare={handleStartShare}
         onCancelShare={handleCancelShare}
         onCopyShareUrl={handleCopyShareUrl}
+        pinnedChannelIds={pinnedChannelIds}
       />
 
       {/* チャンネルヘッダー */}
@@ -201,6 +213,8 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
         onToggleTag={toggleTag}
         headerScrollRef={headerScrollRef}
         onScroll={handleHeaderScroll}
+        pinnedChannelIds={pinnedChannelIds}
+        onTogglePin={togglePin}
       />
 
       {/* タイムグリッド */}

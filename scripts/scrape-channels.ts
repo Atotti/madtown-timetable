@@ -19,7 +19,9 @@ async function main() {
           `📂 既存データ: ${existingChannels.length}件のチャンネルを読み込みました\n`,
         );
       } catch (error) {
-        console.warn("⚠️  既存データの読み込みに失敗しました。新規作成します。\n");
+        console.warn(
+          "⚠️  既存データの読み込みに失敗しました。新規作成します。\n",
+        );
       }
     } else {
       console.log("📂 既存データなし。新規作成します。\n");
@@ -36,7 +38,9 @@ async function main() {
         }
       }
     }
-    console.log(`📊 既存データの最大ID: ch-${String(maxIdNumber).padStart(3, "0")}\n`);
+    console.log(
+      `📊 既存データの最大ID: ch-${String(maxIdNumber).padStart(3, "0")}\n`,
+    );
 
     // Wikiからチャンネル情報を取得（既存最大ID+1から開始）
     const wikiChannels = await scrapeChannelsFromWiki(maxIdNumber + 1);

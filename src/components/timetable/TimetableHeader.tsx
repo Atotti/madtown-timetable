@@ -28,7 +28,11 @@ type TimetableHeaderProps = {
   isShareMode: boolean;
   onStartShare: () => void;
   onCancelShare: () => void;
-  onCopyShareUrl: (selectedTags: string[]) => Promise<boolean>;
+  onCopyShareUrl: (
+    selectedTags: string[],
+    pinnedChannelIds: Set<string>,
+  ) => Promise<boolean>;
+  pinnedChannelIds: Set<string>;
 };
 
 export function TimetableHeader({
@@ -47,13 +51,14 @@ export function TimetableHeader({
   onStartShare,
   onCancelShare,
   onCopyShareUrl,
+  pinnedChannelIds,
 }: TimetableHeaderProps) {
   const [copyMessage, setCopyMessage] = useState<string>("");
   const [showHowToUse, setShowHowToUse] = useState(false);
 
   // URLコピーボタンのハンドラー
   const handleCopyUrl = async () => {
-    const success = await onCopyShareUrl(selectedTags);
+    const success = await onCopyShareUrl(selectedTags, pinnedChannelIds);
     if (success) {
       setCopyMessage("URLをコピーしました！");
       setTimeout(() => setCopyMessage(""), 2000);
@@ -148,10 +153,18 @@ export function TimetableHeader({
           </Popover>
           {!isShareMode ? (
             <>
-              <Button onClick={onScrollToNow} variant="default" className="shadow-sm hover:shadow-md transition-shadow">
+              <Button
+                onClick={onScrollToNow}
+                variant="default"
+                className="shadow-sm hover:shadow-md transition-shadow"
+              >
                 現在時刻に戻る
               </Button>
-              <Button onClick={onStartShare} variant="outline" className="shadow-sm hover:shadow-md transition-shadow">
+              <Button
+                onClick={onStartShare}
+                variant="outline"
+                className="shadow-sm hover:shadow-md transition-shadow"
+              >
                 <Share2 className="mr-2 h-4 w-4" />
                 この時刻を共有
               </Button>
@@ -159,7 +172,11 @@ export function TimetableHeader({
           ) : (
             <>
               <div className="relative">
-                <Button onClick={handleCopyUrl} variant="default" className="shadow-sm hover:shadow-md transition-shadow">
+                <Button
+                  onClick={handleCopyUrl}
+                  variant="default"
+                  className="shadow-sm hover:shadow-md transition-shadow"
+                >
                   <Share2 className="mr-2 h-4 w-4" />
                   URLをコピー
                 </Button>
@@ -169,7 +186,11 @@ export function TimetableHeader({
                   </div>
                 )}
               </div>
-              <Button onClick={onCancelShare} variant="outline" className="shadow-sm hover:shadow-md transition-shadow">
+              <Button
+                onClick={onCancelShare}
+                variant="outline"
+                className="shadow-sm hover:shadow-md transition-shadow"
+              >
                 キャンセル
               </Button>
             </>

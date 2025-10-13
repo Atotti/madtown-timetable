@@ -45,7 +45,10 @@ export function useShareMode({
   };
 
   // 共有URLをコピー
-  const handleCopyShareUrl = async (selectedTags: string[] = []): Promise<boolean> => {
+  const handleCopyShareUrl = async (
+    selectedTags: string[] = [],
+    pinnedChannelIds: Set<string> = new Set(),
+  ): Promise<boolean> => {
     if (!shareTime) return false;
 
     const url = new URL(window.location.href);
@@ -56,6 +59,13 @@ export function useShareMode({
       url.searchParams.set("tags", selectedTags.join(","));
     } else {
       url.searchParams.delete("tags");
+    }
+
+    // ピン留めされているチャンネルがある場合はURLに追加
+    if (pinnedChannelIds.size > 0) {
+      url.searchParams.set("pins", Array.from(pinnedChannelIds).join(","));
+    } else {
+      url.searchParams.delete("pins");
     }
 
     try {

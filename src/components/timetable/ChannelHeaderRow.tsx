@@ -8,6 +8,8 @@ type ChannelHeaderRowProps = {
   onToggleTag: (tag: string) => void;
   headerScrollRef: RefObject<HTMLDivElement | null>;
   onScroll: () => void;
+  pinnedChannelIds: Set<string>;
+  onTogglePin: (channelId: string) => void;
 };
 
 /**
@@ -20,6 +22,8 @@ export function ChannelHeaderRow({
   onToggleTag,
   headerScrollRef,
   onScroll,
+  pinnedChannelIds,
+  onTogglePin,
 }: ChannelHeaderRowProps) {
   return (
     <div
@@ -48,6 +52,8 @@ export function ChannelHeaderRow({
               channel={channel}
               selectedTags={selectedTags}
               onToggleTag={onToggleTag}
+              isPinned={pinnedChannelIds.has(channel.id)}
+              onTogglePin={onTogglePin}
             />
           ))}
         </div>

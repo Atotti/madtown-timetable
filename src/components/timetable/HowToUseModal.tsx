@@ -58,7 +58,7 @@ export function HowToUseModal({ open, onOpenChange }: HowToUseModalProps) {
             </h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
-                タイムテーブルの特定の時刻をURLで共有できます。
+                タイムテーブルの特定の時刻をURLで共有できます。選択したタグやピン留めも共有URLに含まれます。
               </p>
               <ol className="list-decimal list-inside space-y-1 ml-4">
                 <li>
@@ -100,11 +100,33 @@ export function HowToUseModal({ open, onOpenChange }: HowToUseModalProps) {
                   チャンネルヘッダーの<strong>タグをクリック</strong>
                   するとフィルタリング
                 </li>
-                <li>複数のタグを選択すると、いずれかに該当するチャンネルを表示</li>
+                <li>
+                  複数のタグを選択すると、いずれかに該当するチャンネルを表示
+                </li>
                 <li>
                   ヘッダー上部の<strong>「×」ボタン</strong>
                   でフィルターを解除
                 </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* ピン留め機能 */}
+          <section>
+            <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+              <span className="text-2xl">📌</span>
+              ピン留め機能
+            </h3>
+            <div className="space-y-2 text-sm text-gray-700">
+              <p>お気に入りのチャンネルを固定して、常に左側に表示できます。</p>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>
+                  チャンネルヘッダー右上の
+                  <strong className="text-yellow-600">黄色いピンボタン</strong>
+                  をクリック
+                </li>
+                <li>ピン留めされたチャンネルは常に最左側に表示されます</li>
+                <li>もう一度クリックでピン留めを解除できます</li>
               </ul>
             </div>
           </section>
@@ -150,7 +172,9 @@ export function HowToUseModal({ open, onOpenChange }: HowToUseModalProps) {
                 <div className="flex items-center gap-2">
                   <div className="w-12 h-0.5 bg-blue-500"></div>
                   <span>
-                    <strong className="text-blue-600">青：共有された時刻</strong>
+                    <strong className="text-blue-600">
+                      青：共有された時刻
+                    </strong>
                   </span>
                 </div>
                 <div className="flex items-center gap-2">

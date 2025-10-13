@@ -2,20 +2,39 @@ import { useMemo, useState } from "react";
 import type { Channel } from "@/types";
 import { getBaseTag } from "@/lib/tag-utils";
 
-export function useTagFilter(sortedChannels: Channel[], initialTags: string[] = []) {
+export function useTagFilter(
+  sortedChannels: Channel[],
+  initialTags: string[] = [],
+  initialPins: string[] = [],
+) {
   const [selectedTags, setSelectedTags] = useState<string[]>(initialTags);
+  const [pinnedChannelIds, setPinnedChannelIds] = useState<Set<string>>(
+    new Set(initialPins),
+  );
 
-  // チャンネルをソート（該当チャンネルを左に寄せる）
+  // チャンネルをソート（ピン留め優先 → タグ該当 → その他）
   const filteredChannels = useMemo(() => {
-    if (selectedTags.length === 0) {
-      return sortedChannels;
-    }
-
-    // チャンネルを2つのグループに分ける
-    const matched: Channel[] = [];
-    const unmatched: Channel[] = [];
+    // チャンネルを3つのグループに分ける
+    const pinned: Channel[] = [];
+    const matchedUnpinned: Channel[] = [];
+    const unmatchedUnpinned: Channel[] = [];
 
     for (const channel of sortedChannels) {
+      // ピン留めされているか
+      const isPinned = pinnedChannelIds.has(channel.id);
+
+      // ピン留めチャンネルは最優先
+      if (isPinned) {
+        pinned.push(channel);
+        continue;
+      }
+
+      // タグフィルタが有効でない場合は、ピン留め以外をそのまま表示
+      if (selectedTags.length === 0) {
+        matchedUnpinned.push(channel);
+        continue;
+      }
+
       // チャンネルのすべてのタグを取得
       const channelTags: string[] = [];
       if (channel.job) {
@@ -38,15 +57,15 @@ export function useTagFilter(sortedChannels: Channel[], initialTags: string[] = 
       });
 
       if (isMatched) {
-        matched.push(channel);
+        matchedUnpinned.push(channel);
       } else {
-        unmatched.push(channel);
+        unmatchedUnpinned.push(channel);
       }
     }
 
-    // 該当するチャンネルを前に、該当しないチャンネルを後ろに配置
-    return [...matched, ...unmatched];
-  }, [sortedChannels, selectedTags]);
+    // ピン留め → タグ該当（非ピン） → タグ非該当（非ピン）の順
+    return [...pinned, ...matchedUnpinned, ...unmatchedUnpinned];
+  }, [sortedChannels, selectedTags, pinnedChannelIds]);
 
   // タグの追加・削除
   const toggleTag = (tag: string) => {
@@ -63,10 +82,25 @@ export function useTagFilter(sortedChannels: Channel[], initialTags: string[] = 
     setSelectedTags((prev) => prev.filter((t) => t !== tag));
   };
 
+  // ピン留めのトグル
+  const togglePin = (channelId: string) => {
+    setPinnedChannelIds((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(channelId)) {
+        newSet.delete(channelId);
+      } else {
+        newSet.add(channelId);
+      }
+      return newSet;
+    });
+  };
+
   return {
     selectedTags,
     filteredChannels,
     toggleTag,
     removeTag,
+    pinnedChannelIds,
+    togglePin,
   };
 }
