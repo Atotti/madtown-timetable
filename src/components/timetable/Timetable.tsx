@@ -15,6 +15,7 @@ import { addHours } from "date-fns";
 import { GRID_CONFIG } from "@/lib/constants";
 import { useTagFilter } from "@/hooks/useTagFilter";
 import { useDateNavigation } from "@/hooks/useDateNavigation";
+import { calculateChannelDuration } from "@/lib/stream-utils";
 
 type TimetableProps = {
   channels: Channel[];
@@ -62,12 +63,10 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
 
   // チャンネルをソート（配信時間順）
   const sortedChannels = useMemo(() => {
-    // 各チャンネルの配信時間を計算
+    // 各チャンネルの実配信時間を計算（重複を排除）
     const channelDurations = new Map<string, number>();
     channels.forEach((channel) => {
-      const duration = streams
-        .filter((s) => s.channelId === channel.id)
-        .reduce((total, stream) => total + (stream.duration || 0), 0);
+      const duration = calculateChannelDuration(channel.id, streams);
       channelDurations.set(channel.id, duration);
     });
 
