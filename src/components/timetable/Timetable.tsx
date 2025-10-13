@@ -4,6 +4,7 @@ import { useMemo, useState, useRef, useEffect } from 'react';
 import type { Channel, Stream, Config } from '@/types';
 import { TimeGrid } from './TimeGrid';
 import { parseTime, getDayStart, getHoursDiff, formatTime, getDateFromScrollPosition } from '@/lib/time-utils';
+import { addHours } from 'date-fns';
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -22,6 +23,16 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   const timeGridScrollRef = useRef<HTMLDivElement>(null);
   const timeLabelScrollRef = useRef<HTMLDivElement>(null);
 
+  // 現在時刻（1分ごとに更新）
+  const [currentTime, setCurrentTime] = useState<Date>(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 60000); // 1分ごと
+    return () => clearInterval(timer);
+  }, []);
+
   // イベント期間
   const eventStartDate = useMemo(() => parseTime(config.event.startDate), [config.event.startDate]);
   const eventEndDate = useMemo(() => parseTime(config.event.endDate), [config.event.endDate]);
@@ -31,10 +42,16 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     return getDayStart(eventStartDate);
   }, [eventStartDate]);
 
-  // 表示時間範囲（イベント全期間）
+  // 表示終了時刻（現在時刻+3時間 または イベント終了時刻の早い方）
+  const displayEndTime = useMemo(() => {
+    const nowPlus3Hours = addHours(currentTime, 3);
+    return nowPlus3Hours < eventEndDate ? nowPlus3Hours : eventEndDate;
+  }, [currentTime, eventEndDate]);
+
+  // 表示時間範囲（現在時刻+3時間まで）
   const hourCount = useMemo(() => {
-    return getHoursDiff(gridStartTime, eventEndDate) + 24; // 終了日の23:59まで表示
-  }, [gridStartTime, eventEndDate]);
+    return getHoursDiff(gridStartTime, displayEndTime) + 1;
+  }, [gridStartTime, displayEndTime]);
 
   // 日付選択
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
