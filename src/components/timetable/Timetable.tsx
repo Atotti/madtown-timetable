@@ -61,17 +61,33 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     return now < eventEndDate ? now : eventEndDate;
   }, [eventEndDate]);
 
-  // チャンネルをソート（配信時間順）
+  // チャンネルをソート（LIVE優先、次に配信時間順）
   const sortedChannels = useMemo(() => {
-    // 各チャンネルの実配信時間を計算（重複を排除）
+    // 各チャンネルの実配信時間とLIVE状態を計算
     const channelDurations = new Map<string, number>();
+    const channelLiveStatus = new Map<string, boolean>();
+
     channels.forEach((channel) => {
       const duration = calculateChannelDuration(channel.id, streams);
       channelDurations.set(channel.id, duration);
+
+      // LIVE状態を計算
+      const hasLiveStream = streams.some(
+        (stream) => stream.channelId === channel.id && stream.isLive,
+      );
+      channelLiveStatus.set(channel.id, hasLiveStream);
     });
 
-    // 配信時間の長い順にソート
+    // LIVE優先、次に配信時間の長い順にソート
     return [...channels].sort((a, b) => {
+      const aIsLive = channelLiveStatus.get(a.id) || false;
+      const bIsLive = channelLiveStatus.get(b.id) || false;
+
+      // LIVE中のチャンネルを優先
+      if (aIsLive && !bIsLive) return -1;
+      if (!aIsLive && bIsLive) return 1;
+
+      // 同じLIVE状態なら配信時間順
       const aDuration = channelDurations.get(a.id) || 0;
       const bDuration = channelDurations.get(b.id) || 0;
       return bDuration - aDuration;

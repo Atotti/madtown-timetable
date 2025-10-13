@@ -75,7 +75,7 @@ export function TimetableHeader({
             </div>
           )}
           <div className="text-sm text-gray-700 bg-gray-100 px-3 py-2 rounded-md border border-gray-200">
-            <span className="font-semibold">表示中:</span>{" "}
+            {" "}
             {formatTime(currentViewDate, "MM月dd日 (E)")}
           </div>
           <Popover>
