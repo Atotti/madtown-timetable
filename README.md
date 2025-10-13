@@ -11,6 +11,7 @@ VCRGTA イベントの配信スケジュールを表示するタイムテーブ�
 - **@tanstack/react-virtual** (仮想スクロール)
 - **date-fns** (日時処理)
 - **YouTube Data API v3**
+- **Twitch Helix API**
 
 ## セットアップ
 
@@ -25,14 +26,21 @@ npm install
 `.env`ファイルを作成（`.env.example`を参考）：
 
 ```bash
-# YouTube Data API v3
+# YouTube Data API v3 キー
 YOUTUBE_API_KEY=your_api_key_here
 
-# Test limit for fetch-streams script (default: 5)
-TEST_LIMIT=50
+# Twitch API 認証情報
+TWITCH_CLIENT_ID=your_client_id_here
+TWITCH_CLIENT_SECRET=your_client_secret_here
+
+# テストモード（デフォルト: 5チャンネル）
+TEST_LIMIT=5
 ```
 
-YouTube API キーは [Google Cloud Console](https://console.cloud.google.com/) で取得できます。
+**APIキーの取得方法：**
+
+- YouTube: [Google Cloud Console](https://console.developers.google.com/) で API キーを作成
+- Twitch: [Twitch Developer Console](https://dev.twitch.tv/console/apps) でアプリを作成し、Client ID と Secret を取得
 
 ## 開発
 
@@ -46,18 +54,28 @@ npm run dev
 
 ### データ取得スクリプト
 
+配信データを取得するには、以下のスクリプトを順番に実行します：
+
 ```bash
-# チャンネルリストを取得（Wiki から）
+# 1. チャンネルリストを取得（raw.html から YouTube & Twitch の情報を抽出）
 npm run scrape:channels
 
-# YouTube @handle を解決
+# 2. YouTube @handle 形式のチャンネルIDを実際のIDに変換
 npm run resolve:handles
 
-# 配信データを取得（YouTube API から）
+# 3. Twitch ユーザー名からユーザーIDを取得
+npm run resolve:twitch-ids
+
+# 4. 配信データを取得（YouTube & Twitch の両方）
 npm run fetch:streams
 ```
 
 取得したデータは `data/` ディレクトリに保存されます。
+
+**注意：**
+
+- `fetch:streams` は YouTube API の quota を消費します
+- デフォルトではテストモードで最初の5チャンネルのみ処理されます（`.env` の `TEST_LIMIT` で変更可能）
 
 ## ビルド
 

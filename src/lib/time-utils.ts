@@ -6,8 +6,8 @@ import {
   startOfDay,
   addHours,
   addMinutes,
-  isWithinInterval
-} from 'date-fns';
+  isWithinInterval,
+} from "date-fns";
 
 /**
  * ISO 8601文字列をDateオブジェクトに変換
@@ -33,7 +33,7 @@ export function getHoursDiff(start: Date, end: Date): number {
 /**
  * 時刻をフォーマット
  */
-export function formatTime(date: Date, formatString: string = 'HH:mm'): string {
+export function formatTime(date: Date, formatString: string = "HH:mm"): string {
   return format(date, formatString);
 }
 
@@ -62,7 +62,7 @@ export function isStreamInPeriod(
   streamStart: string,
   streamEnd: string | undefined,
   periodStart: Date,
-  periodEnd: Date
+  periodEnd: Date,
 ): boolean {
   const start = parseISO(streamStart);
   const end = streamEnd ? parseISO(streamEnd) : new Date();
@@ -84,7 +84,7 @@ export function isStreamInPeriod(
 export function getDateFromScrollPosition(
   gridStartTime: Date,
   scrollTop: number,
-  hourHeight: number = 60
+  hourHeight: number = 60,
 ): Date {
   const minutes = (scrollTop / hourHeight) * 60;
   return addMinutes(gridStartTime, Math.floor(minutes));

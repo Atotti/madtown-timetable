@@ -1,6 +1,6 @@
-import type { Stream } from '@/types';
-import { formatTime, parseTime } from '@/lib/time-utils';
-import { CARD_DISPLAY_THRESHOLDS } from '@/lib/constants';
+import type { Stream } from "@/types";
+import { formatTime, parseTime } from "@/lib/time-utils";
+import { CARD_DISPLAY_THRESHOLDS } from "@/lib/constants";
 
 type StreamCardProps = {
   stream: Stream;
@@ -13,11 +13,23 @@ export function StreamCard({ stream, style }: StreamCardProps) {
   const showTime = height >= CARD_DISPLAY_THRESHOLDS.SHOW_TIME;
 
   const handleClick = () => {
-    window.open(`https://www.youtube.com/watch?v=${stream.videoId}`, '_blank');
+    const url =
+      stream.platform === "youtube"
+        ? `https://www.youtube.com/watch?v=${stream.videoId}`
+        : `https://www.twitch.tv/videos/${stream.videoId}`;
+    window.open(url, "_blank");
   };
 
   const startTime = formatTime(parseTime(stream.startTime));
-  const endTime = stream.endTime ? formatTime(parseTime(stream.endTime)) : '配信中';
+  const endTime = stream.endTime
+    ? formatTime(parseTime(stream.endTime))
+    : "配信中";
+
+  // プラットフォームに応じた背景色
+  const bgColor =
+    stream.platform === "youtube"
+      ? "bg-blue-500 hover:bg-blue-600"
+      : "bg-purple-600 hover:bg-purple-700";
 
   return (
     <div
@@ -25,7 +37,9 @@ export function StreamCard({ stream, style }: StreamCardProps) {
       style={style}
       onClick={handleClick}
     >
-      <div className="h-full bg-blue-500 hover:bg-blue-600 text-white rounded shadow-md overflow-hidden transition-colors">
+      <div
+        className={`h-full ${bgColor} text-white rounded shadow-md overflow-hidden transition-colors`}
+      >
         <div className="h-full p-2 flex flex-col">
           {showThumbnail && (
             // eslint-disable-next-line @next/next/no-img-element
@@ -37,9 +51,7 @@ export function StreamCard({ stream, style }: StreamCardProps) {
             />
           )}
           <div className="flex-1 overflow-hidden">
-            <p className="text-xs font-semibold line-clamp-2">
-              {stream.title}
-            </p>
+            <p className="text-xs font-semibold line-clamp-2">{stream.title}</p>
           </div>
           {showTime && (
             <p className="text-xs mt-1 opacity-90">

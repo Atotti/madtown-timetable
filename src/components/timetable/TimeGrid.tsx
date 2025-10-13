@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { useRef, useMemo, useState, useEffect } from 'react';
-import { useVirtualizer } from '@tanstack/react-virtual';
-import { differenceInMinutes, isWithinInterval } from 'date-fns';
-import type { Channel, Stream } from '@/types';
-import { ChannelColumn } from './ChannelColumn';
-import { TimeLabel } from './TimeLabel';
-import { generateHourLabels } from '@/lib/time-utils';
-import { calculateGridSize } from '@/lib/grid-calculator';
-import { GRID_CONFIG } from '@/lib/constants';
+import { useRef, useMemo, useState, useEffect } from "react";
+import { useVirtualizer } from "@tanstack/react-virtual";
+import { differenceInMinutes, isWithinInterval } from "date-fns";
+import type { Channel, Stream } from "@/types";
+import { ChannelColumn } from "./ChannelColumn";
+import { TimeLabel } from "./TimeLabel";
+import { generateHourLabels } from "@/lib/time-utils";
+import { calculateGridSize } from "@/lib/grid-calculator";
+import { GRID_CONFIG } from "@/lib/constants";
 
 type TimeGridProps = {
   channels: Channel[];
@@ -49,7 +49,7 @@ export function TimeGrid({
   // 時刻ラベル生成
   const timeLabels = useMemo(
     () => generateHourLabels(gridStartTime, hourCount),
-    [gridStartTime, hourCount]
+    [gridStartTime, hourCount],
   );
 
   // チャンネルごとの配信リストを作成
@@ -121,8 +121,8 @@ export function TimeGrid({
         style={{
           width: `${GRID_CONFIG.TIME_LABEL_WIDTH}px`,
           flexShrink: 0,
-          scrollbarWidth: 'none',
-          msOverflowStyle: 'none',
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
         }}
       >
         <div style={{ height: `${gridSize.height}px` }}>
@@ -136,7 +136,7 @@ export function TimeGrid({
               className="absolute right-0 h-0.5 bg-red-500 z-50 pointer-events-none"
               style={{
                 top: `${currentTimePosition}px`,
-                width: '100%',
+                width: "100%",
               }}
             >
               <span className="absolute right-1 -top-2 bg-red-500 text-white text-xs px-1 rounded whitespace-nowrap">
@@ -193,10 +193,10 @@ export function TimeGrid({
                 streams={channelStreams}
                 gridStartTime={gridStartTime}
                 style={{
-                  position: 'absolute',
+                  position: "absolute",
                   top: 0,
                   left: `${virtualColumn.start}px`,
-                  height: '100%',
+                  height: "100%",
                 }}
               />
             );

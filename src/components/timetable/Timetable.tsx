@@ -1,15 +1,25 @@
-'use client';
+"use client";
 
-import { useMemo, useState, useRef, useEffect } from 'react';
-import type { Channel, Stream, Config } from '@/types';
-import { TimeGrid } from './TimeGrid';
-import { parseTime, getDayStart, getHoursDiff, formatTime, getDateFromScrollPosition } from '@/lib/time-utils';
-import { addHours } from 'date-fns';
-import { Button } from '@/components/ui/button';
-import { Calendar } from '@/components/ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { CalendarIcon } from 'lucide-react';
-import { GRID_CONFIG } from '@/lib/constants';
+import { useMemo, useState, useRef, useEffect } from "react";
+import type { Channel, Stream, Config } from "@/types";
+import { TimeGrid } from "./TimeGrid";
+import {
+  parseTime,
+  getDayStart,
+  getHoursDiff,
+  formatTime,
+  getDateFromScrollPosition,
+} from "@/lib/time-utils";
+import { addHours } from "date-fns";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { CalendarIcon } from "lucide-react";
+import { GRID_CONFIG } from "@/lib/constants";
 
 type TimetableProps = {
   channels: Channel[];
@@ -34,8 +44,14 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   }, []);
 
   // イベント期間
-  const eventStartDate = useMemo(() => parseTime(config.event.startDate), [config.event.startDate]);
-  const eventEndDate = useMemo(() => parseTime(config.event.endDate), [config.event.endDate]);
+  const eventStartDate = useMemo(
+    () => parseTime(config.event.startDate),
+    [config.event.startDate],
+  );
+  const eventEndDate = useMemo(
+    () => parseTime(config.event.endDate),
+    [config.event.endDate],
+  );
 
   // 表示開始時刻（企画開始日の0時）
   const gridStartTime = useMemo(() => {
@@ -121,7 +137,11 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     }
 
     // スクロール位置から表示中の日時を計算
-    const viewDate = getDateFromScrollPosition(gridStartTime, scrollTop, GRID_CONFIG.HOUR_HEIGHT);
+    const viewDate = getDateFromScrollPosition(
+      gridStartTime,
+      scrollTop,
+      GRID_CONFIG.HOUR_HEIGHT,
+    );
     setCurrentViewDate(viewDate);
   };
 
@@ -140,14 +160,17 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
           </div>
           <div className="flex items-center gap-3">
             <div className="text-sm text-gray-700 bg-gray-100 px-3 py-2 rounded-md border border-gray-200">
-              <span className="font-semibold">表示中:</span>{' '}
-              {formatTime(currentViewDate, 'MM月dd日 (E)')}
+              <span className="font-semibold">表示中:</span>{" "}
+              {formatTime(currentViewDate, "MM月dd日 (E)")}
             </div>
             <Popover>
               <PopoverTrigger asChild>
-                <Button variant="outline" className="w-[200px] justify-start text-left font-normal">
+                <Button
+                  variant="outline"
+                  className="w-[200px] justify-start text-left font-normal"
+                >
                   <CalendarIcon className="mr-2 h-4 w-4" />
-                  {formatTime(selectedDate, 'yyyy/MM/dd')}
+                  {formatTime(selectedDate, "yyyy/MM/dd")}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="w-auto p-0" align="end">
@@ -169,10 +192,13 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
       </div>
 
       {/* チャンネルヘッダー */}
-      <div className="bg-gray-50 border-b border-gray-300 flex" style={{ height: '60px' }}>
+      <div
+        className="bg-gray-50 border-b border-gray-300 flex"
+        style={{ height: "60px" }}
+      >
         <div
           className="flex items-center justify-center border-r border-gray-300 bg-gray-100"
-          style={{ width: '60px', flexShrink: 0 }}
+          style={{ width: "60px", flexShrink: 0 }}
         >
           <span className="text-xs font-semibold text-gray-600">時刻</span>
         </div>
@@ -180,14 +206,14 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
           ref={headerScrollRef}
           className="flex-1 overflow-x-auto overflow-y-hidden flex"
           onScroll={handleHeaderScroll}
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           <div className="flex">
             {sortedChannels.map((channel) => (
               <div
                 key={channel.id}
                 className="flex items-center justify-center border-r border-gray-200"
-                style={{ width: '200px', minWidth: '200px' }}
+                style={{ width: "200px", minWidth: "200px" }}
               >
                 <div className="text-center px-2">
                   <p className="text-sm font-semibold text-gray-800 truncate">

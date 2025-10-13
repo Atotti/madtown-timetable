@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "VCRGTA タイムテーブル",
-  description: "VCRGTA企画の配信タイムテーブル - 全配信者の配信スケジュールを時間軸で一覧表示",
+  description:
+    "VCRGTA企画の配信タイムテーブル - 全配信者の配信スケジュールを時間軸で一覧表示",
 };
 
 export default function RootLayout({

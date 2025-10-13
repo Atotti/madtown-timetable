@@ -22,6 +22,12 @@
     │             │      │  (Cron)   │      │             │
     └─────────────┘      └───────────┘      └─────────────┘
            │                    │                    │
+           │                    │             ┌──────▼──────┐
+           │                    │             │   Twitch    │
+           │                    │             │ Helix API   │
+           │                    │             │             │
+           │                    │             └─────────────┘
+           │                    │                    │
            │                    └────────────────────┘
            │                         (定期データ更新)
            ▼
@@ -34,28 +40,43 @@
 ### 1.2 データフロー
 
 #### データ更新フロー（管理者側）
+
 ```
 1. GitHub Actions (Cron: 6時間ごと)
    ↓
 2. scripts/scrape-channels.ts (週1回)
    ├→ Wiki スクレイピング
-   ├→ チャンネルリスト抽出
+   ├→ チャンネルリスト抽出（YouTube、Twitch）
    └→ data/channels.json 生成
    ↓
-3. scripts/fetch-streams.ts (6時間ごと)
+3. scripts/resolve-handles.ts (初回・必要時)
+   ├→ YouTube @handle → Channel ID 変換
+   └→ data/channels.json 更新
+   ↓
+4. scripts/resolve-twitch-ids.ts (初回・必要時)
+   ├→ Twitch username → User ID 変換
+   └→ data/channels.json 更新
+   ↓
+5. scripts/fetch-streams.ts (6時間ごと)
    ├→ channels.json 読み込み
    ├→ YouTube API 呼び出し
-   │  ├→ search.list (タイトルフィルタ)
+   │  ├→ channels.list (uploadsプレイリストID取得)
+   │  ├→ playlistItems.list (動画リスト取得)
    │  └→ videos.list (詳細取得)
-   ├→ liveStreamingDetails フィルタリング
+   ├→ Twitch API 呼び出し
+   │  ├→ OAuth2 認証
+   │  └→ GET /helix/videos (VOD取得)
+   ├→ liveStreamingDetails フィルタリング（YouTube）
+   ├→ タイトル・期間フィルタ（両プラットフォーム）
    └→ data/streams.json 生成
    ↓
-4. Git Commit & Push
+6. Git Commit & Push
    ↓
-5. Vercel Auto Deploy
+7. Vercel Auto Deploy
 ```
 
 #### データ表示フロー（ユーザー側）
+
 ```
 1. ユーザーがサイトにアクセス
    ↓
@@ -77,19 +98,20 @@
 
 ### 1.3 技術スタック詳細
 
-| カテゴリ | 技術 | バージョン | 用途 |
-|---------|------|-----------|------|
-| フレームワーク | Next.js | 15.x | React SSG/SSR |
-| 言語 | TypeScript | 5.x | 型安全性 |
-| UI | React | 19.x | コンポーネント |
-| スタイリング | Tailwind CSS | 3.x | CSSフレームワーク |
-| 仮想スクロール | @tanstack/react-virtual | 3.x | パフォーマンス最適化 |
-| 日時処理 | date-fns | 3.x | タイムゾーン・フォーマット |
-| スクレイピング | cheerio | 1.x | HTML解析 |
-| HTTP | axios | 1.x | API呼び出し |
-| YouTube API | @googleapis/youtube | 最新 | 公式クライアント |
-| ホスティング | Vercel | - | デプロイ |
-| CI/CD | GitHub Actions | - | 自動化 |
+| カテゴリ       | 技術                    | バージョン | 用途                         |
+| -------------- | ----------------------- | ---------- | ---------------------------- |
+| フレームワーク | Next.js                 | 15.x       | React SSG/SSR                |
+| 言語           | TypeScript              | 5.x        | 型安全性                     |
+| UI             | React                   | 19.x       | コンポーネント               |
+| スタイリング   | Tailwind CSS            | 4.x        | CSSフレームワーク            |
+| 仮想スクロール | @tanstack/react-virtual | 3.x        | パフォーマンス最適化         |
+| 日時処理       | date-fns                | 3.x        | タイムゾーン・フォーマット   |
+| スクレイピング | cheerio                 | 1.x        | HTML解析                     |
+| HTTP           | axios                   | 1.x        | API呼び出し（主にTwitch）    |
+| YouTube API    | googleapis              | 最新       | 公式クライアント             |
+| Twitch API     | Twitch Helix API        | -          | OAuth2 + REST API            |
+| ホスティング   | Vercel                  | -          | デプロイ                     |
+| CI/CD          | GitHub Actions          | -          | 自動化                       |
 
 ## 2. ディレクトリ構造
 
@@ -109,9 +131,13 @@ vcr-timetable/
 │   ├── lib/
 │   │   ├── wiki-scraper.ts         # Wikiスクレイピングロジック
 │   │   ├── youtube-client.ts       # YouTube API クライアント
+│   │   ├── twitch-client.ts        # Twitch API クライアント
+│   │   ├── file-utils.ts           # ファイル読み書きユーティリティ
 │   │   └── data-validator.ts       # データバリデーション
 │   ├── scrape-channels.ts          # チャンネルリスト取得
-│   └── fetch-streams.ts            # 配信データ取得
+│   ├── resolve-handles.ts          # YouTube @handle → Channel ID 変換
+│   ├── resolve-twitch-ids.ts       # Twitch username → User ID 変換
+│   └── fetch-streams.ts            # 配信データ取得（YouTube + Twitch）
 │
 ├── src/
 │   ├── app/                         # Next.js App Router
@@ -183,19 +209,22 @@ app/page.tsx (トップページ)
 #### 3.2.1 Timetable (タイムテーブルコンテナ)
 
 **責務**:
+
 - データ読み込み
 - フィルタリング・検索ロジック
 - 状態管理（表示範囲、選択中のフィルタ等）
 
 **State**:
+
 ```typescript
 type TimetableState = {
-  channels: Channel[];              // 全チャンネル
-  streams: Stream[];                // 全配信
-  filteredChannels: Channel[];      // フィルタ後のチャンネル
-  searchQuery: string;              // 検索クエリ
-  selectedJobs: string[];           // 選択中の職業フィルタ
-  timeRange: {                      // 表示時間範囲
+  channels: Channel[]; // 全チャンネル
+  streams: Stream[]; // 全配信
+  filteredChannels: Channel[]; // フィルタ後のチャンネル
+  searchQuery: string; // 検索クエリ
+  selectedJobs: string[]; // 選択中の職業フィルタ
+  timeRange: {
+    // 表示時間範囲
     start: Date;
     end: Date;
   };
@@ -203,6 +232,7 @@ type TimetableState = {
 ```
 
 **Props**:
+
 ```typescript
 type TimetableProps = {
   initialData: {
@@ -216,34 +246,36 @@ type TimetableProps = {
 #### 3.2.2 TimeGrid (時間グリッド)
 
 **責務**:
+
 - グリッドレイアウト計算
 - スクロール位置管理
 - 時刻ラベルの固定表示
 
 **レイアウト計算**:
+
 ```typescript
 // グリッドサイズ定数
 const GRID_CONFIG = {
-  HOUR_HEIGHT: 60,           // 1時間の高さ（px）
-  CHANNEL_WIDTH: 200,        // 1チャンネルの幅（px）
-  TIME_LABEL_WIDTH: 60,      // 時刻ラベルの幅（px）
-  HEADER_HEIGHT: 60,         // ヘッダーの高さ（px）
+  HOUR_HEIGHT: 60, // 1時間の高さ（px）
+  CHANNEL_WIDTH: 200, // 1チャンネルの幅（px）
+  TIME_LABEL_WIDTH: 60, // 時刻ラベルの幅（px）
+  HEADER_HEIGHT: 60, // ヘッダーの高さ（px）
 };
 
 // 配信カードの位置計算
-function calculateCardPosition(stream: Stream, startTime: Date): {
+function calculateCardPosition(
+  stream: Stream,
+  startTime: Date,
+): {
   top: number;
   height: number;
 } {
   const startOffset = differenceInMinutes(
     parseISO(stream.startTime),
-    startTime
+    startTime,
   );
   const duration = stream.endTime
-    ? differenceInMinutes(
-        parseISO(stream.endTime),
-        parseISO(stream.startTime)
-      )
+    ? differenceInMinutes(parseISO(stream.endTime), parseISO(stream.startTime))
     : 60; // デフォルト1時間
 
   return {
@@ -256,11 +288,13 @@ function calculateCardPosition(stream: Stream, startTime: Date): {
 #### 3.2.3 VirtualScroller (仮想スクロール)
 
 **責務**:
+
 - 横スクロールの仮想化
 - 表示範囲内のチャンネルのみレンダリング
 - パフォーマンス最適化
 
 **実装方針**:
+
 ```typescript
 import { useVirtualizer } from '@tanstack/react-virtual';
 
@@ -305,15 +339,17 @@ function VirtualScroller({ channels }: { channels: Channel[] }) {
 #### 3.2.4 StreamCard (配信カード)
 
 **責務**:
+
 - 配信情報の表示
 - クリックイベント処理（別タブでYouTube開く）
 - ライブ配信バッジ表示
 
 **UI設計**:
+
 ```typescript
 type StreamCardProps = {
   stream: Stream;
-  style: CSSProperties;  // 位置・サイズ（親から計算）
+  style: CSSProperties; // 位置・サイズ（親から計算）
 };
 
 // カードの最小高さ
@@ -326,10 +362,25 @@ const MIN_CARD_HEIGHT = 40; // px
 ```
 
 **クリックイベント**:
+
 ```typescript
-function handleClick(videoId: string) {
-  window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+function handleClick(stream: Stream) {
+  const url =
+    stream.platform === "youtube"
+      ? `https://www.youtube.com/watch?v=${stream.videoId}`
+      : `https://www.twitch.tv/videos/${stream.videoId}`;
+  window.open(url, "_blank");
 }
+```
+
+**プラットフォーム別スタイリング**:
+
+```typescript
+// プラットフォームに応じた背景色
+const bgColor =
+  stream.platform === "youtube"
+    ? "bg-blue-500 hover:bg-blue-600"
+    : "bg-purple-600 hover:bg-purple-700";
 ```
 
 ### 3.3 状態管理設計
@@ -338,15 +389,16 @@ function handleClick(videoId: string) {
 
 **状態の分類**:
 
-| 状態 | 管理場所 | 用途 |
-|-----|---------|-----|
-| channels, streams | `Timetable` state | データ |
-| searchQuery | `Timetable` state | 検索 |
-| selectedJobs | `Timetable` state | フィルタ |
-| scrollPosition | `TimeGrid` ref | スクロール |
-| virtualItems | `useVirtualizer` | 仮想化 |
+| 状態              | 管理場所          | 用途       |
+| ----------------- | ----------------- | ---------- |
+| channels, streams | `Timetable` state | データ     |
+| searchQuery       | `Timetable` state | 検索       |
+| selectedJobs      | `Timetable` state | フィルタ   |
+| scrollPosition    | `TimeGrid` ref    | スクロール |
+| virtualItems      | `useVirtualizer`  | 仮想化     |
 
 **派生状態**:
+
 ```typescript
 // フィルタリング
 const filteredChannels = useMemo(() => {
@@ -355,7 +407,7 @@ const filteredChannels = useMemo(() => {
       .toLowerCase()
       .includes(searchQuery.toLowerCase());
     const matchesJob =
-      selectedJobs.length === 0 || selectedJobs.includes(channel.job || '');
+      selectedJobs.length === 0 || selectedJobs.includes(channel.job || "");
     return matchesSearch && matchesJob;
   });
 }, [channels, searchQuery, selectedJobs]);
@@ -375,6 +427,7 @@ const streamsByChannel = useMemo(() => {
 ### 3.4 レンダリング戦略
 
 **SSG（Static Site Generation）**:
+
 - ビルド時にJSONデータを読み込み
 - 完全な静的HTMLを生成
 - CDN配信で高速化
@@ -396,6 +449,7 @@ export default async function Home() {
 ```
 
 **クライアント側レンダリング**:
+
 - タイムテーブルコンポーネントは`"use client"`
 - インタラクション（スクロール、フィルタ）を処理
 
@@ -427,6 +481,7 @@ export default async function Home() {
 #### 4.1.2 座標計算
 
 **時間軸（Y座標）**:
+
 ```typescript
 // 時刻ラベルの位置
 function getTimeLabelPosition(hour: number): number {
@@ -436,7 +491,7 @@ function getTimeLabelPosition(hour: number): number {
 // 配信カードのY座標
 function getStreamYPosition(
   streamStartTime: Date,
-  gridStartTime: Date
+  gridStartTime: Date,
 ): number {
   const minutesFromStart = differenceInMinutes(streamStartTime, gridStartTime);
   return (minutesFromStart / 60) * GRID_CONFIG.HOUR_HEIGHT;
@@ -444,11 +499,13 @@ function getStreamYPosition(
 ```
 
 **チャンネル軸（X座標）**:
+
 ```typescript
 // チャンネル列のX座標
 function getChannelXPosition(channelIndex: number): number {
-  return GRID_CONFIG.TIME_LABEL_WIDTH +
-         channelIndex * GRID_CONFIG.CHANNEL_WIDTH;
+  return (
+    GRID_CONFIG.TIME_LABEL_WIDTH + channelIndex * GRID_CONFIG.CHANNEL_WIDTH
+  );
 }
 ```
 
@@ -457,6 +514,7 @@ function getChannelXPosition(channelIndex: number): number {
 #### 4.2.1 横スクロール（チャンネル軸）
 
 **@tanstack/react-virtual 使用**:
+
 - 200チャンネルでも、表示範囲（例: 5-10チャンネル）のみレンダリング
 - 前後のoverscan（余裕を持ってレンダリング）で滑らかなスクロール
 
@@ -473,6 +531,7 @@ const columnVirtualizer = useVirtualizer({
 #### 4.2.2 縦スクロール（時間軸）
 
 **通常のCSSスクロール**:
+
 - 時間軸は連続的なのでネイティブスクロールで十分
 - 固定ヘッダー・固定時刻ラベルは`position: sticky`で実現
 
@@ -493,6 +552,7 @@ const columnVirtualizer = useVirtualizer({
 ### 4.3 スクロール同期
 
 **ヘッダーと本体の横スクロール同期**:
+
 ```typescript
 function Timetable() {
   const headerScrollRef = useRef<HTMLDivElement>(null);
@@ -529,15 +589,18 @@ function Timetable() {
 ### 4.4 レスポンシブ対応
 
 **デスクトップ（メイン）**:
+
 - 横幅: 無制限（横スクロール）
 - チャンネル幅: 200px
 - 時間高さ: 60px/hour
 
 **タブレット（オプション）**:
+
 - チャンネル幅: 150px
 - 時間高さ: 50px/hour
 
 **モバイル（将来的）**:
+
 - タイムテーブル表示は困難
 - リスト表示に切り替え（チャンネル → 配信リスト）
 
@@ -548,15 +611,17 @@ function Timetable() {
 **位置づけ**: 初回データ作成を補助するツール。出力結果は手動修正が必要。
 
 #### 5.1.1 対象ページ
+
 - URL: https://w.atwiki.jp/madtowngta1/pages/12.html
 - 内容: 参加者一覧（チャンネル名、URL、職業）
 
 #### 5.1.2 実装
 
 **scripts/lib/wiki-scraper.ts**:
+
 ```typescript
-import axios from 'axios';
-import * as cheerio from 'cheerio';
+import axios from "axios";
+import * as cheerio from "cheerio";
 
 type WikiChannel = {
   name: string;
@@ -566,7 +631,7 @@ type WikiChannel = {
 };
 
 export async function scrapeChannelsFromWiki(
-  url: string
+  url: string,
 ): Promise<WikiChannel[]> {
   // HTML取得
   const response = await axios.get(url);
@@ -576,11 +641,11 @@ export async function scrapeChannelsFromWiki(
 
   // テーブルまたはリストからチャンネル情報を抽出
   // （実際のHTML構造に応じて調整）
-  $('table tr').each((_, row) => {
+  $("table tr").each((_, row) => {
     const $row = $(row);
-    const name = $row.find('td:nth-child(1)').text().trim();
-    const youtubeUrl = $row.find('td:nth-child(2) a').attr('href') || '';
-    const job = $row.find('td:nth-child(3)').text().trim();
+    const name = $row.find("td:nth-child(1)").text().trim();
+    const youtubeUrl = $row.find("td:nth-child(2) a").attr("href") || "";
+    const job = $row.find("td:nth-child(3)").text().trim();
 
     if (name && youtubeUrl) {
       const channelId = extractChannelId(youtubeUrl);
@@ -608,14 +673,15 @@ function extractChannelId(url: string): string | null {
 ```
 
 **scripts/scrape-channels.ts**:
+
 ```typescript
-import { scrapeChannelsFromWiki } from './lib/wiki-scraper';
-import { writeJSON } from './lib/file-utils';
+import { scrapeChannelsFromWiki } from "./lib/wiki-scraper";
+import { writeJSON } from "./lib/file-utils";
 
 async function main() {
-  console.log('Scraping channels from Wiki...');
+  console.log("Scraping channels from Wiki...");
   const wikiChannels = await scrapeChannelsFromWiki(
-    'https://w.atwiki.jp/madtowngta1/pages/12.html'
+    "https://w.atwiki.jp/madtowngta1/pages/12.html",
   );
 
   console.log(`Found ${wikiChannels.length} channels`);
@@ -623,25 +689,28 @@ async function main() {
   // 粗データとして出力（手動修正が必要）
   const rawData = {
     channels: wikiChannels.map((ch) => ({
-      id: '', // 手動で設定
+      id: "", // 手動で設定
       name: ch.name,
       youtubeChannelId: ch.youtubeChannelId,
-      avatarUrl: '', // 手動で設定またはYouTube APIで取得
+      avatarUrl: "", // 手動で設定またはYouTube APIで取得
       job: ch.job,
       totalViews: 0, // 手動で設定またはYouTube APIで取得
     })),
   };
 
   // 粗データとして出力
-  await writeJSON('data/channels-raw.json', rawData);
-  console.log('Saved raw data to data/channels-raw.json');
-  console.log('⚠️  This is raw data. Please manually review and edit before using as channels.json');
+  await writeJSON("data/channels-raw.json", rawData);
+  console.log("Saved raw data to data/channels-raw.json");
+  console.log(
+    "⚠️  This is raw data. Please manually review and edit before using as channels.json",
+  );
 }
 
 main().catch(console.error);
 ```
 
 **使用方法**:
+
 1. スクリプト実行: `npm run scrape:channels`
 2. `data/channels-raw.json`が生成される
 3. 手動で内容を確認・修正
@@ -652,20 +721,21 @@ main().catch(console.error);
 #### 5.2.1 APIクライアント
 
 **scripts/lib/youtube-client.ts**:
+
 ```typescript
-import { google, youtube_v3 } from '@googleapis/youtube';
+import { google, youtube_v3 } from "@googleapis/youtube";
 
 const youtube = google.youtube({
-  version: 'v3',
+  version: "v3",
   auth: process.env.YOUTUBE_API_KEY,
 });
 
 // チャンネル詳細取得
 export async function getChannelDetails(
-  channelId: string
+  channelId: string,
 ): Promise<youtube_v3.Schema$Channel> {
   const response = await youtube.channels.list({
-    part: ['snippet', 'statistics'],
+    part: ["snippet", "statistics"],
     id: [channelId],
   });
 
@@ -681,20 +751,20 @@ export async function searchStreams(
   channelId: string,
   keywords: string[],
   publishedAfter: string,
-  publishedBefore: string
+  publishedBefore: string,
 ): Promise<youtube_v3.Schema$SearchResult[]> {
   const results: youtube_v3.Schema$SearchResult[] = [];
 
   for (const keyword of keywords) {
     const response = await youtube.search.list({
-      part: ['id'],
+      part: ["id"],
       channelId,
       q: keyword,
-      type: ['video'],
+      type: ["video"],
       publishedAfter,
       publishedBefore,
       maxResults: 50,
-      order: 'date',
+      order: "date",
     });
 
     if (response.data.items) {
@@ -704,7 +774,7 @@ export async function searchStreams(
 
   // 重複除去
   const uniqueResults = Array.from(
-    new Map(results.map((r) => [r.id?.videoId, r])).values()
+    new Map(results.map((r) => [r.id?.videoId, r])).values(),
   );
 
   return uniqueResults;
@@ -712,7 +782,7 @@ export async function searchStreams(
 
 // 動画詳細取得（liveStreamingDetails含む）
 export async function getVideoDetails(
-  videoIds: string[]
+  videoIds: string[],
 ): Promise<youtube_v3.Schema$Video[]> {
   // 50件ずつバッチ処理
   const batches = [];
@@ -724,7 +794,7 @@ export async function getVideoDetails(
 
   for (const batch of batches) {
     const response = await youtube.videos.list({
-      part: ['snippet', 'liveStreamingDetails', 'statistics', 'contentDetails'],
+      part: ["snippet", "liveStreamingDetails", "statistics", "contentDetails"],
       id: batch,
     });
 
@@ -737,18 +807,105 @@ export async function getVideoDetails(
 }
 ```
 
+**scripts/lib/twitch-client.ts**:
+
+```typescript
+import axios from "axios";
+import { config } from "dotenv";
+
+config();
+
+const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
+const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
+
+let accessToken: string | null = null;
+let tokenExpiry: number = 0;
+
+/**
+ * アプリアクセストークン取得（Client Credentials Flow）
+ */
+async function getAccessToken(): Promise<string> {
+  if (accessToken && Date.now() < tokenExpiry) {
+    return accessToken;
+  }
+
+  const response = await axios.post("https://id.twitch.tv/oauth2/token", null, {
+    params: {
+      client_id: CLIENT_ID,
+      client_secret: CLIENT_SECRET,
+      grant_type: "client_credentials",
+    },
+  });
+
+  accessToken = response.data.access_token;
+  tokenExpiry = Date.now() + response.data.expires_in * 1000;
+  return response.data.access_token;
+}
+
+/**
+ * ログイン名からユーザー情報を取得
+ */
+export async function getUserByLogin(login: string): Promise<{
+  id: string;
+  login: string;
+  displayName: string;
+} | null> {
+  const token = await getAccessToken();
+  const response = await axios.get("https://api.twitch.tv/helix/users", {
+    headers: {
+      "Client-ID": CLIENT_ID!,
+      Authorization: `Bearer ${token}`,
+    },
+    params: { login },
+  });
+
+  const users = response.data.data || [];
+  if (users.length === 0) return null;
+
+  return {
+    id: users[0].id,
+    login: users[0].login,
+    displayName: users[0].display_name,
+  };
+}
+
+/**
+ * ユーザーの動画（VOD）を取得
+ */
+export async function getUserVideos(
+  userId: string,
+  startDate: string,
+  endDate: string,
+  keywords: string[]
+): Promise<TwitchVideo[]> {
+  // Twitch APIからVODを取得し、期間・キーワードでフィルタ
+  // 詳細は実装参照
+}
+
+/**
+ * Twitch durationをパース（例: "1h23m45s" → 5025秒）
+ */
+export function parseTwitchDuration(duration: string): number {
+  const hours = duration.match(/(\d+)h/)?.[1] || "0";
+  const minutes = duration.match(/(\d+)m/)?.[1] || "0";
+  const seconds = duration.match(/(\d+)s/)?.[1] || "0";
+  return parseInt(hours) * 3600 + parseInt(minutes) * 60 + parseInt(seconds);
+}
+```
+
 #### 5.2.2 配信データ取得
 
 **scripts/fetch-streams.ts**:
+
 ```typescript
-import { readJSON, writeJSON } from './lib/file-utils';
-import { searchStreams, getVideoDetails } from './lib/youtube-client';
-import type { Channel, Stream, Config } from '../src/types';
+import { readJSON, writeJSON } from "./lib/file-utils";
+import { searchStreams, getVideoDetails } from "./lib/youtube-client";
+import type { Channel, Stream, Config } from "../src/types";
 
 async function main() {
   // 設定読み込み
-  const config: Config = await readJSON('data/config.json');
-  const channels: Channel[] = (await readJSON('data/channels.json')).channels;
+  const config: Config = await readJSON("data/config.json");
+  const channels: Channel[] = (await readJSON("data/channels.json")).channels;
 
   console.log(`Fetching streams for ${channels.length} channels...`);
 
@@ -764,7 +921,7 @@ async function main() {
         channel.youtubeChannelId,
         config.filters.titleKeywords,
         config.event.startDate,
-        config.event.endDate
+        config.event.endDate,
       );
 
       const videoIds = searchResults
@@ -781,7 +938,7 @@ async function main() {
 
       // liveStreamingDetailsが存在するもののみ（ライブ配信）
       const liveVideos = videos.filter(
-        (v) => v.liveStreamingDetails?.actualStartTime
+        (v) => v.liveStreamingDetails?.actualStartTime,
       );
 
       console.log(`  Found ${liveVideos.length} live streams`);
@@ -798,18 +955,20 @@ async function main() {
           id: crypto.randomUUID(),
           channelId: channel.id,
           videoId: video.id!,
-          title: video.snippet?.title || '',
-          thumbnailUrl: video.snippet?.thumbnails?.medium?.url || '',
+          title: video.snippet?.title || "",
+          thumbnailUrl: video.snippet?.thumbnails?.medium?.url || "",
           startTime: actualStart,
           endTime: actualEnd || undefined,
           scheduledStartTime: liveDetails.scheduledStartTime || undefined,
           duration: actualEnd
             ? Math.floor(
-                (new Date(actualEnd).getTime() - new Date(actualStart).getTime()) / 1000
+                (new Date(actualEnd).getTime() -
+                  new Date(actualStart).getTime()) /
+                  1000,
               )
             : undefined,
           isLive: !actualEnd, // 終了時刻がなければ配信中
-          viewCount: parseInt(video.statistics?.viewCount || '0'),
+          viewCount: parseInt(video.statistics?.viewCount || "0"),
         });
       }
 
@@ -822,11 +981,11 @@ async function main() {
 
   // 開始時刻でソート
   allStreams.sort(
-    (a, b) => new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
+    (a, b) => new Date(a.startTime).getTime() - new Date(b.startTime).getTime(),
   );
 
   // streams.jsonに保存
-  await writeJSON('data/streams.json', {
+  await writeJSON("data/streams.json", {
     period: {
       start: config.event.startDate,
       end: config.event.endDate,
@@ -848,19 +1007,21 @@ main().catch(console.error);
 
 #### 5.3.1 YouTube API Quota
 
-| エンドポイント | コスト | 用途 |
-|--------------|-------|-----|
-| channels.list | 1 | チャンネル詳細 |
-| search.list | 100 | 動画検索 |
-| videos.list | 1 | 動画詳細 |
+| エンドポイント | コスト | 用途           |
+| -------------- | ------ | -------------- |
+| channels.list  | 1      | チャンネル詳細 |
+| search.list    | 100    | 動画検索       |
+| videos.list    | 1      | 動画詳細       |
 
 **1チャンネルあたりのコスト**:
+
 - search.list × キーワード数（2個の場合）: 200
 - videos.list × 動画数 / 50: ~1-2
 
 **合計**: 約200-202ユニット/チャンネル
 
 **200チャンネル**:
+
 - 合計: 40,000-40,400ユニット
 - 1日のquota: 10,000ユニット
 - **必要日数: 4-5日**
@@ -868,24 +1029,27 @@ main().catch(console.error);
 #### 5.3.2 対策
 
 **1. 差分更新**:
+
 ```typescript
 // 前回取得済みの配信はスキップ
-const existingStreams = await readJSON('data/streams.json');
-const existingVideoIds = new Set(existingStreams.streams.map(s => s.videoId));
+const existingStreams = await readJSON("data/streams.json");
+const existingVideoIds = new Set(existingStreams.streams.map((s) => s.videoId));
 
 // 新規動画のみ詳細取得
-const newVideoIds = videoIds.filter(id => !existingVideoIds.has(id));
+const newVideoIds = videoIds.filter((id) => !existingVideoIds.has(id));
 ```
 
 **2. バッチ処理**:
+
 ```typescript
 // 1日50チャンネルずつ処理
 const BATCH_SIZE = 50;
-const startIndex = parseInt(process.env.BATCH_INDEX || '0');
+const startIndex = parseInt(process.env.BATCH_INDEX || "0");
 const batch = channels.slice(startIndex, startIndex + BATCH_SIZE);
 ```
 
 **3. キャッシュ**:
+
 ```typescript
 // チャンネル情報は1週間キャッシュ
 const cacheFile = `cache/channels-${channel.id}.json`;
@@ -901,7 +1065,7 @@ if (cacheAge < 7 * 24 * 60 * 60 * 1000) {
 // リトライロジック
 async function fetchWithRetry<T>(
   fn: () => Promise<T>,
-  maxRetries = 3
+  maxRetries = 3,
 ): Promise<T> {
   for (let i = 0; i < maxRetries; i++) {
     try {
@@ -910,8 +1074,8 @@ async function fetchWithRetry<T>(
       if (i === maxRetries - 1) throw error;
 
       // Quota超過の場合は即座に失敗
-      if (error.code === 403 && error.message.includes('quota')) {
-        throw new Error('YouTube API quota exceeded');
+      if (error.code === 403 && error.message.includes("quota")) {
+        throw new Error("YouTube API quota exceeded");
       }
 
       // それ以外のエラーはリトライ
@@ -919,7 +1083,7 @@ async function fetchWithRetry<T>(
       await sleep(1000 * (i + 1)); // 指数バックオフ
     }
   }
-  throw new Error('Should not reach here');
+  throw new Error("Should not reach here");
 }
 ```
 
@@ -928,15 +1092,21 @@ async function fetchWithRetry<T>(
 ### 6.1 TypeScript型定義
 
 **src/types/channel.ts**:
+
 ```typescript
 export type Channel = {
-  id: string;                    // UUID
-  name: string;                  // チャンネル名
-  youtubeChannelId: string;      // YouTubeチャンネルID
-  youtubeHandle?: string;        // @ハンドル
-  avatarUrl: string;             // アイコン画像URL
-  job?: string;                  // 職業
-  totalViews?: number;           // 総再生回数
+  id: string; // UUID
+  name: string; // チャンネル名
+  // YouTube（オプショナル）
+  youtubeChannelId?: string; // YouTubeチャンネルID
+  youtubeHandle?: string; // @ハンドル
+  // Twitch（オプショナル）
+  twitchUserId?: string; // TwitchユーザーID
+  twitchUserName?: string; // Twitchユーザー名
+  // 共通
+  avatarUrl: string; // アイコン画像URL
+  job?: string; // 職業
+  totalViews?: number; // 総再生回数
 };
 
 export type ChannelsData = {
@@ -945,44 +1115,47 @@ export type ChannelsData = {
 ```
 
 **src/types/stream.ts**:
+
 ```typescript
 export type Stream = {
-  id: string;                    // UUID
-  channelId: string;             // チャンネルID
-  videoId: string;               // YouTube動画ID
-  title: string;                 // タイトル
-  thumbnailUrl: string;          // サムネイル
-  startTime: string;             // ISO 8601
-  endTime?: string;              // ISO 8601
-  scheduledStartTime?: string;   // ISO 8601
-  duration?: number;             // 秒
-  isLive: boolean;               // 配信中
-  viewCount?: number;            // 再生回数
+  id: string; // UUID
+  channelId: string; // チャンネルID
+  platform: 'youtube' | 'twitch'; // プラットフォーム識別子
+  videoId: string; // 動画ID（YouTubeまたはTwitch）
+  title: string; // タイトル
+  thumbnailUrl: string; // サムネイル
+  startTime: string; // ISO 8601
+  endTime?: string; // ISO 8601
+  scheduledStartTime?: string; // ISO 8601
+  duration?: number; // 秒
+  isLive: boolean; // 配信中
+  viewCount?: number; // 再生回数
 };
 
 export type StreamsData = {
   period: {
-    start: string;               // ISO 8601
-    end: string;                 // ISO 8601
+    start: string; // ISO 8601
+    end: string; // ISO 8601
   };
   streams: Stream[];
 };
 ```
 
 **src/types/config.ts**:
+
 ```typescript
 export type Config = {
   event: {
-    name: string;                // 企画名
-    startDate: string;           // ISO 8601
-    endDate: string;             // ISO 8601
+    name: string; // 企画名
+    startDate: string; // ISO 8601
+    endDate: string; // ISO 8601
   };
   filters: {
-    titleKeywords: string[];     // フィルタキーワード
+    titleKeywords: string[]; // フィルタキーワード
   };
   display: {
-    defaultTimeRange: number;    // 時間
-    timeGridInterval: number;    // 時間
+    defaultTimeRange: number; // 時間
+    timeGridInterval: number; // 時間
   };
 };
 ```
@@ -990,8 +1163,9 @@ export type Config = {
 ### 6.2 バリデーション
 
 **scripts/lib/data-validator.ts**:
+
 ```typescript
-import { z } from 'zod';
+import { z } from "zod";
 
 const ChannelSchema = z.object({
   id: z.string().uuid(),
@@ -1022,13 +1196,15 @@ export function validateChannels(data: unknown) {
 }
 
 export function validateStreams(data: unknown) {
-  return z.object({
-    period: z.object({
-      start: z.string().datetime(),
-      end: z.string().datetime(),
-    }),
-    streams: z.array(StreamSchema),
-  }).parse(data);
+  return z
+    .object({
+      period: z.object({
+        start: z.string().datetime(),
+        end: z.string().datetime(),
+      }),
+      streams: z.array(StreamSchema),
+    })
+    .parse(data);
 }
 ```
 
@@ -1037,10 +1213,12 @@ export function validateStreams(data: unknown) {
 ### 7.1 仮想スクロール
 
 **効果**:
+
 - 200チャンネル × 500配信 = 100,000 DOM要素
 - 仮想化により、表示範囲のみ（例: 10チャンネル × 50配信 = 500 DOM要素）
 
 **実装**:
+
 - `@tanstack/react-virtual`使用
 - 横スクロール（チャンネル軸）のみ仮想化
 - 縦スクロール（時間軸）は通常のCSSスクロール
@@ -1048,6 +1226,7 @@ export function validateStreams(data: unknown) {
 ### 7.2 画像最適化
 
 **サムネイル遅延読み込み**:
+
 ```typescript
 <img
   src={stream.thumbnailUrl}
@@ -1058,6 +1237,7 @@ export function validateStreams(data: unknown) {
 ```
 
 **Next.js Image コンポーネント** (オプション):
+
 ```typescript
 import Image from 'next/image';
 
@@ -1073,13 +1253,17 @@ import Image from 'next/image';
 ### 7.3 バンドルサイズ最適化
 
 **Tree shaking**:
+
 - date-fnsは必要な関数のみimport
+
 ```typescript
-import { format, parseISO } from 'date-fns';
+import { format, parseISO } from "date-fns";
 ```
 
 **Code splitting**:
+
 - フィルタパネル等は動的import
+
 ```typescript
 const FilterPanel = dynamic(() => import('./FilterPanel'), {
   loading: () => <div>Loading...</div>,
@@ -1089,10 +1273,12 @@ const FilterPanel = dynamic(() => import('./FilterPanel'), {
 ### 7.4 データ最適化
 
 **JSONサイズ削減**:
+
 - フィールド名を短縮（オプション）
 - Gzip圧縮（Vercel自動）
 
 **データ分割** (将来的):
+
 ```typescript
 // data/streams-2025-02.json (月ごと)
 // data/streams-2025-03.json
@@ -1105,6 +1291,7 @@ const FilterPanel = dynamic(() => import('./FilterPanel'), {
 **目標**: タイムテーブル表示
 
 **タスク**:
+
 1. ✅ プロジェクトセットアップ（Next.js, TypeScript, Tailwind）
 2. ✅ 型定義作成
 3. ✅ サンプルデータ作成（channels.json, streams.json, config.json）
@@ -1121,24 +1308,31 @@ const FilterPanel = dynamic(() => import('./FilterPanel'), {
 
 ### Phase 2: データ取得・フィルタ機能
 
-**目標**: 実データ取得、検索・フィルタ
+**目標**: 実データ取得、検索・フィルタ、マルチプラットフォーム対応
 
 **タスク**:
-1. ✅ Wikiスクレイピングスクリプト
-2. ✅ YouTube API連携スクリプト
-3. ✅ GitHub Actions設定（定期実行）
-4. ✅ SearchBar実装
-5. ✅ FilterPanel実装（職業グループ絞り込み）
-6. ✅ DatePicker実装（日時ジャンプ）
-7. ✅ ヘッダー・時刻ラベルの固定
 
-**デプロイ**: 実データでのテスト
+1. ✅ Wikiスクレイピングスクリプト（YouTube + Twitch）
+2. ✅ YouTube API連携スクリプト
+3. ✅ Twitch API連携スクリプト
+   - ✅ twitch-client.ts実装（OAuth2認証、VOD取得）
+   - ✅ resolve-twitch-ids.ts実装（username → ID変換）
+4. ✅ マルチプラットフォーム型定義（Channel、Stream）
+5. ✅ プラットフォーム別UIスタイリング（青/紫）
+6. ✅ GitHub Actions設定（定期実行）
+7. ✅ SearchBar実装
+8. ✅ FilterPanel実装（職業グループ絞り込み）
+9. ✅ DatePicker実装（日時ジャンプ）
+10. ✅ ヘッダー・時刻ラベルの固定
+
+**デプロイ**: 実データでのテスト（YouTube + Twitch）
 
 ### Phase 3: パフォーマンス最適化
 
 **目標**: 200チャンネル対応、快適な操作
 
 **タスク**:
+
 1. ✅ 仮想スクロール実装（@tanstack/react-virtual）
 2. ✅ 画像遅延読み込み
 3. ✅ データ分割（月ごとのJSON）
@@ -1152,34 +1346,50 @@ const FilterPanel = dynamic(() => import('./FilterPanel'), {
 ### Phase 4: 拡張機能（オプション）
 
 **タスク**:
+
 - [ ] モバイル対応（リスト表示）
 - [ ] ダークモード
 - [ ] お気に入りチャンネル機能
 - [ ] URL共有（特定日時・チャンネルへのリンク）
 - [ ] 配信統計表示（最多配信者等）
-- [ ] Twitch対応
+- [x] Twitch対応（完了）
 
 ## 9. 開発環境セットアップ
 
 ### 9.1 環境変数
 
 **.env.local** (開発用):
+
 ```bash
+# YouTube Data API v3
 YOUTUBE_API_KEY=your_api_key_here
+
+# Twitch API (App Access Token)
+TWITCH_CLIENT_ID=your_client_id_here
+TWITCH_CLIENT_SECRET=your_client_secret_here
 ```
 
 **.env.example** (テンプレート):
+
 ```bash
 # YouTube Data API v3
 YOUTUBE_API_KEY=
+
+# Twitch API (App Access Token)
+TWITCH_CLIENT_ID=
+TWITCH_CLIENT_SECRET=
 ```
 
 **GitHub Secrets** (本番用):
+
 - `YOUTUBE_API_KEY`: YouTube API Key
+- `TWITCH_CLIENT_ID`: Twitch Client ID
+- `TWITCH_CLIENT_SECRET`: Twitch Client Secret
 
 ### 9.2 npm scripts
 
 **package.json**:
+
 ```json
 {
   "scripts": {
@@ -1188,6 +1398,8 @@ YOUTUBE_API_KEY=
     "start": "next start",
     "lint": "next lint",
     "scrape:channels": "tsx scripts/scrape-channels.ts",
+    "resolve:handles": "tsx scripts/resolve-handles.ts",
+    "resolve:twitch-ids": "tsx scripts/resolve-twitch-ids.ts",
     "fetch:streams": "tsx scripts/fetch-streams.ts",
     "validate:data": "tsx scripts/validate-data.ts"
   }
@@ -1206,11 +1418,13 @@ npm install
 
 # 3. 環境変数設定
 cp .env.example .env.local
-# .env.localにYouTube API Keyを設定
+# .env.localにYouTube API KeyとTwitch認証情報を設定
 
 # 4. サンプルデータ生成（初回のみ）
-npm run scrape:channels
-npm run fetch:streams
+npm run scrape:channels       # チャンネルリスト取得
+npm run resolve:handles        # YouTube @handle解決
+npm run resolve:twitch-ids     # Twitch username解決
+npm run fetch:streams          # 配信データ取得
 
 # 5. 開発サーバー起動
 npm run dev
@@ -1228,6 +1442,7 @@ npm start
 ### 10.1 単体テスト
 
 **対象**:
+
 - ユーティリティ関数（time-utils, grid-calculator）
 - データバリデーション
 
@@ -1236,6 +1451,7 @@ npm start
 ### 10.2 統合テスト
 
 **対象**:
+
 - データ取得スクリプト
 - APIクライアント
 
@@ -1244,6 +1460,7 @@ npm start
 ### 10.3 E2Eテスト
 
 **対象**:
+
 - タイムテーブル表示
 - 検索・フィルタ機能
 - スクロール
@@ -1253,6 +1470,7 @@ npm start
 ### 10.4 パフォーマンステスト
 
 **ツール**:
+
 - Lighthouse（ページ読み込み速度）
 - React DevTools Profiler（レンダリング性能）
 
@@ -1261,6 +1479,7 @@ npm start
 ### 11.1 Vercel設定
 
 **vercel.json**:
+
 ```json
 {
   "buildCommand": "npm run build",
@@ -1275,12 +1494,13 @@ npm start
 ### 11.2 GitHub Actions
 
 **.github/workflows/update-streams.yml**:
+
 ```yaml
 name: Update Stream Data
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 6時間ごと
+    - cron: "0 */6 * * *" # 6時間ごと
   workflow_dispatch:
 
 jobs:
@@ -1293,7 +1513,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm ci

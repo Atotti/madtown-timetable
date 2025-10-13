@@ -1,14 +1,14 @@
 export type Config = {
   event: {
-    name: string;                // 企画名
-    startDate: string;           // ISO 8601
-    endDate: string;             // ISO 8601
+    name: string; // 企画名
+    startDate: string; // ISO 8601
+    endDate: string; // ISO 8601
   };
   filters: {
-    titleKeywords: string[];     // フィルタキーワード
+    titleKeywords: string[]; // フィルタキーワード
   };
   display: {
-    defaultTimeRange: number;    // 時間
-    timeGridInterval: number;    // 時間
+    defaultTimeRange: number; // 時間
+    timeGridInterval: number; // 時間
   };
 };

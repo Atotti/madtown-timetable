@@ -1,13 +1,13 @@
-import { parseISO, differenceInMinutes } from 'date-fns';
-import { GRID_CONFIG } from './constants';
-import type { Stream } from '@/types';
+import { parseISO, differenceInMinutes } from "date-fns";
+import { GRID_CONFIG } from "./constants";
+import type { Stream } from "@/types";
 
 /**
  * 配信カードの位置とサイズを計算
  */
 export function calculateCardPosition(
   stream: Stream,
-  gridStartTime: Date
+  gridStartTime: Date,
 ): {
   top: number;
   height: number;
@@ -25,7 +25,7 @@ export function calculateCardPosition(
   const top = (startOffset / 60) * GRID_CONFIG.HOUR_HEIGHT;
   const height = Math.max(
     (duration / 60) * GRID_CONFIG.HOUR_HEIGHT,
-    GRID_CONFIG.MIN_CARD_HEIGHT
+    GRID_CONFIG.MIN_CARD_HEIGHT,
   );
 
   return { top, height };
@@ -42,7 +42,9 @@ export function calculateTimeLabelPosition(hour: number): number {
  * チャンネル列のX座標を計算
  */
 export function calculateChannelPosition(channelIndex: number): number {
-  return GRID_CONFIG.TIME_LABEL_WIDTH + channelIndex * GRID_CONFIG.CHANNEL_WIDTH;
+  return (
+    GRID_CONFIG.TIME_LABEL_WIDTH + channelIndex * GRID_CONFIG.CHANNEL_WIDTH
+  );
 }
 
 /**
@@ -50,13 +52,14 @@ export function calculateChannelPosition(channelIndex: number): number {
  */
 export function calculateGridSize(
   channelCount: number,
-  hourCount: number
+  hourCount: number,
 ): {
   width: number;
   height: number;
 } {
   return {
-    width: GRID_CONFIG.TIME_LABEL_WIDTH + channelCount * GRID_CONFIG.CHANNEL_WIDTH,
+    width:
+      GRID_CONFIG.TIME_LABEL_WIDTH + channelCount * GRID_CONFIG.CHANNEL_WIDTH,
     height: hourCount * GRID_CONFIG.HOUR_HEIGHT,
   };
 }

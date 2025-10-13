@@ -1,5 +1,5 @@
-import { formatTime } from '@/lib/time-utils';
-import { GRID_CONFIG } from '@/lib/constants';
+import { formatTime } from "@/lib/time-utils";
+import { GRID_CONFIG } from "@/lib/constants";
 
 type TimeLabelProps = {
   time: Date;

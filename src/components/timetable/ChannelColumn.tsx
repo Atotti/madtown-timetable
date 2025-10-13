@@ -1,7 +1,7 @@
-import type { Channel, Stream } from '@/types';
-import { StreamCard } from './StreamCard';
-import { calculateCardPosition } from '@/lib/grid-calculator';
-import { GRID_CONFIG } from '@/lib/constants';
+import type { Channel, Stream } from "@/types";
+import { StreamCard } from "./StreamCard";
+import { calculateCardPosition } from "@/lib/grid-calculator";
+import { GRID_CONFIG } from "@/lib/constants";
 
 type ChannelColumnProps = {
   channel: Channel;

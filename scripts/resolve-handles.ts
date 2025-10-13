@@ -1,15 +1,15 @@
-import { readJSON, writeJSON } from './lib/file-utils';
-import { google } from 'googleapis';
-import type { Channel } from '../src/types/channel';
+import { readJSON, writeJSON } from "./lib/file-utils";
+import { google } from "googleapis";
+import type { Channel } from "../src/types/channel";
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
 if (!API_KEY) {
-  throw new Error('YOUTUBE_API_KEY environment variable is not set');
+  throw new Error("YOUTUBE_API_KEY environment variable is not set");
 }
 
 const youtube = google.youtube({
-  version: 'v3',
+  version: "v3",
   auth: API_KEY,
 });
 
@@ -19,10 +19,10 @@ const youtube = google.youtube({
 async function resolveHandle(handle: string): Promise<string | null> {
   try {
     // @を除去
-    const cleanHandle = handle.startsWith('@') ? handle.substring(1) : handle;
+    const cleanHandle = handle.startsWith("@") ? handle.substring(1) : handle;
 
     const response = await youtube.channels.list({
-      part: ['id'],
+      part: ["id"],
       forHandle: cleanHandle,
     });
 
@@ -38,21 +38,22 @@ async function resolveHandle(handle: string): Promise<string | null> {
 }
 
 async function main() {
-  console.log('=== @handleからチャンネルIDへの変換 ===\n');
+  console.log("=== @handleからチャンネルIDへの変換 ===\n");
 
   // チャンネルリストを読み込み
-  const data = await readJSON<{ channels: Channel[] }>('data/channels.json');
+  const data = await readJSON<{ channels: Channel[] }>("data/channels.json");
   const channels = data.channels;
 
   // @handleを持つチャンネルを抽出
-  const handleChannels = channels.filter((ch) =>
-    ch.youtubeChannelId.startsWith('@')
+  const handleChannels = channels.filter(
+    (ch): ch is Channel & { youtubeChannelId: string } =>
+      !!ch.youtubeChannelId && ch.youtubeChannelId.startsWith("@"),
   );
 
   console.log(`🔍 @handle形式のチャンネル数: ${handleChannels.length}\n`);
 
   if (handleChannels.length === 0) {
-    console.log('✅ 変換が必要なチャンネルはありません\n');
+    console.log("✅ 変換が必要なチャンネルはありません\n");
     return;
   }
 
@@ -61,7 +62,9 @@ async function main() {
 
   // 1件ずつ変換
   for (const channel of handleChannels) {
-    console.log(`[${resolvedCount + failedCount + 1}/${handleChannels.length}] ${channel.name} (${channel.youtubeChannelId})`);
+    console.log(
+      `[${resolvedCount + failedCount + 1}/${handleChannels.length}] ${channel.name} (${channel.youtubeChannelId})`,
+    );
 
     const channelId = await resolveHandle(channel.youtubeChannelId);
 
@@ -79,7 +82,7 @@ async function main() {
   }
 
   // 更新されたデータを保存
-  await writeJSON('data/channels.json', data);
+  await writeJSON("data/channels.json", data);
 
   console.log(`\n📊 結果:`);
   console.log(`   - 成功: ${resolvedCount}件`);
@@ -88,6 +91,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error('❌ エラーが発生しました:', error);
+  console.error("❌ エラーが発生しました:", error);
   process.exit(1);
 });

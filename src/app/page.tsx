@@ -1,5 +1,5 @@
-import { Timetable } from '@/components/timetable/Timetable';
-import { loadChannels, loadStreams, loadConfig } from '@/lib/data-loader';
+import { Timetable } from "@/components/timetable/Timetable";
+import { loadChannels, loadStreams, loadConfig } from "@/lib/data-loader";
 
 export default async function Home() {
   const [channelsData, streamsData, config] = await Promise.all([

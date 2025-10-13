@@ -9,6 +9,7 @@
     "lint": "eslint",
     "scrape:channels": "tsx scripts/scrape-channels.ts",
     "resolve:handles": "tsx scripts/resolve-handles.ts",
+    "resolve:twitch-ids": "tsx scripts/resolve-twitch-ids.ts",
     "fetch:streams": "tsx scripts/fetch-streams.ts"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@radix-ui/react-popover": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.3",
     "@tanstack/react-virtual": "^3.13.12",
+    "axios": "^1.12.2",
     "cheerio": "^1.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
