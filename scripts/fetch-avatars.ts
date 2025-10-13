@@ -8,9 +8,18 @@ async function main() {
 
   // チャンネルリストを読み込み
   const data = await readJSON<{ channels: Channel[] }>("data/channels.json");
-  const channels = data.channels;
+  const allChannels = data.channels;
 
-  console.log(`📺 ${channels.length}件のチャンネルを処理します\n`);
+  // avatarUrlが空のチャンネルのみ処理
+  const channels = allChannels.filter((ch) => !ch.avatarUrl);
+
+  console.log(`📺 全チャンネル数: ${allChannels.length}`);
+  console.log(`🔍 アイコン未設定のチャンネル数: ${channels.length}\n`);
+
+  if (channels.length === 0) {
+    console.log("✅ 取得が必要なチャンネルはありません\n");
+    return;
+  }
 
   let youtubeCount = 0;
   let twitchCount = 0;

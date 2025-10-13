@@ -1,17 +1,51 @@
 import { scrapeChannelsFromWiki } from "./lib/wiki-scraper";
-import { writeJSON } from "./lib/file-utils";
+import { readJSON, writeJSON } from "./lib/file-utils";
+import { mergeChannels, getMergeStats } from "./lib/channel-merger";
+import type { Channel, ChannelsData } from "../src/types/channel";
+import { existsSync } from "fs";
 
 async function main() {
   console.log("=== VCRGTA チャンネルリストスクレイピング ===\n");
 
   try {
-    const channels = await scrapeChannelsFromWiki();
+    // 既存データを読み込み
+    let existingChannels: Channel[] = [];
+    const channelsPath = "data/channels.json";
+    if (existsSync(channelsPath)) {
+      try {
+        const existingData = await readJSON<ChannelsData>(channelsPath);
+        existingChannels = existingData.channels || [];
+        console.log(
+          `📂 既存データ: ${existingChannels.length}件のチャンネルを読み込みました\n`,
+        );
+      } catch (error) {
+        console.warn("⚠️  既存データの読み込みに失敗しました。新規作成します。\n");
+      }
+    } else {
+      console.log("📂 既存データなし。新規作成します。\n");
+    }
 
-    console.log(`\n✅ ${channels.length}件のチャンネルを取得しました\n`);
+    // Wikiからチャンネル情報を取得
+    const wikiChannels = await scrapeChannelsFromWiki();
+
+    console.log(`\n✅ ${wikiChannels.length}件のチャンネルを取得しました\n`);
+
+    // 既存データと新規データをマージ
+    console.log("=== データマージ処理 ===");
+    const mergedChannels = mergeChannels(existingChannels, wikiChannels);
+
+    // マージ統計を表示
+    const stats = getMergeStats(existingChannels, wikiChannels, mergedChannels);
+    console.log(`📊 マージ統計:`);
+    console.log(`  - 既存データ: ${stats.existingCount}件`);
+    console.log(`  - Wiki取得: ${stats.wikiCount}件`);
+    console.log(`  - 追加: ${stats.addedCount}件`);
+    console.log(`  - 更新: ${stats.updatedCount}件`);
+    console.log(`  - 合計: ${stats.totalCount}件\n`);
 
     // data/channels.jsonに保存
-    const output = {
-      channels,
+    const output: ChannelsData = {
+      channels: mergedChannels,
     };
 
     await writeJSON("data/channels.json", output);

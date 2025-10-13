@@ -9,13 +9,15 @@ async function main() {
   const data = await readJSON<{ channels: Channel[] }>("data/channels.json");
   const channels = data.channels;
 
-  // twitchUserNameを持つチャンネルを抽出
+  // twitchUserNameを持ち、twitchUserIdが未設定のチャンネルを抽出
   const twitchChannels = channels.filter(
-    (ch): ch is Channel & { twitchUserName: string } => !!ch.twitchUserName,
+    (ch): ch is Channel & { twitchUserName: string } =>
+      !!ch.twitchUserName && !ch.twitchUserId,
   );
 
+  console.log(`📺 全チャンネル数: ${channels.length}`);
   console.log(
-    `🔍 Twitchユーザー名が設定されているチャンネル数: ${twitchChannels.length}\n`,
+    `🔍 TwitchユーザーID未設定のチャンネル数: ${twitchChannels.length}\n`,
   );
 
   if (twitchChannels.length === 0) {

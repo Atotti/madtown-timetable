@@ -1,9 +1,11 @@
 import { readJSON, writeJSON } from "./lib/file-utils";
 import { searchStreams, getVideoDetails } from "./lib/youtube-client";
 import { getUserVideos, parseTwitchDuration } from "./lib/twitch-client";
+import { mergeStreams, getMergeStats } from "./lib/stream-merger";
 import type { Channel } from "../src/types/channel";
 import type { Stream, StreamsData } from "../src/types/stream";
 import type { Config } from "../src/types/config";
+import { existsSync } from "fs";
 
 async function main() {
   console.log("=== VCRGTA 配信データ取得 ===\n");
@@ -33,7 +35,24 @@ async function main() {
   console.log(`📅 期間: ${config.event.startDate} 〜 ${config.event.endDate}`);
   console.log(`🔍 キーワード: ${config.filters.titleKeywords.join(", ")}\n`);
 
-  const allStreams: Stream[] = [];
+  // 既存データを読み込み
+  let existingStreams: Stream[] = [];
+  const streamsPath = "data/streams.json";
+  if (existsSync(streamsPath)) {
+    try {
+      const existingData = await readJSON<StreamsData>(streamsPath);
+      existingStreams = existingData.streams || [];
+      console.log(
+        `📂 既存データ: ${existingStreams.length}件のストリームを読み込みました\n`,
+      );
+    } catch (error) {
+      console.warn("⚠️  既存データの読み込みに失敗しました。新規作成します。\n");
+    }
+  } else {
+    console.log("📂 既存データなし。新規作成します。\n");
+  }
+
+  const newStreams: Stream[] = [];
   let processedCount = 0;
 
   // チャンネルごとに配信検索
@@ -65,16 +84,10 @@ async function main() {
           const videos = await getVideoDetails(videoIds);
 
           // liveStreamingDetailsが存在し、actualStartTimeがあるもののみ（ライブ配信）
-          // ただし、liveBroadcastContentが"none"の場合は通常動画なので除外
+          // actualStartTimeがあれば配信終了後のアーカイブも含む
           const liveVideos = videos.filter((v) => {
-            // liveStreamingDetailsがない場合は除外
-            if (!v.liveStreamingDetails?.actualStartTime) return false;
-
-            // liveBroadcastContentが"none"の場合は通常動画なので除外
-            const broadcastContent = v.snippet?.liveBroadcastContent;
-            if (broadcastContent === "none") return false;
-
-            return true;
+            // liveStreamingDetailsがあり、actualStartTimeがあればライブ配信
+            return !!v.liveStreamingDetails?.actualStartTime;
           });
 
           if (liveVideos.length === 0) {
@@ -94,7 +107,7 @@ async function main() {
 
               if (!actualStart) continue; // まだ開始していない
 
-              allStreams.push({
+              newStreams.push({
                 id: `stream-${Date.now()}-${Math.random().toString(36).substring(7)}`,
                 channelId: channel.id,
                 platform: "youtube",
@@ -146,7 +159,7 @@ async function main() {
               startTime.getTime() + durationSeconds * 1000,
             );
 
-            allStreams.push({
+            newStreams.push({
               id: `stream-${Date.now()}-${Math.random().toString(36).substring(7)}`,
               channelId: channel.id,
               platform: "twitch",
@@ -169,8 +182,21 @@ async function main() {
     }
   }
 
+  // 既存データと新規データをマージ
+  console.log("\n=== データマージ処理 ===");
+  const mergedStreams = mergeStreams(existingStreams, newStreams);
+
+  // マージ統計を表示
+  const stats = getMergeStats(existingStreams, newStreams, mergedStreams);
+  console.log(`📊 マージ統計:`);
+  console.log(`  - 既存データ: ${stats.existingCount}件`);
+  console.log(`  - 新規取得: ${stats.newCount}件`);
+  console.log(`  - 追加: ${stats.addedCount}件`);
+  console.log(`  - 更新: ${stats.updatedCount}件`);
+  console.log(`  - 合計: ${stats.totalCount}件\n`);
+
   // 開始時刻でソート
-  allStreams.sort(
+  mergedStreams.sort(
     (a, b) => new Date(a.startTime).getTime() - new Date(b.startTime).getTime(),
   );
 
@@ -180,12 +206,12 @@ async function main() {
       start: config.event.startDate,
       end: config.event.endDate,
     },
-    streams: allStreams,
+    streams: mergedStreams,
   };
 
   await writeJSON("data/streams.json", streamsData);
 
-  console.log(`\n✅ ${allStreams.length}件の配信データを保存しました`);
+  console.log(`✅ ${mergedStreams.length}件の配信データを保存しました`);
   console.log("📁 保存先: data/streams.json\n");
 }
 
