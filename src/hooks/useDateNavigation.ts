@@ -18,6 +18,7 @@ export function useDateNavigation({
   const searchParams = useSearchParams();
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [currentViewDate, setCurrentViewDate] = useState<Date>(new Date());
+  const [isManualSelection, setIsManualSelection] = useState<boolean>(false);
 
   // URLパラメータから共有時刻を取得
   const sharedTimeParam = searchParams.get("t");
@@ -57,9 +58,22 @@ export function useDateNavigation({
     const targetTime = new Date(date);
     targetTime.setHours(17, 0, 0, 0);
 
+    setIsManualSelection(true);
     setSelectedDate(date);
     scrollToTime(targetTime);
+
+    // 3秒後に自動更新を再開
+    setTimeout(() => {
+      setIsManualSelection(false);
+    }, 3000);
   };
+
+  // currentViewDateが変わったらselectedDateも更新（手動選択中を除く）
+  useEffect(() => {
+    if (!isManualSelection) {
+      setSelectedDate(currentViewDate);
+    }
+  }, [currentViewDate, isManualSelection]);
 
   // 初回レンダリング時に共有時刻または現在時刻にスクロール
   useEffect(() => {

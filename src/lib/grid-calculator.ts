@@ -5,12 +5,17 @@ import type { Stream } from "@/types";
 /**
  * 各時間帯の高さを計算
  */
-export function calculateHourHeights(streamCountByHour: number[]): number[] {
-  return streamCountByHour.map((count) =>
-    count <= GRID_CONFIG.INACTIVE_HOUR_THRESHOLD
-      ? GRID_CONFIG.INACTIVE_HOUR_HEIGHT
-      : GRID_CONFIG.HOUR_HEIGHT,
-  );
+export function calculateHourHeights(
+  streamCountByHour: number[],
+  zoomLevel: number = 1.0,
+): number[] {
+  return streamCountByHour.map((count) => {
+    const baseHeight =
+      count <= GRID_CONFIG.INACTIVE_HOUR_THRESHOLD
+        ? GRID_CONFIG.INACTIVE_HOUR_HEIGHT
+        : GRID_CONFIG.HOUR_HEIGHT;
+    return baseHeight * zoomLevel;
+  });
 }
 
 /**

@@ -19,7 +19,6 @@ type TimetableHeaderProps = {
   streams: Stream[];
   selectedTags: string[];
   onRemoveTag: (tag: string) => void;
-  currentViewDate: Date;
   selectedDate: Date;
   onDateSelect: (date: Date | undefined) => void;
   onScrollToNow: () => void;
@@ -33,6 +32,10 @@ type TimetableHeaderProps = {
     pinnedChannelIds: Set<string>,
   ) => Promise<boolean>;
   pinnedChannelIds: Set<string>;
+  zoomLevel: number;
+  onZoomIn: () => void;
+  onZoomOut: () => void;
+  onZoomReset: () => void;
 };
 
 export function TimetableHeader({
@@ -41,7 +44,6 @@ export function TimetableHeader({
   streams,
   selectedTags,
   onRemoveTag,
-  currentViewDate,
   selectedDate,
   onDateSelect,
   onScrollToNow,
@@ -52,6 +54,10 @@ export function TimetableHeader({
   onCancelShare,
   onCopyShareUrl,
   pinnedChannelIds,
+  zoomLevel,
+  onZoomIn,
+  onZoomOut,
+  onZoomReset,
 }: TimetableHeaderProps) {
   const [copyMessage, setCopyMessage] = useState<string>("");
   const [showHowToUse, setShowHowToUse] = useState(false);
@@ -97,6 +103,40 @@ export function TimetableHeader({
           </div>
         </div>
 
+        {/* ズームコントロール */}
+        <div className="relative">
+          <span className="absolute -top-2 left-3 text-xs text-gray-600 font-medium bg-white px-1">
+            zoom
+          </span>
+          <div className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 rounded-md shadow-sm">
+            <Button
+              onClick={onZoomOut}
+              disabled={zoomLevel <= 0.5}
+              variant="outline"
+              size="sm"
+              className="h-7 w-7 p-0"
+            >
+              −
+            </Button>
+            <button
+              type="button"
+              onClick={onZoomReset}
+              className="min-w-[3.5rem] text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+            >
+              {zoomLevel.toFixed(1)}x
+            </button>
+            <Button
+              onClick={onZoomIn}
+              disabled={zoomLevel >= 3.0}
+              variant="outline"
+              size="sm"
+              className="h-7 w-7 p-0"
+            >
+              +
+            </Button>
+          </div>
+        </div>
+
         {/* ボタン群 */}
         <div className="flex items-center gap-3">
           {selectedTags.length > 0 && (
@@ -124,14 +164,11 @@ export function TimetableHeader({
             <HelpCircle className="mr-2 h-4 w-4" />
             使い方
           </Button>
-          <div className="text-sm text-gray-700 bg-white px-3 py-2 rounded-md border border-gray-200 shadow-sm">
-            {formatTime(currentViewDate, "MM月dd日 (E)")}
-          </div>
           <Popover>
             <PopoverTrigger asChild>
               <Button
                 variant="outline"
-                className="w-[200px] justify-start text-left font-normal shadow-sm hover:shadow-md transition-shadow"
+                className="w-[150px] justify-start text-left font-normal shadow-sm hover:shadow-md transition-shadow"
               >
                 <CalendarIcon className="mr-2 h-4 w-4" />
                 {formatTime(selectedDate, "yyyy/MM/dd")}

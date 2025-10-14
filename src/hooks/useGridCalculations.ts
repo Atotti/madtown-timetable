@@ -10,6 +10,7 @@ type UseGridCalculationsProps = {
   streams: Stream[];
   gridStartTime: Date;
   hourCount: number;
+  zoomLevel?: number;
 };
 
 /**
@@ -20,6 +21,7 @@ export function useGridCalculations({
   streams,
   gridStartTime,
   hourCount,
+  zoomLevel = 1.0,
 }: UseGridCalculationsProps) {
   // 時間帯ごとの配信数を計算（1時間刻み）
   const streamCountByHour = useMemo(() => {
@@ -48,8 +50,8 @@ export function useGridCalculations({
 
   // 各時間帯の高さを計算（inactive時は半分）
   const hourHeights = useMemo(
-    () => calculateHourHeights(streamCountByHour),
-    [streamCountByHour],
+    () => calculateHourHeights(streamCountByHour, zoomLevel),
+    [streamCountByHour, zoomLevel],
   );
 
   // 各時間帯の累積位置を計算

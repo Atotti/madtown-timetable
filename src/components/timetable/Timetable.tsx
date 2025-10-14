@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Channel, Stream, Config } from "@/types";
 import { TimeGrid } from "./TimeGrid";
@@ -12,6 +12,10 @@ import {
   getHoursDiff,
   getDateFromScrollPosition,
 } from "@/lib/time-utils";
+import {
+  positionToTime,
+  timeToPosition,
+} from "@/lib/time-position-converter";
 import { addHours } from "date-fns";
 import { GRID_CONFIG } from "@/lib/constants";
 import { useTagFilter } from "@/hooks/useTagFilter";
@@ -109,12 +113,16 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
     });
   }, [channels, streams]);
 
+  // ズームレベルの管理（0.5x～3.0x）
+  const [zoomLevel, setZoomLevel] = useState<number>(1.0);
+
   // グリッド計算（動的な高さと位置）
   const { streamCountByHour, hourHeights, hourPositions } = useGridCalculations(
     {
       streams,
       gridStartTime,
       hourCount,
+      zoomLevel,
     },
   );
 
@@ -130,7 +138,6 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
 
   const {
     selectedDate,
-    currentViewDate,
     setCurrentViewDate,
     scrollToNow,
     handleDateSelect,
@@ -158,10 +165,72 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
 
   // 再生位置の管理
   const [playbackTime, setPlaybackTime] = useState<Date | null>(null);
+  const [targetScrollTime, setTargetScrollTime] = useState<Date | null>(null);
 
   const handleSetPlaybackTime = (time: Date) => {
     setPlaybackTime(time);
   };
+
+  // ズーム変更ハンドラー
+  const handleZoomChange = (newZoomLevel: number) => {
+    if (!timeGridScrollRef.current) return;
+
+    // 現在の画面中央の時刻を取得
+    const scrollTop = timeGridScrollRef.current.scrollTop;
+    const viewportHeight = timeGridScrollRef.current.clientHeight;
+    const centerY = scrollTop + viewportHeight / 2;
+
+    const centerTime = positionToTime(
+      centerY,
+      gridStartTime,
+      hourPositions,
+      hourHeights,
+    );
+
+    // ズームレベルを更新
+    setZoomLevel(newZoomLevel);
+
+    // 次のレンダリング後に同じ時刻にスクロール
+    setTargetScrollTime(centerTime);
+  };
+
+  const handleZoomIn = () => {
+    const newZoom = Math.min(3.0, Math.round((zoomLevel + 0.25) * 100) / 100);
+    handleZoomChange(newZoom);
+  };
+
+  const handleZoomOut = () => {
+    const newZoom = Math.max(0.5, Math.round((zoomLevel - 0.25) * 100) / 100);
+    handleZoomChange(newZoom);
+  };
+
+  const handleZoomReset = () => {
+    handleZoomChange(1.0);
+  };
+
+  // ズームレベル変更時にスクロール位置を維持
+  useEffect(() => {
+    if (targetScrollTime && timeGridScrollRef.current) {
+      const targetPosition = timeToPosition(
+        targetScrollTime,
+        gridStartTime,
+        hourPositions,
+        hourHeights,
+      );
+
+      const viewportHeight = timeGridScrollRef.current.clientHeight;
+      const scrollTop = Math.max(0, targetPosition - viewportHeight / 2);
+
+      timeGridScrollRef.current.scrollTop = scrollTop;
+      setTargetScrollTime(null);
+    }
+  }, [
+    targetScrollTime,
+    gridStartTime,
+    hourPositions,
+    hourHeights,
+    timeGridScrollRef,
+  ]);
 
   // スクロール同期
   const handleHeaderScroll = () => {
@@ -193,7 +262,6 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
         streams={streams}
         selectedTags={selectedTags}
         onRemoveTag={removeTag}
-        currentViewDate={currentViewDate}
         selectedDate={selectedDate}
         onDateSelect={handleDateSelect}
         onScrollToNow={scrollToNow}
@@ -204,6 +272,10 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
         onCancelShare={handleCancelShare}
         onCopyShareUrl={handleCopyShareUrl}
         pinnedChannelIds={pinnedChannelIds}
+        zoomLevel={zoomLevel}
+        onZoomIn={handleZoomIn}
+        onZoomOut={handleZoomOut}
+        onZoomReset={handleZoomReset}
       />
 
       {/* チャンネルヘッダー */}
