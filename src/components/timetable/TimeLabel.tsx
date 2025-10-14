@@ -18,7 +18,7 @@ export function TimeLabel({ time, top, height }: TimeLabelProps) {
         height: `${height}px`,
       }}
     >
-      {formatTime(time)}
+      {formatTime(time, "HH")}
     </div>
   );
 }
