@@ -17,7 +17,7 @@
       "twitchUserId": "162740394",
       "twitchUserName": "batsubatsu",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/c28a5bb4-5a30-406c-8667-f6732b5bcf56-profile_image-300x300.png",
-      "job": "メカニック (Manager)",
+      "job": "メカニック (店長)",
       "organization": "7278メカニック",
       "totalViews": 0
     },
@@ -114,7 +114,7 @@
       "twitchUserId": "926274428",
       "twitchUserName": "light_starboy",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/ed620630-16b8-4952-a997-262e5159cbe6-profile_image-300x300.png",
-      "job": "警察 (Chief)",
+      "job": "警察",
       "organization": "",
       "totalViews": 0
     },
@@ -415,8 +415,8 @@
       "twitchUserId": "196336132",
       "twitchUserName": "d175",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/ac8e199c-7423-4189-825c-ae3d5c67cb50-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
+      "job": "飲食店",
+      "organization": "Ritunes music bar",
       "totalViews": 0
     },
     {
@@ -538,7 +538,7 @@
       "twitchUserName": "kenki521",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/448afe18-e7d3-484e-a18f-d8f047942d83-profile_image-300x300.png",
       "job": "飲食店",
-      "organization": "7230 (店長)",
+      "organization": "飲食店６ (店長)",
       "totalViews": 0
     },
     {
@@ -548,8 +548,8 @@
       "twitchUserId": "865792830",
       "twitchUserName": "kentsumeshi_heyoo",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/6ba95d43-1d4e-470d-ad75-5f0a973c1b8b-profile_image-300x300.png",
-      "job": "",
-      "organization": "朕狼党",
+      "job": "ギャング",
+      "organization": "朕狼党、angler",
       "totalViews": 0
     },
     {
@@ -620,7 +620,7 @@
       "twitchUserName": "shinori_spt",
       "avatarUrl": "https://yt3.ggpht.com/Y0pGBRcZKaPMB4HN3I_1h8LpE4GoifbXAHpMtQMyVML6rhp8nWM-y_nrvLIgglNG5_aLsZHdEA=s88-c-k-c0x00ffffff-no-rj",
       "job": "ギャング、スーパーマーケット",
-      "organization": "angler、Celestial Cats",
+      "organization": "Celestial Cats、angler",
       "totalViews": 0
     },
     {
@@ -740,7 +740,7 @@
       "twitchUserId": "94618049",
       "twitchUserName": "tototmix",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/136fef26-39cd-485d-93d8-97c616c81131-profile_image-300x300.png",
-      "job": "メカニック",
+      "job": "警察、メカニック",
       "organization": "7278メカニック",
       "totalViews": 0
     },
@@ -812,7 +812,7 @@
       "youtubeChannelId": "UC_LS7mBxC0zL9Ot0gaU26Lw",
       "avatarUrl": "https://yt3.ggpht.com/ytc/AIdro_nu0G1Shnq-z41nWiaLdNC5JoZP1HkR8JYmukEfHdBVWw=s88-c-k-c0x00ffffff-no-rj",
       "job": "警察",
-      "organization": "",
+      "organization": "XVI",
       "totalViews": 0
     },
     {
@@ -1178,7 +1178,7 @@
       "twitchUserName": "kanae_2434",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/f9ceed8c-4ae9-4e46-a249-4abf8e4f38c5-profile_image-300x300.png",
       "job": "飲食店、警察、スーパーマーケット",
-      "organization": "Nice! Tacos. (店長)",
+      "organization": "Nice! Tacos.(店長)",
       "totalViews": 0
     },
     {
@@ -1186,7 +1186,7 @@
       "name": "甘音あむ",
       "youtubeChannelId": "UC6FprWVXuULaY9mZOcqTe4A",
       "avatarUrl": "https://yt3.ggpht.com/W54g-zJdlmpV0ubxNqX4Fnktjsa-IKw8DFNf6VUnzMqpmZDoVlNfE3u01Y5l5cNQ3PnFrc4ATg=s88-c-k-c0x00ffffff-no-rj",
-      "job": "",
+      "job": "救急隊",
       "organization": "",
       "totalViews": 0
     },
@@ -1195,7 +1195,7 @@
       "name": "甘結もか",
       "youtubeChannelId": "UC8vKBjGY2HVfbW9GAmgikWw",
       "avatarUrl": "https://yt3.ggpht.com/e_Vc-qiRBWmj9PaysPGhh9b2bn5YDLs-FhmqDwZTiog6umosQzQEa7phbJwz4eaZsGwzfFze=s88-c-k-c0x00ffffff-no-rj",
-      "job": "飲食店",
+      "job": "",
       "organization": "Ritunes music bar",
       "totalViews": 0
     },
@@ -1469,7 +1469,7 @@
       "youtubeChannelId": "UC_upTZ0otpptV5KARBsnIPg",
       "avatarUrl": "https://yt3.ggpht.com/yws5uaKyNFbLVsDSjGb8Or8WZs-pydOu9U6YEPkZLU0FMZY9GpzRSAm-Fs738-x1_YLEKYGHag=s88-c-k-c0x00ffffff-no-rj",
       "job": "飲食店、救急隊",
-      "organization": "7230",
+      "organization": "飲食店６",
       "totalViews": 0
     },
     {
@@ -1537,8 +1537,8 @@
       "twitchUserId": "696513350",
       "twitchUserName": "sakusancanon",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/7e07128e-536d-4adb-8812-b329c64e3c96-profile_image-300x300.png",
-      "job": "タクシー運転手",
-      "organization": "",
+      "job": "タクシー運転手、ギャング",
+      "organization": "Black Rose",
       "totalViews": 0
     },
     {
@@ -1606,7 +1606,7 @@
       "twitchUserId": "671313857",
       "twitchUserName": "tomo0723sw",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/0e55cd81-eaf9-4365-a76a-08e7a32f8ef7-profile_image-300x300.png",
-      "job": "救急隊 (Chief)",
+      "job": "救急隊",
       "organization": "",
       "totalViews": 0
     },
@@ -1728,7 +1728,7 @@
       "twitchUserId": "817025645",
       "twitchUserName": "hatsukaneru",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/61c4629a-010b-4e28-be7b-d24c8dcd6176-profile_image-300x300.png",
-      "job": "警察 (Chief)、聖職者",
+      "job": "警察 、聖職者",
       "organization": "",
       "totalViews": 0
     },
@@ -2133,6 +2133,24 @@
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/60001145-d628-45ad-ac17-c6f9a8decaed-profile_image-300x300.png",
       "job": "メカニック",
       "organization": "7278メカニック"
+    },
+    {
+      "id": "ch-406",
+      "name": "Recap",
+      "youtubeChannelId": "",
+      "twitchUserName": "recaplol1",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/da35eb8e-5505-4959-8a5e-310dd40ef1d3-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "256964489"
+    },
+    {
+      "id": "ch-350",
+      "name": "花江夏樹",
+      "youtubeHandle": "@hanae0626",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
     }
   ]
 }
