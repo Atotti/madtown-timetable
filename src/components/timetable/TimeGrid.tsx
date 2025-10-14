@@ -172,7 +172,7 @@ export function TimeGrid({
       {/* 時刻ラベル（縦スクロール同期） */}
       <div
         ref={timeLabelScrollRef}
-        className="relative bg-gray-50 border-r border-gray-300 overflow-y-auto overflow-x-hidden"
+        className="relative bg-blue-50/30 overflow-y-auto overflow-x-hidden"
         onScroll={handleTimeLabelScroll}
         style={{
           width: `${GRID_CONFIG.TIME_LABEL_WIDTH}px`,

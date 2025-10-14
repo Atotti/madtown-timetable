@@ -11,7 +11,7 @@ type TimeLabelProps = {
 export function TimeLabel({ time, top, height }: TimeLabelProps) {
   return (
     <div
-      className="absolute left-0 flex items-center justify-center text-sm font-medium text-gray-700 border-t border-blue-200 bg-white shadow-sm"
+      className="absolute left-0 flex items-center justify-center text-xs font-bold text-gray-500 bg-transparent border-t border-blue-100"
       style={{
         top: `${top}px`,
         width: `${GRID_CONFIG.TIME_LABEL_WIDTH}px`,

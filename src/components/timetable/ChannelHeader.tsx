@@ -57,7 +57,7 @@ export function ChannelHeader({
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
         <div
-          className={`relative flex items-center justify-center border-r ${headerColor} cursor-pointer shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5`}
+          className={`relative flex items-center justify-center ${headerColor} cursor-pointer hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 rounded-t-lg`}
           style={{ width: "200px", minWidth: "200px" }}
           onMouseEnter={() => setIsPopoverOpen(true)}
           onMouseLeave={() => setIsPopoverOpen(false)}

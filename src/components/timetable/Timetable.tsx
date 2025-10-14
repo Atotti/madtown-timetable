@@ -254,7 +254,7 @@ export function Timetable({ channels, streams, config }: TimetableProps) {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-blue-50/30">
       {/* ヘッダー */}
       <TimetableHeader
         config={config}
