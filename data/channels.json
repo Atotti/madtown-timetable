@@ -549,7 +549,7 @@
       "twitchUserName": "kentsumeshi_heyoo",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/6ba95d43-1d4e-470d-ad75-5f0a973c1b8b-profile_image-300x300.png",
       "job": "ギャング",
-      "organization": "朕狼党、angler",
+      "organization": "angler、朕狼党",
       "totalViews": 0
     },
     {
@@ -620,7 +620,7 @@
       "twitchUserName": "shinori_spt",
       "avatarUrl": "https://yt3.ggpht.com/Y0pGBRcZKaPMB4HN3I_1h8LpE4GoifbXAHpMtQMyVML6rhp8nWM-y_nrvLIgglNG5_aLsZHdEA=s88-c-k-c0x00ffffff-no-rj",
       "job": "ギャング、スーパーマーケット",
-      "organization": "Celestial Cats、angler",
+      "organization": "angler、Celestial Cats",
       "totalViews": 0
     },
     {
@@ -2137,12 +2137,11 @@
     {
       "id": "ch-406",
       "name": "Recap",
-      "youtubeChannelId": "",
+      "twitchUserId": "256964489",
       "twitchUserName": "recaplol1",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/da35eb8e-5505-4959-8a5e-310dd40ef1d3-profile_image-300x300.png",
       "job": "",
-      "organization": "",
-      "twitchUserId": "256964489"
+      "organization": ""
     },
     {
       "id": "ch-350",
@@ -2151,6 +2150,22 @@
       "avatarUrl": "",
       "job": "",
       "organization": ""
+    },
+    {
+      "id": "ch-566",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-548",
+      "name": "花江夏樹",
+      "youtubeHandle": "@hanae0626",
+      "avatarUrl": "",
+      "job": "飲食店",
+      "organization": "Nice! Tacos."
     }
   ]
 }
