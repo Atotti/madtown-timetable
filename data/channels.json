@@ -1037,7 +1037,7 @@
       "twitchUserId": "463657800",
       "twitchUserName": "wakiwaki612",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/a86ddd65-c91c-4f59-9bae-41b7e64d056b-profile_image-300x300.png",
-      "job": "聖職者 (司祭)、救急隊",
+      "job": "聖職者（司祭） 、救急隊",
       "organization": "",
       "totalViews": 0
     },
@@ -1318,7 +1318,7 @@
       "twitchUserName": "gotsukishima",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/49437742-fa8a-49bc-85cd-43f954324254-profile_image-300x300.png",
       "job": "ギャング、メカニック",
-      "organization": "XVI",
+      "organization": "XVI、7278メカニック",
       "totalViews": 0
     },
     {
@@ -2144,12 +2144,12 @@
       "organization": ""
     },
     {
-      "id": "ch-350",
+      "id": "ch-548",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
-      "job": "",
-      "organization": ""
+      "job": "飲食店",
+      "organization": "Nice! Tacos."
     },
     {
       "id": "ch-566",
@@ -2160,12 +2160,58 @@
       "organization": ""
     },
     {
-      "id": "ch-548",
+      "id": "ch-733",
+      "name": "ManueL",
+      "youtubeChannelId": "",
+      "twitchUserName": "getmanuel",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/51834dcb-8f2c-4271-b9d2-fb3194d4a52b-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "169255517"
+    },
+    {
+      "id": "ch-767",
+      "name": "Rio",
+      "youtubeChannelId": "",
+      "twitchUserName": "rio_taro",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1b693cf6-29a5-45a3-8018-9a1f5da626e3-profile_image-300x300.png",
+      "job": "警察",
+      "organization": "",
+      "twitchUserId": "145248977"
+    },
+    {
+      "id": "ch-726",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-738",
+      "name": "みつき",
+      "youtubeChannelId": "mituki0916",
+      "twitchUserName": "mitsuki_mitsuu",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e05c193-4c53-4d57-9281-cc76052c9d4a-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "689257502"
+    },
+    {
+      "id": "ch-708",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
       "job": "飲食店",
       "organization": "Nice! Tacos."
+    },
+    {
+      "id": "ch-739",
+      "name": "光葉エニ",
+      "youtubeHandle": "@Mitsuba_Eni",
+      "avatarUrl": "",
+      "job": "スーパーマーケット",
+      "organization": ""
     }
   ]
 }
