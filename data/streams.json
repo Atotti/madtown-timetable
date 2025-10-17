@@ -204,7 +204,7 @@
       "scheduledStartTime": "2025-10-01T08:20:00Z",
       "duration": 27249,
       "isLive": false,
-      "viewCount": 66097
+      "viewCount": 66103
     },
     {
       "id": "stream-1760678392137-exrm2j",
@@ -230,7 +230,7 @@
       "endTime": "2025-10-01T08:51:55.000Z",
       "duration": 1725,
       "isLive": false,
-      "viewCount": 4362
+      "viewCount": 4363
     },
     {
       "id": "stream-1760678390631-1lwiso",
@@ -243,7 +243,7 @@
       "endTime": "2025-10-01T20:17:22.000Z",
       "duration": 42805,
       "isLive": false,
-      "viewCount": 173197
+      "viewCount": 173198
     },
     {
       "id": "stream-1760686139376-gvly8o",
@@ -325,7 +325,7 @@
       "endTime": "2025-10-01T19:28:31.000Z",
       "duration": 39392,
       "isLive": false,
-      "viewCount": 109818
+      "viewCount": 109820
     },
     {
       "id": "stream-1760678378678-6m0fv",
@@ -365,7 +365,7 @@
       "endTime": "2025-10-01T18:08:03.000Z",
       "duration": 34398,
       "isLive": false,
-      "viewCount": 4047
+      "viewCount": 4048
     },
     {
       "id": "stream-1760678392843-67qsd",
@@ -664,7 +664,7 @@
       "endTime": "2025-10-01T18:01:16.000Z",
       "duration": 32824,
       "isLive": false,
-      "viewCount": 110970
+      "viewCount": 110971
     },
     {
       "id": "stream-1760678377661-1jw0hp",
@@ -809,7 +809,7 @@
       "endTime": "2025-10-01T18:04:56.000Z",
       "duration": 32804,
       "isLive": false,
-      "viewCount": 136342
+      "viewCount": 136343
     },
     {
       "id": "stream-1760678367813-iohx68",
@@ -1001,7 +1001,7 @@
       "scheduledStartTime": "2025-10-01T09:00:00Z",
       "duration": 32874,
       "isLive": false,
-      "viewCount": 67171
+      "viewCount": 67176
     },
     {
       "id": "stream-1760686184551-xqqi38",
@@ -1176,7 +1176,7 @@
       "endTime": "2025-10-01T18:01:47.000Z",
       "duration": 32045,
       "isLive": false,
-      "viewCount": 677158
+      "viewCount": 677164
     },
     {
       "id": "stream-1760686070625-ss27cn",
@@ -1286,7 +1286,7 @@
       "scheduledStartTime": "2025-10-01T09:30:00Z",
       "duration": 31225,
       "isLive": false,
-      "viewCount": 590500
+      "viewCount": 590511
     },
     {
       "id": "stream-1760678372504-sa9pbu",
@@ -1299,7 +1299,7 @@
       "endTime": "2025-10-01T14:02:06.000Z",
       "duration": 16687,
       "isLive": false,
-      "viewCount": 119463
+      "viewCount": 119465
     },
     {
       "id": "stream-1760686132990-o09t0p",
@@ -1437,7 +1437,7 @@
       "endTime": "2025-10-01T16:15:37.000Z",
       "duration": 23235,
       "isLive": false,
-      "viewCount": 138587
+      "viewCount": 138588
     },
     {
       "id": "stream-1760686173744-knzfwo",
@@ -1531,7 +1531,7 @@
       "endTime": "2025-10-01T15:15:27.000Z",
       "duration": 16931,
       "isLive": false,
-      "viewCount": 151763
+      "viewCount": 151764
     },
     {
       "id": "stream-1760678380434-w2kdsh",
@@ -1544,7 +1544,7 @@
       "endTime": "2025-10-01T15:55:15.000Z",
       "duration": 19316,
       "isLive": false,
-      "viewCount": 275124
+      "viewCount": 275128
     },
     {
       "id": "stream-1760686153280-ririv",
@@ -1682,7 +1682,7 @@
       "endTime": "2025-10-01T20:53:05.000Z",
       "duration": 31016,
       "isLive": false,
-      "viewCount": 411888
+      "viewCount": 411890
     },
     {
       "id": "stream-1760686096570-to3zh",
@@ -1776,7 +1776,7 @@
       "endTime": "2025-10-01T13:51:28.000Z",
       "duration": 2884,
       "isLive": false,
-      "viewCount": 541
+      "viewCount": 546
     },
     {
       "id": "stream-1760678372252-vmggu",
@@ -1829,7 +1829,7 @@
       "endTime": "2025-10-01T14:06:14.000Z",
       "duration": 120,
       "isLive": false,
-      "viewCount": 2281
+      "viewCount": 2282
     },
     {
       "id": "stream-1760686107532-6ebm39",
@@ -1870,7 +1870,7 @@
       "endTime": "2025-10-01T18:00:38.000Z",
       "duration": 10969,
       "isLive": false,
-      "viewCount": 38763
+      "viewCount": 38764
     },
     {
       "id": "stream-1760678367161-5tkfls",
@@ -1896,7 +1896,7 @@
       "endTime": "2025-10-01T18:07:11.000Z",
       "duration": 6812,
       "isLive": false,
-      "viewCount": 39430
+      "viewCount": 39431
     },
     {
       "id": "stream-1760678369933-k3h4ue",
@@ -1977,7 +1977,7 @@
       "endTime": "2025-10-02T18:02:17.000Z",
       "duration": 34492,
       "isLive": false,
-      "viewCount": 155688
+      "viewCount": 155689
     },
     {
       "id": "stream-1760686005830-wpgorb",
@@ -2073,7 +2073,7 @@
       "scheduledStartTime": "2025-10-02T09:00:00Z",
       "duration": 32668,
       "isLive": false,
-      "viewCount": 77248
+      "viewCount": 77268
     },
     {
       "id": "stream-1760686108478-81vhbx",
@@ -2249,7 +2249,7 @@
       "endTime": "2025-10-02T18:02:27.000Z",
       "duration": 32490,
       "isLive": false,
-      "viewCount": 59100
+      "viewCount": 59102
     },
     {
       "id": "stream-1760686136212-opykjl",
@@ -2400,7 +2400,7 @@
       "endTime": "2025-10-02T13:33:56.000Z",
       "duration": 16317,
       "isLive": false,
-      "viewCount": 36333
+      "viewCount": 36334
     },
     {
       "id": "stream-1760686139376-wbap8",
@@ -2427,7 +2427,7 @@
       "endTime": "2025-10-02T18:00:39.000Z",
       "duration": 32299,
       "isLive": false,
-      "viewCount": 76903
+      "viewCount": 76904
     },
     {
       "id": "stream-1760678377169-ktyopk",
@@ -2440,7 +2440,7 @@
       "endTime": "2025-10-02T18:01:57.000Z",
       "duration": 32335,
       "isLive": false,
-      "viewCount": 529439
+      "viewCount": 529445
     },
     {
       "id": "stream-1760686156535-bzxrae",
@@ -2564,7 +2564,7 @@
       "scheduledStartTime": "2025-10-02T09:00:00Z",
       "duration": 32474,
       "isLive": false,
-      "viewCount": 42545
+      "viewCount": 42548
     },
     {
       "id": "stream-1760686048854-xdr42m",
@@ -2606,7 +2606,7 @@
       "scheduledStartTime": "2025-10-02T09:00:00Z",
       "duration": 32541,
       "isLive": false,
-      "viewCount": 251811
+      "viewCount": 251834
     },
     {
       "id": "stream-1760686009448-mz1pok",
@@ -2620,7 +2620,7 @@
       "scheduledStartTime": "2025-10-02T09:05:00Z",
       "duration": 32215,
       "isLive": false,
-      "viewCount": 434048
+      "viewCount": 434079
     },
     {
       "id": "stream-1760678390124-uge0l",
@@ -3160,7 +3160,7 @@
       "endTime": "2025-10-02T18:01:23.000Z",
       "duration": 27408,
       "isLive": false,
-      "viewCount": 185641
+      "viewCount": 185642
     },
     {
       "id": "stream-1760686154127-m6xc8",
@@ -3310,7 +3310,7 @@
       "scheduledStartTime": "2025-10-02T11:22:29Z",
       "duration": 20468,
       "isLive": false,
-      "viewCount": 19771
+      "viewCount": 19777
     },
     {
       "id": "stream-1760686153280-xl8sqf",
@@ -3471,7 +3471,7 @@
       "endTime": "2025-10-02T20:13:41.000Z",
       "duration": 29456,
       "isLive": false,
-      "viewCount": 32903
+      "viewCount": 32904
     },
     {
       "id": "stream-1760678374717-van1d6",
@@ -3484,7 +3484,7 @@
       "endTime": "2025-10-02T18:14:25.000Z",
       "duration": 21803,
       "isLive": false,
-      "viewCount": 74886
+      "viewCount": 74887
     },
     {
       "id": "stream-1760678376895-788eks",
@@ -3511,7 +3511,7 @@
       "scheduledStartTime": "2025-10-02T12:10:00Z",
       "duration": 14849,
       "isLive": false,
-      "viewCount": 165602
+      "viewCount": 165623
     },
     {
       "id": "stream-1760686142254-xugqud",
@@ -3713,7 +3713,7 @@
       "endTime": "2025-10-02T19:17:11.000Z",
       "duration": 17931,
       "isLive": false,
-      "viewCount": 93258
+      "viewCount": 93259
     },
     {
       "id": "stream-1760686025229-luq8gh",
@@ -3727,7 +3727,7 @@
       "scheduledStartTime": "2025-10-02T14:30:00Z",
       "duration": 12702,
       "isLive": false,
-      "viewCount": 5698
+      "viewCount": 5699
     },
     {
       "id": "stream-1760686064871-se4rkq",
@@ -3782,7 +3782,7 @@
       "scheduledStartTime": "2025-10-02T16:20:00Z",
       "duration": 6944,
       "isLive": false,
-      "viewCount": 59714
+      "viewCount": 59715
     },
     {
       "id": "stream-1760678369933-ydngtg",
@@ -3795,7 +3795,7 @@
       "endTime": "2025-10-02T18:01:01.000Z",
       "duration": 4391,
       "isLive": false,
-      "viewCount": 6981
+      "viewCount": 6982
     },
     {
       "id": "stream-1760686169873-7ybyj7",
@@ -3976,7 +3976,7 @@
       "scheduledStartTime": "2025-10-03T09:00:00Z",
       "duration": 32493,
       "isLive": false,
-      "viewCount": 44065
+      "viewCount": 44077
     },
     {
       "id": "stream-1760686138650-rozboq",
@@ -4003,7 +4003,7 @@
       "endTime": "2025-10-03T20:11:02.000Z",
       "duration": 40068,
       "isLive": false,
-      "viewCount": 104686
+      "viewCount": 104687
     },
     {
       "id": "stream-1760678371959-btxgt",
@@ -4016,7 +4016,7 @@
       "endTime": "2025-10-03T18:00:31.000Z",
       "duration": 32220,
       "isLive": false,
-      "viewCount": 146374
+      "viewCount": 146375
     },
     {
       "id": "stream-1760686132990-tsa8lv",
@@ -4207,7 +4207,7 @@
       "endTime": "2025-10-03T18:01:40.000Z",
       "duration": 31805,
       "isLive": false,
-      "viewCount": 9428
+      "viewCount": 9429
     },
     {
       "id": "stream-1760686165034-9ff29g",
@@ -4410,7 +4410,7 @@
       "scheduledStartTime": "2025-10-03T09:30:00Z",
       "duration": 31350,
       "isLive": false,
-      "viewCount": 422519
+      "viewCount": 422520
     },
     {
       "id": "stream-1760686122190-a44uyj",
@@ -4450,7 +4450,7 @@
       "endTime": "2025-10-03T11:19:26.000Z",
       "duration": 7024,
       "isLive": false,
-      "viewCount": 106017
+      "viewCount": 106018
     },
     {
       "id": "stream-1760678364531-nipw59",
@@ -4571,7 +4571,7 @@
       "scheduledStartTime": "2025-10-03T09:50:48Z",
       "duration": 14718,
       "isLive": false,
-      "viewCount": 16704
+      "viewCount": 16714
     },
     {
       "id": "stream-1760686070625-17ce4",
@@ -4598,7 +4598,7 @@
       "endTime": "2025-10-03T18:04:05.000Z",
       "duration": 28922,
       "isLive": false,
-      "viewCount": 120645
+      "viewCount": 120646
     },
     {
       "id": "stream-1760686080276-ujuat6",
@@ -4639,7 +4639,7 @@
       "endTime": "2025-10-03T18:04:52.000Z",
       "duration": 28617,
       "isLive": false,
-      "viewCount": 20581
+      "viewCount": 20584
     },
     {
       "id": "stream-1760678363015-wv0qgo",
@@ -4694,7 +4694,7 @@
       "scheduledStartTime": "2025-10-03T10:30:00Z",
       "duration": 27353,
       "isLive": false,
-      "viewCount": 57424
+      "viewCount": 57443
     },
     {
       "id": "stream-1760686109057-3qldbm",
@@ -4801,7 +4801,7 @@
       "endTime": "2025-10-03T18:01:13.000Z",
       "duration": 25525,
       "isLive": false,
-      "viewCount": 94622
+      "viewCount": 94625
     },
     {
       "id": "stream-1760678371125-fm81uo",
@@ -4907,7 +4907,7 @@
       "endTime": "2025-10-03T17:59:56.000Z",
       "duration": 23968,
       "isLive": false,
-      "viewCount": 267353
+      "viewCount": 267355
     },
     {
       "id": "stream-1760678390124-0coma",
@@ -4920,7 +4920,7 @@
       "endTime": "2025-10-03T18:02:21.000Z",
       "duration": 23750,
       "isLive": false,
-      "viewCount": 34134
+      "viewCount": 34136
     },
     {
       "id": "stream-1760686025229-h9wzwf",
@@ -5042,7 +5042,7 @@
       "endTime": "2025-10-03T18:21:17.000Z",
       "duration": 22601,
       "isLive": false,
-      "viewCount": 129752
+      "viewCount": 129753
     },
     {
       "id": "stream-1760678372747-0e3d5c",
@@ -5221,7 +5221,7 @@
       "endTime": "2025-10-03T18:01:02.000Z",
       "duration": 17001,
       "isLive": false,
-      "viewCount": 214459
+      "viewCount": 214465
     },
     {
       "id": "stream-1760686001281-u236yi",
@@ -5304,7 +5304,7 @@
       "endTime": "2025-10-03T16:19:15.000Z",
       "duration": 9156,
       "isLive": false,
-      "viewCount": 12282
+      "viewCount": 12283
     },
     {
       "id": "stream-1760678390402-9sj1iq",
@@ -5317,7 +5317,7 @@
       "endTime": "2025-10-03T21:19:56.000Z",
       "duration": 26966,
       "isLive": false,
-      "viewCount": 140809
+      "viewCount": 140810
     },
     {
       "id": "stream-1760686140705-u681h",
@@ -5521,7 +5521,7 @@
       "endTime": "2025-10-04T11:41:39.000Z",
       "duration": 10988,
       "isLive": false,
-      "viewCount": 22691
+      "viewCount": 22692
     },
     {
       "id": "stream-1760686162003-vi1xaa",
@@ -5548,7 +5548,7 @@
       "endTime": "2025-10-04T18:04:31.000Z",
       "duration": 32817,
       "isLive": false,
-      "viewCount": 136534
+      "viewCount": 136535
     },
     {
       "id": "stream-1760686130045-kz1gcj",
@@ -5657,7 +5657,7 @@
       "scheduledStartTime": "2025-10-04T09:00:00Z",
       "duration": 32739,
       "isLive": false,
-      "viewCount": 42009
+      "viewCount": 42012
     },
     {
       "id": "stream-1760686136212-01chno",
@@ -5699,7 +5699,7 @@
       "scheduledStartTime": "2025-10-04T09:00:00Z",
       "duration": 33302,
       "isLive": false,
-      "viewCount": 286656
+      "viewCount": 286717
     },
     {
       "id": "stream-1760686086374-4mw25h",
@@ -5755,7 +5755,7 @@
       "scheduledStartTime": "2025-10-04T09:00:00Z",
       "duration": 35154,
       "isLive": false,
-      "viewCount": 78238
+      "viewCount": 78248
     },
     {
       "id": "stream-1760678385712-900be",
@@ -6000,7 +6000,7 @@
       "endTime": "2025-10-04T16:52:56.000Z",
       "duration": 28025,
       "isLive": false,
-      "viewCount": 367762
+      "viewCount": 367770
     },
     {
       "id": "stream-1760678367575-zvqvtb",
@@ -6069,7 +6069,7 @@
       "scheduledStartTime": "2025-10-04T09:30:00Z",
       "duration": 32040,
       "isLive": false,
-      "viewCount": 435168
+      "viewCount": 435189
     },
     {
       "id": "stream-1760678369933-mzxzh",
@@ -6095,7 +6095,7 @@
       "endTime": "2025-10-04T15:41:54.000Z",
       "duration": 23464,
       "isLive": false,
-      "viewCount": 33289
+      "viewCount": 33291
     },
     {
       "id": "stream-1760686132235-ztkpem",
@@ -6189,7 +6189,7 @@
       "endTime": "2025-10-04T18:01:02.000Z",
       "duration": 31510,
       "isLive": false,
-      "viewCount": 71485
+      "viewCount": 71486
     },
     {
       "id": "stream-1760686098542-h74ca",
@@ -6325,7 +6325,7 @@
       "endTime": "2025-10-04T17:51:52.000Z",
       "duration": 29524,
       "isLive": false,
-      "viewCount": 174572
+      "viewCount": 174573
     },
     {
       "id": "stream-1760686128636-ml635o",
@@ -6366,7 +6366,7 @@
       "endTime": "2025-10-04T18:04:31.000Z",
       "duration": 30136,
       "isLive": false,
-      "viewCount": 74466
+      "viewCount": 74467
     },
     {
       "id": "stream-1760686051758-qsjoer",
@@ -6543,7 +6543,7 @@
       "scheduledStartTime": "2025-10-04T10:30:00Z",
       "duration": 27812,
       "isLive": false,
-      "viewCount": 77769
+      "viewCount": 77797
     },
     {
       "id": "stream-1760686145717-6abkka",
@@ -6584,7 +6584,7 @@
       "endTime": "2025-10-04T18:01:04.000Z",
       "duration": 27142,
       "isLive": false,
-      "viewCount": 121718
+      "viewCount": 121721
     },
     {
       "id": "stream-1760686173744-tvgtq4",
@@ -6868,7 +6868,7 @@
       "endTime": "2025-10-04T15:20:17.000Z",
       "duration": 12856,
       "isLive": false,
-      "viewCount": 20101
+      "viewCount": 20102
     },
     {
       "id": "stream-1760686148481-wip4np",
@@ -6895,7 +6895,7 @@
       "endTime": "2025-10-04T19:52:46.000Z",
       "duration": 29052,
       "isLive": false,
-      "viewCount": 353545
+      "viewCount": 353549
     },
     {
       "id": "stream-1760678374717-rmbok",
@@ -6908,7 +6908,7 @@
       "endTime": "2025-10-04T18:14:36.000Z",
       "duration": 23149,
       "isLive": false,
-      "viewCount": 74534
+      "viewCount": 74539
     },
     {
       "id": "stream-1760686109057-q3qypl",
@@ -6948,7 +6948,7 @@
       "endTime": "2025-10-04T21:39:32.000Z",
       "duration": 34787,
       "isLive": false,
-      "viewCount": 310885
+      "viewCount": 310892
     },
     {
       "id": "stream-1760686152535-4x0zlv",
@@ -6989,7 +6989,7 @@
       "endTime": "2025-10-04T20:34:58.000Z",
       "duration": 29937,
       "isLive": false,
-      "viewCount": 161524
+      "viewCount": 161525
     },
     {
       "id": "stream-1760686115189-lzu22f",
@@ -7017,7 +7017,7 @@
       "scheduledStartTime": "2025-10-04T12:20:00Z",
       "duration": 23878,
       "isLive": false,
-      "viewCount": 176398
+      "viewCount": 176396
     },
     {
       "id": "stream-1760686175632-k6krnq",
@@ -7098,7 +7098,7 @@
       "endTime": "2025-10-04T18:20:11.000Z",
       "duration": 18763,
       "isLive": false,
-      "viewCount": 60795
+      "viewCount": 60796
     },
     {
       "id": "stream-1760686159067-io1x8p",
@@ -7153,7 +7153,7 @@
       "endTime": "2025-10-04T19:34:04.000Z",
       "duration": 20199,
       "isLive": false,
-      "viewCount": 63707
+      "viewCount": 63709
     },
     {
       "id": "stream-1760686126577-w7qibs",
@@ -7180,7 +7180,7 @@
       "endTime": "2025-10-04T18:08:40.000Z",
       "duration": 14772,
       "isLive": false,
-      "viewCount": 50890
+      "viewCount": 50891
     },
     {
       "id": "stream-1760686142254-32q7s",
@@ -7451,7 +7451,7 @@
       "endTime": "2025-10-05T21:00:42.000Z",
       "duration": 44342,
       "isLive": false,
-      "viewCount": 322332
+      "viewCount": 322333
     },
     {
       "id": "stream-1760686136212-iug8tg",
@@ -7492,7 +7492,7 @@
       "endTime": "2025-10-05T18:01:20.000Z",
       "duration": 32638,
       "isLive": false,
-      "viewCount": 45761
+      "viewCount": 45762
     },
     {
       "id": "stream-1760686117350-qzsk8m",
@@ -7519,7 +7519,7 @@
       "scheduledStartTime": "2025-10-05T09:00:00Z",
       "duration": 32891,
       "isLive": false,
-      "viewCount": 38173
+      "viewCount": 38183
     },
     {
       "id": "stream-1760686130045-6gchhw",
@@ -7767,7 +7767,7 @@
       "scheduledStartTime": "2025-10-05T09:15:00Z",
       "duration": 32626,
       "isLive": false,
-      "viewCount": 441899
+      "viewCount": 441950
     },
     {
       "id": "stream-1760686155309-tc592d",
@@ -7821,7 +7821,7 @@
       "endTime": "2025-10-05T17:38:15.000Z",
       "duration": 30950,
       "isLive": false,
-      "viewCount": 469661
+      "viewCount": 469662
     },
     {
       "id": "stream-1760678390631-nu52wh",
@@ -7834,7 +7834,7 @@
       "endTime": "2025-10-05T18:03:35.000Z",
       "duration": 32466,
       "isLive": false,
-      "viewCount": 116481
+      "viewCount": 116483
     },
     {
       "id": "stream-1760686162902-fxiadf",
@@ -7861,7 +7861,7 @@
       "endTime": "2025-10-05T18:03:05.000Z",
       "duration": 32410,
       "isLive": false,
-      "viewCount": 54959
+      "viewCount": 54960
     },
     {
       "id": "stream-1760686165034-3i8pq",
@@ -7902,7 +7902,7 @@
       "endTime": "2025-10-05T12:27:36.000Z",
       "duration": 12229,
       "isLive": false,
-      "viewCount": 184043
+      "viewCount": 184050
     },
     {
       "id": "stream-1760686132990-crxvij",
@@ -8026,7 +8026,7 @@
       "scheduledStartTime": "2025-10-05T09:00:00Z",
       "duration": 4507,
       "isLive": false,
-      "viewCount": 86840
+      "viewCount": 86868
     },
     {
       "id": "stream-1760686105293-o1hvjt",
@@ -8053,7 +8053,7 @@
       "endTime": "2025-10-05T21:06:03.000Z",
       "duration": 42986,
       "isLive": false,
-      "viewCount": 62261
+      "viewCount": 62263
     },
     {
       "id": "stream-1760686139376-sqlapu",
@@ -8147,7 +8147,7 @@
       "endTime": "2025-10-05T18:02:16.000Z",
       "duration": 31211,
       "isLive": false,
-      "viewCount": 103461
+      "viewCount": 103462
     },
     {
       "id": "stream-1760678365596-bmtuh",
@@ -8186,7 +8186,7 @@
       "endTime": "2025-10-05T10:47:17.000Z",
       "duration": 4938,
       "isLive": false,
-      "viewCount": 99995
+      "viewCount": 99996
     },
     {
       "id": "stream-1760678389242-ff32si",
@@ -8225,7 +8225,7 @@
       "endTime": "2025-10-05T21:02:56.000Z",
       "duration": 41491,
       "isLive": false,
-      "viewCount": 47430
+      "viewCount": 47431
     },
     {
       "id": "stream-1760678388327-gm9ujk",
@@ -8265,7 +8265,7 @@
       "endTime": "2025-10-05T20:27:18.000Z",
       "duration": 38830,
       "isLive": false,
-      "viewCount": 188504
+      "viewCount": 188507
     },
     {
       "id": "stream-1760678371125-3qxlwj",
@@ -8291,7 +8291,7 @@
       "endTime": "2025-10-05T20:58:43.000Z",
       "duration": 40197,
       "isLive": false,
-      "viewCount": 63526
+      "viewCount": 63527
     },
     {
       "id": "stream-1760678372504-kdyfl5",
@@ -8317,7 +8317,7 @@
       "endTime": "2025-10-05T20:27:20.000Z",
       "duration": 38212,
       "isLive": false,
-      "viewCount": 39663
+      "viewCount": 39664
     },
     {
       "id": "stream-1760686038466-sd3sg",
@@ -8412,7 +8412,7 @@
       "endTime": "2025-10-05T18:31:09.000Z",
       "duration": 30300,
       "isLive": false,
-      "viewCount": 47390
+      "viewCount": 47391
     },
     {
       "id": "stream-1760686102845-0fyieh",
@@ -8481,7 +8481,7 @@
       "endTime": "2025-10-05T19:59:06.000Z",
       "duration": 35248,
       "isLive": false,
-      "viewCount": 139105
+      "viewCount": 139106
     },
     {
       "id": "stream-1760686128636-72x16",
@@ -8659,7 +8659,7 @@
       "endTime": "2025-10-05T15:13:24.000Z",
       "duration": 14604,
       "isLive": false,
-      "viewCount": 342465
+      "viewCount": 342468
     },
     {
       "id": "stream-1760678375115-fkcmi",
@@ -8685,7 +8685,7 @@
       "endTime": "2025-10-05T18:00:53.000Z",
       "duration": 24253,
       "isLive": false,
-      "viewCount": 150225
+      "viewCount": 150229
     },
     {
       "id": "stream-1760685997383-7nupdr",
@@ -8740,7 +8740,7 @@
       "scheduledStartTime": "2025-10-05T11:30:00Z",
       "duration": 30253,
       "isLive": false,
-      "viewCount": 74650
+      "viewCount": 74675
     },
     {
       "id": "stream-1760678377661-47djw",
@@ -8819,7 +8819,7 @@
       "endTime": "2025-10-05T18:28:24.000Z",
       "duration": 22916,
       "isLive": false,
-      "viewCount": 75985
+      "viewCount": 75986
     },
     {
       "id": "stream-1760686001281-df9v",
@@ -8833,7 +8833,7 @@
       "scheduledStartTime": "2025-10-05T12:15:00Z",
       "duration": 21409,
       "isLive": false,
-      "viewCount": 253651
+      "viewCount": 253645
     },
     {
       "id": "stream-1760686140705-5wz3rhl",
@@ -9065,7 +9065,7 @@
       "scheduledStartTime": "2025-10-05T14:10:00Z",
       "duration": 14268,
       "isLive": false,
-      "viewCount": 138898
+      "viewCount": 138895
     },
     {
       "id": "stream-1760678367161-rvg8m",
@@ -9118,7 +9118,7 @@
       "endTime": "2025-10-05T20:36:25.000Z",
       "duration": 18674,
       "isLive": false,
-      "viewCount": 179255
+      "viewCount": 179256
     },
     {
       "id": "stream-1760686111785-8s1cer",
@@ -9375,7 +9375,7 @@
       "endTime": "2025-10-07T11:50:29.000Z",
       "duration": 3781,
       "isLive": false,
-      "viewCount": 129196
+      "viewCount": 129198
     },
     {
       "id": "stream-1760686029693-aid2nt",
@@ -9389,7 +9389,7 @@
       "scheduledStartTime": "2025-10-07T11:15:00Z",
       "duration": 23300,
       "isLive": false,
-      "viewCount": 91204
+      "viewCount": 91211
     },
     {
       "id": "stream-1760686156535-9v0zti",
@@ -9416,7 +9416,7 @@
       "endTime": "2025-10-07T13:15:55.000Z",
       "duration": 5057,
       "isLive": false,
-      "viewCount": 136196
+      "viewCount": 136197
     },
     {
       "id": "stream-1760678363015-erys1h",
@@ -9429,7 +9429,7 @@
       "endTime": "2025-10-07T18:07:26.000Z",
       "duration": 22486,
       "isLive": false,
-      "viewCount": 45484
+      "viewCount": 45488
     },
     {
       "id": "stream-1760678367393-c7tumq",
@@ -9646,7 +9646,7 @@
       "scheduledStartTime": "2025-10-08T09:00:00Z",
       "duration": 32690,
       "isLive": false,
-      "viewCount": 32983
+      "viewCount": 32986
     },
     {
       "id": "stream-1760686162902-foanp",
@@ -9840,7 +9840,7 @@
       "scheduledStartTime": "2025-10-08T09:15:00Z",
       "duration": 32348,
       "isLive": false,
-      "viewCount": 551184
+      "viewCount": 551243
     },
     {
       "id": "stream-1760686174549-4oh91f",
@@ -9894,7 +9894,7 @@
       "endTime": "2025-10-08T11:43:20.000Z",
       "duration": 9596,
       "isLive": false,
-      "viewCount": 23062
+      "viewCount": 23063
     },
     {
       "id": "stream-1760678369933-4x7sf",
@@ -9920,7 +9920,7 @@
       "endTime": "2025-10-08T15:49:06.000Z",
       "duration": 24327,
       "isLive": false,
-      "viewCount": 85449
+      "viewCount": 85450
     },
     {
       "id": "stream-1760686162003-5rmnmf",
@@ -9947,7 +9947,7 @@
       "endTime": "2025-10-08T17:52:34.000Z",
       "duration": 31724,
       "isLive": false,
-      "viewCount": 556302
+      "viewCount": 556309
     },
     {
       "id": "stream-1760678373946-zim9xt",
@@ -10081,7 +10081,7 @@
       "endTime": "2025-10-08T18:06:34.000Z",
       "duration": 32347,
       "isLive": false,
-      "viewCount": 358349
+      "viewCount": 358350
     },
     {
       "id": "stream-1760686135580-ygkn05",
@@ -10149,7 +10149,7 @@
       "endTime": "2025-10-08T18:01:41.000Z",
       "duration": 31549,
       "isLive": false,
-      "viewCount": 158854
+      "viewCount": 158855
     },
     {
       "id": "stream-1760686070625-svwci9",
@@ -10203,7 +10203,7 @@
       "endTime": "2025-10-08T18:00:37.000Z",
       "duration": 31282,
       "isLive": false,
-      "viewCount": 181518
+      "viewCount": 181519
     },
     {
       "id": "stream-1760678392843-e4hrk",
@@ -10229,7 +10229,7 @@
       "endTime": "2025-10-08T18:01:58.000Z",
       "duration": 31128,
       "isLive": false,
-      "viewCount": 26932
+      "viewCount": 26933
     },
     {
       "id": "stream-1760678383969-0okg7b",
@@ -10391,7 +10391,7 @@
       "endTime": "2025-10-08T18:06:57.000Z",
       "duration": 29331,
       "isLive": false,
-      "viewCount": 30166
+      "viewCount": 30167
     },
     {
       "id": "stream-1760678369933-t7gy3f",
@@ -10431,7 +10431,7 @@
       "endTime": "2025-10-08T20:11:20.000Z",
       "duration": 36488,
       "isLive": false,
-      "viewCount": 37216
+      "viewCount": 37217
     },
     {
       "id": "stream-1760686038466-aqn2ct",
@@ -10581,7 +10581,7 @@
       "endTime": "2025-10-08T18:01:10.000Z",
       "duration": 25733,
       "isLive": false,
-      "viewCount": 54450
+      "viewCount": 54451
     },
     {
       "id": "stream-1760686173744-xb7j38",
@@ -10797,7 +10797,7 @@
       "endTime": "2025-10-08T17:00:57.000Z",
       "duration": 18122,
       "isLive": false,
-      "viewCount": 45430
+      "viewCount": 45432
     },
     {
       "id": "stream-1760686080879-q5mxy",
@@ -10894,7 +10894,7 @@
       "endTime": "2025-10-08T18:03:00.000Z",
       "duration": 21355,
       "isLive": false,
-      "viewCount": 349482
+      "viewCount": 349483
     },
     {
       "id": "stream-1760678374717-uvd0ea",
@@ -10907,7 +10907,7 @@
       "endTime": "2025-10-08T18:03:33.000Z",
       "duration": 21355,
       "isLive": false,
-      "viewCount": 64786
+      "viewCount": 64788
     },
     {
       "id": "stream-1760678364531-r2py6cd",
@@ -11014,7 +11014,7 @@
       "endTime": "2025-10-08T16:04:52.000Z",
       "duration": 11262,
       "isLive": false,
-      "viewCount": 17814
+      "viewCount": 17815
     },
     {
       "id": "stream-1760678376895-ytre85",
@@ -11027,7 +11027,7 @@
       "endTime": "2025-10-08T20:10:35.000Z",
       "duration": 25955,
       "isLive": false,
-      "viewCount": 283886
+      "viewCount": 283889
     },
     {
       "id": "stream-1760686068538-t1uaeq",
@@ -11191,7 +11191,7 @@
       "scheduledStartTime": "2025-10-08T14:21:02Z",
       "duration": 13272,
       "isLive": false,
-      "viewCount": 10728
+      "viewCount": 10734
     },
     {
       "id": "stream-1760678377409-txttne",
@@ -11258,7 +11258,7 @@
       "endTime": "2025-10-08T18:02:05Z",
       "duration": 11396,
       "isLive": false,
-      "viewCount": 20497
+      "viewCount": 20498
     },
     {
       "id": "stream-1760678368356-ek3wx",
@@ -11311,7 +11311,7 @@
       "endTime": "2025-10-09T04:21:17.000Z",
       "duration": 47794,
       "isLive": false,
-      "viewCount": 69439
+      "viewCount": 69440
     },
     {
       "id": "stream-1760686153280-e0yy6g",
@@ -11446,7 +11446,7 @@
       "endTime": "2025-10-09T18:02:18.000Z",
       "duration": 36053,
       "isLive": false,
-      "viewCount": 58985
+      "viewCount": 58987
     },
     {
       "id": "stream-1760678394348-j4w3qp",
@@ -11853,7 +11853,7 @@
       "endTime": "2025-10-09T17:57:15.000Z",
       "duration": 32028,
       "isLive": false,
-      "viewCount": 483298
+      "viewCount": 483304
     },
     {
       "id": "stream-1760686122190-2ydin",
@@ -11894,7 +11894,7 @@
       "endTime": "2025-10-09T18:09:22.000Z",
       "duration": 32705,
       "isLive": false,
-      "viewCount": 232431
+      "viewCount": 232435
     },
     {
       "id": "stream-1760678390124-cj1nrb",
@@ -11948,7 +11948,7 @@
       "endTime": "2025-10-09T19:03:24.000Z",
       "duration": 35922,
       "isLive": false,
-      "viewCount": 58382
+      "viewCount": 58383
     },
     {
       "id": "stream-1760678366152-d5f6tl",
@@ -11989,7 +11989,7 @@
       "scheduledStartTime": "2025-10-09T09:15:00Z",
       "duration": 32186,
       "isLive": false,
-      "viewCount": 390651
+      "viewCount": 390723
     },
     {
       "id": "stream-1760686128636-7fezrr",
@@ -12141,7 +12141,7 @@
       "scheduledStartTime": "2025-10-09T09:00:00Z",
       "duration": 31810,
       "isLive": false,
-      "viewCount": 46695
+      "viewCount": 46708
     },
     {
       "id": "stream-1760686023118-2tvu8w",
@@ -12155,7 +12155,7 @@
       "scheduledStartTime": "2025-10-09T09:00:00Z",
       "duration": 497,
       "isLive": false,
-      "viewCount": 29247
+      "viewCount": 29251
     },
     {
       "id": "stream-1760678375912-odj8sv",
@@ -12168,7 +12168,7 @@
       "endTime": "2025-10-09T18:01:51.000Z",
       "duration": 31616,
       "isLive": false,
-      "viewCount": 149486
+      "viewCount": 149489
     },
     {
       "id": "stream-1760678372252-vdctx4",
@@ -12181,7 +12181,7 @@
       "endTime": "2025-10-09T18:01:10.000Z",
       "duration": 31500,
       "isLive": false,
-      "viewCount": 84133
+      "viewCount": 84134
     },
     {
       "id": "stream-1760686088637-mrarnd",
@@ -12344,7 +12344,7 @@
       "endTime": "2025-10-09T17:23:54.000Z",
       "duration": 27974,
       "isLive": false,
-      "viewCount": 345329
+      "viewCount": 345338
     },
     {
       "id": "stream-1760678369933-iis9pc",
@@ -12425,7 +12425,7 @@
       "endTime": "2025-10-09T18:04:31.000Z",
       "duration": 29407,
       "isLive": false,
-      "viewCount": 67684
+      "viewCount": 67685
     },
     {
       "id": "stream-1760678380677-vov07k",
@@ -12438,7 +12438,7 @@
       "endTime": "2025-10-09T19:55:00.000Z",
       "duration": 35796,
       "isLive": false,
-      "viewCount": 184326
+      "viewCount": 184327
     },
     {
       "id": "stream-1760686087609-kxd92r",
@@ -12519,7 +12519,7 @@
       "endTime": "2025-10-09T21:20:59.000Z",
       "duration": 40442,
       "isLive": false,
-      "viewCount": 92736
+      "viewCount": 92737
     },
     {
       "id": "stream-1760686169873-f940cn",
@@ -12560,7 +12560,7 @@
       "endTime": "2025-10-09T18:01:11.000Z",
       "duration": 28013,
       "isLive": false,
-      "viewCount": 38243
+      "viewCount": 38244
     },
     {
       "id": "stream-1760685997383-w0k0pv",
@@ -12628,7 +12628,7 @@
       "endTime": "2025-10-09T18:01:26.000Z",
       "duration": 26783,
       "isLive": false,
-      "viewCount": 119373
+      "viewCount": 119374
     },
     {
       "id": "stream-1760678372504-arhxva",
@@ -12695,7 +12695,7 @@
       "endTime": "2025-10-09T19:32:24.000Z",
       "duration": 31129,
       "isLive": false,
-      "viewCount": 30796
+      "viewCount": 30797
     },
     {
       "id": "stream-1760678384840-cl9id8",
@@ -12708,7 +12708,7 @@
       "endTime": "2025-10-09T18:04:55.000Z",
       "duration": 25697,
       "isLive": false,
-      "viewCount": 40879
+      "viewCount": 40880
     },
     {
       "id": "stream-1760678390402-ustw0k",
@@ -12762,7 +12762,7 @@
       "endTime": "2025-10-09T15:32:10.000Z",
       "duration": 16195,
       "isLive": false,
-      "viewCount": 40969
+      "viewCount": 40970
     },
     {
       "id": "stream-1760686089001-c35odi",
@@ -13037,7 +13037,7 @@
       "scheduledStartTime": "2025-10-09T12:30:00Z",
       "duration": 25955,
       "isLive": false,
-      "viewCount": 43138
+      "viewCount": 43156
     },
     {
       "id": "stream-1760678374717-88i0mv",
@@ -13050,7 +13050,7 @@
       "endTime": "2025-10-09T18:38:12.000Z",
       "duration": 23241,
       "isLive": false,
-      "viewCount": 64059
+      "viewCount": 64064
     },
     {
       "id": "stream-1760678392843-g2y4kg",
@@ -13076,7 +13076,7 @@
       "endTime": "2025-10-09T18:10:09.000Z",
       "duration": 21288,
       "isLive": false,
-      "viewCount": 92167
+      "viewCount": 92171
     },
     {
       "id": "stream-1760678362664-57h8vp",
@@ -13223,7 +13223,7 @@
       "endTime": "2025-10-09T17:07:59.000Z",
       "duration": 16224,
       "isLive": false,
-      "viewCount": 196997
+      "viewCount": 197000
     },
     {
       "id": "stream-1760678385712-cq6lald",
@@ -13276,7 +13276,7 @@
       "endTime": "2025-10-09T18:36:11.000Z",
       "duration": 21221,
       "isLive": false,
-      "viewCount": 55521
+      "viewCount": 55524
     },
     {
       "id": "stream-1760678372504-ofrq6c",
@@ -13355,7 +13355,7 @@
       "endTime": "2025-10-09T18:02:39.000Z",
       "duration": 17577,
       "isLive": false,
-      "viewCount": 50556
+      "viewCount": 50557
     },
     {
       "id": "stream-1760686159067-3y4eps",
@@ -13463,7 +13463,7 @@
       "endTime": "2025-10-09T20:21:20.000Z",
       "duration": 20903,
       "isLive": false,
-      "viewCount": 102591
+      "viewCount": 102593
     },
     {
       "id": "stream-1760686137981-euqqqu",
@@ -13490,7 +13490,7 @@
       "endTime": "2025-10-09T18:02:06.000Z",
       "duration": 12117,
       "isLive": false,
-      "viewCount": 9777
+      "viewCount": 9778
     },
     {
       "id": "stream-1760678370404-fe216j",
@@ -13543,7 +13543,7 @@
       "endTime": "2025-10-09T20:18:01.000Z",
       "duration": 9830,
       "isLive": false,
-      "viewCount": 64942
+      "viewCount": 64944
     },
     {
       "id": "stream-1760686162902-r4i8q7",
@@ -13570,7 +13570,7 @@
       "endTime": "2025-10-09T21:21:27.000Z",
       "duration": 10921,
       "isLive": false,
-      "viewCount": 8743
+      "viewCount": 8744
     },
     {
       "id": "stream-1760678367575-4m7j9e",
@@ -13624,7 +13624,7 @@
       "endTime": "2025-10-10T18:03:38.000Z",
       "duration": 33075,
       "isLive": false,
-      "viewCount": 69094
+      "viewCount": 69097
     },
     {
       "id": "stream-1760686027142-00lree",
@@ -13638,7 +13638,7 @@
       "scheduledStartTime": "2025-10-10T09:00:00Z",
       "duration": 23982,
       "isLive": false,
-      "viewCount": 41456
+      "viewCount": 41459
     },
     {
       "id": "stream-1760686086374-jbv19",
@@ -13774,7 +13774,7 @@
       "endTime": "2025-10-10T15:31:33.000Z",
       "duration": 23493,
       "isLive": false,
-      "viewCount": 56965
+      "viewCount": 56967
     },
     {
       "id": "stream-1760686087609-c6ruy3",
@@ -13923,7 +13923,7 @@
       "endTime": "2025-10-10T21:15:53.000Z",
       "duration": 44013,
       "isLive": false,
-      "viewCount": 119375
+      "viewCount": 119376
     },
     {
       "id": "stream-1760686093003-qf2ik9",
@@ -13950,7 +13950,7 @@
       "endTime": "2025-10-10T18:09:53.000Z",
       "duration": 32838,
       "isLive": false,
-      "viewCount": 196234
+      "viewCount": 196240
     },
     {
       "id": "stream-1760686086979-vpfhgj",
@@ -14089,7 +14089,7 @@
       "scheduledStartTime": "2025-10-10T09:30:00Z",
       "duration": 32085,
       "isLive": false,
-      "viewCount": 440567
+      "viewCount": 440638
     },
     {
       "id": "stream-1760678364531-a03keg",
@@ -14115,7 +14115,7 @@
       "endTime": "2025-10-10T17:48:03.000Z",
       "duration": 31192,
       "isLive": false,
-      "viewCount": 465876
+      "viewCount": 465881
     },
     {
       "id": "stream-1760678372747-lozbh9",
@@ -14250,7 +14250,7 @@
       "endTime": "2025-10-10T18:01:16.000Z",
       "duration": 30998,
       "isLive": false,
-      "viewCount": 32395
+      "viewCount": 32397
     },
     {
       "id": "stream-1760678378678-izksjl",
@@ -14329,7 +14329,7 @@
       "endTime": "2025-10-10T18:02:18.000Z",
       "duration": 30016,
       "isLive": false,
-      "viewCount": 46372
+      "viewCount": 46373
     },
     {
       "id": "stream-1760686080276-wbiqrf9",
@@ -14370,7 +14370,7 @@
       "endTime": "2025-10-10T18:00:50.000Z",
       "duration": 29128,
       "isLive": false,
-      "viewCount": 4579
+      "viewCount": 4587
     },
     {
       "id": "stream-1760678365596-5zm91m",
@@ -14383,7 +14383,7 @@
       "endTime": "2025-10-11T01:25:47.000Z",
       "duration": 55768,
       "isLive": false,
-      "viewCount": 119902
+      "viewCount": 119904
     },
     {
       "id": "stream-1760686079465-vth5d",
@@ -14425,7 +14425,7 @@
       "scheduledStartTime": "2025-10-10T10:00:00Z",
       "duration": 28759,
       "isLive": false,
-      "viewCount": 62743
+      "viewCount": 62795
     },
     {
       "id": "stream-1760686154127-x92ms3",
@@ -14466,7 +14466,7 @@
       "endTime": "2025-10-10T18:02:23.000Z",
       "duration": 28519,
       "isLive": false,
-      "viewCount": 218001
+      "viewCount": 218002
     },
     {
       "id": "stream-1760678367575-kag63i",
@@ -14479,7 +14479,7 @@
       "endTime": "2025-10-10T18:01:35.000Z",
       "duration": 28387,
       "isLive": false,
-      "viewCount": 4587
+      "viewCount": 4589
     },
     {
       "id": "stream-1760678361675-7lx29",
@@ -14519,7 +14519,7 @@
       "endTime": "2025-10-10T18:04:18.000Z",
       "duration": 27753,
       "isLive": false,
-      "viewCount": 307731
+      "viewCount": 307742
     },
     {
       "id": "stream-1760678389680-69p0cp",
@@ -14532,7 +14532,7 @@
       "endTime": "2025-10-10T17:55:29.000Z",
       "duration": 26714,
       "isLive": false,
-      "viewCount": 57628
+      "viewCount": 57629
     },
     {
       "id": "stream-1760686088637-2itja",
@@ -14560,7 +14560,7 @@
       "scheduledStartTime": "2025-10-10T10:30:00Z",
       "duration": 27261,
       "isLive": false,
-      "viewCount": 220303
+      "viewCount": 220300
     },
     {
       "id": "stream-1760686147249-ish16",
@@ -14614,7 +14614,7 @@
       "endTime": "2025-10-10T18:02:06.000Z",
       "duration": 26534,
       "isLive": false,
-      "viewCount": 72442
+      "viewCount": 72443
     },
     {
       "id": "stream-1760685997383-nuefr",
@@ -14628,7 +14628,7 @@
       "scheduledStartTime": "2025-10-10T10:39:43Z",
       "duration": 26586,
       "isLive": false,
-      "viewCount": 17456
+      "viewCount": 17470
     },
     {
       "id": "stream-1760686073511-jf7cbh",
@@ -14725,7 +14725,7 @@
       "endTime": "2025-10-10T16:12:56.000Z",
       "duration": 17979,
       "isLive": false,
-      "viewCount": 119051
+      "viewCount": 119055
     },
     {
       "id": "stream-1760686040756-9ffma2",
@@ -14752,7 +14752,7 @@
       "endTime": "2025-10-10T16:52:41.000Z",
       "duration": 19884,
       "isLive": false,
-      "viewCount": 84078
+      "viewCount": 84079
     },
     {
       "id": "stream-1760686153280-wejrg",
@@ -14872,7 +14872,7 @@
       "endTime": "2025-10-10T16:20:16.000Z",
       "duration": 15615,
       "isLive": false,
-      "viewCount": 300194
+      "viewCount": 300200
     },
     {
       "id": "stream-1760686102086-dnvido",
@@ -15036,7 +15036,7 @@
       "endTime": "2025-10-10T20:35:24.000Z",
       "duration": 27934,
       "isLive": false,
-      "viewCount": 241552
+      "viewCount": 241566
     },
     {
       "id": "stream-1760678367393-boe88",
@@ -15115,7 +15115,7 @@
       "endTime": "2025-10-10T18:05:45.000Z",
       "duration": 17406,
       "isLive": false,
-      "viewCount": 24113
+      "viewCount": 24123
     },
     {
       "id": "stream-1760686107532-mw2w2vl",
@@ -15142,7 +15142,7 @@
       "endTime": "2025-10-10T19:52:16.000Z",
       "duration": 22607,
       "isLive": false,
-      "viewCount": 74186
+      "viewCount": 74187
     },
     {
       "id": "stream-1760686025229-lxkx2c",
@@ -15156,7 +15156,7 @@
       "scheduledStartTime": "2025-10-10T13:45:00Z",
       "duration": 15328,
       "isLive": false,
-      "viewCount": 4656
+      "viewCount": 4655
     },
     {
       "id": "stream-1760686060612-p2yynl",
@@ -15184,7 +15184,7 @@
       "scheduledStartTime": "2025-10-10T14:00:00Z",
       "duration": 14614,
       "isLive": false,
-      "viewCount": 116752
+      "viewCount": 116751
     },
     {
       "id": "stream-1760686120121-ec2b5",
@@ -15307,7 +15307,7 @@
       "endTime": "2025-10-10T16:16:56.000Z",
       "duration": 2691,
       "isLive": false,
-      "viewCount": 7735
+      "viewCount": 7736
     },
     {
       "id": "stream-1760678369639-0dj38c",
@@ -15347,7 +15347,7 @@
       "endTime": "2025-10-10T18:04:41.000Z",
       "duration": 6563,
       "isLive": false,
-      "viewCount": 33956
+      "viewCount": 33960
     },
     {
       "id": "stream-1760678363015-gyekzh",
@@ -15360,7 +15360,7 @@
       "endTime": "2025-10-10T18:04:05.000Z",
       "duration": 6364,
       "isLive": false,
-      "viewCount": 13634
+      "viewCount": 13635
     },
     {
       "id": "stream-1760686068538-ptzlti",
@@ -15400,7 +15400,7 @@
       "endTime": "2025-10-10T18:14:49.000Z",
       "duration": 4897,
       "isLive": false,
-      "viewCount": 20621
+      "viewCount": 20622
     },
     {
       "id": "stream-1760678392137-6rmer5",
@@ -15466,7 +15466,7 @@
       "endTime": "2025-10-11T18:01:56.000Z",
       "duration": 34260,
       "isLive": false,
-      "viewCount": 54634
+      "viewCount": 54635
     },
     {
       "id": "stream-1760686117350-u2taht",
@@ -15492,7 +15492,7 @@
       "endTime": "2025-10-11T18:03:40.000Z",
       "duration": 33647,
       "isLive": false,
-      "viewCount": 81144
+      "viewCount": 81145
     },
     {
       "id": "stream-1760686140705-y5yqhq",
@@ -15548,7 +15548,7 @@
       "scheduledStartTime": "2025-10-11T09:00:00Z",
       "duration": 32841,
       "isLive": false,
-      "viewCount": 57503
+      "viewCount": 57502
     },
     {
       "id": "stream-1760686048853-ooxits",
@@ -15589,7 +15589,7 @@
       "endTime": "2025-10-11T18:02:34.000Z",
       "duration": 32625,
       "isLive": false,
-      "viewCount": 107942
+      "viewCount": 107944
     },
     {
       "id": "stream-1760678367575-w0djmar",
@@ -15602,7 +15602,7 @@
       "endTime": "2025-10-11T18:02:26.000Z",
       "duration": 32585,
       "isLive": false,
-      "viewCount": 16479
+      "viewCount": 16485
     },
     {
       "id": "stream-1760686105293-f3lkpd",
@@ -15780,7 +15780,7 @@
       "endTime": "2025-10-11T15:58:54.000Z",
       "duration": 24646,
       "isLive": false,
-      "viewCount": 45130
+      "viewCount": 45131
     },
     {
       "id": "stream-1760678377967-vphthe",
@@ -15874,7 +15874,7 @@
       "endTime": "2025-10-11T21:51:06.000Z",
       "duration": 45497,
       "isLive": false,
-      "viewCount": 259262
+      "viewCount": 259263
     },
     {
       "id": "stream-1760678371959-qttuv",
@@ -15954,7 +15954,7 @@
       "endTime": "2025-10-11T18:05:38.000Z",
       "duration": 31633,
       "isLive": false,
-      "viewCount": 213533
+      "viewCount": 213536
     },
     {
       "id": "stream-1760678366152-w1cym9",
@@ -15967,7 +15967,7 @@
       "endTime": "2025-10-11T09:24:41.000Z",
       "duration": 364,
       "isLive": false,
-      "viewCount": 1253
+      "viewCount": 1254
     },
     {
       "id": "stream-1760678371664-z29dh4",
@@ -15980,7 +15980,7 @@
       "endTime": "2025-10-11T17:09:20.000Z",
       "duration": 28230,
       "isLive": false,
-      "viewCount": 37110
+      "viewCount": 37111
     },
     {
       "id": "stream-1760686038466-4obtx",
@@ -16020,7 +16020,7 @@
       "endTime": "2025-10-11T17:59:08.000Z",
       "duration": 31151,
       "isLive": false,
-      "viewCount": 449765
+      "viewCount": 449770
     },
     {
       "id": "stream-1760686098542-p7nu4",
@@ -16074,7 +16074,7 @@
       "scheduledStartTime": "2025-10-11T09:15:00Z",
       "duration": 31079,
       "isLive": false,
-      "viewCount": 388673
+      "viewCount": 388770
     },
     {
       "id": "stream-1760686001281-tsqf7a",
@@ -16088,7 +16088,7 @@
       "scheduledStartTime": "2025-10-11T09:25:00Z",
       "duration": 5613,
       "isLive": false,
-      "viewCount": 60864
+      "viewCount": 60917
     },
     {
       "id": "stream-1760678394348-ueau5g",
@@ -16101,7 +16101,7 @@
       "endTime": "2025-10-11T20:23:20.000Z",
       "duration": 39495,
       "isLive": false,
-      "viewCount": 85859
+      "viewCount": 85861
     },
     {
       "id": "stream-1760678372747-c3vyyg",
@@ -16182,7 +16182,7 @@
       "endTime": "2025-10-11T18:03:42.000Z",
       "duration": 30710,
       "isLive": false,
-      "viewCount": 383894
+      "viewCount": 383911
     },
     {
       "id": "stream-1760678364209-pqqb1l",
@@ -16315,7 +16315,7 @@
       "endTime": "2025-10-11T18:01:12.000Z",
       "duration": 29105,
       "isLive": false,
-      "viewCount": 140811
+      "viewCount": 140812
     },
     {
       "id": "stream-1760686131383-82q0z7",
@@ -16342,7 +16342,7 @@
       "endTime": "2025-10-11T16:29:00.000Z",
       "duration": 23367,
       "isLive": false,
-      "viewCount": 234691
+      "viewCount": 234696
     },
     {
       "id": "stream-1760678380195-m252sr",
@@ -16355,7 +16355,7 @@
       "endTime": "2025-10-11T19:49:51.000Z",
       "duration": 35407,
       "isLive": false,
-      "viewCount": 141203
+      "viewCount": 141212
     },
     {
       "id": "stream-1760686099217-8ok33b",
@@ -16396,7 +16396,7 @@
       "endTime": "2025-10-11T18:01:51.000Z",
       "duration": 28814,
       "isLive": false,
-      "viewCount": 43741
+      "viewCount": 43742
     },
     {
       "id": "stream-1760686122190-l8uezw",
@@ -16423,7 +16423,7 @@
       "endTime": "2025-10-11T18:01:24.000Z",
       "duration": 28376,
       "isLive": false,
-      "viewCount": 27618
+      "viewCount": 27620
     },
     {
       "id": "stream-1760686128636-yqwig",
@@ -16464,7 +16464,7 @@
       "endTime": "2025-10-11T18:04:20.000Z",
       "duration": 27551,
       "isLive": false,
-      "viewCount": 63977
+      "viewCount": 63979
     },
     {
       "id": "stream-1760686185740-6u4my",
@@ -16519,7 +16519,7 @@
       "scheduledStartTime": "2025-10-11T10:39:23Z",
       "duration": 18495,
       "isLive": false,
-      "viewCount": 17253
+      "viewCount": 17268
     },
     {
       "id": "stream-1760678365596-moli29",
@@ -16532,7 +16532,7 @@
       "endTime": "2025-10-12T00:28:12.000Z",
       "duration": 49089,
       "isLive": false,
-      "viewCount": 145552
+      "viewCount": 145555
     },
     {
       "id": "stream-1760678364531-450u3",
@@ -16545,7 +16545,7 @@
       "endTime": "2025-10-11T17:51:59.000Z",
       "duration": 24995,
       "isLive": false,
-      "viewCount": 87089
+      "viewCount": 87090
     },
     {
       "id": "stream-1760686178245-wgmvu",
@@ -16737,7 +16737,7 @@
       "endTime": "2025-10-11T18:08:09.000Z",
       "duration": 24839,
       "isLive": false,
-      "viewCount": 74378
+      "viewCount": 74381
     },
     {
       "id": "stream-1760686137981-lo64y",
@@ -16777,7 +16777,7 @@
       "endTime": "2025-10-11T20:16:57.000Z",
       "duration": 32355,
       "isLive": false,
-      "viewCount": 312471
+      "viewCount": 312482
     },
     {
       "id": "stream-1760678363956-itbqg",
@@ -16790,7 +16790,7 @@
       "endTime": "2025-10-11T18:14:16.000Z",
       "duration": 24231,
       "isLive": false,
-      "viewCount": 81687
+      "viewCount": 81688
     },
     {
       "id": "stream-1760678372504-d3bj6o",
@@ -16803,7 +16803,7 @@
       "endTime": "2025-10-11T18:00:58.000Z",
       "duration": 23331,
       "isLive": false,
-      "viewCount": 149835
+      "viewCount": 149839
     },
     {
       "id": "stream-1760686025229-j0kcre",
@@ -16872,7 +16872,7 @@
       "endTime": "2025-10-11T20:08:43.000Z",
       "duration": 29503,
       "isLive": false,
-      "viewCount": 170039
+      "viewCount": 170041
     },
     {
       "id": "stream-1760686152535-mfk5e",
@@ -16913,7 +16913,7 @@
       "endTime": "2025-10-11T18:02:44.000Z",
       "duration": 21723,
       "isLive": false,
-      "viewCount": 48759
+      "viewCount": 48760
     },
     {
       "id": "stream-1760686175632-wa1t17",
@@ -16967,7 +16967,7 @@
       "endTime": "2025-10-11T18:06:01.000Z",
       "duration": 21442,
       "isLive": false,
-      "viewCount": 50589
+      "viewCount": 50590
     },
     {
       "id": "stream-1760678384840-lqq31v",
@@ -17020,7 +17020,7 @@
       "endTime": "2025-10-11T15:10:13.000Z",
       "duration": 10041,
       "isLive": false,
-      "viewCount": 13166
+      "viewCount": 13167
     },
     {
       "id": "stream-1760686037308-344o4r",
@@ -17155,7 +17155,7 @@
       "scheduledStartTime": "2025-10-11T13:30:00Z",
       "duration": 16553,
       "isLive": false,
-      "viewCount": 120483
+      "viewCount": 120543
     },
     {
       "id": "stream-1760686135580-htjfu",
@@ -17250,7 +17250,7 @@
       "scheduledStartTime": "2025-10-11T14:00:00Z",
       "duration": 14346,
       "isLive": false,
-      "viewCount": 48100
+      "viewCount": 48127
     },
     {
       "id": "stream-1760678378678-0zkwmf",
@@ -17316,7 +17316,7 @@
       "endTime": "2025-10-11T17:32:46.000Z",
       "duration": 11385,
       "isLive": false,
-      "viewCount": 8921
+      "viewCount": 8924
     },
     {
       "id": "stream-1760678371423-vvtjl",
@@ -17435,7 +17435,7 @@
       "endTime": "2025-10-11T21:57:09.000Z",
       "duration": 14072,
       "isLive": false,
-      "viewCount": 3154
+      "viewCount": 3155
     },
     {
       "id": "stream-1760686069955-9j3q39",
@@ -17462,7 +17462,7 @@
       "endTime": "2025-10-12T18:13:14.000Z",
       "duration": 39702,
       "isLive": false,
-      "viewCount": 146825
+      "viewCount": 146831
     },
     {
       "id": "stream-1760686162003-imasqk",
@@ -17489,7 +17489,7 @@
       "endTime": "2025-10-12T21:00:30.000Z",
       "duration": 47847,
       "isLive": false,
-      "viewCount": 145633
+      "viewCount": 145634
     },
     {
       "id": "stream-1760678383730-9sgaf",
@@ -17502,7 +17502,7 @@
       "endTime": "2025-10-12T18:07:31.000Z",
       "duration": 35822,
       "isLive": false,
-      "viewCount": 45426
+      "viewCount": 45430
     },
     {
       "id": "stream-1760686178245-11j1tb",
@@ -17530,7 +17530,7 @@
       "scheduledStartTime": "2025-10-12T09:00:00Z",
       "duration": 34669,
       "isLive": false,
-      "viewCount": 35925
+      "viewCount": 35926
     },
     {
       "id": "stream-1760686086374-kkirv",
@@ -17557,7 +17557,7 @@
       "endTime": "2025-10-12T18:02:41.000Z",
       "duration": 32754,
       "isLive": false,
-      "viewCount": 147357
+      "viewCount": 147360
     },
     {
       "id": "stream-1760678392843-yeeuzb",
@@ -17720,7 +17720,7 @@
       "endTime": "2025-10-12T18:02:53.000Z",
       "duration": 32493,
       "isLive": false,
-      "viewCount": 74189
+      "viewCount": 74195
     },
     {
       "id": "stream-1760678389242-hw8ifo",
@@ -17733,7 +17733,7 @@
       "endTime": "2025-10-12T16:13:32.000Z",
       "duration": 25929,
       "isLive": false,
-      "viewCount": 48925
+      "viewCount": 48928
     },
     {
       "id": "stream-1760686105293-qn439",
@@ -17843,7 +17843,7 @@
       "endTime": "2025-10-12T18:18:22.000Z",
       "duration": 33335,
       "isLive": false,
-      "viewCount": 9115
+      "viewCount": 9117
     },
     {
       "id": "stream-1760686029693-rgn86",
@@ -17857,7 +17857,7 @@
       "scheduledStartTime": "2025-10-12T09:00:00Z",
       "duration": 32710,
       "isLive": false,
-      "viewCount": 101013
+      "viewCount": 101014
     },
     {
       "id": "stream-1760686140705-pjk1",
@@ -17899,7 +17899,7 @@
       "scheduledStartTime": "2025-10-12T09:15:00Z",
       "duration": 32265,
       "isLive": false,
-      "viewCount": 448482
+      "viewCount": 448620
     },
     {
       "id": "stream-1760678388096-mwgbpb",
@@ -17912,7 +17912,7 @@
       "endTime": "2025-10-12T18:00:38.000Z",
       "duration": 32169,
       "isLive": false,
-      "viewCount": 192373
+      "viewCount": 192379
     },
     {
       "id": "stream-1760686033087-plbumn",
@@ -17926,7 +17926,7 @@
       "scheduledStartTime": "2025-10-12T09:00:00Z",
       "duration": 32265,
       "isLive": false,
-      "viewCount": 86528
+      "viewCount": 86534
     },
     {
       "id": "stream-1760678367813-8hbm08",
@@ -17939,7 +17939,7 @@
       "endTime": "2025-10-12T17:59:42.000Z",
       "duration": 32104,
       "isLive": false,
-      "viewCount": 490966
+      "viewCount": 490969
     },
     {
       "id": "stream-1760678373036-wibbe9",
@@ -17952,7 +17952,7 @@
       "endTime": "2025-10-12T21:00:16.000Z",
       "duration": 42909,
       "isLive": false,
-      "viewCount": 273260
+      "viewCount": 273263
     },
     {
       "id": "stream-1760686132990-38m90g",
@@ -18006,7 +18006,7 @@
       "endTime": "2025-10-12T18:14:21.000Z",
       "duration": 32567,
       "isLive": false,
-      "viewCount": 121178
+      "viewCount": 121187
     },
     {
       "id": "stream-1760678364531-5kmsw8",
@@ -18019,7 +18019,7 @@
       "endTime": "2025-10-12T18:02:49.000Z",
       "duration": 31870,
       "isLive": false,
-      "viewCount": 117714
+      "viewCount": 117716
     },
     {
       "id": "stream-1760678369400-eifcbp",
@@ -18032,7 +18032,7 @@
       "endTime": "2025-10-12T18:11:14.000Z",
       "duration": 32357,
       "isLive": false,
-      "viewCount": 34927
+      "viewCount": 34928
     },
     {
       "id": "stream-1760678361675-7yvg4m",
@@ -18045,7 +18045,7 @@
       "endTime": "2025-10-12T18:01:28.000Z",
       "duration": 31632,
       "isLive": false,
-      "viewCount": 7407
+      "viewCount": 7408
     },
     {
       "id": "stream-1760678377967-bgfcoa",
@@ -18058,7 +18058,7 @@
       "endTime": "2025-10-12T18:02:55.000Z",
       "duration": 31676,
       "isLive": false,
-      "viewCount": 61612
+      "viewCount": 61614
     },
     {
       "id": "stream-1760686078714-zeb0f2",
@@ -18113,7 +18113,7 @@
       "endTime": "2025-10-12T18:05:54.000Z",
       "duration": 31132,
       "isLive": false,
-      "viewCount": 22503
+      "viewCount": 22504
     },
     {
       "id": "stream-1760678375911-exk3t5",
@@ -18126,7 +18126,7 @@
       "endTime": "2025-10-12T18:02:01.000Z",
       "duration": 30830,
       "isLive": false,
-      "viewCount": 173662
+      "viewCount": 173666
     },
     {
       "id": "stream-1760678377169-totzte",
@@ -18139,7 +18139,7 @@
       "endTime": "2025-10-12T18:12:54.000Z",
       "duration": 31480,
       "isLive": false,
-      "viewCount": 408282
+      "viewCount": 408310
     },
     {
       "id": "stream-1760678394348-u5j68m",
@@ -18152,7 +18152,7 @@
       "endTime": "2025-10-12T19:02:21.000Z",
       "duration": 34395,
       "isLive": false,
-      "viewCount": 126037
+      "viewCount": 126040
     },
     {
       "id": "stream-1760678373946-oqmc3",
@@ -18328,7 +18328,7 @@
       "endTime": "2025-10-12T18:01:49.000Z",
       "duration": 29103,
       "isLive": false,
-      "viewCount": 34462
+      "viewCount": 34465
     },
     {
       "id": "stream-1760686128636-rcfjml",
@@ -18370,7 +18370,7 @@
       "scheduledStartTime": "2025-10-12T10:00:00Z",
       "duration": 19501,
       "isLive": false,
-      "viewCount": 11040
+      "viewCount": 11053
     },
     {
       "id": "stream-1760686076621-v7h18r",
@@ -18411,7 +18411,7 @@
       "endTime": "2025-10-12T18:51:17.000Z",
       "duration": 31525,
       "isLive": false,
-      "viewCount": 25130
+      "viewCount": 25131
     },
     {
       "id": "stream-1760678380677-wgsut",
@@ -18424,7 +18424,7 @@
       "endTime": "2025-10-12T18:02:45.000Z",
       "duration": 28476,
       "isLive": false,
-      "viewCount": 213509
+      "viewCount": 213520
     },
     {
       "id": "stream-1760678392137-2hk7g",
@@ -18450,7 +18450,7 @@
       "endTime": "2025-10-12T16:46:12.000Z",
       "duration": 23493,
       "isLive": false,
-      "viewCount": 54876
+      "viewCount": 54882
     },
     {
       "id": "stream-1760678372504-0ba75o",
@@ -18463,7 +18463,7 @@
       "endTime": "2025-10-12T14:42:07.000Z",
       "duration": 15814,
       "isLive": false,
-      "viewCount": 122095
+      "viewCount": 122100
     },
     {
       "id": "stream-1760678377661-bfa90i",
@@ -18476,7 +18476,7 @@
       "endTime": "2025-10-12T21:00:43.000Z",
       "duration": 38433,
       "isLive": false,
-      "viewCount": 62221
+      "viewCount": 62225
     },
     {
       "id": "stream-1760678365596-yua7w",
@@ -18489,7 +18489,7 @@
       "endTime": "2025-10-12T14:47:36.000Z",
       "duration": 15641,
       "isLive": false,
-      "viewCount": 67399
+      "viewCount": 67401
     },
     {
       "id": "stream-1760686153280-pv59hg",
@@ -18585,7 +18585,7 @@
       "scheduledStartTime": "2025-10-12T11:00:00Z",
       "duration": 26293,
       "isLive": false,
-      "viewCount": 246236
+      "viewCount": 246249
     },
     {
       "id": "stream-1760686173744-ory2x",
@@ -18612,7 +18612,7 @@
       "endTime": "2025-10-12T15:58:47.000Z",
       "duration": 17877,
       "isLive": false,
-      "viewCount": 24199
+      "viewCount": 24202
     },
     {
       "id": "stream-1760686169091-278o4r",
@@ -18653,7 +18653,7 @@
       "endTime": "2025-10-12T18:23:28.000Z",
       "duration": 26375,
       "isLive": false,
-      "viewCount": 178913
+      "viewCount": 178918
     },
     {
       "id": "stream-1760686048853-e4hcig",
@@ -18694,7 +18694,7 @@
       "endTime": "2025-10-12T13:04:14.000Z",
       "duration": 6624,
       "isLive": false,
-      "viewCount": 136265
+      "viewCount": 136266
     },
     {
       "id": "stream-1760686150977-tl4lib",
@@ -18762,7 +18762,7 @@
       "endTime": "2025-10-12T16:18:09.000Z",
       "duration": 17835,
       "isLive": false,
-      "viewCount": 2373
+      "viewCount": 2375
     },
     {
       "id": "stream-1760686135580-naq4hr",
@@ -18803,7 +18803,7 @@
       "endTime": "2025-10-12T18:09:28.000Z",
       "duration": 22911,
       "isLive": false,
-      "viewCount": 78326
+      "viewCount": 78327
     },
     {
       "id": "stream-1760678365074-utpbm",
@@ -18829,7 +18829,7 @@
       "endTime": "2025-10-12T18:02:07.000Z",
       "duration": 22125,
       "isLive": false,
-      "viewCount": 68186
+      "viewCount": 68187
     },
     {
       "id": "stream-1760686175632-hns82",
@@ -18994,7 +18994,7 @@
       "endTime": "2025-10-12T18:24:08.000Z",
       "duration": 21948,
       "isLive": false,
-      "viewCount": 68501
+      "viewCount": 68507
     },
     {
       "id": "stream-1760678387833-hj1zvs",
@@ -19075,7 +19075,7 @@
       "endTime": "2025-10-12T15:10:48.000Z",
       "duration": 9688,
       "isLive": false,
-      "viewCount": 11238
+      "viewCount": 11240
     },
     {
       "id": "stream-1760678370404-f43ufg",
@@ -19115,7 +19115,7 @@
       "endTime": "2025-10-12T16:15:21.000Z",
       "duration": 12622,
       "isLive": false,
-      "viewCount": 33985
+      "viewCount": 33986
     },
     {
       "id": "stream-1760686115189-3hbki8",
@@ -19183,7 +19183,7 @@
       "endTime": "2025-10-12T18:04:13.000Z",
       "duration": 18165,
       "isLive": false,
-      "viewCount": 44238
+      "viewCount": 44240
     },
     {
       "id": "stream-1760686036500-8l464",
@@ -19210,7 +19210,7 @@
       "endTime": "2025-10-12T17:58:39.000Z",
       "duration": 17558,
       "isLive": false,
-      "viewCount": 365182
+      "viewCount": 365202
     },
     {
       "id": "stream-1760678376895-8nm5p",
@@ -19223,7 +19223,7 @@
       "endTime": "2025-10-12T17:17:38.000Z",
       "duration": 14787,
       "isLive": false,
-      "viewCount": 217520
+      "viewCount": 217530
     },
     {
       "id": "stream-1760678378906-zgfu9",
@@ -19262,7 +19262,7 @@
       "endTime": "2025-10-12T18:03:18.000Z",
       "duration": 16828,
       "isLive": false,
-      "viewCount": 31140
+      "viewCount": 31145
     },
     {
       "id": "stream-1760686072076-wkytaf",
@@ -19385,7 +19385,7 @@
       "endTime": "2025-10-12T18:09:55.000Z",
       "duration": 13170,
       "isLive": false,
-      "viewCount": 24480
+      "viewCount": 24485
     },
     {
       "id": "stream-1760678383969-130ivo",
@@ -19411,7 +19411,7 @@
       "endTime": "2025-10-12T18:01:17.000Z",
       "duration": 11913,
       "isLive": false,
-      "viewCount": 95370
+      "viewCount": 95379
     },
     {
       "id": "stream-1760678381509-yayp0h",
@@ -19424,7 +19424,7 @@
       "endTime": "2025-10-12T18:09:50.000Z",
       "duration": 12226,
       "isLive": false,
-      "viewCount": 25188
+      "viewCount": 25191
     },
     {
       "id": "stream-1760678365596-28966h",
@@ -19437,7 +19437,7 @@
       "endTime": "2025-10-12T19:11:53.000Z",
       "duration": 15741,
       "isLive": false,
-      "viewCount": 42635
+      "viewCount": 42638
     },
     {
       "id": "stream-1760686107532-z08hqr",
@@ -19491,7 +19491,7 @@
       "endTime": "2025-10-12T16:03:45.000Z",
       "duration": 3414,
       "isLive": false,
-      "viewCount": 21040
+      "viewCount": 21042
     },
     {
       "id": "stream-1760678363279-v3oo09s",
@@ -19530,7 +19530,7 @@
       "endTime": "2025-10-12T21:00:49.000Z",
       "duration": 10062,
       "isLive": false,
-      "viewCount": 6553
+      "viewCount": 6554
     },
     {
       "id": "stream-1760678367575-szejv8",
@@ -19556,7 +19556,7 @@
       "endTime": "2025-10-12T22:22:18.000Z",
       "duration": 12358,
       "isLive": false,
-      "viewCount": 16014
+      "viewCount": 16015
     },
     {
       "id": "stream-1760686069955-3odk0o",
@@ -19736,7 +19736,7 @@
       "endTime": "2025-10-14T12:02:05.000Z",
       "duration": 79,
       "isLive": false,
-      "viewCount": 1396
+      "viewCount": 1417
     },
     {
       "id": "stream-1760686178245-llz1kj",
@@ -19819,7 +19819,7 @@
       "endTime": "2025-10-14T16:26:58.000Z",
       "duration": 14163,
       "isLive": false,
-      "viewCount": 51464
+      "viewCount": 51465
     },
     {
       "id": "stream-1760686040756-5jtonj",
@@ -19860,7 +19860,7 @@
       "scheduledStartTime": "2025-10-14T13:00:00Z",
       "duration": 11311,
       "isLive": false,
-      "viewCount": 47486
+      "viewCount": 47533
     },
     {
       "id": "stream-1760686127683-q2kafl",
@@ -19930,7 +19930,7 @@
       "scheduledStartTime": "2025-10-15T08:45:00Z",
       "duration": 33465,
       "isLive": false,
-      "viewCount": 32678
+      "viewCount": 32737
     },
     {
       "id": "stream-1760686140705-la6kpa",
@@ -19957,7 +19957,7 @@
       "endTime": "2025-10-15T18:20:38.000Z",
       "duration": 34306,
       "isLive": false,
-      "viewCount": 119794
+      "viewCount": 119798
     },
     {
       "id": "stream-1760686108478-icfcos",
@@ -20010,7 +20010,7 @@
       "endTime": "2025-10-15T13:32:19.000Z",
       "duration": 16294,
       "isLive": false,
-      "viewCount": 104053
+      "viewCount": 104054
     },
     {
       "id": "stream-1760686136212-bsu4md",
@@ -20037,7 +20037,7 @@
       "endTime": "2025-10-15T09:45:35.000Z",
       "duration": 2670,
       "isLive": false,
-      "viewCount": 11974
+      "viewCount": 11979
     },
     {
       "id": "stream-1760678392843-ilbuym",
@@ -20050,7 +20050,7 @@
       "endTime": "2025-10-15T17:21:07.000Z",
       "duration": 29998,
       "isLive": false,
-      "viewCount": 33183
+      "viewCount": 33186
     },
     {
       "id": "stream-1760686114393-ka75rp",
@@ -20119,7 +20119,7 @@
       "endTime": "2025-10-15T18:01:44.000Z",
       "duration": 32402,
       "isLive": false,
-      "viewCount": 378099
+      "viewCount": 378148
     },
     {
       "id": "stream-1760678373036-fwj99v",
@@ -20132,7 +20132,7 @@
       "endTime": "2025-10-15T21:09:38.000Z",
       "duration": 43659,
       "isLive": false,
-      "viewCount": 267354
+      "viewCount": 267357
     },
     {
       "id": "stream-1760686131383-3zzwxe",
@@ -20187,7 +20187,7 @@
       "endTime": "2025-10-15T15:06:15.000Z",
       "duration": 21797,
       "isLive": false,
-      "viewCount": 39896
+      "viewCount": 39903
     },
     {
       "id": "stream-1760686173204-1k6yzc",
@@ -20214,7 +20214,7 @@
       "endTime": "2025-10-15T18:01:17.000Z",
       "duration": 32272,
       "isLive": false,
-      "viewCount": 15845
+      "viewCount": 15846
     },
     {
       "id": "stream-1760686174549-3uxice",
@@ -20297,7 +20297,7 @@
       "endTime": "2025-10-15T18:01:54.000Z",
       "duration": 32182,
       "isLive": false,
-      "viewCount": 109267
+      "viewCount": 109268
     },
     {
       "id": "stream-1760686033086-2ednjk",
@@ -20311,7 +20311,7 @@
       "scheduledStartTime": "2025-10-15T09:05:00Z",
       "duration": 32128,
       "isLive": false,
-      "viewCount": 81394
+      "viewCount": 81470
     },
     {
       "id": "stream-1760678373946-jukocw",
@@ -20324,7 +20324,7 @@
       "endTime": "2025-10-15T21:11:05.000Z",
       "duration": 43349,
       "isLive": false,
-      "viewCount": 58917
+      "viewCount": 58919
     },
     {
       "id": "stream-1760686093003-0ykwg",
@@ -20392,7 +20392,7 @@
       "endTime": "2025-10-15T15:12:44.000Z",
       "duration": 21662,
       "isLive": false,
-      "viewCount": 53545
+      "viewCount": 53548
     },
     {
       "id": "stream-1760678371125-imo4r",
@@ -20405,7 +20405,7 @@
       "endTime": "2025-10-15T16:47:11.000Z",
       "duration": 27317,
       "isLive": false,
-      "viewCount": 19557
+      "viewCount": 19558
     },
     {
       "id": "stream-1760686165939-onpuw",
@@ -20432,7 +20432,7 @@
       "endTime": "2025-10-15T18:02:55.000Z",
       "duration": 31820,
       "isLive": false,
-      "viewCount": 244988
+      "viewCount": 245008
     },
     {
       "id": "stream-1760686009448-tpdm",
@@ -20446,7 +20446,7 @@
       "scheduledStartTime": "2025-10-15T09:30:00Z",
       "duration": 31815,
       "isLive": false,
-      "viewCount": 507675
+      "viewCount": 507895
     },
     {
       "id": "stream-1760678375677-1ve6rs",
@@ -20459,7 +20459,7 @@
       "endTime": "2025-10-15T18:04:10.000Z",
       "duration": 31867,
       "isLive": false,
-      "viewCount": 49091
+      "viewCount": 49092
     },
     {
       "id": "stream-1760686156535-ym28q",
@@ -20514,7 +20514,7 @@
       "endTime": "2025-10-15T17:50:19.000Z",
       "duration": 30692,
       "isLive": false,
-      "viewCount": 393079
+      "viewCount": 393092
     },
     {
       "id": "stream-1760678369400-ck23kq",
@@ -20527,7 +20527,7 @@
       "endTime": "2025-10-15T17:39:44.000Z",
       "duration": 30018,
       "isLive": false,
-      "viewCount": 27823
+      "viewCount": 27825
     },
     {
       "id": "stream-1760678377967-31jyz",
@@ -20540,7 +20540,7 @@
       "endTime": "2025-10-15T18:01:18.000Z",
       "duration": 31310,
       "isLive": false,
-      "viewCount": 51582
+      "viewCount": 51585
     },
     {
       "id": "stream-1760686135580-2r1r69",
@@ -20581,7 +20581,7 @@
       "endTime": "2025-10-15T17:53:28.000Z",
       "duration": 30337,
       "isLive": false,
-      "viewCount": 49392
+      "viewCount": 49399
     },
     {
       "id": "stream-1760686038466-8j4r7s",
@@ -20621,7 +20621,7 @@
       "endTime": "2025-10-15T16:38:16.000Z",
       "duration": 25446,
       "isLive": false,
-      "viewCount": 15338
+      "viewCount": 15339
     },
     {
       "id": "stream-1760678366152-tmxt6u",
@@ -20634,7 +20634,7 @@
       "endTime": "2025-10-15T18:02:49.000Z",
       "duration": 30493,
       "isLive": false,
-      "viewCount": 35772
+      "viewCount": 35773
     },
     {
       "id": "stream-1760686102086-lmr3c2",
@@ -20715,7 +20715,7 @@
       "endTime": "2025-10-15T18:02:24.000Z",
       "duration": 29424,
       "isLive": false,
-      "viewCount": 90777
+      "viewCount": 90814
     },
     {
       "id": "stream-1760686079465-amtlig",
@@ -20771,7 +20771,7 @@
       "scheduledStartTime": "2025-10-15T10:00:00Z",
       "duration": 26688,
       "isLive": false,
-      "viewCount": 11631
+      "viewCount": 11648
     },
     {
       "id": "stream-1760686076621-iac1ug",
@@ -20855,7 +20855,7 @@
       "scheduledStartTime": "2025-10-15T10:15:00Z",
       "duration": 28078,
       "isLive": false,
-      "viewCount": 202946
+      "viewCount": 202963
     },
     {
       "id": "stream-1760686111785-5qqz9q",
@@ -20882,7 +20882,7 @@
       "endTime": "2025-10-15T13:42:56.000Z",
       "duration": 12071,
       "isLive": false,
-      "viewCount": 8639
+      "viewCount": 8641
     },
     {
       "id": "stream-1760678383969-06tbw5",
@@ -20895,7 +20895,7 @@
       "endTime": "2025-10-15T15:23:54.000Z",
       "duration": 16977,
       "isLive": false,
-      "viewCount": 12492
+      "viewCount": 12493
     },
     {
       "id": "stream-1760686096570-l725l",
@@ -20922,7 +20922,7 @@
       "endTime": "2025-10-15T18:19:21.000Z",
       "duration": 27230,
       "isLive": false,
-      "viewCount": 72309
+      "viewCount": 72327
     },
     {
       "id": "stream-1760678380195-h3igt9",
@@ -20935,7 +20935,7 @@
       "endTime": "2025-10-15T18:37:05.000Z",
       "duration": 28277,
       "isLive": false,
-      "viewCount": 40856
+      "viewCount": 40858
     },
     {
       "id": "stream-1760686080276-zvdihm",
@@ -20990,7 +20990,7 @@
       "endTime": "2025-10-15T18:01:49.000Z",
       "duration": 25594,
       "isLive": false,
-      "viewCount": 76926
+      "viewCount": 76928
     },
     {
       "id": "stream-1760686173744-r658ea",
@@ -21100,7 +21100,7 @@
       "endTime": "2025-10-15T17:27:45.000Z",
       "duration": 21649,
       "isLive": false,
-      "viewCount": 50416
+      "viewCount": 50418
     },
     {
       "id": "stream-1760686061332-8kzxqi",
@@ -21141,7 +21141,7 @@
       "endTime": "2025-10-15T16:14:48.000Z",
       "duration": 16917,
       "isLive": false,
-      "viewCount": 22779
+      "viewCount": 22784
     },
     {
       "id": "stream-1760678375115-bxzmo6",
@@ -21154,7 +21154,7 @@
       "endTime": "2025-10-15T18:03:22.000Z",
       "duration": 22972,
       "isLive": false,
-      "viewCount": 15929
+      "viewCount": 15931
     },
     {
       "id": "stream-1760678377661-93604d",
@@ -21167,7 +21167,7 @@
       "endTime": "2025-10-15T16:40:55.000Z",
       "duration": 17781,
       "isLive": false,
-      "viewCount": 30346
+      "viewCount": 30351
     },
     {
       "id": "stream-1760678361675-8sax58",
@@ -21207,7 +21207,7 @@
       "endTime": "2025-10-15T18:06:25.000Z",
       "duration": 22484,
       "isLive": false,
-      "viewCount": 94660
+      "viewCount": 94663
     },
     {
       "id": "stream-1760678365354-eogabw",
@@ -21220,7 +21220,7 @@
       "endTime": "2025-10-15T18:32:32.000Z",
       "duration": 23903,
       "isLive": false,
-      "viewCount": 96163
+      "viewCount": 96165
     },
     {
       "id": "stream-1760686150977-qnsy89",
@@ -21317,7 +21317,7 @@
       "endTime": "2025-10-15T18:05:38.000Z",
       "duration": 21320,
       "isLive": false,
-      "viewCount": 118713
+      "viewCount": 118715
     },
     {
       "id": "stream-1760678374717-g1a6rq",
@@ -21330,7 +21330,7 @@
       "endTime": "2025-10-15T18:17:02.000Z",
       "duration": 21603,
       "isLive": false,
-      "viewCount": 72046
+      "viewCount": 72060
     },
     {
       "id": "stream-1760678379382-q7mcc",
@@ -21343,7 +21343,7 @@
       "endTime": "2025-10-15T21:09:53.000Z",
       "duration": 31915,
       "isLive": false,
-      "viewCount": 40727
+      "viewCount": 40733
     },
     {
       "id": "stream-1760686048853-2qbxad",
@@ -21370,7 +21370,7 @@
       "endTime": "2025-10-15T18:06:13.000Z",
       "duration": 20867,
       "isLive": false,
-      "viewCount": 31256
+      "viewCount": 31257
     },
     {
       "id": "stream-1760686069955-tje86",
@@ -21425,7 +21425,7 @@
       "endTime": "2025-10-15T14:55:27.000Z",
       "duration": 8434,
       "isLive": false,
-      "viewCount": 150806
+      "viewCount": 150830
     },
     {
       "id": "stream-1760678390402-48zv7h",
@@ -21438,7 +21438,7 @@
       "endTime": "2025-10-15T19:35:10.000Z",
       "duration": 24068,
       "isLive": false,
-      "viewCount": 130610
+      "viewCount": 130618
     },
     {
       "id": "stream-1760686078714-ks91r",
@@ -21507,7 +21507,7 @@
       "scheduledStartTime": "2025-10-15T13:05:00Z",
       "duration": 17855,
       "isLive": false,
-      "viewCount": 38296
+      "viewCount": 38295
     },
     {
       "id": "stream-1760686034478-9dfizym",
@@ -21574,7 +21574,7 @@
       "endTime": "2025-10-15T17:51:01.000Z",
       "duration": 15471,
       "isLive": false,
-      "viewCount": 69164
+      "viewCount": 69167
     },
     {
       "id": "stream-1760678367393-zlux99",
@@ -21600,7 +21600,7 @@
       "endTime": "2025-10-15T18:01:41.000Z",
       "duration": 15445,
       "isLive": false,
-      "viewCount": 8649
+      "viewCount": 8651
     },
     {
       "id": "stream-1760678394348-5jarr6",
@@ -21613,7 +21613,7 @@
       "endTime": "2025-10-15T19:37:06.000Z",
       "duration": 20972,
       "isLive": false,
-      "viewCount": 52285
+      "viewCount": 52292
     },
     {
       "id": "stream-1760686105293-d8k1k2",
@@ -21654,7 +21654,7 @@
       "endTime": "2025-10-15T16:23:44.000Z",
       "duration": 8612,
       "isLive": false,
-      "viewCount": 20446
+      "viewCount": 20451
     },
     {
       "id": "stream-1760678388096-tml3p",
@@ -21667,7 +21667,7 @@
       "endTime": "2025-10-15T18:06:03.000Z",
       "duration": 14683,
       "isLive": false,
-      "viewCount": 73564
+      "viewCount": 73570
     },
     {
       "id": "stream-1760686094097-pju0hq",
@@ -21764,7 +21764,7 @@
       "scheduledStartTime": "2025-10-15T16:05:00Z",
       "duration": 7253,
       "isLive": false,
-      "viewCount": 62812
+      "viewCount": 62819
     },
     {
       "id": "stream-1760678389680-70kwiz",
@@ -21790,7 +21790,7 @@
       "endTime": "2025-10-15T18:01:38.000Z",
       "duration": 5770,
       "isLive": false,
-      "viewCount": 13491
+      "viewCount": 13494
     },
     {
       "id": "stream-1760678384840-jxqya",
@@ -21803,7 +21803,7 @@
       "endTime": "2025-10-15T22:43:52.000Z",
       "duration": 22364,
       "isLive": false,
-      "viewCount": 26029
+      "viewCount": 26035
     },
     {
       "id": "stream-1760678377661-s9di9i",
@@ -21816,7 +21816,7 @@
       "endTime": "2025-10-15T23:05:34.000Z",
       "duration": 23068,
       "isLive": false,
-      "viewCount": 20194
+      "viewCount": 20196
     },
     {
       "id": "stream-1760678369039-xrgm4",
@@ -21829,7 +21829,7 @@
       "endTime": "2025-10-15T18:03:42.000Z",
       "duration": 2582,
       "isLive": false,
-      "viewCount": 1145
+      "viewCount": 1146
     },
     {
       "id": "stream-1760678369400-xqwr8c",
@@ -21842,7 +21842,7 @@
       "endTime": "2025-10-15T18:06:55.000Z",
       "duration": 1623,
       "isLive": false,
-      "viewCount": 2112
+      "viewCount": 2113
     },
     {
       "id": "stream-1760678367575-ggzu48",
@@ -21855,7 +21855,7 @@
       "endTime": "2025-10-15T21:09:42.000Z",
       "duration": 11295,
       "isLive": false,
-      "viewCount": 2484
+      "viewCount": 2485
     },
     {
       "id": "stream-1760686155309-da2obe",
@@ -21924,7 +21924,7 @@
       "endTime": "2025-10-16T18:01:36.000Z",
       "duration": 32613,
       "isLive": false,
-      "viewCount": 47510
+      "viewCount": 47512
     },
     {
       "id": "stream-1760686117350-lhwelp",
@@ -22019,7 +22019,7 @@
       "endTime": "2025-10-16T18:01:38.000Z",
       "duration": 32441,
       "isLive": false,
-      "viewCount": 126312
+      "viewCount": 126327
     },
     {
       "id": "stream-1760686093003-uh1rgk",
@@ -22046,7 +22046,7 @@
       "endTime": "2025-10-16T18:02:49.000Z",
       "duration": 32485,
       "isLive": false,
-      "viewCount": 96685
+      "viewCount": 96723
     },
     {
       "id": "stream-1760678392843-7ssins",
@@ -22059,7 +22059,7 @@
       "endTime": "2025-10-16T15:57:06.000Z",
       "duration": 24940,
       "isLive": false,
-      "viewCount": 22552
+      "viewCount": 22561
     },
     {
       "id": "stream-1760686029693-jkn1d",
@@ -22073,7 +22073,7 @@
       "scheduledStartTime": "2025-10-16T09:00:00Z",
       "duration": 32501,
       "isLive": false,
-      "viewCount": 56099
+      "viewCount": 56105
     },
     {
       "id": "stream-1760686120121-b7eizp",
@@ -22100,7 +22100,7 @@
       "endTime": "2025-10-16T18:01:08.000Z",
       "duration": 32343,
       "isLive": false,
-      "viewCount": 145478
+      "viewCount": 145485
     },
     {
       "id": "stream-1760686048853-ekpcyr",
@@ -22141,7 +22141,7 @@
       "endTime": "2025-10-16T11:58:18.000Z",
       "duration": 10553,
       "isLive": false,
-      "viewCount": 55481
+      "viewCount": 55487
     },
     {
       "id": "stream-1760678388096-mvpxb",
@@ -22154,7 +22154,7 @@
       "endTime": "2025-10-16T18:03:59.000Z",
       "duration": 32453,
       "isLive": false,
-      "viewCount": 157803
+      "viewCount": 157825
     },
     {
       "id": "stream-1760686165034-gb2ati",
@@ -22181,7 +22181,7 @@
       "endTime": "2025-10-16T22:32:57.000Z",
       "duration": 48556,
       "isLive": false,
-      "viewCount": 60212
+      "viewCount": 60245
     },
     {
       "id": "stream-1760678367575-94o4oj",
@@ -22194,7 +22194,7 @@
       "endTime": "2025-10-16T18:04:37.000Z",
       "duration": 32450,
       "isLive": false,
-      "viewCount": 10168
+      "viewCount": 10172
     },
     {
       "id": "stream-1760686070625-ak7kh8",
@@ -22221,7 +22221,7 @@
       "endTime": "2025-10-16T21:37:34.000Z",
       "duration": 44987,
       "isLive": false,
-      "viewCount": 45858
+      "viewCount": 45864
     },
     {
       "id": "stream-1760678366152-8314tj",
@@ -22234,7 +22234,7 @@
       "endTime": "2025-10-16T16:34:09.000Z",
       "duration": 26766,
       "isLive": false,
-      "viewCount": 30537
+      "viewCount": 30538
     },
     {
       "id": "stream-1760678364531-667fba",
@@ -22247,7 +22247,7 @@
       "endTime": "2025-10-16T13:27:34.000Z",
       "duration": 15546,
       "isLive": false,
-      "viewCount": 64730
+      "viewCount": 64736
     },
     {
       "id": "stream-1760686150977-xllu45",
@@ -22275,7 +22275,7 @@
       "scheduledStartTime": "2025-10-16T09:05:00Z",
       "duration": 31884,
       "isLive": false,
-      "viewCount": 24204
+      "viewCount": 24215
     },
     {
       "id": "stream-1760686086979-1014cg",
@@ -22302,7 +22302,7 @@
       "endTime": "2025-10-16T19:50:00.000Z",
       "duration": 38323,
       "isLive": false,
-      "viewCount": 178980
+      "viewCount": 179001
     },
     {
       "id": "stream-1760686184551-at4x3n",
@@ -22358,7 +22358,7 @@
       "scheduledStartTime": "2025-10-16T09:30:00Z",
       "duration": 31783,
       "isLive": false,
-      "viewCount": 455699
+      "viewCount": 456436
     },
     {
       "id": "stream-1760678363015-oh569j",
@@ -22371,7 +22371,7 @@
       "endTime": "2025-10-16T17:49:47.000Z",
       "duration": 31009,
       "isLive": false,
-      "viewCount": 117900
+      "viewCount": 117920
     },
     {
       "id": "stream-1760678372747-2vntvp",
@@ -22384,7 +22384,7 @@
       "endTime": "2025-10-16T18:01:07.000Z",
       "duration": 31638,
       "isLive": false,
-      "viewCount": 29639
+      "viewCount": 29640
     },
     {
       "id": "stream-1760678378678-ibkho",
@@ -22397,7 +22397,7 @@
       "endTime": "2025-10-16T18:02:49.000Z",
       "duration": 31666,
       "isLive": false,
-      "viewCount": 12974
+      "viewCount": 12979
     },
     {
       "id": "stream-1760686132235-g6wnvhj",
@@ -22424,7 +22424,7 @@
       "endTime": "2025-10-16T18:01:46.000Z",
       "duration": 31238,
       "isLive": false,
-      "viewCount": 110399
+      "viewCount": 110402
     },
     {
       "id": "stream-1760678373036-3t636",
@@ -22437,7 +22437,7 @@
       "endTime": "2025-10-16T16:49:37.000Z",
       "duration": 26868,
       "isLive": false,
-      "viewCount": 187941
+      "viewCount": 187956
     },
     {
       "id": "stream-1760686122190-e2akum",
@@ -22491,7 +22491,7 @@
       "endTime": "2025-10-16T18:04:03.000Z",
       "duration": 30973,
       "isLive": false,
-      "viewCount": 332340
+      "viewCount": 332462
     },
     {
       "id": "stream-1760686135580-6kwg5",
@@ -22546,7 +22546,7 @@
       "endTime": "2025-10-16T19:45:34.000Z",
       "duration": 36664,
       "isLive": false,
-      "viewCount": 73011
+      "viewCount": 73020
     },
     {
       "id": "stream-1760686051758-o33iz",
@@ -22573,7 +22573,7 @@
       "endTime": "2025-10-16T16:40:44.000Z",
       "duration": 25185,
       "isLive": false,
-      "viewCount": 315615
+      "viewCount": 315646
     },
     {
       "id": "stream-1760678368048-zbk92",
@@ -22586,7 +22586,7 @@
       "endTime": "2025-10-16T18:01:30.000Z",
       "duration": 29551,
       "isLive": false,
-      "viewCount": 6065
+      "viewCount": 6069
     },
     {
       "id": "stream-1760678369933-sfs1t",
@@ -22599,7 +22599,7 @@
       "endTime": "2025-10-16T22:32:47.000Z",
       "duration": 45767,
       "isLive": false,
-      "viewCount": 103748
+      "viewCount": 103764
     },
     {
       "id": "stream-1760678375677-02k0f",
@@ -22612,7 +22612,7 @@
       "endTime": "2025-10-16T18:01:49.000Z",
       "duration": 29151,
       "isLive": false,
-      "viewCount": 35524
+      "viewCount": 35528
     },
     {
       "id": "stream-1760685997383-pcu1j",
@@ -22626,7 +22626,7 @@
       "scheduledStartTime": "2025-10-16T10:01:35Z",
       "duration": 11959,
       "isLive": false,
-      "viewCount": 11407
+      "viewCount": 11415
     },
     {
       "id": "stream-1760686107532-dmggv",
@@ -22695,7 +22695,7 @@
       "endTime": "2025-10-16T21:41:06.000Z",
       "duration": 41783,
       "isLive": false,
-      "viewCount": 28529
+      "viewCount": 28549
     },
     {
       "id": "stream-1760678380677-o1ctq",
@@ -22708,7 +22708,7 @@
       "endTime": "2025-10-16T18:01:07.000Z",
       "duration": 28335,
       "isLive": false,
-      "viewCount": 183501
+      "viewCount": 183536
     },
     {
       "id": "stream-1760678375911-olsnyh",
@@ -22721,7 +22721,7 @@
       "endTime": "2025-10-16T18:01:45.000Z",
       "duration": 28206,
       "isLive": false,
-      "viewCount": 120650
+      "viewCount": 120718
     },
     {
       "id": "stream-1760686061332-sv0b2fa",
@@ -22790,7 +22790,7 @@
       "endTime": "2025-10-16T18:01:37.000Z",
       "duration": 26922,
       "isLive": false,
-      "viewCount": 5678
+      "viewCount": 5679
     },
     {
       "id": "stream-1760686173744-hznzxr",
@@ -22817,7 +22817,7 @@
       "endTime": "2025-10-16T19:49:32.000Z",
       "duration": 33314,
       "isLive": false,
-      "viewCount": 33364
+      "viewCount": 33373
     },
     {
       "id": "stream-1760686038466-xxzynb",
@@ -22843,7 +22843,7 @@
       "endTime": "2025-10-16T18:02:22.000Z",
       "duration": 26393,
       "isLive": false,
-      "viewCount": 25453
+      "viewCount": 25457
     },
     {
       "id": "stream-1760686173204-k4a95",
@@ -22870,7 +22870,7 @@
       "endTime": "2025-10-16T16:25:23.000Z",
       "duration": 20161,
       "isLive": false,
-      "viewCount": 14010
+      "viewCount": 14011
     },
     {
       "id": "stream-1760686178245-4j6448",
@@ -22939,7 +22939,7 @@
       "scheduledStartTime": "2025-10-16T11:00:00Z",
       "duration": 25568,
       "isLive": false,
-      "viewCount": 166649
+      "viewCount": 166880
     },
     {
       "id": "stream-1760678365354-g4fx4",
@@ -22952,7 +22952,7 @@
       "endTime": "2025-10-16T18:01:37.000Z",
       "duration": 24948,
       "isLive": false,
-      "viewCount": 81364
+      "viewCount": 81366
     },
     {
       "id": "stream-1760686169873-3xoods",
@@ -22979,7 +22979,7 @@
       "endTime": "2025-10-16T18:01:30.000Z",
       "duration": 24377,
       "isLive": false,
-      "viewCount": 3046
+      "viewCount": 3048
     },
     {
       "id": "stream-1760678371125-khmz8",
@@ -23061,7 +23061,7 @@
       "endTime": "2025-10-16T18:05:04.000Z",
       "duration": 23335,
       "isLive": false,
-      "viewCount": 35108
+      "viewCount": 35200
     },
     {
       "id": "stream-1760686111785-07ffqo",
@@ -23088,7 +23088,7 @@
       "endTime": "2025-10-16T17:13:53.000Z",
       "duration": 20189,
       "isLive": false,
-      "viewCount": 18119
+      "viewCount": 18121
     },
     {
       "id": "stream-1760678391416-iw5x7m",
@@ -23101,7 +23101,7 @@
       "endTime": "2025-10-16T16:21:05.000Z",
       "duration": 16537,
       "isLive": false,
-      "viewCount": 299466
+      "viewCount": 299621
     },
     {
       "id": "stream-1760686034478-ooky3",
@@ -23128,7 +23128,7 @@
       "endTime": "2025-10-16T17:17:40.000Z",
       "duration": 19082,
       "isLive": false,
-      "viewCount": 60741
+      "viewCount": 60753
     },
     {
       "id": "stream-1760686152535-4tobgd",
@@ -23155,7 +23155,7 @@
       "endTime": "2025-10-16T12:01:09.000Z",
       "duration": 24,
       "isLive": false,
-      "viewCount": 224
+      "viewCount": 226
     },
     {
       "id": "stream-1760678396571-3m3mwn",
@@ -23168,7 +23168,7 @@
       "endTime": "2025-10-16T21:37:22.000Z",
       "duration": 34441,
       "isLive": false,
-      "viewCount": 91491
+      "viewCount": 91496
     },
     {
       "id": "stream-1760678374176-q9bbcv",
@@ -23181,7 +23181,7 @@
       "endTime": "2025-10-16T18:02:30.000Z",
       "duration": 21538,
       "isLive": false,
-      "viewCount": 59342
+      "viewCount": 59351
     },
     {
       "id": "stream-1760678388327-woz4e",
@@ -23221,7 +23221,7 @@
       "endTime": "2025-10-16T18:13:55.000Z",
       "duration": 22125,
       "isLive": false,
-      "viewCount": 83447
+      "viewCount": 83452
     },
     {
       "id": "stream-1760686170789-az3asn",
@@ -23248,7 +23248,7 @@
       "endTime": "2025-10-16T18:05:04.000Z",
       "duration": 21482,
       "isLive": false,
-      "viewCount": 25016
+      "viewCount": 25051
     },
     {
       "id": "stream-1760678374717-7r7kn",
@@ -23261,7 +23261,7 @@
       "endTime": "2025-10-16T18:02:26.000Z",
       "duration": 21039,
       "isLive": false,
-      "viewCount": 67181
+      "viewCount": 67220
     },
     {
       "id": "stream-1760678363279-7wzd34",
@@ -23274,7 +23274,7 @@
       "endTime": "2025-10-16T18:01:17.000Z",
       "duration": 20707,
       "isLive": false,
-      "viewCount": 8832
+      "viewCount": 8841
     },
     {
       "id": "stream-1760678376895-7iffrh",
@@ -23287,7 +23287,7 @@
       "endTime": "2025-10-16T14:18:02.000Z",
       "duration": 6651,
       "isLive": false,
-      "viewCount": 91263
+      "viewCount": 91302
     },
     {
       "id": "stream-1760678389680-2ccou",
@@ -23300,7 +23300,7 @@
       "endTime": "2025-10-16T18:03:39.000Z",
       "duration": 19964,
       "isLive": false,
-      "viewCount": 40281
+      "viewCount": 40306
     },
     {
       "id": "stream-1760686127683-x4vaz7",
@@ -23341,7 +23341,7 @@
       "endTime": "2025-10-16T20:38:11.000Z",
       "duration": 28523,
       "isLive": false,
-      "viewCount": 17021
+      "viewCount": 17071
     },
     {
       "id": "stream-1760678376191-ioytqg",
@@ -23354,7 +23354,7 @@
       "endTime": "2025-10-16T19:34:52.000Z",
       "duration": 24145,
       "isLive": false,
-      "viewCount": 18990
+      "viewCount": 18992
     },
     {
       "id": "stream-1760686073511-1s2xb",
@@ -23436,7 +23436,7 @@
       "endTime": "2025-10-16T18:02:12.000Z",
       "duration": 17572,
       "isLive": false,
-      "viewCount": 30602
+      "viewCount": 30632
     },
     {
       "id": "stream-1760678363956-wkpofr",
@@ -23449,7 +23449,7 @@
       "endTime": "2025-10-16T18:29:32.000Z",
       "duration": 18478,
       "isLive": false,
-      "viewCount": 52851
+      "viewCount": 52861
     },
     {
       "id": "stream-1760685997383-16ehe",
@@ -23502,7 +23502,7 @@
       "endTime": "2025-10-16T18:02:58.000Z",
       "duration": 13651,
       "isLive": false,
-      "viewCount": 32329
+      "viewCount": 32344
     },
     {
       "id": "stream-1760678372504-w4car",
@@ -23515,7 +23515,7 @@
       "endTime": "2025-10-16T17:42:02.000Z",
       "duration": 12248,
       "isLive": false,
-      "viewCount": 62974
+      "viewCount": 63004
     },
     {
       "id": "stream-1760678376895-e8y2ws",
@@ -23528,7 +23528,7 @@
       "endTime": "2025-10-16T19:41:52.000Z",
       "duration": 19260,
       "isLive": false,
-      "viewCount": 168200
+      "viewCount": 168500
     },
     {
       "id": "stream-1760678371423-x6cq8d",
@@ -23541,7 +23541,7 @@
       "endTime": "2025-10-16T17:58:52.000Z",
       "duration": 11768,
       "isLive": false,
-      "viewCount": 7479
+      "viewCount": 7481
     },
     {
       "id": "stream-1760686085453-oiry38",
@@ -23568,7 +23568,7 @@
       "endTime": "2025-10-16T15:50:42.000Z",
       "duration": 2638,
       "isLive": false,
-      "viewCount": 1117
+      "viewCount": 1118
     },
     {
       "id": "stream-1760678369639-4022r",
@@ -23581,7 +23581,7 @@
       "endTime": "2025-10-16T20:33:55.000Z",
       "duration": 18062,
       "isLive": false,
-      "viewCount": 18780
+      "viewCount": 18830
     },
     {
       "id": "stream-1760678372504-xyaqxh",
@@ -23594,7 +23594,7 @@
       "endTime": "2025-10-16T20:18:11.000Z",
       "duration": 9173,
       "isLive": false,
-      "viewCount": 37713
+      "viewCount": 37772
     },
     {
       "id": "stream-1760678363015-gbfzoh",
@@ -23607,7 +23607,7 @@
       "endTime": "2025-10-16T18:03:09.000Z",
       "duration": 768,
       "isLive": false,
-      "viewCount": 5221
+      "viewCount": 5232
     },
     {
       "id": "stream-1760690319489-ao37d",
@@ -23631,10 +23631,10 @@
       "title": "#MADTOWN 12日目  院長まずいですよ",
       "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
       "startTime": "2025-10-17T08:51:57Z",
-      "endTime": "2025-10-17T19:22:13.000Z",
-      "duration": 37816,
+      "endTime": "2025-10-17T20:30:34.000Z",
+      "duration": 41917,
       "isLive": false,
-      "viewCount": 66
+      "viewCount": 79
     },
     {
       "id": "stream-1760693396408-xxqg5i",
@@ -23646,7 +23646,7 @@
       "startTime": "2025-10-17T08:54:41Z",
       "scheduledStartTime": "2025-10-17T09:00:00Z",
       "isLive": false,
-      "viewCount": 27556,
+      "viewCount": 31641,
       "endTime": "2025-10-17T18:08:50Z",
       "duration": 33249
     },
@@ -23675,7 +23675,7 @@
       "endTime": "2025-10-17T18:03:19.000Z",
       "duration": 32776,
       "isLive": false,
-      "viewCount": 185
+      "viewCount": 217
     },
     {
       "id": "stream-1760693521331-1e9xzlr",
@@ -23688,7 +23688,7 @@
       "endTime": "2025-10-17T18:00:53.000Z",
       "duration": 32613,
       "isLive": false,
-      "viewCount": 298
+      "viewCount": 317
     },
     {
       "id": "stream-1760693446252-4cyfam",
@@ -23701,7 +23701,7 @@
       "endTime": "2025-10-17T18:03:30.000Z",
       "duration": 32763,
       "isLive": false,
-      "viewCount": 89
+      "viewCount": 108
     },
     {
       "id": "stream-1760693481968-tkz06j",
@@ -23714,7 +23714,7 @@
       "endTime": "2025-10-17T18:01:00.000Z",
       "duration": 32523,
       "isLive": false,
-      "viewCount": 500
+      "viewCount": 544
     },
     {
       "id": "stream-1760693481732-pxh6fr",
@@ -23808,7 +23808,7 @@
       "endTime": "2025-10-17T18:00:44.000Z",
       "duration": 32358,
       "isLive": false,
-      "viewCount": 1216
+      "viewCount": 1285
     },
     {
       "id": "stream-1760693502150-ern61c",
@@ -23835,7 +23835,7 @@
       "endTime": "2025-10-17T18:02:08.000Z",
       "duration": 32428,
       "isLive": false,
-      "viewCount": 1127
+      "viewCount": 1316
     },
     {
       "id": "stream-1760693398875-wv3a7s",
@@ -23847,7 +23847,7 @@
       "startTime": "2025-10-17T09:02:20Z",
       "scheduledStartTime": "2025-10-17T09:00:00Z",
       "isLive": false,
-      "viewCount": 61353,
+      "viewCount": 64612,
       "endTime": "2025-10-17T18:02:17Z",
       "duration": 32397
     },
@@ -23873,10 +23873,10 @@
       "title": "何年ぶりだろう華金 #MADTOWN/day13",
       "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
       "startTime": "2025-10-17T09:02:35Z",
-      "endTime": "2025-10-17T19:21:55.000Z",
-      "duration": 37160,
+      "endTime": "2025-10-17T20:30:18.000Z",
+      "duration": 41263,
       "isLive": false,
-      "viewCount": 34
+      "viewCount": 41
     },
     {
       "id": "stream-1760693486203-wwl74n",
@@ -23902,7 +23902,7 @@
       "startTime": "2025-10-17T09:03:00Z",
       "scheduledStartTime": "2025-10-17T09:15:00Z",
       "isLive": false,
-      "viewCount": 320628,
+      "viewCount": 349788,
       "endTime": "2025-10-17T18:02:07Z",
       "duration": 32347
     },
@@ -23931,7 +23931,7 @@
       "endTime": "2025-10-17T12:27:37.000Z",
       "duration": 12269,
       "isLive": false,
-      "viewCount": 17524
+      "viewCount": 17525
     },
     {
       "id": "stream-1760693443946-js8d2d",
@@ -23970,7 +23970,7 @@
       "endTime": "2025-10-17T18:05:21.000Z",
       "duration": 32271,
       "isLive": false,
-      "viewCount": 52
+      "viewCount": 58
     },
     {
       "id": "stream-1760693548549-ly171",
@@ -23997,7 +23997,7 @@
       "endTime": "2025-10-17T19:08:15.000Z",
       "duration": 36005,
       "isLive": false,
-      "viewCount": 634
+      "viewCount": 726
     },
     {
       "id": "stream-1760693545074-qruwp",
@@ -24038,7 +24038,7 @@
       "endTime": "2025-10-17T16:13:38.000Z",
       "duration": 25397,
       "isLive": false,
-      "viewCount": 129
+      "viewCount": 138
     },
     {
       "id": "stream-1760693390532-sffifo",
@@ -24051,7 +24051,7 @@
       "endTime": "2025-10-17T17:40:25.000Z",
       "duration": 30562,
       "isLive": false,
-      "viewCount": 3878
+      "viewCount": 4095
     },
     {
       "id": "stream-1760693384034-cw8bgq",
@@ -24089,7 +24089,7 @@
       "endTime": "2025-10-17T18:04:16.000Z",
       "duration": 31855,
       "isLive": false,
-      "viewCount": 963
+      "viewCount": 1129
     },
     {
       "id": "stream-1760693418776-7anr9g",
@@ -24102,7 +24102,7 @@
       "endTime": "2025-10-17T18:01:41.000Z",
       "duration": 31630,
       "isLive": false,
-      "viewCount": 287
+      "viewCount": 363
     },
     {
       "id": "stream-1760693479399-ndh8ra",
@@ -24143,7 +24143,7 @@
       "endTime": "2025-10-17T15:29:13.000Z",
       "duration": 22322,
       "isLive": false,
-      "viewCount": 13008
+      "viewCount": 13031
     },
     {
       "id": "stream-1760693454924-vevk",
@@ -24156,7 +24156,7 @@
       "endTime": "2025-10-17T18:12:29.000Z",
       "duration": 32071,
       "isLive": false,
-      "viewCount": 1124
+      "viewCount": 1331
     },
     {
       "id": "stream-1760693451907-092int",
@@ -24225,7 +24225,7 @@
       "endTime": "2025-10-17T17:45:31.000Z",
       "duration": 29711,
       "isLive": false,
-      "viewCount": 3410
+      "viewCount": 3955
     },
     {
       "id": "stream-1760693519620-d1voob",
@@ -24252,7 +24252,7 @@
       "endTime": "2025-10-17T09:47:40.000Z",
       "duration": 454,
       "isLive": false,
-      "viewCount": 131
+      "viewCount": 133
     },
     {
       "id": "stream-1760697145562-55kd8d",
@@ -24265,7 +24265,7 @@
       "endTime": "2025-10-17T17:59:59.000Z",
       "duration": 29892,
       "isLive": false,
-      "viewCount": 290
+      "viewCount": 329
     },
     {
       "id": "stream-1760697107201-3bvpzj",
@@ -24278,7 +24278,7 @@
       "endTime": "2025-10-17T16:00:04.000Z",
       "duration": 22633,
       "isLive": false,
-      "viewCount": 287
+      "viewCount": 307
     },
     {
       "id": "stream-1760697225818-j118io",
@@ -24291,7 +24291,7 @@
       "endTime": "2025-10-17T18:00:44.000Z",
       "duration": 29870,
       "isLive": false,
-      "viewCount": 1074
+      "viewCount": 1232
     },
     {
       "id": "stream-1760697216078-v8c93i",
@@ -24372,7 +24372,7 @@
       "endTime": "2025-10-17T17:51:56.000Z",
       "duration": 28391,
       "isLive": false,
-      "viewCount": 138
+      "viewCount": 181
     },
     {
       "id": "stream-1760697189558-9hbwda",
@@ -24425,7 +24425,7 @@
       "startTime": "2025-10-17T10:05:04Z",
       "scheduledStartTime": "2025-10-17T10:05:00Z",
       "isLive": false,
-      "viewCount": 155106,
+      "viewCount": 156526,
       "endTime": "2025-10-17T15:09:52Z",
       "duration": 18288
     },
@@ -24482,7 +24482,7 @@
       "endTime": "2025-10-17T18:11:31.000Z",
       "duration": 28228,
       "isLive": false,
-      "viewCount": 1554
+      "viewCount": 1938
     },
     {
       "id": "stream-1760697178886-2aeoia",
@@ -24565,7 +24565,7 @@
       "endTime": "2025-10-17T17:29:03.000Z",
       "duration": 24666,
       "isLive": false,
-      "viewCount": 998
+      "viewCount": 1151
     },
     {
       "id": "stream-1760700317910-sirc7r",
@@ -24592,7 +24592,7 @@
       "endTime": "2025-10-17T14:47:56.000Z",
       "duration": 14496,
       "isLive": false,
-      "viewCount": 44407
+      "viewCount": 44447
     },
     {
       "id": "stream-1760700301216-7kix4l",
@@ -24726,7 +24726,7 @@
       "endTime": "2025-10-17T18:02:44.000Z",
       "duration": 25245,
       "isLive": false,
-      "viewCount": 204
+      "viewCount": 242
     },
     {
       "id": "stream-1760700215836-wo97je",
@@ -24739,7 +24739,7 @@
       "endTime": "2025-10-17T18:01:34.000Z",
       "duration": 24888,
       "isLive": false,
-      "viewCount": 175
+      "viewCount": 197
     },
     {
       "id": "stream-1760700360271-x9gjn7",
@@ -24779,7 +24779,7 @@
       "startTime": "2025-10-17T11:27:44Z",
       "scheduledStartTime": "2025-10-17T11:27:37Z",
       "isLive": false,
-      "viewCount": 11939,
+      "viewCount": 13004,
       "endTime": "2025-10-17T18:01:08Z",
       "duration": 23604
     },
@@ -24842,12 +24842,12 @@
       "platform": "twitch",
       "videoId": "2594059769",
       "title": "『#MADTOWN』巫神こん2nd 13日目 /傭兵で犯罪学んで全部ヤル🦊",
-      "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2f964770f4ce0a90871d_mikami_kon_314969454578_1760701446//thumb/thumb0-320x180.jpg",
       "startTime": "2025-10-17T11:44:13Z",
-      "endTime": "2025-10-17T19:24:43.000Z",
-      "duration": 27630,
+      "endTime": "2025-10-17T20:15:30.000Z",
+      "duration": 30677,
       "isLive": false,
-      "viewCount": 410
+      "viewCount": 490
     },
     {
       "id": "stream-1760705865065-q1jxam",
@@ -24911,7 +24911,7 @@
       "startTime": "2025-10-17T12:02:42Z",
       "scheduledStartTime": "2025-10-17T12:00:00Z",
       "isLive": false,
-      "viewCount": 126480,
+      "viewCount": 150464,
       "endTime": "2025-10-17T18:06:51Z",
       "duration": 21849
     },
@@ -24935,12 +24935,12 @@
       "platform": "twitch",
       "videoId": "2594070749",
       "title": "#madtown XVI(シックスティーン) 12day ズズ",
-      "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c1e49dc5ef77a6ed8c5e_zetyou2_314959698033_1760702760//thumb/thumb0-320x180.jpg",
       "startTime": "2025-10-17T12:06:05Z",
-      "endTime": "2025-10-17T19:22:32.000Z",
-      "duration": 26187,
+      "endTime": "2025-10-17T20:12:29.000Z",
+      "duration": 29184,
       "isLive": false,
-      "viewCount": 829
+      "viewCount": 1011
     },
     {
       "id": "stream-1760705976056-i8m3v",
@@ -24953,7 +24953,7 @@
       "endTime": "2025-10-17T18:18:22.000Z",
       "duration": 22322,
       "isLive": false,
-      "viewCount": 383
+      "viewCount": 443
     },
     {
       "id": "stream-1760705823566-n5ymkd",
@@ -24961,12 +24961,12 @@
       "platform": "twitch",
       "videoId": "2594071842",
       "title": "MADTOWN GTA12日目『司教業』【かんせる】",
-      "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2132d9900df2c1d8e8b3_kanseru_tyan_314959713777_1760702887//thumb/thumb0-320x180.jpg",
       "startTime": "2025-10-17T12:08:13Z",
-      "endTime": "2025-10-17T19:22:16.000Z",
-      "duration": 26043,
+      "endTime": "2025-10-17T20:28:52.000Z",
+      "duration": 30039,
       "isLive": false,
-      "viewCount": 178
+      "viewCount": 239
     },
     {
       "id": "stream-1760705823280-1r1hga",
@@ -24992,7 +24992,7 @@
       "endTime": "2025-10-17T16:03:29.000Z",
       "duration": 13984,
       "isLive": false,
-      "viewCount": 185
+      "viewCount": 197
     },
     {
       "id": "stream-1760705903906-z2qhyi",
@@ -25018,7 +25018,7 @@
       "endTime": "2025-10-17T16:59:50.000Z",
       "duration": 15674,
       "isLive": false,
-      "viewCount": 31
+      "viewCount": 37
     },
     {
       "id": "stream-1760705829987-0yzamgj",
@@ -25031,7 +25031,7 @@
       "endTime": "2025-10-17T18:00:56.000Z",
       "duration": 18483,
       "isLive": false,
-      "viewCount": 38
+      "viewCount": 44
     },
     {
       "id": "stream-1760708245963-mkvzui",
@@ -25056,7 +25056,7 @@
       "endTime": "2025-10-17T18:29:33.000Z",
       "duration": 18606,
       "isLive": false,
-      "viewCount": 228
+      "viewCount": 290
     },
     {
       "id": "stream-1760711400037-ux2yto",
@@ -25064,12 +25064,12 @@
       "platform": "twitch",
       "videoId": "2594121281",
       "title": "寝すぎたmad..#12",
-      "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
+      "thumbnailUrl": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fe6905775f975c365c7a_nniru_314960214257_1760708528//thumb/thumb0-320x180.jpg",
       "startTime": "2025-10-17T13:42:14Z",
-      "endTime": "2025-10-17T19:21:43.000Z",
-      "duration": 20369,
+      "endTime": "2025-10-17T20:22:12.000Z",
+      "duration": 23998,
       "isLive": false,
-      "viewCount": 166
+      "viewCount": 183
     },
     {
       "id": "stream-1760711417255-pyuhf",
@@ -25094,7 +25094,7 @@
       "endTime": "2025-10-17T18:11:50.000Z",
       "duration": 15913,
       "isLive": false,
-      "viewCount": 22
+      "viewCount": 24
     },
     {
       "id": "stream-1760711537229-8nqgy",
@@ -25121,7 +25121,7 @@
       "endTime": "2025-10-17T18:02:45.000Z",
       "duration": 14972,
       "isLive": false,
-      "viewCount": 11
+      "viewCount": 17
     },
     {
       "id": "stream-1760711392628-472rvp",
@@ -25134,7 +25134,7 @@
       "endTime": "2025-10-17T18:01:29.000Z",
       "duration": 14630,
       "isLive": false,
-      "viewCount": 95
+      "viewCount": 108
     },
     {
       "id": "stream-1760711547957-a7zd19",
@@ -25161,7 +25161,7 @@
       "endTime": "2025-10-17T18:02:59.000Z",
       "duration": 13985,
       "isLive": false,
-      "viewCount": 1134
+      "viewCount": 1478
     },
     {
       "id": "stream-1760711574187-6fxiat",
@@ -25174,7 +25174,7 @@
       "endTime": "2025-10-17T18:03:47.000Z",
       "duration": 13671,
       "isLive": false,
-      "viewCount": 271
+      "viewCount": 361
     },
     {
       "id": "stream-1760714963134-mubvw",
@@ -25198,10 +25198,10 @@
       "title": "五周年をMADTOWNで迎える#13",
       "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
       "startTime": "2025-10-17T14:38:09Z",
-      "endTime": "2025-10-17T19:24:18.000Z",
-      "duration": 17169,
+      "endTime": "2025-10-17T20:31:06.000Z",
+      "duration": 21177,
       "isLive": false,
-      "viewCount": 472
+      "viewCount": 610
     },
     {
       "id": "stream-1760718982923-ogt9sd",
@@ -25225,10 +25225,10 @@
       "title": "MAD▶",
       "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
       "startTime": "2025-10-17T15:36:01Z",
-      "endTime": "2025-10-17T19:23:24.000Z",
-      "duration": 13643,
+      "endTime": "2025-10-17T20:30:57.000Z",
+      "duration": 17696,
       "isLive": false,
-      "viewCount": 2239
+      "viewCount": 2668
     },
     {
       "id": "stream-1760721943125-4yl1qc",
@@ -25238,10 +25238,10 @@
       "title": "【MADTOWN】ブレキルしたい警察12日目※鳩コメ禁止",
       "thumbnailUrl": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png",
       "startTime": "2025-10-17T16:37:34Z",
-      "endTime": "2025-10-17T19:22:03.000Z",
-      "duration": 9869,
+      "endTime": "2025-10-17T20:30:26.000Z",
+      "duration": 13972,
       "isLive": false,
-      "viewCount": 49
+      "viewCount": 62
     }
   ]
 }
