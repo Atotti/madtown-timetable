@@ -802,7 +802,7 @@
       "twitchUserId": "203654142",
       "twitchUserName": "fantasista_jp",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/ef3636c8-f522-4026-aa5b-39eff35324ef-profile_image-300x300.png",
-      "job": "ギャング、イベントプロデューサー",
+      "job": "イベントプロデューサー、ギャング",
       "organization": "angler",
       "totalViews": 0
     },
@@ -2144,7 +2144,7 @@
       "organization": ""
     },
     {
-      "id": "ch-708",
+      "id": "ch-909",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2152,7 +2152,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-726",
+      "id": "ch-927",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2165,7 +2165,7 @@
       "twitchUserId": "169255517",
       "twitchUserName": "getmanuel",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/51834dcb-8f2c-4271-b9d2-fb3194d4a52b-profile_image-300x300.png",
-      "job": "",
+      "job": "警察",
       "organization": ""
     },
     {
@@ -2188,7 +2188,7 @@
       "organization": ""
     },
     {
-      "id": "ch-739",
+      "id": "ch-940",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
@@ -2196,7 +2196,7 @@
       "organization": ""
     },
     {
-      "id": "ch-927",
+      "id": "ch-1100",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2204,7 +2204,7 @@
       "organization": ""
     },
     {
-      "id": "ch-909",
+      "id": "ch-1082",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2212,7 +2212,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-940",
+      "id": "ch-1113",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
