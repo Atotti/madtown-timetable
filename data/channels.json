@@ -782,7 +782,7 @@
       "twitchUserId": "719401810",
       "twitchUserName": "hayun2434",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/0c92c8a8-f19d-4cf4-8a13-76ca98faf175-profile_image-300x300.png",
-      "job": "救急隊",
+      "job": "警察、救急隊",
       "organization": "",
       "totalViews": 0
     },
@@ -1780,8 +1780,8 @@
       "twitchUserId": "614603576",
       "twitchUserName": "nenemaru220",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/9b7e3fcb-6888-40f9-a83b-0832bb652f82-profile_image-300x300.png",
-      "job": "不動産",
-      "organization": "Celestial Cats",
+      "job": "メカニック、不動産",
+      "organization": "7278メカニック、Celestial Cats",
       "totalViews": 0
     },
     {
@@ -1853,7 +1853,7 @@
       "name": "氷乃渚",
       "youtubeChannelId": "UCe5mbpYA9Yym4lZTdj06G6Q",
       "avatarUrl": "https://yt3.ggpht.com/ocMFCh-neckH9bGCoPjlnFivIBJWRer8Xr2sxjP-9mfscPiui3uJZlodCq4Ek1COKA7nsfylYII=s88-c-k-c0x00ffffff-no-rj",
-      "job": "警察",
+      "job": "スーパーマーケット、警察",
       "organization": "",
       "totalViews": 0
     },
@@ -2121,7 +2121,7 @@
       "twitchUserId": "116965093",
       "twitchUserName": "middleeetv",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/e3d41733-c642-4226-a5d1-2d2dfa75a72f-profile_image-300x300.png",
-      "job": "タクシー運転手",
+      "job": "警察、タクシー運転手",
       "organization": "Celestial Cats"
     },
     {
@@ -2144,40 +2144,12 @@
       "organization": ""
     },
     {
-      "id": "ch-548",
+      "id": "ch-708",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
       "job": "飲食店",
       "organization": "Nice! Tacos."
-    },
-    {
-      "id": "ch-566",
-      "name": "ポッキー",
-      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
-      "avatarUrl": "",
-      "job": "",
-      "organization": ""
-    },
-    {
-      "id": "ch-733",
-      "name": "ManueL",
-      "youtubeChannelId": "",
-      "twitchUserName": "getmanuel",
-      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/51834dcb-8f2c-4271-b9d2-fb3194d4a52b-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
-      "twitchUserId": "169255517"
-    },
-    {
-      "id": "ch-767",
-      "name": "Rio",
-      "youtubeChannelId": "",
-      "twitchUserName": "rio_taro",
-      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1b693cf6-29a5-45a3-8018-9a1f5da626e3-profile_image-300x300.png",
-      "job": "警察",
-      "organization": "",
-      "twitchUserId": "145248977"
     },
     {
       "id": "ch-726",
@@ -2188,17 +2160,51 @@
       "organization": ""
     },
     {
+      "id": "ch-733",
+      "name": "ManueL",
+      "twitchUserId": "169255517",
+      "twitchUserName": "getmanuel",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/51834dcb-8f2c-4271-b9d2-fb3194d4a52b-profile_image-300x300.png",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-767",
+      "name": "Rio",
+      "twitchUserId": "145248977",
+      "twitchUserName": "rio_taro",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1b693cf6-29a5-45a3-8018-9a1f5da626e3-profile_image-300x300.png",
+      "job": "警察",
+      "organization": ""
+    },
+    {
       "id": "ch-738",
       "name": "みつき",
       "youtubeChannelId": "mituki0916",
+      "twitchUserId": "689257502",
       "twitchUserName": "mitsuki_mitsuu",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e05c193-4c53-4d57-9281-cc76052c9d4a-profile_image-300x300.png",
       "job": "",
-      "organization": "",
-      "twitchUserId": "689257502"
+      "organization": ""
     },
     {
-      "id": "ch-708",
+      "id": "ch-739",
+      "name": "光葉エニ",
+      "youtubeHandle": "@Mitsuba_Eni",
+      "avatarUrl": "",
+      "job": "スーパーマーケット",
+      "organization": ""
+    },
+    {
+      "id": "ch-927",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-909",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2206,7 +2212,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-739",
+      "id": "ch-940",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
