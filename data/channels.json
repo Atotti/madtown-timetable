@@ -50,7 +50,7 @@
       "twitchUserId": "441251211",
       "twitchUserName": "tw_civa",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/bb6a07d4-11a3-4b42-98f8-254a35eaf2ae-profile_image-300x300.png",
-      "job": "ギャング、NPC、プール清掃員",
+      "job": "ギャング、プール清掃員",
       "organization": "Black Rose、神聖へっぽこーず",
       "totalViews": 0
     },
@@ -103,8 +103,8 @@
       "twitchUserId": "912775996",
       "twitchUserName": "kawaii_club_0809",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/6f54a2e7-b890-4da6-a5ed-36a9d45a755a-profile_image-300x300.png",
-      "job": "ギャング、イベントプロデューサー、NPC",
-      "organization": "白狐、Team NPC(神聖へっぽこーず)",
+      "job": "ギャング、イベントプロデューサー",
+      "organization": "白狐",
       "totalViews": 0
     },
     {
@@ -285,8 +285,8 @@
       "twitchUserId": "102009661",
       "twitchUserName": "usya",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/a1635b43-df04-41c4-af87-18dac1be1f38-profile_image-300x300.png",
-      "job": "スーパーマーケット (店長)、NPC",
-      "organization": "Team NPC(神聖へっぽこーず)",
+      "job": "スーパーマーケット (店長)",
+      "organization": "",
       "totalViews": 0
     },
     {
@@ -579,7 +579,7 @@
       "twitchUserId": "1320744591",
       "twitchUserName": "colon56n_stpr",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/c680203d-9fde-488e-b5cc-0cadb7c57239-profile_image-300x300.png",
-      "job": "ギャング、NPC",
+      "job": "ギャング",
       "organization": "Black Rose、神聖へっぽこーず",
       "totalViews": 0
     },
@@ -729,7 +729,7 @@
       "twitchUserId": "836587213",
       "twitchUserName": "crtopioxd",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/e9e21dca-fed1-4063-90b0-a3d2651ccaac-profile_image-300x300.png",
-      "job": "メカニック",
+      "job": "警察、メカニック",
       "organization": "7278メカニック",
       "totalViews": 0
     },
@@ -884,7 +884,7 @@
       "name": "ミラン・ケストレル",
       "youtubeChannelId": "UCFtyinR2ZdvKK_Xgy07qXUg",
       "avatarUrl": "https://yt3.ggpht.com/CKUiuGTB4CKt9-b0auxPOfO4fynana2WKciy3cvv-PXgGR9KwM49Zc8LyVpKMD-tU1C9xZH7p7Y=s88-c-k-c0x00ffffff-no-rj",
-      "job": "カーディーラー、警察、聖職者、飲食店",
+      "job": "警察、聖職者",
       "organization": "Celestial Cats、相席ボナペ",
       "totalViews": 0
     },
@@ -984,7 +984,7 @@
       "twitchUserId": "801921410",
       "twitchUserName": "reglushlionheart",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/e435a26e-a1a1-4883-876d-31e830ee7b87-profile_image-300x300.png",
-      "job": "",
+      "job": "スーパーマーケット",
       "organization": "",
       "totalViews": 0
     },
@@ -1450,8 +1450,8 @@
       "twitchUserId": "467110256",
       "twitchUserName": "shibuyahal",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/cb0cdf4b-9b04-4253-892b-aebc264b0856-profile_image-300x300.png",
-      "job": "カーディーラー、NPC",
-      "organization": "Team NPC(神聖へっぽこーず)",
+      "job": "カーディーラー",
+      "organization": "",
       "totalViews": 0
     },
     {
@@ -1537,7 +1537,7 @@
       "twitchUserId": "696513350",
       "twitchUserName": "sakusancanon",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/7e07128e-536d-4adb-8812-b329c64e3c96-profile_image-300x300.png",
-      "job": "タクシー運転手、ギャング",
+      "job": "ギャング、タクシー運転手",
       "organization": "Black Rose",
       "totalViews": 0
     },
@@ -2144,7 +2144,7 @@
       "organization": ""
     },
     {
-      "id": "ch-909",
+      "id": "ch-1082",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2152,7 +2152,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-927",
+      "id": "ch-1100",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2184,32 +2184,8 @@
       "twitchUserId": "689257502",
       "twitchUserName": "mitsuki_mitsuu",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e05c193-4c53-4d57-9281-cc76052c9d4a-profile_image-300x300.png",
-      "job": "",
+      "job": "警察",
       "organization": ""
-    },
-    {
-      "id": "ch-940",
-      "name": "光葉エニ",
-      "youtubeHandle": "@Mitsuba_Eni",
-      "avatarUrl": "",
-      "job": "スーパーマーケット",
-      "organization": ""
-    },
-    {
-      "id": "ch-1100",
-      "name": "ポッキー",
-      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
-      "avatarUrl": "",
-      "job": "",
-      "organization": ""
-    },
-    {
-      "id": "ch-1082",
-      "name": "花江夏樹",
-      "youtubeHandle": "@hanae0626",
-      "avatarUrl": "",
-      "job": "飲食店",
-      "organization": "Nice! Tacos."
     },
     {
       "id": "ch-1113",
@@ -2217,6 +2193,38 @@
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
       "job": "スーパーマーケット",
+      "organization": ""
+    },
+    {
+      "id": "ch-1274",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-1256",
+      "name": "花江夏樹",
+      "youtubeHandle": "@hanae0626",
+      "avatarUrl": "",
+      "job": "飲食店",
+      "organization": "Nice! Tacos."
+    },
+    {
+      "id": "ch-1287",
+      "name": "光葉エニ",
+      "youtubeHandle": "@Mitsuba_Eni",
+      "avatarUrl": "",
+      "job": "スーパーマーケット",
+      "organization": ""
+    },
+    {
+      "id": "ch-1151",
+      "name": "小野賢章",
+      "youtubeChannelId": "",
+      "avatarUrl": "",
+      "job": "",
       "organization": ""
     }
   ]
