@@ -275,8 +275,8 @@
       "twitchUserId": "183905602",
       "twitchUserName": "tonbocub",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a500d3a-be50-4dcd-aa82-63f339d10412-profile_image-300x300.png",
-      "job": "警察",
-      "organization": "",
+      "job": "ギャング、警察",
+      "organization": "Black Rose",
       "totalViews": 0
     },
     {
@@ -740,7 +740,7 @@
       "twitchUserId": "94618049",
       "twitchUserName": "tototmix",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/136fef26-39cd-485d-93d8-97c616c81131-profile_image-300x300.png",
-      "job": "警察、メカニック",
+      "job": "メカニック",
       "organization": "7278メカニック",
       "totalViews": 0
     },
@@ -782,7 +782,7 @@
       "twitchUserId": "719401810",
       "twitchUserName": "hayun2434",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/0c92c8a8-f19d-4cf4-8a13-76ca98faf175-profile_image-300x300.png",
-      "job": "警察、救急隊",
+      "job": "救急隊、警察",
       "organization": "",
       "totalViews": 0
     },
@@ -1046,8 +1046,8 @@
       "name": "綾見ユラ",
       "youtubeChannelId": "UCB-aip0wsqKQPcrLW1BBJaw",
       "avatarUrl": "https://yt3.ggpht.com/5NuCwpbtoEnf_jdrC22ml_dfZGmdG252lmWy8jAw9D3EYDXUxATdYwbP4wkFg1iIAc2mZqrhJbA=s88-c-k-c0x00ffffff-no-rj",
-      "job": "",
-      "organization": "朕狼党",
+      "job": "ギャング",
+      "organization": "XVI、朕狼党",
       "totalViews": 0
     },
     {
@@ -2057,8 +2057,8 @@
       "twitchUserId": "1023243630",
       "twitchUserName": "mikami_kon",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1384b557-419d-4592-8d4f-55d53be4e91b-profile_image-300x300.png",
-      "job": "救急隊",
-      "organization": "",
+      "job": "ギャング、救急隊",
+      "organization": "XVI",
       "totalViews": 0
     },
     {
@@ -2144,7 +2144,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1082",
+      "id": "ch-1256",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2152,7 +2152,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-1100",
+      "id": "ch-1274",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2188,30 +2188,6 @@
       "organization": ""
     },
     {
-      "id": "ch-1113",
-      "name": "光葉エニ",
-      "youtubeHandle": "@Mitsuba_Eni",
-      "avatarUrl": "",
-      "job": "スーパーマーケット",
-      "organization": ""
-    },
-    {
-      "id": "ch-1274",
-      "name": "ポッキー",
-      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
-      "avatarUrl": "",
-      "job": "",
-      "organization": ""
-    },
-    {
-      "id": "ch-1256",
-      "name": "花江夏樹",
-      "youtubeHandle": "@hanae0626",
-      "avatarUrl": "",
-      "job": "飲食店",
-      "organization": "Nice! Tacos."
-    },
-    {
       "id": "ch-1287",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
@@ -2222,9 +2198,32 @@
     {
       "id": "ch-1151",
       "name": "小野賢章",
-      "youtubeChannelId": "",
       "avatarUrl": "",
       "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-1448",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-1430",
+      "name": "花江夏樹",
+      "youtubeHandle": "@hanae0626",
+      "avatarUrl": "",
+      "job": "飲食店",
+      "organization": "Nice! Tacos."
+    },
+    {
+      "id": "ch-1461",
+      "name": "光葉エニ",
+      "youtubeHandle": "@Mitsuba_Eni",
+      "avatarUrl": "",
+      "job": "スーパーマーケット",
       "organization": ""
     }
   ]
