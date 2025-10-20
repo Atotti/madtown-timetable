@@ -147,8 +147,8 @@
       "twitchUserId": "158804879",
       "twitchUserName": "mondo2244",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/ed0caac8-947b-412f-8a54-411588450540-profile_image-300x300.png",
-      "job": "警察、不動産",
-      "organization": "",
+      "job": "ギャング、警察、不動産",
+      "organization": "angler",
       "totalViews": 0
     },
     {
@@ -802,8 +802,8 @@
       "twitchUserId": "203654142",
       "twitchUserName": "fantasista_jp",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/ef3636c8-f522-4026-aa5b-39eff35324ef-profile_image-300x300.png",
-      "job": "イベントプロデューサー、ギャング",
-      "organization": "angler",
+      "job": "飲食店、イベントプロデューサー、ギャング",
+      "organization": "飲食店６、angler",
       "totalViews": 0
     },
     {
@@ -903,7 +903,7 @@
       "youtubeChannelId": "UCE4W22kKQQVdrA2KTiyZ_cA",
       "avatarUrl": "https://yt3.ggpht.com/GQtrEjW5fab5xs87c95RI_DfhhWboBusY0FYLcAjHaEBSOToaPulL2x6BuM3Ibx8n3RiAyxZ=s88-c-k-c0x00ffffff-no-rj",
       "job": "飲食店、タクシー運転手",
-      "organization": "朕狼党、Ritunes music bar",
+      "organization": "Ritunes music bar、朕狼党",
       "totalViews": 0
     },
     {
@@ -1993,7 +1993,7 @@
       "name": "夕刻ロベル",
       "youtubeChannelId": "UCANDOlYTJT7N5jlRC3zfzVA",
       "avatarUrl": "https://yt3.ggpht.com/087yj2idU-aFOILEg1aycYQopvTOEQw4oILbI4p0u5jjSwauZRzfQkNvIhcKeUdLK-4owPQa4w=s88-c-k-c0x00ffffff-no-rj",
-      "job": "飲食店、スーパーマーケット",
+      "job": "スーパーマーケット、飲食店",
       "organization": "料亭みそぢ",
       "totalViews": 0
     },
@@ -2144,7 +2144,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1256",
+      "id": "ch-1430",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2152,7 +2152,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-1274",
+      "id": "ch-1448",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2188,7 +2188,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1287",
+      "id": "ch-1461",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
@@ -2203,7 +2203,15 @@
       "organization": ""
     },
     {
-      "id": "ch-1448",
+      "id": "ch-1656",
+      "name": "Yuni",
+      "youtubeHandle": "@ayatsunoyuni",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-1622",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2211,7 +2219,17 @@
       "organization": ""
     },
     {
-      "id": "ch-1430",
+      "id": "ch-1628",
+      "name": "ましゃかり",
+      "youtubeHandle": "@mashakari",
+      "twitchUserName": "masakari913",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/75993ec0-3da9-4663-a7bb-a31e94e1f2e8-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "175682261"
+    },
+    {
+      "id": "ch-1604",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2219,7 +2237,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-1461",
+      "id": "ch-1636",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
