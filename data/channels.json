@@ -2144,7 +2144,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1430",
+      "id": "ch-1604",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2152,7 +2152,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-1448",
+      "id": "ch-1622",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2188,7 +2188,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1461",
+      "id": "ch-1636",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
@@ -2211,14 +2211,6 @@
       "organization": ""
     },
     {
-      "id": "ch-1622",
-      "name": "ポッキー",
-      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
-      "avatarUrl": "",
-      "job": "",
-      "organization": ""
-    },
-    {
       "id": "ch-1628",
       "name": "ましゃかり",
       "youtubeHandle": "@mashakari",
@@ -2229,7 +2221,33 @@
       "twitchUserId": "175682261"
     },
     {
-      "id": "ch-1604",
+      "id": "ch-1851",
+      "name": "Yuni",
+      "youtubeHandle": "@ayatsunoyuni",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-1817",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-1823",
+      "name": "ましゃかり",
+      "youtubeHandle": "@mashakari",
+      "twitchUserName": "masakari913",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/75993ec0-3da9-4663-a7bb-a31e94e1f2e8-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "175682261"
+    },
+    {
+      "id": "ch-1799",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2237,7 +2255,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-1636",
+      "id": "ch-1831",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
