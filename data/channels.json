@@ -1555,8 +1555,8 @@
       "name": "水無瀬",
       "youtubeChannelId": "UCEy9cYULQrC2cRlVqJPCcSw",
       "avatarUrl": "https://yt3.ggpht.com/CfjCSE318-dKauDmOyfyo_4cV6nKY_gosZSH5zG71uAjkC1ixUkF7OIHqd4cpwTDbGortHkD=s88-c-k-c0x00ffffff-no-rj",
-      "job": "飲食店、聖職者",
-      "organization": "料亭みそぢ",
+      "job": "ギャング、飲食店、聖職者",
+      "organization": "Black Rose、料亭みそぢ",
       "totalViews": 0
     },
     {
@@ -1874,7 +1874,7 @@
       "youtubeChannelId": "UCJWTT5HZQbrkP1NUBwwVEbQ",
       "avatarUrl": "https://yt3.ggpht.com/84H7pjJGO1Da24NdCqE1ah_GSO-bVD2aB8NeGc1XJYeK5KeJ8rVbgyfqA-J1tRxjJRPwjiAJ=s88-c-k-c0x00ffffff-no-rj",
       "job": "飲食店",
-      "organization": "朕狼党、Ritunes music bar",
+      "organization": "Ritunes music bar、朕狼党",
       "totalViews": 0
     },
     {
@@ -2144,7 +2144,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1799",
+      "id": "ch-1995",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2152,7 +2152,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-1817",
+      "id": "ch-2014",
       "name": "ポッキー",
       "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
@@ -2188,7 +2188,7 @@
       "organization": ""
     },
     {
-      "id": "ch-1831",
+      "id": "ch-2028",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
@@ -2203,45 +2203,9 @@
       "organization": ""
     },
     {
-      "id": "ch-1851",
-      "name": "Yuni",
-      "youtubeHandle": "@ayatsunoyuni",
-      "avatarUrl": "",
-      "job": "",
-      "organization": ""
-    },
-    {
-      "id": "ch-1823",
-      "name": "ましゃかり",
-      "youtubeHandle": "@mashakari",
-      "twitchUserName": "masakari913",
-      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/75993ec0-3da9-4663-a7bb-a31e94e1f2e8-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
-      "twitchUserId": "175682261"
-    },
-    {
       "id": "ch-2048",
       "name": "Yuni",
       "youtubeHandle": "@ayatsunoyuni",
-      "avatarUrl": "",
-      "job": "",
-      "organization": ""
-    },
-    {
-      "id": "ch-1875",
-      "name": "アンダーバー",
-      "youtubeHandle": "@underbar_freedom?si=UbvCmhCFs7kl4oh_",
-      "twitchUserName": "underbar_ub",
-      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/377b4fef-39f5-43f9-b52e-5e3dd6a89514-profile_image-300x300.png",
-      "job": "",
-      "organization": "",
-      "twitchUserId": "1057729041"
-    },
-    {
-      "id": "ch-2014",
-      "name": "ポッキー",
-      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
       "avatarUrl": "",
       "job": "",
       "organization": ""
@@ -2257,7 +2221,69 @@
       "twitchUserId": "175682261"
     },
     {
-      "id": "ch-1995",
+      "id": "ch-1875",
+      "name": "アンダーバー",
+      "youtubeHandle": "@underbar_freedom?si=UbvCmhCFs7kl4oh_",
+      "twitchUserName": "underbar_ub",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/377b4fef-39f5-43f9-b52e-5e3dd6a89514-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "1057729041"
+    },
+    {
+      "id": "ch-2012",
+      "name": "星川サラ",
+      "youtubeHandle": "@HoshikawaSara",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-2246",
+      "name": "Yuni",
+      "youtubeHandle": "@ayatsunoyuni",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-2072",
+      "name": "アンダーバー",
+      "youtubeHandle": "@underbar_freedom?si=UbvCmhCFs7kl4oh_",
+      "twitchUserName": "underbar_ub",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/377b4fef-39f5-43f9-b52e-5e3dd6a89514-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "1057729041"
+    },
+    {
+      "id": "ch-2211",
+      "name": "ポッキー",
+      "youtubeHandle": "@pockysweets?si=88qjpleuBKQwzMib",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-2217",
+      "name": "ましゃかり",
+      "youtubeHandle": "@mashakari",
+      "twitchUserName": "masakari913",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/75993ec0-3da9-4663-a7bb-a31e94e1f2e8-profile_image-300x300.png",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "175682261"
+    },
+    {
+      "id": "ch-2220",
+      "name": "マフィア梶田",
+      "youtubeHandle": "@mafia_kajita",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-2192",
       "name": "花江夏樹",
       "youtubeHandle": "@hanae0626",
       "avatarUrl": "",
@@ -2265,7 +2291,7 @@
       "organization": "Nice! Tacos."
     },
     {
-      "id": "ch-2028",
+      "id": "ch-2226",
       "name": "光葉エニ",
       "youtubeHandle": "@Mitsuba_Eni",
       "avatarUrl": "",
@@ -2273,7 +2299,7 @@
       "organization": ""
     },
     {
-      "id": "ch-2012",
+      "id": "ch-2209",
       "name": "星川サラ",
       "youtubeHandle": "@HoshikawaSara",
       "avatarUrl": "",
