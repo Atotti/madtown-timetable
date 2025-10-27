@@ -2267,21 +2267,21 @@
       "id": "ch-2860",
       "name": "Rio",
       "youtubeChannelId": "UCqacbacnrbT3nw0kM5wZtvw",
+      "twitchUserId": "145248977",
       "twitchUserName": "rio_taro",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1b693cf6-29a5-45a3-8018-9a1f5da626e3-profile_image-300x300.png",
       "job": "警察",
-      "organization": "",
-      "twitchUserId": "145248977"
+      "organization": ""
     },
     {
       "id": "ch-2675",
       "name": "アンダーバー",
       "youtubeChannelId": "UCAm21bybwFxjw3wb-oe-J2A",
+      "twitchUserId": "1057729041",
       "twitchUserName": "underbar_ub",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/377b4fef-39f5-43f9-b52e-5e3dd6a89514-profile_image-300x300.png",
       "job": "",
-      "organization": "",
-      "twitchUserId": "1057729041"
+      "organization": ""
     },
     {
       "id": "ch-2816",
@@ -2295,31 +2295,31 @@
       "id": "ch-2822",
       "name": "ましゃかり",
       "youtubeChannelId": "UCEOWxJCx_wPq-LsJB_QXL9A",
+      "twitchUserId": "175682261",
       "twitchUserName": "masakari913",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/75993ec0-3da9-4663-a7bb-a31e94e1f2e8-profile_image-300x300.png",
       "job": "",
-      "organization": "",
-      "twitchUserId": "175682261"
+      "organization": ""
     },
     {
       "id": "ch-2825",
       "name": "マフィア梶田",
       "youtubeChannelId": "UC1f7is1S9CZ4yAuZEAcAypw",
+      "twitchUserId": "146795702",
       "twitchUserName": "mafiakajita",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/4b996169-2eda-4e46-af37-0e563ef51868-profile_image-300x300.jpeg",
       "job": "",
-      "organization": "",
-      "twitchUserId": "146795702"
+      "organization": ""
     },
     {
       "id": "ch-2830",
       "name": "みつき",
       "youtubeChannelId": "UC2ryeSqlQw-RWnCxQ53-3Fw",
+      "twitchUserId": "689257502",
       "twitchUserName": "mitsuki_mitsuu",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e05c193-4c53-4d57-9281-cc76052c9d4a-profile_image-300x300.png",
       "job": "警察",
-      "organization": "",
-      "twitchUserId": "689257502"
+      "organization": ""
     },
     {
       "id": "ch-2797",
@@ -2341,11 +2341,11 @@
       "id": "ch-2741",
       "name": "史門",
       "youtubeChannelId": "UCPceuZrm28gFBqBmmLjTooQ",
+      "twitchUserId": "493082882",
       "twitchUserName": "shimon_vtuber_",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/16619870-bcc6-449b-aff0-92b2464452a0-profile_image-300x300.jpeg",
       "job": "スーパーマーケット",
-      "organization": "",
-      "twitchUserId": "493082882"
+      "organization": ""
     },
     {
       "id": "ch-2690",
@@ -2359,31 +2359,49 @@
       "id": "ch-2814",
       "name": "星川サラ",
       "youtubeChannelId": "UC9V3Y3_uzU5e-usObb6IE1w",
+      "twitchUserId": "810038301",
       "twitchUserName": "sara_hoshikawa",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/9ecf65b8-7f64-466b-9b5f-2f7171714c02-profile_image-300x300.png",
       "job": "",
-      "organization": "",
-      "twitchUserId": "810038301"
+      "organization": ""
     },
     {
       "id": "ch-2664",
       "name": "天鬼ぷるる",
       "youtubeChannelId": "UCtoR8l7GGoq-PY9sT8qkOYQ",
+      "twitchUserId": "741229569",
       "twitchUserName": "amakipururu",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/48aad627-8bb3-42a3-9e7b-78c71f14fb1a-profile_image-300x300.png",
       "job": "警察",
-      "organization": "",
-      "twitchUserId": "741229569"
+      "organization": ""
     },
     {
       "id": "ch-2851",
       "name": "柚原いづみ",
       "youtubeChannelId": "UCW8WKciBixmaqaGqrlTITRQ",
+      "twitchUserId": "838406432",
       "twitchUserName": "izumi_yunohara",
       "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/d22c6310-7bce-463c-8929-26849e7360b6-profile_image-300x300.png",
       "job": "",
+      "organization": ""
+    },
+    {
+      "id": "ch-2927",
+      "name": "ぐちつぼ",
+      "youtubeHandle": "@gutitubo",
+      "twitchUserName": "gutitubo",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/gutitubo-profile_image-0ed83d3655c0a82c-300x300.jpeg",
+      "job": "",
       "organization": "",
-      "twitchUserId": "838406432"
+      "twitchUserId": "70947583"
+    },
+    {
+      "id": "ch-3015",
+      "name": "樋口楓",
+      "youtubeHandle": "@HiguchiKaede",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
     }
   ]
 }
