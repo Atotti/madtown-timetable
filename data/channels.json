@@ -2402,6 +2402,24 @@
       "avatarUrl": "",
       "job": "",
       "organization": ""
+    },
+    {
+      "id": "ch-3082",
+      "name": "ぐちつぼ",
+      "youtubeHandle": "@gutitubo",
+      "twitchUserName": "gutitubo",
+      "avatarUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/gutitubo-profile_image-0ed83d3655c0a82c-300x300.jpeg",
+      "job": "",
+      "organization": "",
+      "twitchUserId": "70947583"
+    },
+    {
+      "id": "ch-3170",
+      "name": "樋口楓",
+      "youtubeHandle": "@HiguchiKaede",
+      "avatarUrl": "",
+      "job": "",
+      "organization": ""
     }
   ]
 }
