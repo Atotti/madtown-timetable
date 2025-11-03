@@ -2,7 +2,7 @@
 
 MADTOWN GTA イベントの配信スケジュールを表示するタイムテーブルサイト
 
-<img width="1710" height="948" alt="image" src="https://github.com/user-attachments/assets/80aa74dc-34cf-4ff9-96dd-3808bd6d407b" />
+<img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/cb2c59d1-ec39-4fee-950c-7e622b94b7a8" />
 
 ## マスターデータ
 
