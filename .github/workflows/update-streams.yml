@@ -1,9 +1,9 @@
 name: Update Stream Data
 
 on:
-  schedule:
+  # schedule:
     # 1時間ごと（毎時5分）
-    - cron: "5 * * * *"
+    # - cron: "5 * * * *"
   workflow_dispatch: # 手動実行も可能
 
 jobs:
